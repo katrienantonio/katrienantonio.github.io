@@ -6,17 +6,17 @@
     <description>Recent content in Pricing Models on Katrien Antonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/pricing-models/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Machine learning for insurance pricing</title>
-      <link>/projects/2019/06/13/machine-learning/</link>
-      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      <link>/projects/2019/11/06/machine-learning/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2019/06/13/machine-learning/</guid>
+      <guid>/projects/2019/11/06/machine-learning/</guid>
       <description>An overview of published and ongoing research papers within the machine learning for pricing research line developed in my lab. This research line puts focus on:data driven strategies to handle continuous and spatial risk factorssparse regression with automatic feature selection and binningtree-based machine learning techniques for pricing.Watch Roel Henckaerts presenting our paper on tree-based machine learning during UseR!2018 in Brisbane.
 Boosting insights in insurance tariff plans with tree-basedmachine learning methods Collaborators: Roel Henckaerts, Katrien Antonio, Marie-Pier Côté and Roel Verbelen.</description>
     </item>

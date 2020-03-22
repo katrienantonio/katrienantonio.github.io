@@ -6,10 +6,20 @@
     <description>Recent content in Teaching on Katrien Antonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Non-Life Insurance course</title>
+      <link>/teaching/non-life-insurance/</link>
+      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/teaching/non-life-insurance/</guid>
+      <description>This course covers the basic principles of pricing and reserving in non-life insurance.
+Chapter 1 equips you with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency-severity approach typical for non-life insurance loss models. Chapter 2 puts focus on a priori insurance pricing with generalized linear models (GLMs). Chapter 3 explains a posteriori pricing with credibility models and bonus-malus scales.</description>
+    </item>
     
     <item>
       <title>MSc of Actuarial and Financial Engineering</title>

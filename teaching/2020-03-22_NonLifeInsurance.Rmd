@@ -1,0 +1,278 @@
+---
+title: "Non-Life Insurance course"
+author: "Katrien Antonio"
+date: '2020-03-22'
+draft: no
+image: teaching/img/mainImages/collegio.png
+showonlyimage: no
+slug: non-life insurance
+description: Online course on Non Life Insurance.
+type: post
+---
+
+```{r, include = FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+<p align="justify">This course covers the basic principles of pricing and reserving in non-life insurance. 
+
+><p align="justify">
+<u class="dotted">Chapter 1</u> equips you with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency-severity approach typical for non-life insurance loss models. <br /> <u class="dotted">Chapter 2</u> puts focus on a priori insurance pricing with generalized linear models (GLMs). <br /> <u class="dotted">Chapter 3</u> explains a posteriori pricing with credibility models and bonus-malus scales. <br /> <u class="dotted">Chapter 4</u> concludes with claims reserving methods. During computer labs with the statistical software package R you apply the theory to practical use cases.</p>
+
+***
+
+**Introduction**
+
+What is risk? // principles of insurance: life vs non-life // lines-of-business in non-life insurance // principles of insurance pricing with frequency-severity data.
+
+Download the lecture sheets [here](https://www.dropbox.com/s/w2dumo3dknv89lj/2019-01-13%20Risk%20modelling%20in%20Insurance%20Part%20I%20-%20intro.pdf?dl=0).
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TQsbSGQpCh0" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<b>Reading list</b>: [preface](https://www.dropbox.com/s/bjl3co4j84o8u5r/Denuit%20et%20al%20%282007%29%20Intro.pdf?dl=0) from Denuit et al. (2007) on Actuarial Modelling of Claim Counts.
+
+***
+
+**Chapter 1: loss models for frequency and severity data**
+
+***1.1 Frequency models***
+
+Download the lecture sheets [here](https://www.dropbox.com/s/f1p2noggwslv0oi/2019-01-13%20Risk%20modelling%20in%20Insurance%20Part%20I%20-%20frequency%20modeling.pdf?dl=0).
+
+Poisson distribution for claim counts // Poisson models // The use of exposure.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e_WM-TGxFdg" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Mixed Poisson models // ZIP // Negative Binomial.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HUKgxNQGLSs" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Calibration with MLE // Statistical inference.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JVyusmh0ZiA" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<b>Reading list</b>: Chapter 1 on *Mixed Poisson models for claim counts* from Denuit et al. (2007) on Actuarial Modelling of Claim Counts.
+
+<b>Exercises</b> on frequency modeling are [here](https://www.dropbox.com/s/qz3hkbcurz7x0mg/2019-01-13%20Exercises%20Part%20I%20Frequency%20Models.pdf?dl=0), plus [solutions](https://www.dropbox.com/s/kt6dkilx9dzx3qr/2019-01-13%20Exercises%20Part%20I%20Frequency%20Models%20-%20Solutions.pdf?dl=0). 
+
+***1.2 Severity models***
+
+Download the lecture sheets [here](https://www.dropbox.com/s/rbobhb0a3zy87ql/2019-01-13%20Risk%20modelling%20in%20Insurance%20Part%20I%20-%20severity%20modeling.pdf?dl=0).
+
+Characteristics of severity data // censoring // truncation // MLE in the presence of censoring and truncation.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KxGAl-tj7ZA" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Mixing and splicing.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ja89rmfjFlc" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<b>Exercises</b> on severity modeling are [here](https://www.dropbox.com/s/o1uzqce3ml4q0ct/2019-01-13%20Exercises%20Part%20I%20Severity%20Models.pdf?dl=0), plus [solutions](https://www.dropbox.com/s/p2s2gdar15q5qpr/2019-01-13%20Exercises%20Part%20I%20Severity%20Models%20-%20Solutions.pdf?dl=0). 
+
+Case-study: splicing for severity modeling in reinsurance. 
+
+Download the lecture sheets [here](https://www.dropbox.com/s/v95kgsieyh12qob/2017-11-17%20Weblecture%20splicing.pdf?dl=0).
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zaKyiNclD2w" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<b>Reading list</b> (optional, only if interested): [loss models with mixtures of Erlangs and a Pareto tail](http://127.0.0.1:7578/projects/2019/09/28/loss-models/).
+
+***
+
+**Chapter 2: insurance pricing with GLMs**
+
+***2.1 Poisson regression***
+
+Download the lecture sheets [here](https://www.dropbox.com/s/8w78ldu8bltzdvs/2019-01-13%20Risk%20modelling%20Part%20II%20-%20GLMs%20for%20insurance%20pricing.pdf?dl=0).
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wUkaePwkYZE" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aUBqz3Nx9IY" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/po4D79YbWYI" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<b>Reading list</b>: Chapter 2 on *Risk classification* from Denuit et al. (2007) on Actuarial Modelling of Claim Counts.
+    
+***2.2 More on GLMs***
+
+Download the lecture sheets [here](https://www.dropbox.com/s/vt4j8ukoxrl8ky1/2019-01-13%20Risk%20modelling%20Part%20II%20-%20More%20on%20GLMs.pdf?dl=0).
+
+Exponential family of distributions // building blocks of GLMs // MLE.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qndCDzOO6tE" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Deviance statistic // drop-in-deviance analysis // residuals.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9yQh85syVYg" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Toy example. 
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WWEN2fRcOcM" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<b>Exercises</b> on GLMs are [here](https://www.dropbox.com/s/z3f7vt88vp1bo4r/2019-01-13%20Exercises%20Part%20II%20GLMs%20for%20Insurance%20Pricing.pdf?dl=0), plus [solutions](https://www.dropbox.com/s/2oxebitd3rlui1y/2019-01-13%20Exercises%20Part%20II%20GLMs%20for%20Insurance%20Pricing%20-%20Solutions.pdf?dl=0). 
+
+***
+
+**Chapter 3: experience rating with credibility models and bonus-malus scales**
+
+***3.1 Credibility models***
+
+Download the lecture sheets [here](https://www.dropbox.com/s/isegsdmnvmjr8g3/2019-04-11%20Credibility%20Theory.pdf?dl=0).
+
+Download some extra notes [here](https://www.dropbox.com/s/99hg6aohkmop7a5/2019-04-15%20Notes%20on%20Credibility%20Theory.pdf?dl=0). 
+
+Introduction to a posteriori or experience rating.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oj0MtbQE2EE" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Toy example.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H4XnjYxhzEc" frameborder="0" allowfullscreen></iframe>
+</p>
+
+The Poisson credibility model. 
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vB65rnjs6C4" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Bayesian credibility models. 
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1YPZ-ct1rfw" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Poisson-gamma credibility models. 
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VusZzWeWdGA" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Linear credibility and Buhlmann's model. 
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sYD9OIJx500" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<b>Reading list</b>: Chapter 3 on *Credibility models for claim counts* from Denuit et al. (2007).
+
+***3.2 Bonus-malus scales***
+
+Download the lecture sheets [here](https://www.dropbox.com/s/4g7qtlu9kfz77sa/2019-04-27%20Bonus%20Malus%20Scales.pdf?dl=0). 
+
+Introduction
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9SifUPtLi_g" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Toy examples
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wuRN-ma3FBk" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Transition rules
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_E193iKkK4o" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Transition probabilities
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fWb5fmtzlO4" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Long-term behavior
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8KvF1pIw89A" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Calculating relativities
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-qkJN_7_HuE" frameborder="0" allowfullscreen></iframe>
+</p>
+
+A realistic example
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v53jadnO_6Q" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<b>Reading list</b>: Chapter 4 on *Bonus-malus scales* from Debuit et al. (2007).
+
+***
+
+**Chapter 4: claims reserving**
+
+Download the lecture sheets [here](https://www.dropbox.com/s/kvr25imj74jqtqf/2019-01-13%20Risk%20modelling%20Part%20III%20-%20Claims%20reserving.pdf?dl=0).
+    
+Introduction // basic terminology.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lRm9sl0gShg" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Chain ladder method.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JoqJFPILqt0" frameborder="0" allowfullscreen></iframe>
+</p>
+
+Mack's distribution-free chain ladder method.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KkI1NFkgOR8" frameborder="0" allowfullscreen></iframe>
+</p>
+
+GLMs and bootstrapping.
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BecWUyi4P8Y" frameborder="0" allowfullscreen></iframe>
+</p>
+
+***
+
+    
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+<title>Machine learning for insurance pricing - Katrien Antonio</title>
+<meta property="og:title" content="Machine learning for insurance pricing - Katrien Antonio">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://amber.rbind.io/projects/img/mainImages/machine_learning.jpg" >
+  
+
+<meta property="description" content="Research papers on insurance pricing with machine learning methods">
+<meta property="og:description" content="Research papers on insurance pricing with machine learning methods">
+
+
+<meta name="twitter:creator" content="">
+
+<meta name="description" content="This website serves as a portfolio for my data science projects, as well as blog posts and tutorials for using R, RStudio and other data science topics.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="all,follow">
+<meta name="twitter:creator" content="">
+<meta name="googlebot" content="index,follow,snippet,archive">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,300,700,400italic">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/academicons.min.css">
+<link rel="stylesheet" href="/css/owl.carousel.css">
+<link rel="stylesheet" href="/css/owl.theme.css">
+
+
+
+  <link href="/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+
+<link href="/css/custom.css" rel="stylesheet">
+<link rel="shortcut icon" href="/img/favicon.png">
+
+
+<link rel="stylesheet" href="/css/github-gist.css" rel="stylesheet" id="theme-stylesheet">
+
+
+
+
+</head>
+<body>
+  <div id="all">
+      <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+              
+<div id="sidebar" class="col-sb-fixedpos col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <h1 class="sidebar-heading"><a href="/">Katrien Antonio</a></h1>
+
+    <ul class="sidebar-menu">
+      
+      
+        <li><a href="/about/">About</a></li>
+      
+        <li><a href="/projects/">Research Projects</a></li>
+      
+        <li><a href="/teaching/">Teaching</a></li>
+      
+        <li><a href="/lab/">Research Lab</a></li>
+      
+
+       
+
+
+
+ 
+
+      
+
+ 
+
+      
+ 
+
+    </ul>
+    <p class="social">
+  
+  <a href="https://scholar.google.be/citations?user=8nEiR3MAAAAJ&amp;hl=en" data-animate-hover="pulse" class="external googlescholar">
+    <i class="ai ai-google-scholar"></i>
+  </a>
+  
+  
+  <a href="/docs/2019-11-06%20Katrien%20Antonio.pdf" data-animate-hover="pulse" class="external cv">
+    <i class="ai ai-cv"></i>
+  </a>
+  
+  
+  
+  <a href="https://twitter.com/katrienantonio" data-animate-hover="pulse" class="external twitter">
+    <i class="fa fa-twitter"></i>
+  </a>
+  
+  
+  
+  <a href="mailto:katrien.antonio@kuleuven.be" data-animate-hover="pulse" class="email">
+    <i class="fa fa-envelope"></i>
+  </a>
+  
+  
+  <a href="https://www.linkedin.com/in/katrien-antonio-a419636/" data-animate-hover="pulse">
+    <i class="fa fa-linkedin"></i>
+  </a>
+  
+  
+  
+  <a href="https://github.com/katrienantonio">
+  <i class="fa fa-github"></i>
+  </a>
+  
+
+
+</p>
+
+
+    <div class="copyright">
+      <p class="credit">
+        
+          &copy;2019 Katrien Antonio
+        
+        | Template by <a href="https://bootstrapious.com/free-templates" target="_blank" class="external">Bootstrapious.com</a>
+
+&amp; ported to Hugo by <a href="https://github.com/kishaningithub" target="_blank">Kishan B</a>, design inspired by the work of <a href="https://github.com/ProQuestionAsker" target="_blank">Amber Thomas</a>.
+
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background col-main-fixedpos">
+  <div class="small-navbar visible-xs">
+  <button type="button" data-toggle="offcanvas" class="btn btn-ghost pull-left"> <i class="fa fa-align-left"> </i>Menu</button>
+  <h1 class="small-navbar-heading"><a href="/">Katrien Antonio</a></h1>
+</div>
+
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h1>Machine learning for insurance pricing</h1>
+         
+<script src="/rmarkdown-libs/header-attrs/header-attrs.js"></script>
+
+
+<p align="justify">
+An overview of published and ongoing research papers within the <strong>machine learning for pricing</strong> research line developed in my lab. This research line puts focus on:
+</p>
+<ul>
+<li><a href="#data-driven">data driven strategies to handle continuous and spatial risk factors</a></li>
+<li><a href="#SMuRF">sparse regression with automatic feature selection and binning</a></li>
+<li><a href="#tree-based-pricing">tree-based machine learning techniques for pricing</a>.</li>
+</ul>
+<hr />
+<div id="video-tree" class="section level6">
+<h6></h6>
+<p>Watch Roel Henckaerts presenting our paper on tree-based machine learning during <a href="https://user2018.r-project.org"target="_blank">UseR!2018</a> in Brisbane.</p>
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z1AlNGXGz9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+</p>
+</div>
+<div id="tree-based-pricing" class="section level6">
+<h6></h6>
+<blockquote>
+<p align="justify">
+<strong>Boosting insights in insurance tariff plans with tree-based
+machine learning methods</strong>
+</br> </br>
+<u class="dotted">Collaborators:</u> Roel Henckaerts, Katrien Antonio, Marie-Pier Côté and Roel Verbelen.
+</br> </br>
+<u class="dotted">Journal paper:</u> submitted
+</br> </br>
+<u class="dotted">Working paper:</u> <a href="https://arxiv.org/abs/1904.10890"target="_blank">Working paper on arxiv</a>
+</br> </br>
+<u class="dotted">Presentations:</u> UseR!2018, IME Sydney 2018, EAJ Leuven 2018, Cass &amp; KU Leuven symposium 2019.
+</br> </br>
+<u class="dotted">Abstract.</u> In this paper we apply machine learning techniques to insurance pricing, thereby leaving the comfort zone of both traditional rate making and machine learning. The insurance industry typically stays within the framework of generalized linear models (GLMs), while our
+study focuses on <strong>machine learning to develop full tariff plans built from both the frequency
+and severity of claims</strong>. Traditional regression problems in machine learning involve a mean
+squared error loss function. We adapt the cost functions and performance measures used
+in the algorithms such that the specific characteristics of insurance data are carefully incorporated:
+highly unbalanced count data with excess zeros and varying exposure on the
+frequency side and scarce, but potentially heavy-tailed data on the severity side. One of
+our key requirements is the need for transparent and interpretable pricing models which are
+easily explainable to all stakeholders. We therefore focus on machine learning with decision
+trees: <strong>starting from simple regression trees we work towards more advanced ensembles such
+as random forests and boosted trees</strong>. We show how to choose the optimal tuning parameters
+for these models in an elaborate cross-validation scheme. We also present visualization tools
+to obtain insights from the resulting models by assessing the importance of different risk
+factors and their impact on the price of an insurance contract. The economic value of these
+new modeling approaches is evaluated with loss ratios, double lift charts, ordered Lorenz
+curves and Gini indices. These tools allow the insurer to form profitable portfolios and to
+guard against potential adverse selection risks.
+</p>
+</blockquote>
+<hr />
+</div>
+<div id="SMuRF" class="section level6">
+<h6></h6>
+<blockquote>
+<p align="justify">
+<strong>Sparse Regression with Multi-type Regularized Feature Modeling</strong>
+</br> </br>
+<u class="dotted">Collaborators:</u> Sander Devriendt, Katrien Antonio, Tom Reynkens and Roel Verbelen.
+</br> </br>
+<u class="dotted">Journal paper:</u> submitted
+</br> </br>
+<u class="dotted">Working paper:</u> <a href="https://arxiv.org/abs/1810.03136"target="_blank">Working paper on arxiv</a>
+</br> </br>
+<u class="dotted">Abstract.</u> Within the statistical and machine learning literature, <strong>regularization</strong> techniques are often used to construct sparse (predictive) models. Most regularization strategies only work for data where all predictors are of the same type, such as Lasso regression for continuous predictors. However, many predictive problems involve <strong>different predictor types</strong>. We propose <strong>a multi-type Lasso penalty</strong> that acts on the objective function as a sum of subpenalties, one for each predictor type. As such, we perform predictor selection and level fusion within a predictor in a data-driven way, simultaneous with the parameter estimation process. We develop a new estimation strategy for convex predictive models with this multi-type penalty. Using the <strong>theory of proximal operators</strong>, our estimation procedure is computationally efficient, partitioning the overall optimization problem into easier to solve subproblems, specific for each predictor type and its associated penalty. The proposed SMuRF algorithm improves on existing solvers in both accuracy and computational efficiency. This is demonstrated with an extensive simulation study and the analysis of a case-study on <strong>insurance pricing analytics</strong>.
+</br> </br>
+An <strong>R package</strong> that accompanies the paper is available on <a href="https://cran.r-project.org/web/packages/smurf/index.html"target="_blank">CRAN</a>.
+</p>
+</blockquote>
+<hr />
+</div>
+<div id="data-driven" class="section level6">
+<h6></h6>
+<blockquote>
+<p align="justify">
+<strong>A data driven binning strategy for the construction of insurance tariff classes</strong>
+</br> </br>
+<u class="dotted">Collaborators:</u> Roel Henckaerts, Katrien Antonio, Maxime Clijsters and Roel Verbelen.
+</br> </br>
+<u class="dotted">Journal paper:</u> <a href="https://www.tandfonline.com/doi/full/10.1080/03461238.2018.1429300"target="_blank">Scandinavian Actuarial Journal, Volume 8, 681-705, 2018</a>
+</br> </br>
+<u class="dotted">Working paper:</u> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3052174"target="_blank">Working paper on SSRN</a>
+</br> </br>
+<u class="dotted">Abstract.</u> We present a <strong>fully data driven strategy to incorporate continuous risk factors and geographical information in an insurance tariff</strong>. A framework is developed that aligns flexibility with the practical requirements of an insurance company, the policyholder and the regulator. Our strategy is illustrated with an example from property and casualty (P&amp;C) insurance, namely a motor insurance case study. We start by fitting generalized additive models (GAMs) to the number of reported claims and their corresponding severity. These models allow for flexible statistical modeling in the presence of different types of risk factors: categorical, continuous, and spatial risk factors. The goal is <strong>to bin the continuous and spatial risk factors such that categorical risk factors result which captures the effect of the covariate on the response in an accurate way, while being easy to use in a generalized linear model (GLM)</strong>. This is in line with the requirement of an insurance company to construct a practical and interpretable tariff that can be explained easily to stakeholders. We propose to bin the spatial risk factor using Fisher’s natural breaks algorithm and the continuous risk factors using evolutionary trees. GLMs are fitted to the claims data with the resulting categorical risk factors. We find that the resulting GLMs approximate the original GAMs closely, and lead to a very similar premium structure.
+</br> </br>
+An <strong>R workshop</strong> that explains and demonstrates the main findings of the paper is available as in company training.
+</p>
+</blockquote>
+<hr />
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+      </div>
+  </div>
+  <script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.cookie.js"> </script>
+<script src="/js/ekko-lightbox.js"></script>
+<script src="/js/jquery.scrollTo.min.js"></script>
+<script src="/js/masonry.pkgd.min.js"></script>
+<script src="/js/imagesloaded.pkgd.min.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/front.js"></script>
+<script src="/js/backtotop.js"></script> 
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>

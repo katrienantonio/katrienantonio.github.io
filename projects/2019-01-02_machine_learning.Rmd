@@ -1,7 +1,7 @@
 ---
 title: "Machine learning for insurance pricing"
 author: "Katrien Antonio"
-date: '2019-06-13'
+date: '2019-11-06'
 draft: no
 image: projects/img/mainImages/machine_learning.jpg
 keywords:
