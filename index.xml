@@ -22,15 +22,6 @@
     </item>
     
     <item>
-      <title>Non-Life Insurance course</title>
-      <link>/teaching/non-life-insurance/</link>
-      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/teaching/non-life-insurance/</guid>
-      <description>This course covers the basic principles of pricing and reserving in non-life insurance. Chapter 1 equips you with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency-severity approach typical for non-life insurance loss models. Chapter 2 puts focus on a priori insurance pricing with generalized linear models (GLMs). Chapter 3 explains a posteriori pricing with credibility models and bonus-malus scales.</description>
-    </item>
-    
-    <item>
       <title>Insurance fraud analytics</title>
       <link>/projects/2019/11/21/fraud/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
