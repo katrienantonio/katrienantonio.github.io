@@ -53,6 +53,16 @@ Mixed Poisson models // ZIP // Negative Binomial.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HUKgxNQGLSs" frameborder="0" allowfullscreen></iframe>
 </p>
 
+More detailed explanations:
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5ReBlVkPVaQ" frameborder="0" allowfullscreen></iframe>
+</p>
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M8TG2sPEDXQ" frameborder="0" allowfullscreen></iframe>
+</p>
+
 Calibration with MLE // Statistical inference.
 
 <p align="center">
