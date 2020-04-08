@@ -71,7 +71,9 @@ Calibration with MLE // Statistical inference.
 
 <b>Reading list</b>: Chapter 1 on *Mixed Poisson models for claim counts* from Denuit et al. (2007) on Actuarial Modelling of Claim Counts.
 
-<b>Exercises</b> on frequency modeling are [here](https://www.dropbox.com/s/qz3hkbcurz7x0mg/2019-01-13%20Exercises%20Part%20I%20Frequency%20Models.pdf?dl=0), plus [solutions](https://www.dropbox.com/s/kt6dkilx9dzx3qr/2019-01-13%20Exercises%20Part%20I%20Frequency%20Models%20-%20Solutions.pdf?dl=0). 
+<b>Exercises</b> on frequency modeling are [here](https://www.dropbox.com/s/qz3hkbcurz7x0mg/2019-01-13%20Exercises%20Part%20I%20Frequency%20Models.pdf?dl=0), plus [solutions](https://www.dropbox.com/s/kt6dkilx9dzx3qr/2019-01-13%20Exercises%20Part%20I%20Frequency%20Models%20-%20Solutions.pdf?dl=0).
+
+<b>Case studies in R</b> on modelling claim count data, see [Chapter 3](https://katrienantonio.github.io/Risk-modelling-in-insurance/) in our e-book on Risk models in insurance. In this Chapter we start from a data set with the number of claims reported by policyholders during a period of exposure. We fit the Poisson, the Negative Binomial, the zero-inflated Poisson and the hurdle Poisson distribution to this data. Then, we evaluate the model fit using various measures and finally select the preferred distribution for the given data.
 
 ***1.2 Severity models***
 
@@ -83,10 +85,22 @@ Characteristics of severity data // censoring // truncation // MLE in the presen
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KxGAl-tj7ZA" frameborder="0" allowfullscreen></iframe>
 </p>
 
+More details on right censoring and left truncation
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IMA6_OKSB2w" frameborder="0" allowfullscreen></iframe>
+</p>
+
 Mixing and splicing.
 
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ja89rmfjFlc" frameborder="0" allowfullscreen></iframe>
+</p>
+
+More details on splicing
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IMA6_OKSB2w" frameborder="0" allowfullscreen></iframe>
 </p>
 
 <b>Exercises</b> on severity modeling are [here](https://www.dropbox.com/s/o1uzqce3ml4q0ct/2019-01-13%20Exercises%20Part%20I%20Severity%20Models.pdf?dl=0), plus [solutions](https://www.dropbox.com/s/p2s2gdar15q5qpr/2019-01-13%20Exercises%20Part%20I%20Severity%20Models%20-%20Solutions.pdf?dl=0). 
@@ -146,6 +160,8 @@ Toy example.
 </p>
 
 <b>Exercises</b> on GLMs are [here](https://www.dropbox.com/s/z3f7vt88vp1bo4r/2019-01-13%20Exercises%20Part%20II%20GLMs%20for%20Insurance%20Pricing.pdf?dl=0), plus [solutions](https://www.dropbox.com/s/2oxebitd3rlui1y/2019-01-13%20Exercises%20Part%20II%20GLMs%20for%20Insurance%20Pricing%20-%20Solutions.pdf?dl=0). 
+
+<b>Case studies in R</b> on building GLMs for claim frequencies, see [Chapter 5](https://katrienantonio.github.io/Risk-modelling-in-insurance/) in our e-book on Risk models for insurance. In this Chapter we fit several Poisson regression models to a data set on claim counts reported per risk class, and the characteristics of these risk classes. We demonstrate the model comparison and variable selection strategy.
 
 ***
 
@@ -241,7 +257,7 @@ A realistic example
 <iframe width="560" height="315" src="https://www.youtube.com/embed/v53jadnO_6Q" frameborder="0" allowfullscreen></iframe>
 </p>
 
-<b>Reading list</b>: Chapter 4 on *Bonus-malus scales* from Debuit et al. (2007).
+<b>Reading list</b>: Chapter 4 on *Bonus-malus scales* from Denuit et al. (2007).
 
 ***
 
