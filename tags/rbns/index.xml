@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rbns on Katrien Antonio</title>
+    <title>RBNS on Katrien Antonio</title>
     <link>/tags/rbns/</link>
-    <description>Recent content in Rbns on Katrien Antonio</description>
+    <description>Recent content in RBNS on Katrien Antonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Nov 2019 00:00:00 +0000</lastBuildDate>
@@ -13,10 +13,19 @@
     
     <item>
       <title>Loss reserving</title>
-      <link>/projects/2019/11/06/reserving/</link>
+      <link>/portfolio/reserving/</link>
       <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2019/11/06/reserving/</guid>
+      <guid>/portfolio/reserving/</guid>
+      <description>An overview of published and ongoing research papers within the loss or claims reserving research line developed in my lab. This research line puts focus onIBNR models for individual claimsRBNS models for individual claims.These contributions are refined versions of a stream of older papers in which I first explored the use of granular data in claims reserving. See my SSRN page for the references to these contributions.</description>
+    </item>
+    
+    <item>
+      <title>Loss reserving</title>
+      <link>/research/reserving/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/research/reserving/</guid>
       <description>An overview of published and ongoing research papers within the loss or claims reserving research line developed in my lab. This research line puts focus onIBNR models for individual claimsRBNS models for individual claims.These contributions are refined versions of a stream of older papers in which I first explored the use of granular data in claims reserving. See my SSRN page for the references to these contributions.</description>
     </item>
     

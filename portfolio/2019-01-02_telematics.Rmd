@@ -1,0 +1,39 @@
+---
+date: "2019-02-11"
+type: "post"
+showonlyimage: false
+draft: false
+slug: "telematics"
+author: "Katrien Antonio" 
+title: "Telematics insurance"
+image: "projects/img/mainImages/telematics_car.png"
+description: "Actuarial insights from analyzing telematics data collected by a black box installed in the vehicle."
+tags: [
+ "telematics",
+ "data viz",
+ "research"
+]
+keywords: [
+"telematics",
+"data visualization",
+"compositional data",
+"GAMs"
+]
+---
+
+<p align="justify">An overview of published and ongoing research papers within the *telematics insurance* research line developed in my lab.</p>
+
+***
+><p align="justify">**Unravelling the predictive power of telematics data in car insurance pricing**
+</br> </br>
+<u class="dotted">Collaborators:</u> Roel Verbelen, Katrien Antonio and Gerda Claeskens, research in the framework of the Ageas CE Research Chair. 
+</br> </br>
+<u class="dotted">Journal paper:</u> <a href="https://rss.onlinelibrary.wiley.com/doi/10.1111/rssc.12283"target="_blank">JRSS C, 67(5), 1275-1304</a>
+</br> </br>
+<u class="dotted">Working paper:</u> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2872112"target="_blank">Working paper on SSRN</a>
+</br> </br>
+<u class="dotted">Abstract.</u> A data set from a Belgian telematics product aimed at young drivers is used to identify how car insurance premiums can be designed based on the telematics data collected by a black box installed in the vehicle. In traditional pricing models for car insurance, the premium depends on self‐reported rating variables (e.g. age and postal code) which capture characteristics of the policy(holder) and the insured vehicle and are often only indirectly related to the accident risk. Using telematics technology enables tailor‐made car insurance pricing based on the driving behaviour of the policyholder. We develop **a statistical modelling approach using generalized additive models and compositional predictors to quantify and interpret the effect of telematics variables on the expected claim frequency**. We find that such variables increase the predictive power and render the use of gender as a rating variable redundant.
+</p>
+
+***
+

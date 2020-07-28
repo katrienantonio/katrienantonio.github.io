@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Population on Katrien Antonio</title>
+    <title>population on Katrien Antonio</title>
     <link>/tags/population/</link>
-    <description>Recent content in Population on Katrien Antonio</description>
+    <description>Recent content in population on Katrien Antonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
@@ -13,10 +13,19 @@
     
     <item>
       <title>Mortality modeling</title>
-      <link>/projects/2019/11/21/mortality-models/</link>
+      <link>/portfolio/mortality-models/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2019/11/21/mortality-models/</guid>
+      <guid>/portfolio/mortality-models/</guid>
+      <description>An overview of published and ongoing research papers within the mortality modeling research line developed in my lab. This research line puts focus on:stochastic models for population mortalityBayesian multi-population mortality modelsportfolio-specific mortality to capture basis riskmicro-level lifetime data to explore the effect of risk factors on mortality ratesthe detection of structural changes.Quantifying longevity gaps using micro-level lifetime data Collaborators: Frank Van Berkum, Katrien Antonio and Michel Vellekoop.</description>
+    </item>
+    
+    <item>
+      <title>Mortality modeling</title>
+      <link>/research/mortality-models/</link>
+      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/research/mortality-models/</guid>
       <description>An overview of published and ongoing research papers within the mortality modeling research line developed in my lab. This research line puts focus on:stochastic models for population mortalityBayesian multi-population mortality modelsportfolio-specific mortality to capture basis riskmicro-level lifetime data to explore the effect of risk factors on mortality ratesthe detection of structural changes.Quantifying longevity gaps using micro-level lifetime data Collaborators: Frank Van Berkum, Katrien Antonio and Michel Vellekoop.</description>
     </item>
     

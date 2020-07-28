@@ -1,136 +1,14 @@
-/* 
-========================================= 
-========================================= 
-
-Startup Template By Bootstrapious.com 
-
-========================================= 
+/*
+=========================================
+=========================================
+Startup Template By Bootstrapious.com
+=========================================
 ========================================= */
 /* variant 6  - pink */
 /*
-
-=====================
-ELEPHANT IMPORT
-=====================
-
-*/
-#blog-listing-medium .post {
-  margin-bottom: 60px;
-}
-#blog-listing-medium .post h2 {
-  text-transform: uppercase;
-  margin: 0 0 10px;
-  font-size: 24px;
-  letter-spacing: 0.08em;
-}
-#blog-listing-medium .post h2 a {
-  color: #555555;
-}
-#blog-listing-medium .post h2 a:hover {
-  color: #e01557;
-}
-#blog-listing-medium .post .author-category {
-  float: left;
-  color: #999999;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-}
-#blog-listing-medium .post .author-category a {
-  font-weight: 500;
-}
-#blog-listing-medium .post .date-comments {
-  float: right;
-  font-size: 12px;
-}
-#blog-listing-medium .post .date-comments a {
-  color: #999999;
-  margin-right: 20px;
-}
-#blog-listing-medium .post .date-comments a:hover {
-  color: #e01557;
-}
-@media (min-width: 768px) {
-  #blog-listing-medium .post .date-comments {
-    text-align: right;
-  }
-}
-#blog-listing-medium .post .intro {
-  text-align: left;
-}
-#blog-listing-medium .post .clearfix:before,
-#blog-listing-medium .post .clearfix:after,
-#blog-listing-medium .post .navbar:before,
-#blog-listing-medium .post .navbar:after,
-#blog-listing-medium .post .navbar-header:before,
-#blog-listing-medium .post .navbar-header:after {
-  content: " ";
-  display: table;
-}
-#blog-listing-medium .post .clearfix:after,
-#blog-listing-medium .post .navbar:after,
-#blog-listing-medium .post .navbar-header:after {
-  clear: both;
-}
-#blog-listing-medium .post .clearfix:before,
-#blog-listing-medium .post .clearfix:after,
-#blog-listing-medium .post .navbar:before,
-#blog-listing-medium .post .navbar:after,
-#blog-listing-medium .post .navbar-header:before,
-#blog-listing-medium .post .navbar-header:after {
-  content: " ";
-  display: table;
-}
-#blog-listing-medium .post .clearfix:after,
-#blog-listing-medium .post .navbar:after,
-#blog-listing-medium .post .navbar-header:after {
-  clear: both;
-}
-#blog-listing-medium .post .image {
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-#blog-listing-medium .post .image img {
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-@media (max-width: 767px) {
-  #blog-listing-medium .post .image img.img-responsive {
-    min-width: 100%;
-  }
-}
-#blog-listing-medium .post .video {
-  margin-bottom: 10px;
-}
-#blog-listing-medium .post .read-more {
-  text-align: right;
-}
-
-
- /*
-=====================
-FIXED POSITION - ADDED BY PARKER
-=====================
-
-*/
-
-@media (min-width:768px) {
-  .col-sb-fixedpos {
-    position: fixed;
-  }
-  .col-main-fixedpos {
-    float: right;
-  }
-}
-
-/*
-
 =====================
 GENERAL
 =====================
-
 */
 html,
 body {
@@ -142,7 +20,8 @@ header {
 }
 section {
   position: relative;
-
+  padding-top: 90px;
+  padding-bottom: 90px;
 }
 section.background-gray-lighter {
   background: #cdcdcd;
@@ -237,10 +116,6 @@ button {
 }
 a i.fa,
 button i.fa {
-  margin: 0 5px;
-}
-a i.ai,
-button i.ai {
   margin: 0 5px;
 }
 .clickable {
@@ -437,19 +312,21 @@ fieldset[disabled] .btn-white.active {
   color: #feee7d;
 }
 /*
-
 =====================
 SIDEBAR + RIGHT COLUMN
 =====================
-
 */
 #sidebar {
   padding-top: 40px;
 }
+.sidebar-content {
+    z-index: 0;
+    padding: 0 1.7em 0 0em;
+}
 @media screen and (min-width: 992px) {
   .sidebar-content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 18px;
   }
 }
 .sidebar-heading {
@@ -531,7 +408,7 @@ SIDEBAR + RIGHT COLUMN
 }
 .content-column-content p,
 .content-column-content li {
-  color: #282828;
+  color: #999999;
 }
 .content-column-content ul li {
   list-style-type: none;
@@ -553,7 +430,6 @@ SIDEBAR + RIGHT COLUMN
 .small-navbar:after {
   clear: both;
 }
-
 .small-navbar-heading {
   float: right;
   font-size: 18px;
@@ -574,11 +450,9 @@ SIDEBAR + RIGHT COLUMN
   text-decoration: none;
 }
 /*
-
 =====================
 OFF-CANVAS SIDEBAR BEHAVIOUR
 =====================
-
 */
 @media screen and (max-width: 767px) {
   .row-offcanvas {
@@ -618,11 +492,9 @@ OFF-CANVAS SIDEBAR BEHAVIOUR
   }
 }
 /*
-
 =====================
 SERVICES / INTEGRATIONS
 =====================
-
 */
 .services {
   margin-top: 80px;
@@ -657,11 +529,9 @@ SERVICES / INTEGRATIONS
   color: #999999;
 }
 /*
-
 =====================
 CUSTOMERS
 =====================
-
 */
 .customer {
   text-align: center;
@@ -678,11 +548,9 @@ CUSTOMERS
   filter: grayscale(0);
 }
 /*
-
 =====================
 SIGN UP FORM
 =====================
-
 */
 @media (max-width: 991px) {
   .sign-up-form .form-control {
@@ -698,11 +566,9 @@ SIGN UP FORM
   }
 }
 /*
-
 =====================
 SOCIAL LINKS
 =====================
-
 */
 .contact-form {
   margin-bottom: 20px;
@@ -781,11 +647,9 @@ p.social.social--big i {
   line-height: 60px;
 }
 /*
-
 =====================
 COPYRIGHT
 =====================
-
 */
 .copyright {
   color: #999999;
@@ -808,11 +672,9 @@ COPYRIGHT
   }
 }
 /*
-
 =====================
 MAIN PORTFOLIO SLIDER
 =====================
-
 */
 #main-slider {
   margin-bottom: 40px;
@@ -832,11 +694,9 @@ MAIN PORTFOLIO SLIDER
   background: #ef5285;
 }
 /*
-
 =====================
 ABOUT
 =====================
-
 */
 .progress-title {
   text-align: left;
@@ -907,11 +767,9 @@ ABOUT
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
 }
 /*
-
 =====================
 EKKO LIGHTBOX
 =====================
-
 */
 .ekko-lightbox-container {
   position: relative;
@@ -1003,7 +861,6 @@ a:active {
   font-size: 14px;
 }
 .box-masonry .box-masonry-hover-text-header {
-  pointer-events: none;
   position: absolute;
   left: 0;
   right: 0;
@@ -1336,11 +1193,9 @@ a:active {
   transform: translate(0, 100%);
 }
 /*
-
 =====================
 STYLE SWITCHER FOR DEMO
 =====================
-
 */
 #style-switch-button {
   position: fixed;
@@ -2202,7 +2057,7 @@ address {
 }
 .panel {
   margin-bottom: 24px;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   border: 1px solid transparent;
   border-radius: 0;
   -webkit-box-shadow: 0 0 0;
@@ -2213,7 +2068,7 @@ address {
 }
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   border-color: #666666;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {

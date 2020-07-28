@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Get in touch on Katrien Antonio</title>
+    <link>/contact/</link>
+    <description>Recent content in Get in touch on Katrien Antonio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Nov 2016 13:00:25 +0530</lastBuildDate>
+    
+	<atom:link href="/contact/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get in touch</title>
+      <link>/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/contact/</guid>
+      <description>Message me here: &amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;name&amp;quot;&amp;gt;Your name *&amp;lt;/label&amp;gt;&amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;name&amp;quot; id=&amp;quot;name&amp;quot; required=&amp;quot;required&amp;quot; class=&amp;quot;form-control&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;email&amp;quot;&amp;gt;Your email *&amp;lt;/label&amp;gt;&amp;lt;input type=&amp;quot;email&amp;quot; name=&amp;quot;email&amp;quot; id=&amp;quot;email&amp;quot; required=&amp;quot;required&amp;quot; class=&amp;quot;form-control&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&amp;quot;form-group&amp;quot;&amp;gt;&amp;lt;label for=&amp;quot;message&amp;quot;&amp;gt;Your message for me *&amp;lt;/label&amp;gt;&amp;lt;textarea rows=&amp;quot;4&amp;quot; name=&amp;quot;message&amp;quot; id=&amp;quot;message&amp;quot; required=&amp;quot;required&amp;quot; class=&amp;quot;form-control&amp;quot;&amp;gt;&amp;lt;/textarea&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;div&amp;gt;&amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Send&amp;quot; class=&amp;quot;btn btn-ghost&amp;quot;&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/form&amp;gt;</description>
+    </item>
+    
+  </channel>
+</rss>

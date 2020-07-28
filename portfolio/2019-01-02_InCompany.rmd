@@ -1,0 +1,32 @@
+---
+title: "In company courses"
+author: "Katrien Antonio"
+date: '2019-02-02'
+draft: no
+image: teaching/img/mainImages/my_courses_2.jpg
+showonlyimage: no
+slug: in company
+description: Design and instruction of in company courses.
+type: post
+---
+
+**Happy learning!**
+    
+    
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+

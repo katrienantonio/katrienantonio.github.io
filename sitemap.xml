@@ -1,6 +1,81 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/machine-learning/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/machine-learning/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pricing-models/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lab/</loc>
+    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/katriens-lab/</loc>
+    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lab/lab-members/</loc>
+    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/lab-members/</loc>
+    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/members/</loc>
+    <lastmod>2020-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/teaching/</loc>
+    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/non-life-insurance/</loc>
+    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
+  </url>
   
   <url>
     <loc>/teaching/non-life-insurance/</loc>
@@ -8,17 +83,77 @@
   </url>
   
   <url>
-    <loc>/projects/2019/11/21/fraud/</loc>
+    <loc>/tags/fraud-analytics/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/2019/11/21/mortality-models/</loc>
+    <loc>/tags/insurance/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/2019/11/06/reserving/</loc>
+    <loc>/portfolio/fraud/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/fraud/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/mortality-models/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/mortality-models/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mortality-models/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/population/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/portfolio/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/social-networks/</loc>
+    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ibnr/</loc>
+    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/reserving/</loc>
+    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/reserving/</loc>
+    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mafe/</loc>
+    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/mafe/</loc>
     <lastmod>2019-11-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -28,27 +163,67 @@
   </url>
   
   <url>
-    <loc>/projects/2019/11/06/machine-learning/</loc>
+    <loc>/tags/rbns/</loc>
     <lastmod>2019-11-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/lab/lab-members/</loc>
+    <loc>/tags/reserving/</loc>
+    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/university/</loc>
+    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/loss-models/</loc>
     <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/2019/09/28/loss-models/</loc>
+    <loc>/research/loss-models/</loc>
     <lastmod>2019-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/2019/02/11/telematics/</loc>
+    <loc>/tags/loss-models/</loc>
+    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-viz/</loc>
+    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/research/</loc>
+    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/telematics/</loc>
+    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/telematics/</loc>
+    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/telematics/</loc>
     <lastmod>2019-02-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/lab/lrisk/</loc>
+    <lastmod>2019-02-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/lrisk/</loc>
     <lastmod>2019-02-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -68,12 +243,57 @@
   </url>
   
   <url>
+    <loc>/portfolio/abs/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/ku-leuven/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/uva/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/abs/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ku-leuven/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/portfolio/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/teaching/portfolio/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/uva/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/datacamp/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/teaching/datacamp/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/in-company/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -83,258 +303,11 @@
   </url>
   
   <url>
-    <loc>/lab/img/articleimages/2016-12-27_fcccourses_img/fig1/</loc>
-  </url>
-  
-  <url>
-    <loc>/lab/img/articleimages/2016-12-27_fcccourses_img/fig2/</loc>
-  </url>
-  
-  <url>
-    <loc>/lab/img/articleimages/2016-12-27_fcccourses_img/fig3/</loc>
-  </url>
-  
-  <url>
-    <loc>/lab/img/articleimages/2016-12-27_fcccourses_img/fig4/</loc>
-  </url>
-  
-  <url>
-    <loc>/lab/img/articleimages/2016-12-27_fcccourses_img/fig5/</loc>
-  </url>
-  
-  <url>
-    <loc>/lab/img/articleimages/2016-12-27_fcccourses_img/fig6/</loc>
-  </url>
-  
-  <url>
-    <loc>/lab/img/articleimages/2016-12-27_fcccourses_img/fig7/</loc>
-  </url>
-  
-  <url>
-    <loc>/lab/img/articleimages/2016-12-27_fcccourses_img/fig8/</loc>
-  </url>
-  
-  <url>
-    <loc>/lab/img/articleimages/2017-01-07_gendermoviedialogue_img/ro_fig2/</loc>
-  </url>
-  
-  <url>
-    <loc>/lab/img/articleimages/2017-01-07_gendermoviedialogue_img/ro_fig/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/1/01/01/</loc>
-  </url>
-  
-  <url>
     <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>/tags/abs/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/data-viz/</loc>
-    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/fraud-analytics/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/contact/</loc>
-  </url>
-  
-  <url>
-    <loc>/tags/ibnr/</loc>
-    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/insurance/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/katriens-lab/</loc>
-    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ku-leuven/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/lab/</loc>
-    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/loss-models/</loc>
-    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/mafe/</loc>
-    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/members/</loc>
-    <lastmod>2019-09-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/mortality-models/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/population/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/portfolio/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/pricing-models/</loc>
-    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/projects/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/rbns/</loc>
-    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/research/</loc>
-    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/reserving/</loc>
-    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/social-networks/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/teaching/</loc>
-    <lastmod>2020-03-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/telematics/</loc>
-    <lastmod>2019-02-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/university/</loc>
-    <lastmod>2019-11-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/uva/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

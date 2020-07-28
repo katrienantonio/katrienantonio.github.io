@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Abs on Katrien Antonio</title>
+    <title>ABS on Katrien Antonio</title>
     <link>/tags/abs/</link>
-    <description>Recent content in Abs on Katrien Antonio</description>
+    <description>Recent content in ABS on Katrien Antonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
@@ -17,6 +17,16 @@
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/lab/abs/</guid>
+      <description>This page gives an overview of my current and former affiliations, my visiting positions, and the courses in my teaching portfolio.KU Leuven, BelgiumFaculty of Economics and BusinessI am professor in actuarial science and insurance analytics at KU Leuven, Faculty of Economics and Business, Research Group Accounting, Finance and Insurance.At KU Leuven I coordinate and teach the courses:
+Loss Models. This is a 6 ects course that equips students with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency - severity approach typical for general insurance loss models.</description>
+    </item>
+    
+    <item>
+      <title> </title>
+      <link>/portfolio/abs/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/portfolio/abs/</guid>
       <description>This page gives an overview of my current and former affiliations, my visiting positions, and the courses in my teaching portfolio.KU Leuven, BelgiumFaculty of Economics and BusinessI am professor in actuarial science and insurance analytics at KU Leuven, Faculty of Economics and Business, Research Group Accounting, Finance and Insurance.At KU Leuven I coordinate and teach the courses:
 Loss Models. This is a 6 ects course that equips students with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency - severity approach typical for general insurance loss models.</description>
     </item>

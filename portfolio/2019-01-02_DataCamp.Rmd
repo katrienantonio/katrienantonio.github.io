@@ -1,0 +1,67 @@
+---
+title: "DataCamp course"
+author: "Katrien Antonio"
+date: '2019-02-02'
+draft: no
+image: teaching/img/mainImages/datacamp_life.jpg
+showonlyimage: no
+slug: datacamp
+description: Online course on the valuation of life insurance products in R.
+type: post
+---
+
+```{r, include = FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+<p align="justify">Together with dr. Roel Verbelen I developed the DataCamp online course on <a href="https://www.datacamp.com/courses/valuation-of-life-insurance-products-in-r"target="_blank">Valuation of Life Insurance Products in R</a>. The course covers 17 videos and 55 exercises organized in 4 chapters: valuation of cash flows, life tables, life annuities and life insurances.</p>
+
+***
+
+<p align="justify">Free registration of your classroom by completing <a href="https://www.datacamp.com/groups/education"target="_blank">this form</a>. DataCamp is 100% free when you need it for your classroom. Even the premium content! Sign up your classroom and use our course on life insurance as computer tutorials.</p>
+
+***
+
+Watch the <u class="dotted">marketing video</u> on YouTube:
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IqrUMYurYF0" frameborder="0" allowfullscreen></iframe>
+</p>
+
+***
+
+Find out more about the <u class="dotted">course content</u>:
+
+><p align="justify"><u class="dotted">Synopsis.</u> Understanding the basic principles of life insurance products is essential for your personal financial planning, ranging from taking out a mortgage to designing your retirement plan and seeking financial protection for the risk of dying early. In this course, you'll study the time value of money and you’ll work with human mortality data to derive demographic markers (such as the life expectancy). Combining the basics of cash flow valuation with the calculation of survival and death probabilities in R will allow you to construct insightful tools to design life insurance products. You'll come out of this course understanding the valuation of life contingent claims: life annuities, which provide an income upon survival, and life insurance products, which pay a benefit upon death of the policyholder.</p>
+
+><p align="justify"><u class="dotted">Chapter 1 on Valuation of Cash Flows.</u> Learn the basics of cash flow vectors and their valuation with discount factors. You will then evaluate investments based on their net present value and build your own mortgage calculator. Finally, you will learn about fixed and variable interest rates; and annual and monthly rates.</p>
+
+><p align="justify"><u class="dotted">Chapter 2 on Life Tables.</u> Life tables play a vital role in life insurance products. In this chapter you will work with data sets from the Human Mortality Database by building meaningful visualizations to study the evolution of mortality data over age and time. You will also use survival and death probabilities.</p>
+
+><p align="justify"><u class="dotted">Chapter 3 on Life Annuities.</u> You will now act as an actuary working in a life insurance company. Learn about the basics of life annuity products and their valuation by working on cases ranging from simple life annuities to retirement plans.</p>
+
+><p align="justify"><u class="dotted">Chapter 4 on Life Insurances.</u> You will now deal with life insurance contracts. Learn how these products are relevant in your financial planning by designing whole life, temporary and endowment insurances.</p>
+
+***
+
+
+
+    
+    
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+

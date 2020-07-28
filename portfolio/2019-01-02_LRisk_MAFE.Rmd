@@ -1,0 +1,47 @@
+---
+date: "2019-11-06"
+type: "post"
+showonlyimage: false
+draft: false
+slug: "MAFE"
+author: "Katrien Antonio" 
+title: "MSc of Actuarial and Financial Engineering"
+image: "teaching/img/mainImages/mafe.png"
+description: "Study actuarial and financial coursework at KU Leuven."
+tags: [
+ "MAFE",
+ "university"
+]
+keywords: [
+"MAFE",
+"university",
+"KU Leuven"
+]
+---
+
+<p align="justify">
+The <a href="https://feb.kuleuven.be/eng/prospective-students/master-of-actuarial-and-financial-engineering"target="_blank">MSc of Actuarial and Financial Engineering</a> is an English taught MSc program of 120 ects, offered jointly by the Faculty of Economics and Business and the Faculty of Science at KU Leuven. The program prepares students for careers in actuarial science, financial engineering or quantitative risk management within financial institutions. I serve as the program director of this MSc program, since academic year 2018-2019.</p>
+
+<p align="justify">Find out more on the <a href="https://feb.kuleuven.be/eng/prospective-students/master-of-actuarial-and-financial-engineering"target="_blank">program website</a>, the <a href="https://onderwijsaanbod.kuleuven.be/opleidingen/e/CQ_54295011.htm#activetab=diploma_omschrijving"target="_blank">official KU Leuven page</a> or in the  <a href="https://feb.kuleuven.be/eng/prospective-students/brochures/2019-2020/master-in-actuarial-and-financial-engineering/at_download/file"target="_blank">brochure</a>!</p>
+
+<p align="justify">
+The MAFE courses are also available as <u class="dotted">electives</u> in other KU Leuven programmes (MSc in Mathematics, Statistics, Mathematical Engineering, Business Engineering, Physics). If you are currently in one of these programmes, choosing the MAFE courses as electives in your current study program enables a smooth transition to the Master in Actuarial and Financial Engineering. Your gateway for a career as actuary or risk manager!
+</p>
+
+***
+
+#### LRisk
+
+<p align="justify">I am co-director and co-founder of <a href="http://www.lrisk.be"target="_blank">LRisk</a>, the KU Leuven research center for risk analysis in insurance and finance. Founded in 2015 as one of the <a href="https://www.kuleuven.be/wieiswie/en/unit/53670007"target="_blank">Faculty Research Centers</a> within the Faculty of Economics and Business at KU Leuven.</p> 
+
+><p align="justify">
+The center offers a <a href="https://feb.kuleuven.be/drc/LRisk/staff/LRiskStaff"target="_blank">multidisciplinary</a> view with its staff from different schools and research areas at KU Leuven. 
+</br> </br>
+The center connects its research with a vibrant community of <a href="https://feb.kuleuven.be/drc/LRisk/lrisk-education/alumni/LRiskAlumni"target="_blank">alumni</a>.
+</br> </br>
+LRisk staff members challenge research via teaching in the [MSc of Actuarial and Financial Engineering](#MAFE).
+</p>
+
+<p align="justify">For example, within LRisk I work on the <a href="https://soc.kuleuven.be/ceso/life-sciences-society-lab/Research/understanding-insurance-in-the-era-of-big-data-and-personalization-of-risk"target="_blank">Understanding Insurance in the Era of Big Data and Personalization of Risk</a> project with prof. Caroline Van Schoubroeck (Faculty of Law) and prof. Ine Van Hoyweghen (Faculty of Social Sciences).</p> 
+
+***

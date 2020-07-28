@@ -1,0 +1,44 @@
+---
+date: '2019-11-21'
+type: "post"
+showonlyimage: false
+draft: false
+slug: "fraud"
+author: "Katrien Antonio" 
+title: "Insurance fraud analytics"
+image: "projects/img/mainImages/fraud.png"
+description: "Research papers on insurance fraud analytics."
+tags: [
+ "fraud analytics",
+ "insurance",
+ "social networks"
+]
+keywords: [
+ "fraud analytics",
+ "insurance",
+ "social networks"
+]
+---
+
+<p align="justify">An overview of published and ongoing research papers within the *insurance fraud* research line developed in my lab.</p>
+
+***
+><p align="justify">**Social network analytics for supervised fraud detection in insurance**
+</br> </br>
+<u class="dotted">Collaborators:</u> María Óskarsdóttir, Waqas Ahmed, Katrien Antonio, Bart Baesens, Rémi Dendievel, Tom Donas and Tom Reynkens, research in the framework of the Ageas CE Research Chair. 
+</br> </br>
+<u class="dotted">Journal paper:</u> submitted
+</br> </br>
+<u class="dotted">Working paper:</u> available <a href="https://www.dropbox.com/s/akijpc0hvkyibv2/SNAfraud.pdf?dl=0"target="_blank">here</a>
+</br> </br>
+<u class="dotted">Presentations:</u> EAJ Leuven 2018, Cass & KU Leuven symposium 2019, Insurance Data Science 2019 (ETH), IME Munchen 2019.
+</br> </br>
+<u class="dotted">Abstract.</u> 
+Insurance fraud occurs when policyholders file claims that are exaggerated or based on intentional damages. This contribution develops a fraud detection strategy by **extracting insightful information from the social network of a claim**. First, we construct a network by linking claims with all their involved parties, including the policyholders, brokers, experts, and garages. Next, we establish fraud as a social phenomenon in the network and use the **BiRank algorithm with a fraud specific query vector to compute a fraud score for each claim in the network**. From the network, we extract features related to the fraud scores as well as the claims' neighborhood structure. Finally, we combine these network features with the claim-specific features and build a **supervised model with fraud in motor insurance as the
+target variable**. Although we build a model for only motor insurance, the network includes claims from all available lines of business. Our results show that models with features derived from the network perform well when detecting fraud and even outperform the models with only the classical claim-specific features. **Combining network and claim-specific features further improves the performance of supervised learning models to detect fraud.** The resulting model flags highly suspicions claims that need to be further investigated. Our approach provides a guided and intelligent selection of claims and contributes to a more effective fraud investigation process.
+</p>
+
+***
+
+
+

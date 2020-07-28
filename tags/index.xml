@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Katrien Antonio</title>
@@ -6,31 +6,49 @@
     <description>Recent content in Tags on Katrien Antonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Abs</title>
-      <link>/tags/abs/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <title>machine learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/abs/</guid>
+      <guid>/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Data Viz</title>
-      <link>/tags/data-viz/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      <title>pricing models</title>
+      <link>/tags/pricing-models/</link>
+      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-viz/</guid>
+      <guid>/tags/pricing-models/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Fraud Analytics</title>
+      <title>Katrien&#39;s lab</title>
+      <link>/tags/katriens-lab/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/katriens-lab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>members</title>
+      <link>/tags/members/</link>
+      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/members/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fraud analytics</title>
       <link>/tags/fraud-analytics/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -39,16 +57,7 @@
     </item>
     
     <item>
-      <title>Ibnr</title>
-      <link>/tags/ibnr/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ibnr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Insurance</title>
+      <title>insurance</title>
       <link>/tags/insurance/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -57,61 +66,7 @@
     </item>
     
     <item>
-      <title>Katriens Lab</title>
-      <link>/tags/katriens-lab/</link>
-      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/katriens-lab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ku Leuven</title>
-      <link>/tags/ku-leuven/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ku-leuven/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Loss Models</title>
-      <link>/tags/loss-models/</link>
-      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/loss-models/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mafe</title>
-      <link>/tags/mafe/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/mafe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Members</title>
-      <link>/tags/members/</link>
-      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/members/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mortality Models</title>
+      <title>mortality models</title>
       <link>/tags/mortality-models/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -120,7 +75,7 @@
     </item>
     
     <item>
-      <title>Population</title>
+      <title>population</title>
       <link>/tags/population/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -129,7 +84,7 @@
     </item>
     
     <item>
-      <title>Portfolio</title>
+      <title>portfolio</title>
       <link>/tags/portfolio/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -138,43 +93,7 @@
     </item>
     
     <item>
-      <title>Pricing Models</title>
-      <link>/tags/pricing-models/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/pricing-models/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rbns</title>
-      <link>/tags/rbns/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/rbns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>/tags/research/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reserving</title>
-      <link>/tags/reserving/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/reserving/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Social Networks</title>
+      <title>social networks</title>
       <link>/tags/social-networks/</link>
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -183,16 +102,43 @@
     </item>
     
     <item>
-      <title>Telematics</title>
-      <link>/tags/telematics/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      <title>IBNR</title>
+      <link>/tags/ibnr/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/telematics/</guid>
+      <guid>/tags/ibnr/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>University</title>
+      <title>MAFE</title>
+      <link>/tags/mafe/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mafe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RBNS</title>
+      <link>/tags/rbns/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rbns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reserving</title>
+      <link>/tags/reserving/</link>
+      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/reserving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>university</title>
       <link>/tags/university/</link>
       <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
       
@@ -201,7 +147,61 @@
     </item>
     
     <item>
-      <title>Uva</title>
+      <title>loss models</title>
+      <link>/tags/loss-models/</link>
+      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/loss-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data viz</title>
+      <link>/tags/data-viz/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-viz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>/tags/research/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>telematics</title>
+      <link>/tags/telematics/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/telematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ABS</title>
+      <link>/tags/abs/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/abs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>KU Leuven</title>
+      <link>/tags/ku-leuven/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ku-leuven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UvA</title>
       <link>/tags/uva/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       

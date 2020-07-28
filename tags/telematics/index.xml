@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Telematics on Katrien Antonio</title>
+    <title>telematics on Katrien Antonio</title>
     <link>/tags/telematics/</link>
-    <description>Recent content in Telematics on Katrien Antonio</description>
+    <description>Recent content in telematics on Katrien Antonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
@@ -13,11 +13,20 @@
     
     <item>
       <title>Telematics insurance</title>
-      <link>/projects/2019/02/11/telematics/</link>
+      <link>/portfolio/telematics/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/projects/2019/02/11/telematics/</guid>
-      <description>An overview of published and ongoing research papers within the telematics insurance research line developed in my lab.Unravelling the predictive power of telematics data in car insurance pricing Collaborators: Roel Verbelen, Katrien Antonio and Gerda Claeskens, research in the framework of the Ageas CE Research Chair. Journal paper: JRSS C, 67(5), 1275-1304 Working paper: Working paper on SSRN Abstract.</description>
+      <guid>/portfolio/telematics/</guid>
+      <description>An overview of published and ongoing research papers within the telematics insurance research line developed in my lab.Unravelling the predictive power of telematics data in car insurance pricing Collaborators: Roel Verbelen, Katrien Antonio and Gerda Claeskens, research in the framework of the Ageas CE Research Chair. Journal paper: JRSS C, 67(5), 1275-1304 Working paper: Working paper on SSRN Abstract. A data set from a Belgian telematics product aimed at young drivers is used to identify how car insurance premiums can be designed based on the telematics data collected by a black box installed in the vehicle.</description>
+    </item>
+    
+    <item>
+      <title>Telematics insurance</title>
+      <link>/research/telematics/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/research/telematics/</guid>
+      <description>An overview of published and ongoing research papers within the telematics insurance research line developed in my lab.Unravelling the predictive power of telematics data in car insurance pricing Collaborators: Roel Verbelen, Katrien Antonio and Gerda Claeskens, research in the framework of the Ageas CE Research Chair. Journal paper: JRSS C, 67(5), 1275-1304 Working paper: Working paper on SSRN Abstract. A data set from a Belgian telematics product aimed at young drivers is used to identify how car insurance premiums can be designed based on the telematics data collected by a black box installed in the vehicle.</description>
     </item>
     
   </channel>

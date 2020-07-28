@@ -1,25 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Events on Katrien Antonio</title>
-    <link>/tags/events/</link>
-    <description>Recent content in Events on Katrien Antonio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/events/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Events and workshops</title>
-      <link>/lab/events/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/lab/events/</guid>
-      <description>The LRisk agenda lists all forthcoming events and workshops organized by (among others) my research lab.Here is a selection of recent events and workshops:
-4th European Actuarial Journal Conference. International conference hosted in Leuven from September 9-11, 2018.</description>
-    </item>
-    
-  </channel>
-</rss>
