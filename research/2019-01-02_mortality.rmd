@@ -1,5 +1,5 @@
 ---
-date: "2019-11-21"
+date: "2020-07-29"
 type: "post"
 showonlyimage: false
 draft: false
@@ -20,7 +20,7 @@ keywords: [
 
 - [stochastic models for population mortality](#pop-mort-models) 
 - [Bayesian multi-population mortality models](#Bayesian)
-- [portfolio-specific mortality to capture basis risk](#portfolio-mort-models)
+- [portfolio-specific mortality and basis risk](#portfolio-mort-models)
 - [micro-level lifetime data to explore the effect of risk factors on mortality rates](#micro-level-lifetime)
 - [the detection of structural changes](#structural-changes).
 
@@ -28,9 +28,10 @@ keywords: [
 ###### {#micro-level-lifetime}
 ><p align="justify">**Quantifying longevity gaps using micro-level lifetime data**
 </br> </br>
+<img src="../img/mainImages/jrss_a.jfif" class = "TextWrapLeft"/>
 <u class="dotted">Collaborators:</u> Frank Van Berkum, Katrien Antonio and Michel Vellekoop. 
 </br> </br>
-<u class="dotted">Journal paper:</u> R&R
+<u class="dotted">Journal paper:</u> to appear in JRSS A, Statistics in Society
 </br> </br>
 <u class="dotted">Working paper:</u> Chapter 5 in <a href="https://pure.uva.nl/ws/files/22341010/Thesis.pdf"target="_blank">Frank's PhD thesis</a> is a preliminary (2018) version of this paper; new version (July, 2019) is <a href="https://www.dropbox.com/s/iqdzz9qwnpbxwjt/PensionFundMortality_rev.pdf?dl=0"target="_blank">here</a>.
 </br> </br>
@@ -56,6 +57,7 @@ expectancies for the most-favorable and least-favorable risk profiles in the fun
 
 ><p align="justify">**A Bayesian joint model for population and portfolio-specific mortality**
 </br> </br>
+<img src="../img/mainImages/astin.jfif" class = "TextWrapLeft"/>
 <u class="dotted">Collaborators:</u> Frank Van Berkum, Katrien Antonio and Michel Vellekoop. 
 </br> </br>
 <u class="dotted">Journal paper:</u> <a href="https://www.cambridge.org/core/journals/astin-bulletin-journal-of-the-iaa/article/bayesian-joint-model-for-population-and-portfoliospecific-mortality/46B8F06571A0087397828055636C7466"target="_blank">ASTIN Bulletin 47(3), 2017</a>
@@ -69,6 +71,7 @@ expectancies for the most-favorable and least-favorable risk profiles in the fun
 ###### {#pop-mort-models}
 ><p align="justify">**Producing the Dutch and Belgian mortality projections: a stochastic multi-population standard**
 </br> </br>
+<img src="../img/mainImages/eaj.jfif" class = "TextWrapLeft"/>
 <u class="dotted">Collaborators:</u> Sander Devriendt, Katrien Antonio, Michel Vellekoop et al. 
 </br> </br>
 <u class="dotted">Journal paper:</u> <a href="https://link.springer.com/article/10.1007/s13385-017-0159-x"target="_blank">European Actuarial Journal 7(2), 2017</a>
@@ -82,6 +85,7 @@ expectancies for the most-favorable and least-favorable risk profiles in the fun
 ###### {#structural-changes}
 ><p align="justify">**The impact of multiple structural changes on mortality predictions**
 </br> </br>
+<img src="../img/mainImages/SAJ.jfif" class = "TextWrapLeft"/>
 <u class="dotted">Collaborators:</u> Frank Van Berkum, Katrien Antonio and Michel Vellekoop. 
 </br> </br>
 <u class="dotted">Journal paper:</u> <a href="https://www.tandfonline.com/doi/full/10.1080/03461238.2014.987807"target="_blank">Scandinavian Actuarial Journal, 2016:7, 581-603</a>
@@ -95,6 +99,7 @@ expectancies for the most-favorable and least-favorable risk profiles in the fun
 ###### {#Bayesian}
 ><p align="justify">**Bayesian Poisson log-bilinear models for mortality projections with multiple populations**
 </br> </br>
+<img src="../img/mainImages/eaj.jfif" class = "TextWrapLeft"/>
 <u class="dotted">Collaborators:</u> Anastasios Bardoutsos, Katrien Antonio and Wilbert Ouburg. 
 </br> </br>
 <u class="dotted">Journal paper:</u> <a href="https://link.springer.com/article/10.1007/s13385-015-0115-6"target="_blank">European Actuarial Journal 5(2), 2015</a>

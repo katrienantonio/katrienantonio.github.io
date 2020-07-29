@@ -6,7 +6,7 @@
     <description>Recent content in mortality models on Katrien Antonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 21 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/mortality-models/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,19 +14,19 @@
     <item>
       <title>Mortality modeling</title>
       <link>/portfolio/mortality-models/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/portfolio/mortality-models/</guid>
-      <description>An overview of published and ongoing research papers within the mortality modeling research line developed in my lab. This research line puts focus on:stochastic models for population mortalityBayesian multi-population mortality modelsportfolio-specific mortality to capture basis riskmicro-level lifetime data to explore the effect of risk factors on mortality ratesthe detection of structural changes.Quantifying longevity gaps using micro-level lifetime data Collaborators: Frank Van Berkum, Katrien Antonio and Michel Vellekoop.</description>
+      <description>An overview of published and ongoing research papers within the mortality modeling research line developed in my lab. This research line puts focus on:stochastic models for population mortalityBayesian multi-population mortality modelsportfolio-specific mortality and basis riskmicro-level lifetime data to explore the effect of risk factors on mortality ratesthe detection of structural changes.Quantifying longevity gaps using micro-level lifetime data Collaborators: Frank Van Berkum, Katrien Antonio and Michel Vellekoop.</description>
     </item>
     
     <item>
       <title>Mortality modeling</title>
       <link>/research/mortality-models/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/research/mortality-models/</guid>
-      <description>An overview of published and ongoing research papers within the mortality modeling research line developed in my lab. This research line puts focus on:stochastic models for population mortalityBayesian multi-population mortality modelsportfolio-specific mortality to capture basis riskmicro-level lifetime data to explore the effect of risk factors on mortality ratesthe detection of structural changes.Quantifying longevity gaps using micro-level lifetime data Collaborators: Frank Van Berkum, Katrien Antonio and Michel Vellekoop.</description>
+      <description>An overview of published and ongoing research papers within the mortality modeling research line developed in my lab. This research line puts focus on:stochastic models for population mortalityBayesian multi-population mortality modelsportfolio-specific mortality and basis riskmicro-level lifetime data to explore the effect of risk factors on mortality ratesthe detection of structural changes.Quantifying longevity gaps using micro-level lifetime data Collaborators: Frank Van Berkum, Katrien Antonio and Michel Vellekoop.</description>
     </item>
     
   </channel>

@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Katrien Antonio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mortality models</title>
+      <link>/tags/mortality-models/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mortality-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>population</title>
+      <link>/tags/population/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/population/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>portfolio</title>
+      <link>/tags/portfolio/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/portfolio/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>machine learning</title>
@@ -62,33 +89,6 @@
       <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/insurance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mortality models</title>
-      <link>/tags/mortality-models/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/mortality-models/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>population</title>
-      <link>/tags/population/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/population/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>portfolio</title>
-      <link>/tags/portfolio/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/portfolio/</guid>
       <description></description>
     </item>
     

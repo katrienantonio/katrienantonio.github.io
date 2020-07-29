@@ -4,17 +4,47 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/portfolio/</loc>
-    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/research/</loc>
-    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/mortality-models/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/research/mortality-models/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mortality-models/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/population/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/portfolio/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -34,11 +64,6 @@
   
   <url>
     <loc>/tags/pricing-models/</loc>
-    <lastmod>2020-07-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-07-28T00:00:00+00:00</lastmod>
   </url>
   
@@ -99,31 +124,6 @@
   
   <url>
     <loc>/research/fraud/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/portfolio/mortality-models/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/research/mortality-models/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/mortality-models/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/population/</loc>
-    <lastmod>2019-11-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/portfolio/</loc>
     <lastmod>2019-11-21T00:00:00+00:00</lastmod>
   </url>
   
