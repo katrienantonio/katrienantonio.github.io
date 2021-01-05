@@ -1,33 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>pricing models on Katrien Antonio</title>
-    <link>/tags/pricing-models/</link>
-    <description>Recent content in pricing models on Katrien Antonio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/pricing-models/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Machine learning for insurance pricing</title>
-      <link>/portfolio/machine-learning/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/machine-learning/</guid>
-      <description>An overview of published and ongoing research papers within the machine learning for insurance pricing research line developed in my lab. This research line puts focus on:data driven strategies to handle continuous and spatial risk factorssparse regression with automatic feature selection and binningtree-based machine learning techniques for pricingbuilding model-agnostic data drive surrogates for black-box models.Watch Roel Henckaerts presenting our paper on tree-based machine learning during UseR!</description>
-    </item>
-    
-    <item>
-      <title>Machine learning for insurance pricing</title>
-      <link>/research/machine-learning/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/research/machine-learning/</guid>
-      <description>An overview of published and ongoing research papers within the machine learning for insurance pricing research line developed in my lab. This research line puts focus on:data driven strategies to handle continuous and spatial risk factorssparse regression with automatic feature selection and binningtree-based machine learning techniques for pricingbuilding model-agnostic data drive surrogates for black-box models.Watch Roel Henckaerts presenting our paper on tree-based machine learning during UseR!</description>
-    </item>
-    
-  </channel>
-</rss>

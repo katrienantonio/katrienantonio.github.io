@@ -1,32 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>machine learning on Katrien Antonio</title>
-    <link>/tags/machine-learning/</link>
-    <description>Recent content in machine learning on Katrien Antonio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Machine learning for insurance pricing</title>
-      <link>/portfolio/machine-learning/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/machine-learning/</guid>
-      <description>An overview of published and ongoing research papers within the machine learning for insurance pricing research line developed in my lab. This research line puts focus on:data driven strategies to handle continuous and spatial risk factorssparse regression with automatic feature selection and binningtree-based machine learning techniques for pricingbuilding model-agnostic data drive surrogates for black-box models.Watch Roel Henckaerts presenting our paper on tree-based machine learning during UseR!</description>
-    </item>
+    <title>machine learning | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/tags/machine-learning/</link>
+      <atom:link href="https://katrienantonio.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>machine learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Tue, 11 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <title>machine learning</title>
+      <link>https://katrienantonio.github.io/tags/machine-learning/</link>
+    </image>
     
     <item>
-      <title>Machine learning for insurance pricing</title>
-      <link>/research/machine-learning/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/research/machine-learning/</guid>
-      <description>An overview of published and ongoing research papers within the machine learning for insurance pricing research line developed in my lab. This research line puts focus on:data driven strategies to handle continuous and spatial risk factorssparse regression with automatic feature selection and binningtree-based machine learning techniques for pricingbuilding model-agnostic data drive surrogates for black-box models.Watch Roel Henckaerts presenting our paper on tree-based machine learning during UseR!</description>
+      <title>Hands-on machine learning in R</title>
+      <link>https://katrienantonio.github.io/project/hands-on-ml/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/hands-on-ml/</guid>
+      <description>&lt;p&gt;This three-day workshop introduces the essential concepts of building machine learning models with R. Throughout the workshop you will gain insights in the foundations of machine learning methods, including resampling methods, data preprocessing steps and the tuning of parameters. You will cover a variety of statistical and machine learning methods, ranging from GLMs, over tree-based machine learning methods to neural networks. You will acquire insights in the foundations of these methods, learn how to set-up the model building process, and focus on building a good understanding of the resulting model output and predictions.&lt;/p&gt;
+&lt;p&gt;Leaving this workshop, you should have a firm grasp of the working principles of a variety of machine learning methods and be able to explore their use in practical settings. Moreover, you should have acquired the fundamental insights to explore some other methods on your own.&lt;/p&gt;
+&lt;p&gt;Previous editions of the workshop were taught for Nationale Nederlanden (in company, February 2020) and the Actuarieel Instituut (online, December 2020 - January 2021).&lt;/p&gt;
+</description>
     </item>
     
   </channel>

@@ -1,61 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Katrien Antonio - teaching on Katrien Antonio</title>
-    <link>/teaching/</link>
-    <description>Recent content in Katrien Antonio - teaching on Katrien Antonio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 22 Mar 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/teaching/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Non-Life Insurance course</title>
-      <link>/teaching/non-life-insurance/</link>
-      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/teaching/non-life-insurance/</guid>
-      <description>This course covers the basic principles of pricing and reserving in non-life insurance.
-Chapter 1 equips you with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency-severity approach typical for non-life insurance loss models. Chapter 2 puts focus on a priori insurance pricing with generalized linear models (GLMs). Chapter 3 explains a posteriori pricing with credibility models and bonus-malus scales.</description>
-    </item>
+    <title>My course portfolio | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/teaching/</link>
+      <atom:link href="https://katrienantonio.github.io/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>My course portfolio</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Tue, 01 Sep 2020 09:45:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <title>My course portfolio</title>
+      <link>https://katrienantonio.github.io/teaching/</link>
+    </image>
     
     <item>
-      <title>MSc of Actuarial and Financial Engineering</title>
-      <link>/teaching/mafe/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/teaching/mafe/</guid>
-      <description>The MSc of Actuarial and Financial Engineering is an English taught MSc program of 120 ects, offered jointly by the Faculty of Economics and Business and the Faculty of Science at KU Leuven. The program prepares students for careers in actuarial science, financial engineering or quantitative risk management within financial institutions. I serve as the program director of this MSc program, since academic year 2018-2019.Find out more on the program website, the official KU Leuven page or in the brochure!</description>
-    </item>
-    
-    <item>
-      <title>Teaching portfolio</title>
-      <link>/teaching/portfolio/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/teaching/portfolio/</guid>
-      <description>This page gives an overview of my current and former affiliations, my visiting positions, and the courses in my teaching portfolio.KU Leuven, BelgiumFaculty of Economics and BusinessI am professor in actuarial science and insurance analytics at KU Leuven, Faculty of Economics and Business, Research Group Accounting, Finance and Insurance.At KU Leuven I coordinate and teach the courses:
-Loss Models. This is a 6 ects course that equips students with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency - severity approach typical for general insurance loss models.</description>
-    </item>
-    
-    <item>
-      <title>DataCamp course</title>
-      <link>/teaching/datacamp/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/teaching/datacamp/</guid>
-      <description>Together with dr. Roel Verbelen I developed the DataCamp online course on Valuation of Life Insurance Products in R. The course covers 17 videos and 55 exercises organized in 4 chapters: valuation of cash flows, life tables, life annuities and life insurances.Free registration of your classroom by completing this form. DataCamp is 100% free when you need it for your classroom. Even the premium content! Sign up your classroom and use our course on life insurance as computer tutorials.</description>
-    </item>
-    
-    <item>
-      <title>In company courses</title>
-      <link>/teaching/in-company/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/teaching/in-company/</guid>
-      <description>Happy learning!</description>
+      <title>Data Science for Non-Life Insurance</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</link>
+      <pubDate>Tue, 01 Sep 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</guid>
+      <description>&lt;p&gt;Here I will describe the data science course.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

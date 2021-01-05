@@ -1,33 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>loss models on Katrien Antonio</title>
-    <link>/tags/loss-models/</link>
-    <description>Recent content in loss models on Katrien Antonio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 28 Sep 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/loss-models/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Loss modelling analytics</title>
-      <link>/portfolio/loss-models/</link>
-      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/loss-models/</guid>
-      <description>An overview of published research papers within the loss modelling analytics research line developed in my lab. This research line puts focus onmixture models for a global fit of attritional lossesspliced models for a global fit of both attritional and large losses.Modelling censored losses using splicing: a global fit strategy with mixed Erlang and extreme value distributions Collaborators: Tom Reynkens, Roel Verbelen, Jan Beirlant and Katrien Antonio.</description>
-    </item>
-    
-    <item>
-      <title>Loss modelling analytics</title>
-      <link>/research/loss-models/</link>
-      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/research/loss-models/</guid>
-      <description>An overview of published research papers within the loss modelling analytics research line developed in my lab. This research line puts focus onmixture models for a global fit of attritional lossesspliced models for a global fit of both attritional and large losses.Modelling censored losses using splicing: a global fit strategy with mixed Erlang and extreme value distributions Collaborators: Tom Reynkens, Roel Verbelen, Jan Beirlant and Katrien Antonio.</description>
-    </item>
-    
-  </channel>
-</rss>

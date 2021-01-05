@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/publication_types/2/</link>
+      <atom:link href="https://katrienantonio.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 02 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>https://katrienantonio.github.io/publication_types/2/</link>
+    </image>
+    
+    <item>
+      <title>Sparse regression with Multi-type Regularized Feature modeling</title>
+      <link>https://katrienantonio.github.io/publication/2020-smurf/</link>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2020-smurf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantifying longevity gaps using micro‐level lifetime data</title>
+      <link>https://katrienantonio.github.io/publication/2020-jrssa-pension-fund-mortality/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2020-jrssa-pension-fund-mortality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Boosting Insights in Insurance Tariff Plans with Tree-Based Machine Learning Methods</title>
+      <link>https://katrienantonio.github.io/publication/2020-boosting/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2020-boosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling the number of hidden events subject to observation delay</title>
+      <link>https://katrienantonio.github.io/publication/2019-ejor/</link>
+      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2019-ejor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A data driven binning strategy for the construction of insurance tariff classes</title>
+      <link>https://katrienantonio.github.io/publication/2018-data-driven/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2018-data-driven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling Censored Losses Using Splicing: a Global Fit Strategy With Mixed Erlang and Extreme Value Distributions</title>
+      <link>https://katrienantonio.github.io/publication/2017-splicing-ime/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-splicing-ime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Producing the Dutch and Belgian mortality projections: a stochastic multi-population standard</title>
+      <link>https://katrienantonio.github.io/publication/2017-mortality-standard/</link>
+      <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-mortality-standard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Bayesian joint model for population and portfolio-specific mortality</title>
+      <link>https://katrienantonio.github.io/publication/2017-bayesian-joint/</link>
+      <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-bayesian-joint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Poisson log-bilinear models for mortality projections with multiple populations</title>
+      <link>https://katrienantonio.github.io/publication/2015-poisson-bilinear/</link>
+      <pubDate>Sat, 19 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2015-poisson-bilinear/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multivariate mixtures of Erlangs for density estimation under censoring</title>
+      <link>https://katrienantonio.github.io/publication/2016-mme/</link>
+      <pubDate>Fri, 04 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2016-mme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of multiple structural changes on mortality predictions</title>
+      <link>https://katrienantonio.github.io/publication/2016-structural-changes/</link>
+      <pubDate>Tue, 16 Dec 2014 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2016-structural-changes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

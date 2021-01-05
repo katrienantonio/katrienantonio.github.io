@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pricing | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/tags/pricing/</link>
+      <atom:link href="https://katrienantonio.github.io/tags/pricing/index.xml" rel="self" type="application/rss+xml" />
+    <description>pricing</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 03 Dec 2020 09:45:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <title>pricing</title>
+      <link>https://katrienantonio.github.io/tags/pricing/</link>
+    </image>
+    
+    <item>
+      <title>Boosting insights in insurance tariff plans with machine learning methods</title>
+      <link>https://katrienantonio.github.io/talk/2020-ergo/</link>
+      <pubDate>Thu, 03 Dec 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-ergo/</guid>
+      <description>&lt;p&gt;In this talk, I discussed the use of tree-based machine learning methods to develop full tariff plans built from both the frequency and severity of claims.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Science for Non-Life Insurance</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</link>
+      <pubDate>Tue, 01 Sep 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</guid>
+      <description>&lt;p&gt;Here I will describe the data science course.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

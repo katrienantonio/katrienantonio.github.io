@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marie-Pier Côté | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/authors/marie-pier-cote/</link>
+      <atom:link href="https://katrienantonio.github.io/authors/marie-pier-cote/index.xml" rel="self" type="application/rss+xml" />
+    <description>Marie-Pier Côté</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <title>Marie-Pier Côté</title>
+      <link>https://katrienantonio.github.io/authors/marie-pier-cote/</link>
+    </image>
+    
+    <item>
+      <title>When stakes are high: balancing accuracy and transparency with Model-Agnostic Interpretable Data-driven suRRogates</title>
+      <link>https://katrienantonio.github.io/publication/2020-maidrr/</link>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2020-maidrr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Boosting Insights in Insurance Tariff Plans with Tree-Based Machine Learning Methods</title>
+      <link>https://katrienantonio.github.io/publication/2020-boosting/</link>
+      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2020-boosting/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

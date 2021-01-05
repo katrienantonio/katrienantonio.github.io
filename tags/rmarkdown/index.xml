@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rmarkdown | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/tags/rmarkdown/</link>
+      <atom:link href="https://katrienantonio.github.io/tags/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
+    <description>rmarkdown</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Tue, 02 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <title>rmarkdown</title>
+      <link>https://katrienantonio.github.io/tags/rmarkdown/</link>
+    </image>
+    
+    <item>
+      <title>How I Taught Tidymodels, Virtually</title>
+      <link>https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/</link>
+      <pubDate>Tue, 02 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/</guid>
+      <description>&lt;p&gt;A few weeks ago, I wrapped up teaching 
+&lt;a href=&#34;https://www.tidymodels.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tidymodels&lt;/a&gt; for the third time. We say third time&amp;rsquo;s the charm, right? Even during a global pandemic? I don&amp;rsquo;t know, but this time around was fun in new ways and hard in new ways, so I wanted to take the time to write some thoughts down about how it went.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;but-why&#34;&gt;But why?&lt;a href=&#34;#but-why&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Why teach tidymodels virtually? I&amp;rsquo;ve already taught it as a 
+&lt;a href=&#34;https://katrienantonio.github.io/project/tidyml&#34;&gt;2-day workshop&lt;/a&gt; at rstudio::conf(2020). I had already agreed to teach intro to machine learning with tidymodels as a full-day workshop for the Cascadia R Conf (which unfortunately was cancelled due to COVID), and the 
+&lt;a href=&#34;https://katrienantonio.github.io/talk/2020-rmedicine-tidyml/&#34;&gt;R / Medicine conference&lt;/a&gt; (still on, and 100% virtual!).&lt;/p&gt;
+&lt;p&gt;I had three main goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First, I wanted to do a good job for the R / Medicine conference workshop in August. This seemed like an interesting teaching challenge. One of the best compliments I&amp;rsquo;ve ever gotten from a colleague is that I &amp;ldquo;teach with heart&amp;rdquo; — so the challenge was, can a virtual workshop have a ❤️?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/RAAEmgtmiR3Fe/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Second, given current events, I saw an opportunity to document a good system (tooling + pedagogy + logistics) around virtual workshops. I don&amp;rsquo;t see them going away anytime soon. My colleague, 
+&lt;a href=&#34;https://third-bit.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Greg Wilson&lt;/a&gt;, had also been giving our 
+&lt;a href=&#34;https://education.rstudio.com/trainers/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio certified instructor&lt;/a&gt; 
+&lt;a href=&#34;https://drive.google.com/drive/folders/13ohFt3D0EJ5PDbMaWTxnHH-hwA7G0IvY&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;workshops virtually&lt;/a&gt; for over a year, so I trusted that he could help me navigate.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Third, help out the R / Medicine conference organizers. My partner-in-crime for this particular workshop, 
+&lt;a href=&#34;https://education.rstudio.com/trainers/people/kadauke&amp;#43;stephan/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dr. Stephan Kadauke&lt;/a&gt;, wanted to join me for some reconnaissance work. He is one of the conference organizers and will be leading his own workshop there, so he wanted to test out the tooling and the pedagogy too.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So we thought, three birds, one stone: I get to pilot a much shorter version of my conf workshop materials, we get to test doing it virtually, and the R / Medicine conference organizers learn how this could all work in August.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/oVP8LBbOv57S8/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;how-we-planned-it&#34;&gt;How we planned it&lt;a href=&#34;#how-we-planned-it&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Starting out, I knew I had two main hurdles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shaving two days of workshop content into &lt;code&gt;X&lt;/code&gt; days&lt;/li&gt;
+&lt;li&gt;Logistics (like figuring out what &lt;code&gt;X&lt;/code&gt; should be!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first decision based on conversations with Greg was to offer the workshop across two half-days. This is how the RStudio instructor training is timed, and it works well because there are few people who can (or want to) be tied up for a full day, especially if under stay-at-home orders. We asked Stephan if his group at the 
+&lt;a href=&#34;https://www.chop.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Children&amp;rsquo;s Hospital of Philadelphia (CHOP)&lt;/a&gt; would be up for two 4-hour sessions. Stephan&amp;rsquo;s feedback was yes, but given that these folks at CHOP typically have weekly schedules, having two consecutive days would not work. So we opted for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Two 4-hour sessions that were&amp;hellip;&lt;/li&gt;
+&lt;li&gt;exactly one week apart.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;rsquo;m in Oregon, they were in Philly, so we decided to start at 9am my time (1pm for them) and wrap up at 1pm my time (5pm for them). After making this call, and again with Greg&amp;rsquo;s sage advice to 
+&lt;a href=&#34;https://education.rstudio.com/blog/2020/03/teaching-online-on-short-notice/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;take a break every hour&lt;/a&gt;, I started working on a rough schedule. I had about 8 hours total to work with; about half of my conf workshop. We decided on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;50 minute chunks, and&lt;/li&gt;
+&lt;li&gt;10 minute breaks at 10 till the hour every single hour.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I didn&amp;rsquo;t try to make sure my materials for each session filled exactly 50 minutes. Instead, I promised the group that I would break wherever I was at the same time, and after each break we just picked up where left off.&lt;/p&gt;
+&lt;p&gt;Here was the new topic outline:&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;day-1&#34;&gt;Day 1&lt;a href=&#34;#day-1&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://tmv.netlify.app/slides/00-intro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Session 00:&lt;/a&gt; Intro (include a tooling tour- orient to Google doc + Zoom)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://tmv.netlify.app/slides/01-model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Session 01:&lt;/a&gt; Build a model (mainly parsnip package)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://tmv.netlify.app/slides/02-resample&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Session 02:&lt;/a&gt; Resample a model (add rsample package, plus tune package for &lt;code&gt;fit_resamples()&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://tmv.netlify.app/slides/03-recipes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Session 03:&lt;/a&gt; Build a better training set (add recipes and workflows packages)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+&lt;h3 id=&#34;day-2&#34;&gt;Day 2&lt;a href=&#34;#day-2&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://tmv.netlify.app/slides/04-ensemble&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Session 04:&lt;/a&gt; Build an ensemble model (back to parsnip, now with model arguments)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://tmv.netlify.app/slides/05-tune&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Session 05:&lt;/a&gt; Tune a model (heavy tune package)&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://tmv.netlify.app/slides/06-case-study&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Session 06:&lt;/a&gt; The Great Model-Off (a Kaggle-like group activity)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The final decision was about tooling. Luckily, Greg had advice here too. We went with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Google doc as the &amp;ldquo;home page&amp;rdquo; + chat (no workshop website!)&lt;/li&gt;
+&lt;li&gt;RStudio Cloud for all exercises&lt;/li&gt;
+&lt;li&gt;Zoom for video&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h2 id=&#34;pre-workshop-launch-list&#34;&gt;Pre-workshop launch list&lt;a href=&#34;#pre-workshop-launch-list&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Make shared Google doc and prepopulate with: Zoom link, RStudio Cloud link, bulleted list of participant names (be sure to make this &lt;em&gt;editable&lt;/em&gt; for anyone!)&lt;/li&gt;
+&lt;li&gt;Email everyone with a Google calendar invite that includes the Zoom link and a link to a shared Google doc (be sure to make this &lt;em&gt;editable&lt;/em&gt; for anyone!)&lt;/li&gt;
+&lt;li&gt;Ask everyone to fill in their 2-sentence bios ahead of time to ensure that you&amp;rsquo;ve done this correctly!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The Zoom link and the Google doc link should be the &lt;strong&gt;only&lt;/strong&gt; links that attendees see ahead of time. Then, the Google doc is the one true source for everything. Too many links at first leads to confusion later. I also prepopulated the doc with my session outline with HTML links to each session&amp;rsquo;s slide deck.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;actual-launch&#34;&gt;Actual launch&lt;a href=&#34;#actual-launch&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In Zoom, I set it up to 
+&lt;a href=&#34;https://support.zoom.us/hc/en-us/articles/203435537-Mute-All-And-Unmute-All&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mute everyone&lt;/a&gt; as they joined. We started with an 
+&lt;a href=&#34;https://tmv.netlify.app/slides/00-intro&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;orientation&lt;/a&gt; of the tools, the schedule, and the general plan for how they would work and interact with each other. We tried to keep questions per session in the Google doc, which my TA Stephan fielded in real time, which now is a great resource for me as I prepare for this again in August.&lt;/p&gt;
+&lt;p&gt;What I should have done:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Have a Code of Conduct. I will next time. We didn&amp;rsquo;t have any issues, but what came up later was that I asked participants to turn on their cameras. I wished that part of my Code of Conduct was that we would not videotape or take screenshots at any point to protect the privacy of all participants.&lt;/li&gt;
+&lt;li&gt;Asked folks to make sure they had an updated version of Zoom. In particular, some newer security issues have been addressed recently, so this is nice for everyone to take advantage of. Plus the interface looked different for some.&lt;/li&gt;
+&lt;li&gt;Locked down the Zoom room. After a few minutes of starting, it was super distracting to have late arrivals who kept sending me personal chats asking for the links.&lt;/li&gt;
+&lt;li&gt;In addition to locking down after the first 10-15 minutes, I also should have assigned my TA as a 
+&lt;a href=&#34;https://support.zoom.us/hc/en-us/articles/206330935-Enabling-and-adding-a-co-host&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;co-host&lt;/a&gt;, so that he could have helped me manage that. We did this on day 2 and it worked great.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h2 id=&#34;how-did-it-go&#34;&gt;How did it go?&lt;a href=&#34;#how-did-it-go&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;So, I&amp;rsquo;m not going to lie here. The first session of teaching spooked me a bit. This was because all attendees left their videos off and I felt like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/AEMyf9Oj6MpS8/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;It was eerie to teach to a silent void. On day 2, I asked for two volunteers to turn on their cameras for a single 50 minute block each because it really helped me to see faces. Participants probably kept their own view as &amp;ldquo;speaker only&amp;rdquo;, but for me it really helped to be able to have some human feedback, even if they were muted. Much love to the head nodders out there. This conversation on day 2 broke my heart though, because several participants indicated they felt they couldn&amp;rsquo;t turn on their cameras because they had young children at home. It is &lt;strong&gt;hard&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Interestingly, the participants didn&amp;rsquo;t sense my discomfort at all. In fact, I heard from several that it was nice to see me up close and so personal. It actually felt &lt;em&gt;more personal&lt;/em&gt; than a large in-person workshop, to my surprise.&lt;/p&gt;
+&lt;p&gt;On day 1, I started by asking participants to use Zoom reactions (like thumbs up) to answer questions, give me progress updates, etc. I ended up retiring this- it was distracting and the reactions disappear so it wasn&amp;rsquo;t actually useful. Instead, I asked people to use the Zoom chat to indicate &amp;ldquo;done&amp;rdquo; or give quick one-word answers (a or b, yes or no).&lt;/p&gt;
+&lt;p&gt;Stephan also had a great idea for the breaks. On day 2, I started using Garrick Aden-Buie&amp;rsquo;s 
+&lt;a href=&#34;https://pkg.garrickadenbuie.com/countdown/#29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;countdown app&lt;/a&gt; to show the 10 minute break countdown full-screen. I used the hosted version 
+&lt;a href=&#34;https://apps.garrickadenbuie.com/countdown/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;what-can-i-do-better&#34;&gt;What can I do better?&lt;a href=&#34;#what-can-i-do-better&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Logistically, I got really frustrated because I kept losing my Zoom meeting controls. Later I found out about this accessibility setting, which would have helped!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;zoom-controls.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;More substantively, as I mentioned, I would have a Code of Conduct at the very beginning. I also think virtual workshops offer a unique opportunity to include some more creative exercise types. Here are a few I brainstormed with Greg Wilson after the fact—expect to see these at R / Medicine if you attend with me!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Spot the bug- do in groups&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unscramble code&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Predict what is going to happen&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Fill in the blank with the 
+&lt;a href=&#34;https://education.rstudio.com/blog/2020/05/flair/#example-3--mask-code-for-easy-practice-activities&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;flair package&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/13eay0HFG25jy0/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;verdict&#34;&gt;Verdict&lt;a href=&#34;#verdict&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Transitioning from primarily teaching in person to teaching virtually is &lt;em&gt;hard&lt;/em&gt;, and I&amp;rsquo;m in awe of 
+&lt;a href=&#34;https://education.rstudio.com/blog/2020/05/remote-roundup/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;all the instructors&lt;/a&gt; I know who have had to do this on very short notice. But, can it be done with heart? Yes, I think so ❤️&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/v9tIehXauaCbK/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;thanks&#34;&gt;Thanks&lt;a href=&#34;#thanks&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Thanks to the participants, who were the loveliest guinea pigs. It is a hard time to learn and a hard time to find time. I appreciate that you took time out of your lives to spend 8 hours with me.&lt;/p&gt;
+&lt;p&gt;Thanks also to 
+&lt;a href=&#34;https://third-bit.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Greg Wilson&lt;/a&gt; for his support, and 
+&lt;a href=&#34;https://www.chop.edu/doctors/kadauke-stephan&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Stephan Kadauke&lt;/a&gt; for being an awesome co-pilot. Extra special thanks to 
+&lt;a href=&#34;https://desiree.rbind.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Desirée De Leon&lt;/a&gt;, who has the biggest heart of all. Knowing that I didn&amp;rsquo;t have time for creativity with my slides, she surprised me with the most beautiful xaringan slide deck theme based on 
+&lt;a href=&#34;https://www.tidymodels.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tidymodels.org&lt;/a&gt;. I merged in her PR &lt;em&gt;with glee and delight&lt;/em&gt;, I know the participants felt those same emotions too (while learning about machine learning, no less!) 🌼&lt;/p&gt;
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.05%20PM.png&#34; &gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.05%20PM_hu8ddd347995e1b8316aad5f226eef880e_1335197_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.51%20PM.png&#34; &gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.51%20PM_hu8ddd347995e1b8316aad5f226eef880e_932227_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.58%20PM.png&#34; &gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.58%20PM_hu8ddd347995e1b8316aad5f226eef880e_2521546_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.06%20PM.png&#34; &gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.06%20PM_hu8ddd347995e1b8316aad5f226eef880e_1994290_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+  &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.41%20PM.png&#34; &gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.41%20PM_hu8ddd347995e1b8316aad5f226eef880e_365121_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+
+
+
+&lt;h2 id=&#34;feedback&#34;&gt;Feedback&lt;a href=&#34;#feedback&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;If you are curious, here is some of the feedback I collected at the bottom of our Google doc:&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;two-half-days&#34;&gt;Two half days?&lt;a href=&#34;#two-half-days&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;worked well for me. A full day would be tough.&lt;/li&gt;
+&lt;li&gt;Worked well for me also and I also think having all in one day would be a lot.&lt;/li&gt;
+&lt;li&gt;worked well.&lt;/li&gt;
+&lt;li&gt;worked well for me too.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;separated-by-one-week&#34;&gt;Separated by one week?&lt;a href=&#34;#separated-by-one-week&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;seemed fine.&lt;/li&gt;
+&lt;li&gt;I liked this!&lt;/li&gt;
+&lt;li&gt;good. Enough time to digest the previous session&lt;/li&gt;
+&lt;li&gt;yes.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;pace-too-fast-too-slow&#34;&gt;Pace: too fast, too slow?&lt;a href=&#34;#pace-too-fast-too-slow&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;good pace&lt;/li&gt;
+&lt;li&gt;I liked the pace. It felt like we covered a lot of ground quickly, but also like we have great resources to come back to for refreshing on what we learned.&lt;/li&gt;
+&lt;li&gt;good pace, except at “data leakage”. I still have hard time to understand that part.&lt;/li&gt;
+&lt;li&gt;good pace.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;scope-too-small-too-big&#34;&gt;Scope: too small, too big?&lt;a href=&#34;#scope-too-small-too-big&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;nice scope&lt;/li&gt;
+&lt;li&gt;Nice scope&lt;/li&gt;
+&lt;li&gt;very nice and practical.&lt;/li&gt;
+&lt;li&gt;nice scope.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;timing-in-50-min-chunks-too-many-or-too-few-breaks&#34;&gt;Timing in 50 min chunks: too many or too few breaks?&lt;a href=&#34;#timing-in-50-min-chunks-too-many-or-too-few-breaks&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The 50 min chunks were great! I thought perfect length.&lt;/li&gt;
+&lt;li&gt;Perfect break up. And the 10 min breaks gave enough time to make tea, grab a snack, etc.&lt;/li&gt;
+&lt;li&gt;I am fine with that.&lt;/li&gt;
+&lt;li&gt;works well.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;timed-code-exercises-too-easy-too-hard&#34;&gt;Timed code exercises: too easy, too hard?&lt;a href=&#34;#timed-code-exercises-too-easy-too-hard&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;good&lt;/li&gt;
+&lt;li&gt;Neither, I thought they were appropriate&lt;/li&gt;
+&lt;li&gt;good.&lt;/li&gt;
+&lt;li&gt;good.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;in-between-homeworkreading&#34;&gt;In-between homework/reading?&lt;a href=&#34;#in-between-homeworkreading&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;maybe some light reading or practice&lt;/li&gt;
+&lt;li&gt;In theory I think I would have liked some ‘homework’, but the week turned out to be so busy that I don’t know if I would’ve made time to complete it before the workshop.&lt;/li&gt;
+&lt;li&gt;will be helpful to give some reading about different model descriptions in-between.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;final-take-home-project---feedback&#34;&gt;Final take-home project (+/- feedback)?&lt;a href=&#34;#final-take-home-project---feedback&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;optional&lt;/li&gt;
+&lt;li&gt;I think this could be fun if we had access to a few different datasets to choose from. With maybe some pointers on what to look out for as we explore the data. Is it unbalanced? Could any two variables be collinear? Etc.&lt;/li&gt;
+&lt;li&gt;i would vote for take-home project to play with.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;zoom-video-onoff&#34;&gt;Zoom: video on/off?&lt;a href=&#34;#zoom-video-onoff&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I find video distracting while working/listening/learning.&lt;/li&gt;
+&lt;li&gt;I like being able to see the presenter/speaker’s video. I tend to choose “Speaker View” so that I don’t see all the participant videos (which I would find distracting).&lt;/li&gt;
+&lt;li&gt;i am fine with either. I know, from the speaker’s perspective, it will be good to have video on.&lt;/li&gt;
+&lt;li&gt;I think it was nice and respectful to ask volunteers to turn video on part time! (Kudos to Stephan for having it on the whole time!)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;google-doc-as-our-home-page-and-discussion-forum&#34;&gt;Google doc as our “home page” and “discussion forum”?&lt;a href=&#34;#google-doc-as-our-home-page-and-discussion-forum&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Great!&lt;/li&gt;
+&lt;li&gt;Yes! I thought it was a really helpful tool and ‘homebase’ to come to for all of the things (slides, R Studio Cloud project, etc.)&lt;/li&gt;
+&lt;li&gt;very good! Much easier to track.&lt;/li&gt;
+&lt;li&gt;works!&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;rstudiocloud&#34;&gt;Rstudio.cloud?&lt;a href=&#34;#rstudiocloud&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;pretty good except for crashing at end.&lt;/li&gt;
+&lt;li&gt;ditto.&lt;/li&gt;
+&lt;li&gt;I really enjoyed using R Studio Cloud. It makes it easier when I don’t have to worry about pre-installing packages or updating my version of R in order to go into a workshop. Having everything already set up for you in there is super convenient.&lt;/li&gt;
+&lt;li&gt;I like Rstudio cloud generally. Just not suitable for complicated model training.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How I Teach R Markdown</title>
+      <link>https://katrienantonio.github.io/post/2020-05-28-how-i-teach-r-markdown/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/post/2020-05-28-how-i-teach-r-markdown/</guid>
+      <description>&lt;p&gt;Ah, 
+&lt;a href=&#34;https://rmarkdown.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;R Markdown&lt;/a&gt;. I love teaching R Markdown. But this was not a love at first sight story. When I first started teaching with R at Oregon Health &amp;amp; Science University many moons ago, my students used R Markdown for their homework assignments and in-class labs. This is a great way to start for beginners, to be honest- just use it! I found that most people are not very disoriented by a file that mixes text and code; a concern I had at first and one that I&amp;rsquo;ve heard voiced by other educators. It seems natural to use if it is your first exposure to &lt;em&gt;all the data science things&lt;/em&gt;, especially if you&amp;rsquo;ve never used an R script.&lt;/p&gt;
+&lt;p&gt;I did notice, though, that over the course of even just a few weeks, many of my students would reach unbearable levels of R Markdown curiosity. I would see signs of growing pains in their assignments, like how can I turn off these messages and warnings when I load packages? This is so long- how can I make it easier to find things? How can I make it look &lt;em&gt;better&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;For all learners, there comes an uncomfortable point where you simply cannot just continue to use this awesome tool without learning how to use it. And I realized when I was teaching that ultimately it was unfair of me to assume that they would just learn an entire ecosystem while I stood idly by, clutching the secrets of being an 
+&lt;a href=&#34;https://twitter.com/sharlagelfand/status/1114264529477799937?s=20&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;R Markdown Whisperer&amp;rdquo;&lt;/a&gt; close to my chest.&lt;/p&gt;
+&lt;p&gt;Like, &lt;strong&gt;why can&amp;rsquo;t you just find the piñata, kid&lt;/strong&gt;? But more importantly, what happens when you can&amp;rsquo;t? I think the risk is that learners either won&amp;rsquo;t like or won&amp;rsquo;t appreciate a tool that I genuinely 
+&lt;a href=&#34;https://community.rstudio.com/t/convince-me-to-start-using-r-markdown/1636/7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;think would make their working lives better&lt;/a&gt;. If I believed it was worth their time to use it, it was worth my time to teach it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/xFcFJAryrhO6s/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;So like any good educator, I evolved. I decided that the next year, I would teach R Markdown. And I did. I went from:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Just use it&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/pHiWkDofYnRv2/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;To:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Just tell them how to use it already&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/3o7TKvFKwclJQDY30A/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I waited until a few weeks into a quarter, and I spent a full lab period walking students through &amp;ldquo;Hey- this bit where you put the title of each assignment and your name? That&amp;rsquo;s called YAML! Here is what it does&amp;hellip;&amp;rdquo; I showed them how to use 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/html-document.html#appearance-and-style&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bootswatch themes&lt;/a&gt;, make a 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/html-document.html#table-of-contents&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;floating table of contents&lt;/a&gt;, control their output using the power of 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/r-code.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;knitr&lt;/a&gt; code chunks and chunk options.&lt;/p&gt;
+&lt;p&gt;Guess what happened? The next batch of assignment my TA team and I received were&amp;hellip;stunning. Creative. Beautiful. Thoughtful and thought-provoking. Students had taken care with their markdown headers, they played with flatly/yeti/united, they cared about not printing the giant output of a code chunk. It was a thing of beauty. I remember one of my beloved TAs, 
+&lt;a href=&#34;https://grace.rbind.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Grace Lawley&lt;/a&gt;, commenting that one star student&amp;rsquo;s homework &amp;ldquo;brought tears to her eyes&amp;rdquo; (and yes, I trained Grace too as she was also my research assistant, so she was already baptized into the R Markdown family).&lt;/p&gt;
+&lt;p&gt;But I have to admit, the first time I taught it, I had a hard time teaching it! I realized that I lacked vocabulary around things I used everyday, but had never really talked about out loud with anyone &lt;em&gt;in words&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Now, in my role at RStudio, I&amp;rsquo;ve devoted a lot of time and energy trying to figure out how we can make R Markdown easier- easier to discover, easier to debug, easier to use, and easier to talk about.&lt;/p&gt;
+&lt;p&gt;So without further ado, here are some of my guiding principles when introducing R Markdown to beginners, for those who are ready to go beyond casual knitter:&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;1-make-it-make-it-again&#34;&gt;#1. Make it. Make it again.&lt;a href=&#34;#1-make-it-make-it-again&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Knit early. Knit often. That means starting with a pre-filled Rmd document usually that you know &lt;em&gt;will&lt;/em&gt; knit. How do you motivate repeated knitting and make it satisfying? Teach the basics of output formats and options by editing mainly the YAML. Your goal is to show how small effort &amp;ndash;&amp;gt; high polish. For single docs, I love 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/html-document.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;html_document()&lt;/code&gt;&lt;/a&gt; with a floating table of contents and a theme (like 
+&lt;a href=&#34;https://rstudio-education.github.io/sharing-short-notice/#24&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this&lt;/a&gt;), switching quickly to 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/bookdown-output.html#a-single-document&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;bookdown::html_document2()&lt;/code&gt;&lt;/a&gt; and &lt;code&gt;distill::distill_article()&lt;/code&gt;. The latter two also enable automated figure numbering, which for scientific audiences is quite nice!&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;You can do something like this with &lt;a href=&#34;https://twitter.com/hashtag/rmarkdown?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rmarkdown&lt;/a&gt;. Ask students to knit to HTML, then use the bootswatch themes &lt;a href=&#34;https://t.co/J9ucdRWnIl&#34;&gt;https://t.co/J9ucdRWnIl&lt;/a&gt;&lt;br&gt;&lt;br&gt;Bonus: you get the prettiest &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; homeworks after this! 💐🖍️&lt;br&gt;---&lt;br&gt;title: &amp;quot;Habits&amp;quot; &lt;br&gt;output:   &lt;br&gt;    html_document:     &lt;br&gt;         theme: flatly&lt;br&gt;--- &lt;a href=&#34;https://t.co/wMQ3Uqhc7s&#34;&gt;https://t.co/wMQ3Uqhc7s&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Presmanes Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/1101866080996212736?ref_src=twsrc%5Etfw&#34;&gt;March 2, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Bonus when using a &lt;code&gt;theme&lt;/code&gt; with &lt;code&gt;html_document()&lt;/code&gt;: show off the &lt;code&gt;code_download&lt;/code&gt; output option!&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;TIL you can embed a &amp;quot;code download&amp;quot; button in an HTML &lt;a href=&#34;https://twitter.com/hashtag/rmarkdown?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rmarkdown&lt;/a&gt; doc so that users can click to download your source .Rmd from the rendered HTML version...without GitHub 🤩 &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt;&lt;br&gt;&lt;br&gt;YAML:&lt;br&gt;&lt;br&gt;---&lt;br&gt;output:&lt;br&gt;  html_document:&lt;br&gt;    code_download: true&lt;br&gt;---&lt;br&gt;&lt;br&gt;Test: &lt;a href=&#34;https://t.co/bp7w7XKF8b&#34;&gt;https://t.co/bp7w7XKF8b&lt;/a&gt; &lt;a href=&#34;https://t.co/uMQK0mvYcF&#34;&gt;pic.twitter.com/uMQK0mvYcF&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Presmanes Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/1108925218850893832?ref_src=twsrc%5Etfw&#34;&gt;March 22, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+
+
+
+&lt;h2 id=&#34;2-make-it-pretty&#34;&gt;#2. Make it pretty.&lt;a href=&#34;#2-make-it-pretty&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The starting Rmd should have a nice 
+&lt;a href=&#34;https://ggplot2.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ggplot2&lt;/a&gt; graphic in there, and maybe a pretty 
+&lt;a href=&#34;https://gt.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gt&lt;/a&gt; table too. This is a motivational, aspirational document! I also try to use local data sets, so they can see how that actually works, as opposed to using a data package.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Never underestimate the power of being able to make pretty &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; things. ⬆️ polish/effort ratio ➡️ happier users 🦚 &lt;a href=&#34;https://t.co/LMbFRUiuLa&#34;&gt;https://t.co/LMbFRUiuLa&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Presmanes Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/1101978567842291712?ref_src=twsrc%5Etfw&#34;&gt;March 2, 2019&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+
+
+
+&lt;h2 id=&#34;3-make-it-snappy&#34;&gt;#3. Make it snappy.&lt;a href=&#34;#3-make-it-snappy&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;I aim to get to a shareable link in the first 20 minutes (at most!). I like to use 
+&lt;a href=&#34;https://app.netlify.com/drop&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netlify Drop&lt;/a&gt; for this. No account sign-up needed, and everyone knows how to drag-and-drop (see video below). It is very satisfying to get a link they can share with their mom/best friend/arch nemesis (kidding). I like to have everyone drop their links in a chat too, like a Slack, Google Doc, or a Gitter channel if doing a workshop. My favorite motto: &lt;em&gt;&amp;ldquo;if it knits, it ships&amp;rdquo;&lt;/em&gt; 🚢&lt;/p&gt;
+&lt;iframe src=&#34;https://rstudio-education.github.io/sharing-short-notice/images/single-doc-dnd.mp4&#34; width=&#34;672&#34; height=&#34;400px&#34;&gt;&lt;/iframe&gt;
+
+
+
+&lt;h2 id=&#34;4-make-it-real&#34;&gt;#4. Make it real.&lt;a href=&#34;#4-make-it-real&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Teach folks what they need to know to actually use the tool productively in real life. If you are an avid R Markdown user, this means that you &lt;em&gt;know&lt;/em&gt; without a doubt that file paths will eventually be painful, for example. At the end of an intro, I go back and highlight things I just used to make sure they notice them like R Projects and the here package for data importing. I also love a good 
+&lt;a href=&#34;https://rmd4medicine.netlify.app/slides/01-rmd-anatomy.html#77&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Your Turn&amp;rdquo;&lt;/a&gt; exercise where you get a fresh data dump and all they have to do is re-knit. As in, &amp;ldquo;Surprise! Now instead of 3 sites, you have data from all 6 sites- what do you do?&amp;rdquo;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;5-make-it-easy&#34;&gt;#5. Make it easy.&lt;a href=&#34;#5-make-it-easy&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;People will only keep using R Markdown if they see it making their life easier. So show them how. For example, the RStudio IDE has some very nice built-in features that make it much easier to be an R Markdown user. I point out things having a 
+&lt;a href=&#34;https://apreshill.github.io/rmd4cdc/#112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;global setup chunk&lt;/a&gt;, and IDE features like:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://rmd4medicine.netlify.app/slides/images/rmd-nav.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;what-do-i-save-until-later&#34;&gt;What do I save until later?&lt;a href=&#34;#what-do-i-save-until-later&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Rendering with &lt;code&gt;render()&lt;/code&gt;. I think knitting in the RStudio IDE can get you very far- this I consider an intermediate to advanced concept that is confusing if introduced too early. I&amp;rsquo;ve never heard someone say &lt;em&gt;&amp;ldquo;Well there is this simple button, but how can I do the same thing from the command line?&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/parameterized-reports.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Parameterized reports&lt;/a&gt;. I actually &lt;em&gt;do&lt;/em&gt; use parameters though! I&amp;rsquo;ll have at least one or two often in one of my Rmds, and mention them briefly in my wrap-up. I teach parameters explicitly with actual exercises when I have &amp;gt; 1 hour.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Multiple Rmd output formats. I tend to start with single output formats first. If I have &amp;gt; 1.5 hours and it matches my learning objectives, then I happily oblige- I love teaching 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/books.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bookdown&lt;/a&gt;, 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown/websites.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown&lt;/a&gt;, and 
+&lt;a href=&#34;https://rstudio.github.io/distill/website.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;distill websites&lt;/a&gt;. But to start, I stay single.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Markdown. I skim markdown, and always provide a link to an interactive tutorial. This 
+&lt;a href=&#34;https://commonmark.org/help/tutorial/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;one&lt;/a&gt; is my favorite. Teaching markdown can be&amp;hellip;dry. I show some bits on the slides because I cannot count on everyone doing the interactive tutorial ahead of time, but I do not linger much.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/U7Uxq9Lyz02oStvUIE/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you are curious to see some of the materials I&amp;rsquo;ve used to teach R Markdown, click on the &lt;code&gt;rmarkdown&lt;/code&gt; button just below this post! 🚀&lt;/p&gt;
+&lt;p&gt;But remember: there is no one way to learn R Markdown, and no one way to teach it either. I love seeing the creativity of the community when introducing the R Markdown family- so keep them coming!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/Q86zzvI3UUCADQCF0h/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

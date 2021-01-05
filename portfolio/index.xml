@@ -1,164 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Katrien Antonio</title>
-    <link>/portfolio/</link>
-    <description>Recent content on Katrien Antonio</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/portfolio/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Mortality modeling</title>
-      <link>/portfolio/mortality-models/</link>
-      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/mortality-models/</guid>
-      <description>An overview of published and ongoing research papers within the mortality modeling research line developed in my lab. This research line puts focus on:stochastic models for population mortalityBayesian multi-population mortality modelsportfolio-specific mortality and basis riskmicro-level lifetime data to explore the effect of risk factors on mortality ratesthe detection of structural changes.Quantifying longevity gaps using micro-level lifetime data Collaborators: Frank Van Berkum, Katrien Antonio and Michel Vellekoop.</description>
-    </item>
-    
-    <item>
-      <title>Machine learning for insurance pricing</title>
-      <link>/portfolio/machine-learning/</link>
-      <pubDate>Tue, 28 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/machine-learning/</guid>
-      <description>An overview of published and ongoing research papers within the machine learning for insurance pricing research line developed in my lab. This research line puts focus on:data driven strategies to handle continuous and spatial risk factorssparse regression with automatic feature selection and binningtree-based machine learning techniques for pricingbuilding model-agnostic data drive surrogates for black-box models.Watch Roel Henckaerts presenting our paper on tree-based machine learning during UseR!</description>
-    </item>
-    
-    <item>
-      <title>Lab members</title>
-      <link>/portfolio/lab-members/</link>
-      <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/lab-members/</guid>
-      <description>At KU Leuven my lab puts focus on research projects covering a range of topics frominsurance analytics. This page gives an overview of: my current PhD students and postdocs, as well as former PhD students and former postdocs. Interested in a PhD or postdoc position in the lab, please drop me a message!PhD students:Jonas Crevecoeur. Jonas holds the degrees of MSc in Mathematics, MSc in Insurance Studies and MSc in Financial and Actuarial Engineering (KU Leuven).</description>
-    </item>
-    
-    <item>
-      <title>Non-Life Insurance course</title>
-      <link>/portfolio/non-life-insurance/</link>
-      <pubDate>Sun, 22 Mar 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/non-life-insurance/</guid>
-      <description>This course covers the basic principles of pricing and reserving in non-life insurance.
-Chapter 1 equips you with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency-severity approach typical for non-life insurance loss models. Chapter 2 puts focus on a priori insurance pricing with generalized linear models (GLMs). Chapter 3 explains a posteriori pricing with credibility models and bonus-malus scales.</description>
-    </item>
-    
-    <item>
-      <title>Insurance fraud analytics</title>
-      <link>/portfolio/fraud/</link>
-      <pubDate>Thu, 21 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/fraud/</guid>
-      <description>An overview of published and ongoing research papers within the insurance fraud research line developed in my lab.Social network analytics for supervised fraud detection in insurance Collaborators: María Óskarsdóttir, Waqas Ahmed, Katrien Antonio, Bart Baesens, Rémi Dendievel, Tom Donas and Tom Reynkens, research in the framework of the Ageas CE Research Chair. Journal paper: submitted Working paper: available here Presentations: EAJ Leuven 2018, Cass &amp;amp; KU Leuven symposium 2019, Insurance Data Science 2019 (ETH), IME Munchen 2019.</description>
-    </item>
-    
-    <item>
-      <title>Loss reserving</title>
-      <link>/portfolio/reserving/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/reserving/</guid>
-      <description>An overview of published and ongoing research papers within the loss or claims reserving research line developed in my lab. This research line puts focus onIBNR models for individual claimsRBNS models for individual claims.These contributions are refined versions of a stream of older papers in which I first explored the use of granular data in claims reserving. See my SSRN page for the references to these contributions.</description>
-    </item>
-    
-    <item>
-      <title>MSc of Actuarial and Financial Engineering</title>
-      <link>/portfolio/mafe/</link>
-      <pubDate>Wed, 06 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/mafe/</guid>
-      <description>The MSc of Actuarial and Financial Engineering is an English taught MSc program of 120 ects, offered jointly by the Faculty of Economics and Business and the Faculty of Science at KU Leuven. The program prepares students for careers in actuarial science, financial engineering or quantitative risk management within financial institutions. I serve as the program director of this MSc program, since academic year 2018-2019.Find out more on the program website, the official KU Leuven page or in the brochure!</description>
-    </item>
-    
-    <item>
-      <title>Loss modelling analytics</title>
-      <link>/portfolio/loss-models/</link>
-      <pubDate>Sat, 28 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/loss-models/</guid>
-      <description>An overview of published research papers within the loss modelling analytics research line developed in my lab. This research line puts focus onmixture models for a global fit of attritional lossesspliced models for a global fit of both attritional and large losses.Modelling censored losses using splicing: a global fit strategy with mixed Erlang and extreme value distributions Collaborators: Tom Reynkens, Roel Verbelen, Jan Beirlant and Katrien Antonio.</description>
-    </item>
-    
-    <item>
-      <title>Telematics insurance</title>
-      <link>/portfolio/telematics/</link>
-      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/telematics/</guid>
-      <description>An overview of published and ongoing research papers within the telematics insurance research line developed in my lab.Unravelling the predictive power of telematics data in car insurance pricing Collaborators: Roel Verbelen, Katrien Antonio and Gerda Claeskens, research in the framework of the Ageas CE Research Chair. Journal paper: JRSS C, 67(5), 1275-1304 Working paper: Working paper on SSRN Abstract. A data set from a Belgian telematics product aimed at young drivers is used to identify how car insurance premiums can be designed based on the telematics data collected by a black box installed in the vehicle.</description>
-    </item>
-    
-    <item>
-      <title>LRisk</title>
-      <link>/portfolio/lrisk/</link>
-      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/lrisk/</guid>
-      <description>I am co-director and co-founder of LRisk, the KU Leuven research center for risk analysis in insurance and finance. Founded in 2015 as one of the Faculty Research Centers within the Faculty of Economics and Business at KU Leuven.The center offers a multidisciplinary view with its staff from different schools and research areas at KU Leuven. The center connects its research with a vibrant community of alumni.</description>
-    </item>
-    
-    <item>
-      <title> </title>
-      <link>/portfolio/abs/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/abs/</guid>
-      <description>This page gives an overview of my current and former affiliations, my visiting positions, and the courses in my teaching portfolio.KU Leuven, BelgiumFaculty of Economics and BusinessI am professor in actuarial science and insurance analytics at KU Leuven, Faculty of Economics and Business, Research Group Accounting, Finance and Insurance.At KU Leuven I coordinate and teach the courses:
-Loss Models. This is a 6 ects course that equips students with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency - severity approach typical for general insurance loss models.</description>
-    </item>
-    
-    <item>
-      <title> </title>
-      <link>/portfolio/ku-leuven/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/ku-leuven/</guid>
-      <description>This page gives an overview of my current and former affiliations, my visiting positions, and the courses in my teaching portfolio.KU Leuven, BelgiumFaculty of Economics and BusinessI am professor in actuarial science and insurance analytics at KU Leuven, Faculty of Economics and Business, Research Group Accounting, Finance and Insurance.At KU Leuven I coordinate and teach the courses:
-Loss Models. This is a 6 ects course that equips students with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency - severity approach typical for general insurance loss models.</description>
-    </item>
-    
-    <item>
-      <title> </title>
-      <link>/portfolio/uva/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/uva/</guid>
-      <description>This page gives an overview of my current and former affiliations, my visiting positions, and the courses in my teaching portfolio.KU Leuven, BelgiumFaculty of Economics and BusinessI am professor in actuarial science and insurance analytics at KU Leuven, Faculty of Economics and Business, Research Group Accounting, Finance and Insurance.At KU Leuven I coordinate and teach the courses:
-Loss Models. This is a 6 ects course that equips students with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency - severity approach typical for general insurance loss models.</description>
-    </item>
-    
-    <item>
-      <title>Teaching portfolio</title>
-      <link>/portfolio/portfolio/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/portfolio/</guid>
-      <description>This page gives an overview of my current and former affiliations, my visiting positions, and the courses in my teaching portfolio.KU Leuven, BelgiumFaculty of Economics and BusinessI am professor in actuarial science and insurance analytics at KU Leuven, Faculty of Economics and Business, Research Group Accounting, Finance and Insurance.At KU Leuven I coordinate and teach the courses:
-Loss Models. This is a 6 ects course that equips students with the basic tools necessary for the construction, estimation and interpretation of quantitative risk models, with a particular focus on the frequency - severity approach typical for general insurance loss models.</description>
-    </item>
-    
-    <item>
-      <title>DataCamp course</title>
-      <link>/portfolio/datacamp/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/datacamp/</guid>
-      <description>Together with dr. Roel Verbelen I developed the DataCamp online course on Valuation of Life Insurance Products in R. The course covers 17 videos and 55 exercises organized in 4 chapters: valuation of cash flows, life tables, life annuities and life insurances.Free registration of your classroom by completing this form. DataCamp is 100% free when you need it for your classroom. Even the premium content! Sign up your classroom and use our course on life insurance as computer tutorials.</description>
-    </item>
-    
-    <item>
-      <title>In company courses</title>
-      <link>/portfolio/in-company/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/portfolio/in-company/</guid>
-      <description>Happy learning!</description>
-    </item>
-    
-  </channel>
-</rss>

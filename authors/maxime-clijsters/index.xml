@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maxime Clijsters | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/authors/maxime-clijsters/</link>
+      <atom:link href="https://katrienantonio.github.io/authors/maxime-clijsters/index.xml" rel="self" type="application/rss+xml" />
+    <description>Maxime Clijsters</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sun, 18 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <title>Maxime Clijsters</title>
+      <link>https://katrienantonio.github.io/authors/maxime-clijsters/</link>
+    </image>
+    
+    <item>
+      <title>A data driven binning strategy for the construction of insurance tariff classes</title>
+      <link>https://katrienantonio.github.io/publication/2018-data-driven/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2018-data-driven/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
