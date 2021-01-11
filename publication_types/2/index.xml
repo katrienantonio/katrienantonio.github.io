@@ -13,6 +13,14 @@
     </image>
     
     <item>
+      <title>Social network analytics for supervised fraud detection in insurance</title>
+      <link>https://katrienantonio.github.io/publication/2020-fraud/</link>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2020-fraud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Sparse regression with Multi-type Regularized Feature modeling</title>
       <link>https://katrienantonio.github.io/publication/2020-smurf/</link>
       <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
@@ -25,6 +33,14 @@
       <link>https://katrienantonio.github.io/publication/2020-jrssa-pension-fund-mortality/</link>
       <pubDate>Tue, 03 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/publication/2020-jrssa-pension-fund-mortality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pricing service maintenance contracts using predictive analytics</title>
+      <link>https://katrienantonio.github.io/publication/2020-pricing-oem/</link>
+      <pubDate>Fri, 21 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2020-pricing-oem/</guid>
       <description></description>
     </item>
     
@@ -53,6 +69,22 @@
     </item>
     
     <item>
+      <title>Profit maximizing logistic model for customer churn prediction using genetic algorithms</title>
+      <link>https://katrienantonio.github.io/publication/2018-proflogit/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2018-proflogit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unravelling the predictive power of telematics data in car insurance pricing</title>
+      <link>https://katrienantonio.github.io/publication/2018-telematics/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2018-telematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Modelling Censored Losses Using Splicing: a Global Fit Strategy With Mixed Erlang and Extreme Value Distributions</title>
       <link>https://katrienantonio.github.io/publication/2017-splicing-ime/</link>
       <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
@@ -77,6 +109,22 @@
     </item>
     
     <item>
+      <title>Lifelong health insurance covers with surrender values: updating mechanisms in the presence of medical inflation</title>
+      <link>https://katrienantonio.github.io/publication/2017-lifelong-health/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-lifelong-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reserving by conditioning on markers of individual claims: a case-study using historical information</title>
+      <link>https://katrienantonio.github.io/publication/2015-reserving-markers/</link>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2015-reserving-markers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Bayesian Poisson log-bilinear models for mortality projections with multiple populations</title>
       <link>https://katrienantonio.github.io/publication/2015-poisson-bilinear/</link>
       <pubDate>Sat, 19 Sep 2015 00:00:00 +0000</pubDate>
@@ -93,10 +141,98 @@
     </item>
     
     <item>
+      <title>Fitting mixtures of Erlangs to censored and truncated data using the EM algorithm</title>
+      <link>https://katrienantonio.github.io/publication/2015-mixtures-erlangs/</link>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2015-mixtures-erlangs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The impact of multiple structural changes on mortality predictions</title>
       <link>https://katrienantonio.github.io/publication/2016-structural-changes/</link>
       <pubDate>Tue, 16 Dec 2014 00:00:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/publication/2016-structural-changes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Individual loss reserving using paid-incurred data</title>
+      <link>https://katrienantonio.github.io/publication/2014-ipic/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2014-ipic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Premium indexing in lifelong health insurance</title>
+      <link>https://katrienantonio.github.io/publication/2013-far-east/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2013-far-east/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Individual loss reserving with the multivariate skew normal framework</title>
+      <link>https://katrienantonio.github.io/publication/2013-astin/</link>
+      <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2013-astin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Micro-level stochastic loss reserving in general insurance</title>
+      <link>https://katrienantonio.github.io/publication/2014-micro/</link>
+      <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2014-micro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A multilevel analysis of intercompany claim counts</title>
+      <link>https://katrienantonio.github.io/publication/2010-multilevel/</link>
+      <pubDate>Wed, 02 Feb 2011 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2010-multilevel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical concepts of a priori and a posteriori risk classification</title>
+      <link>https://katrienantonio.github.io/publication/2012-valdez/</link>
+      <pubDate>Wed, 02 Feb 2011 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2012-valdez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coppice management effects on experimentally established populations of three herbaceous layer woodland species</title>
+      <link>https://katrienantonio.github.io/publication/2008-coppice/</link>
+      <pubDate>Tue, 16 Sep 2008 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2008-coppice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Issues in claims reserving and credibility: a semiparametric approach with mixed models</title>
+      <link>https://katrienantonio.github.io/publication/2008-jri/</link>
+      <pubDate>Mon, 04 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2008-jri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lognormal mixed models for reported claims reserves</title>
+      <link>https://katrienantonio.github.io/publication/2006-naaj/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2006-naaj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discussion on &#39;A Bayesian generalized linear model for the Bornhuetter-Ferguson method of claims reserving&#39;</title>
+      <link>https://katrienantonio.github.io/publication/2005-naaj/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2005-naaj/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Richard Plat | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/authors/richard-plat/</link>
+      <atom:link href="https://katrienantonio.github.io/authors/richard-plat/index.xml" rel="self" type="application/rss+xml" />
+    <description>Richard Plat</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Fri, 17 May 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <title>Richard Plat</title>
+      <link>https://katrienantonio.github.io/authors/richard-plat/</link>
+    </image>
+    
+    <item>
+      <title>Micro-level stochastic loss reserving in general insurance</title>
+      <link>https://katrienantonio.github.io/publication/2014-micro/</link>
+      <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2014-micro/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

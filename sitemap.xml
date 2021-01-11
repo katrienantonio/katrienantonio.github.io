@@ -148,7 +148,22 @@
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/authors/bart-baesens/</loc>
+    <lastmod>2020-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/maria-oskarsdottir/</loc>
+    <lastmod>2020-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/authors/roel-verbelen/</loc>
+    <lastmod>2020-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/remi-dendievel/</loc>
     <lastmod>2020-12-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -158,12 +173,27 @@
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/publication/2020-fraud/</loc>
+    <lastmod>2020-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/publication/2020-smurf/</loc>
     <lastmod>2020-12-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/authors/tom-donas/</loc>
+    <lastmod>2020-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/authors/tom-reynkens/</loc>
+    <lastmod>2020-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/waqas-ahmed/</loc>
     <lastmod>2020-12-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -183,12 +213,82 @@
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/tags/actuarial-science/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/teaching/2020-12-27-advanced-life/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/analytics/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/cash-flow-valuation/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/categories/course/</loc>
     <lastmod>2020-09-01T09:45:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/tags/data-science/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/frequency/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/insurance/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/teaching/2020-12-27-insurance-analytics/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/life-and-disability-insurance/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/teaching/2020-12-27-life-insurance/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/life-insurance-mathematics/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/lifetime-data/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/teaching/2020-12-27-loss-models/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/mortality-projection-models/</loc>
     <lastmod>2020-09-01T09:45:00+00:00</lastmod>
   </url>
   
@@ -200,6 +300,31 @@
   <url>
     <loc>https://katrienantonio.github.io/tags/reserving/</loc>
     <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/risk-models/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/severity/</loc>
+    <lastmod>2020-09-01T09:45:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/laurens-deprez/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2020-pricing-oem/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/robert-boute/</loc>
+    <lastmod>2020-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -293,6 +418,21 @@
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/categories/consulting/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/driving/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/gbms/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/project/hands-on-ml/</loc>
     <lastmod>2020-02-11T00:00:00+00:00</lastmod>
   </url>
@@ -303,7 +443,47 @@
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/tags/insurance-pricing/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/lasso/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/li-lee/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/tags/machine-learning/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/project/tree-based-insurance-pricing/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/mortality/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/project/mortality-modelling/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/multi-type-features/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/multiple-populations/</loc>
     <lastmod>2020-02-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -313,7 +493,42 @@
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/tags/regularization/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/categories/research/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/rfs/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/project/sparsity/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/tags/statistical-learning/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/stochastic-modelling/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/tags/telematics/</loc>
+    <lastmod>2020-02-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/project/telematics/</loc>
     <lastmod>2020-02-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -363,6 +578,11 @@
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/teachings/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/projects/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -378,17 +598,37 @@
   </url>
   
   <url>
-    <loc>https://katrienantonio.github.io/teachings/</loc>
-    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://katrienantonio.github.io/publication/2018-data-driven/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/authors/eugen-stripling/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/authors/maxime-clijsters/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/monique-snoeck/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2018-proflogit/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/seppe-vanden-broucke/</loc>
+    <lastmod>2018-02-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2018-telematics/</loc>
     <lastmod>2018-02-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -463,6 +703,36 @@
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/authors/els-godecharle/</loc>
+    <lastmod>2017-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/hamza-hanbali/</loc>
+    <lastmod>2017-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/jan-dhaene/</loc>
+    <lastmod>2017-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2017-lifelong-health/</loc>
+    <lastmod>2017-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/michel-denuit/</loc>
+    <lastmod>2017-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2015-reserving-markers/</loc>
+    <lastmod>2015-09-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/authors/anastasios-bardoutsos/</loc>
     <lastmod>2015-09-19T00:00:00+00:00</lastmod>
   </url>
@@ -478,8 +748,138 @@
   </url>
   
   <url>
+    <loc>https://katrienantonio.github.io/authors/andrei-badescu/</loc>
+    <lastmod>2015-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2015-mixtures-erlangs/</loc>
+    <lastmod>2015-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/lan-gong/</loc>
+    <lastmod>2015-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/sheldon-lin/</loc>
+    <lastmod>2015-07-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://katrienantonio.github.io/publication/2016-structural-changes/</loc>
     <lastmod>2014-12-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/ermanno-pitacco/</loc>
+    <lastmod>2014-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2014-ipic/</loc>
+    <lastmod>2014-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/mathieu-pigeon/</loc>
+    <lastmod>2014-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2013-far-east/</loc>
+    <lastmod>2014-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/ward-vercurysse/</loc>
+    <lastmod>2014-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2013-astin/</loc>
+    <lastmod>2013-08-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2014-micro/</loc>
+    <lastmod>2013-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/richard-plat/</loc>
+    <lastmod>2013-05-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2010-multilevel/</loc>
+    <lastmod>2011-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/edward-jed-frees/</loc>
+    <lastmod>2011-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/emiliano-valdez/</loc>
+    <lastmod>2011-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2012-valdez/</loc>
+    <lastmod>2011-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2008-coppice/</loc>
+    <lastmod>2008-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/hans-van-calster/</loc>
+    <lastmod>2008-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/kris-verheyen/</loc>
+    <lastmod>2008-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/martin-hermy/</loc>
+    <lastmod>2008-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/patrick-endels/</loc>
+    <lastmod>2008-09-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2008-jri/</loc>
+    <lastmod>2008-08-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2006-naaj/</loc>
+    <lastmod>2006-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/robert-verlaak/</loc>
+    <lastmod>2006-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/authors/tom-hoedemakers/</loc>
+    <lastmod>2006-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://katrienantonio.github.io/publication/2005-naaj/</loc>
+    <lastmod>2005-01-01T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

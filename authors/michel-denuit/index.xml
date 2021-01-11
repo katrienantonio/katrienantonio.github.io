@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michel Denuit | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/authors/michel-denuit/</link>
+      <atom:link href="https://katrienantonio.github.io/authors/michel-denuit/index.xml" rel="self" type="application/rss+xml" />
+    <description>Michel Denuit</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 15 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <title>Michel Denuit</title>
+      <link>https://katrienantonio.github.io/authors/michel-denuit/</link>
+    </image>
+    
+    <item>
+      <title>Lifelong health insurance covers with surrender values: updating mechanisms in the presence of medical inflation</title>
+      <link>https://katrienantonio.github.io/publication/2017-lifelong-health/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-lifelong-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Individual loss reserving using paid-incurred data</title>
+      <link>https://katrienantonio.github.io/publication/2014-ipic/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2014-ipic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Premium indexing in lifelong health insurance</title>
+      <link>https://katrienantonio.github.io/publication/2013-far-east/</link>
+      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2013-far-east/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Individual loss reserving with the multivariate skew normal framework</title>
+      <link>https://katrienantonio.github.io/publication/2013-astin/</link>
+      <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2013-astin/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
