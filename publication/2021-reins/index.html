@@ -27,10 +27,10 @@
   
     
   
-  <meta name="description" content="Insurance companies and pension funds must value liabilities using mortality rates that are appropriate for their portfolio. These can only be estimated in a reliable way from a sufficiently large historical dataset for such portfolios, which is often not available. We overcome this problem by introducing a model to estimate portfolio-specific mortality simultaneously with population mortality. By using a Bayesian framework, we automatically generate the appropriate weighting for the limited statistical information in a given portfolio and the more extensive information that is available for the whole population. This allows us to separate parameter uncertainty from uncertainty due to the randomness in individual deaths for a given realization of mortality rates. When we apply our method to a dataset of assured lives in England and Wales, we find that different prior specifications for the portfolio-specific factors lead to significantly different posterior distributions for hazard rates. However, in short-term predictive distributions for future numbers of deaths, individual mortality risk turns out to be more important than parameter uncertainty in the portfolio-specific factors, both for large and for small portfolios.">
+  <meta name="description" content="Due to the presence of reporting and settlement delay, historical claim data sets in non-life insurance are typically incomplete. As a result observed claim counts and claim severities are right censored. Therefore, non-life insurance pricing is currently approached via a two-step procedure. First, insurers compute best estimates for claim frequency and severity at the level of individual policies based on the incomplete, historical claim data. Second, pricing actuaries build predictive models to estimate technical, pure premiums for new policies by treating these best estimates as actual observed outcomes, hereby neglecting the uncertainty present in them. We propose an alternative one-step approach for non-life pricing by analysing the incomplete information registered during the development of claims. The granularity of our model allows it to be applied to both pricing and reserving, hence bridging two key actuarial tasks that have traditionally been discussed in silos. We illustrate our proposed model on a reinsurance portfolio, where large uncertainties in the best estimates result from long reporting and settlement delays, low claim frequencies and extreme claim sizes.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://katrienantonio.github.io/publication/2017-bayesian-joint/">
+  <link rel="alternate" hreflang="en-us" href="https://katrienantonio.github.io/publication/2021-reins/">
 
   
 
@@ -254,7 +254,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://katrienantonio.github.io/publication/2017-bayesian-joint/">
+  <link rel="canonical" href="https://katrienantonio.github.io/publication/2021-reins/">
 
   
   
@@ -273,15 +273,15 @@
   <meta property="twitter:creator" content="@katrienantonio">
   
   <meta property="og:site_name" content="Katrien Antonio">
-  <meta property="og:url" content="https://katrienantonio.github.io/publication/2017-bayesian-joint/">
-  <meta property="og:title" content="A Bayesian joint model for population and portfolio-specific mortality | Katrien Antonio">
-  <meta property="og:description" content="Insurance companies and pension funds must value liabilities using mortality rates that are appropriate for their portfolio. These can only be estimated in a reliable way from a sufficiently large historical dataset for such portfolios, which is often not available. We overcome this problem by introducing a model to estimate portfolio-specific mortality simultaneously with population mortality. By using a Bayesian framework, we automatically generate the appropriate weighting for the limited statistical information in a given portfolio and the more extensive information that is available for the whole population. This allows us to separate parameter uncertainty from uncertainty due to the randomness in individual deaths for a given realization of mortality rates. When we apply our method to a dataset of assured lives in England and Wales, we find that different prior specifications for the portfolio-specific factors lead to significantly different posterior distributions for hazard rates. However, in short-term predictive distributions for future numbers of deaths, individual mortality risk turns out to be more important than parameter uncertainty in the portfolio-specific factors, both for large and for small portfolios."><meta property="og:image" content="https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="https://katrienantonio.github.io/publication/2021-reins/">
+  <meta property="og:title" content="Bridging the gap between pricing and reserving with an occurrence and development model for non-life insurance claims | Katrien Antonio">
+  <meta property="og:description" content="Due to the presence of reporting and settlement delay, historical claim data sets in non-life insurance are typically incomplete. As a result observed claim counts and claim severities are right censored. Therefore, non-life insurance pricing is currently approached via a two-step procedure. First, insurers compute best estimates for claim frequency and severity at the level of individual policies based on the incomplete, historical claim data. Second, pricing actuaries build predictive models to estimate technical, pure premiums for new policies by treating these best estimates as actual observed outcomes, hereby neglecting the uncertainty present in them. We propose an alternative one-step approach for non-life pricing by analysing the incomplete information registered during the development of claims. The granularity of our model allows it to be applied to both pricing and reserving, hence bridging two key actuarial tasks that have traditionally been discussed in silos. We illustrate our proposed model on a reinsurance portfolio, where large uncertainties in the best estimates result from long reporting and settlement delays, low claim frequencies and extreme claim sizes."><meta property="og:image" content="https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2017-07-18T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2021-01-01T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2017-07-18T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-01-01T00:00:00&#43;00:00">
   
 
   
@@ -303,16 +303,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://katrienantonio.github.io/publication/2017-bayesian-joint/"
+    "@id": "https://katrienantonio.github.io/publication/2021-reins/"
   },
-  "headline": "A Bayesian joint model for population and portfolio-specific mortality",
+  "headline": "Bridging the gap between pricing and reserving with an occurrence and development model for non-life insurance claims",
   
-  "datePublished": "2017-07-18T00:00:00Z",
-  "dateModified": "2017-07-18T00:00:00Z",
+  "datePublished": "2021-01-01T00:00:00Z",
+  "dateModified": "2021-01-01T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Frank van Berkum"
+    "name": "Jonas Crevecoeur"
   },
   
   "publisher": {
@@ -323,7 +323,7 @@
       "url": "https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "Insurance companies and pension funds must value liabilities using mortality rates that are appropriate for their portfolio. These can only be estimated in a reliable way from a sufficiently large historical dataset for such portfolios, which is often not available. We overcome this problem by introducing a model to estimate portfolio-specific mortality simultaneously with population mortality. By using a Bayesian framework, we automatically generate the appropriate weighting for the limited statistical information in a given portfolio and the more extensive information that is available for the whole population. This allows us to separate parameter uncertainty from uncertainty due to the randomness in individual deaths for a given realization of mortality rates. When we apply our method to a dataset of assured lives in England and Wales, we find that different prior specifications for the portfolio-specific factors lead to significantly different posterior distributions for hazard rates. However, in short-term predictive distributions for future numbers of deaths, individual mortality risk turns out to be more important than parameter uncertainty in the portfolio-specific factors, both for large and for small portfolios."
+  "description": "Due to the presence of reporting and settlement delay, historical claim data sets in non-life insurance are typically incomplete. As a result observed claim counts and claim severities are right censored. Therefore, non-life insurance pricing is currently approached via a two-step procedure. First, insurers compute best estimates for claim frequency and severity at the level of individual policies based on the incomplete, historical claim data. Second, pricing actuaries build predictive models to estimate technical, pure premiums for new policies by treating these best estimates as actual observed outcomes, hereby neglecting the uncertainty present in them. We propose an alternative one-step approach for non-life pricing by analysing the incomplete information registered during the development of claims. The granularity of our model allows it to be applied to both pricing and reserving, hence bridging two key actuarial tasks that have traditionally been discussed in silos. We illustrate our proposed model on a reinsurance portfolio, where large uncertainties in the best estimates result from long reporting and settlement delays, low claim frequencies and extreme claim sizes."
 }
 </script>
 
@@ -341,7 +341,7 @@
 
 
 
-  <title>A Bayesian joint model for population and portfolio-specific mortality | Katrien Antonio</title>
+  <title>Bridging the gap between pricing and reserving with an occurrence and development model for non-life insurance claims | Katrien Antonio</title>
 
 </head>
 
@@ -569,7 +569,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>A Bayesian joint model for population and portfolio-specific mortality</h1>
+  <h1>Bridging the gap between pricing and reserving with an occurrence and development model for non-life insurance claims</h1>
 
   
 
@@ -587,7 +587,7 @@
     
 
   
-  <span>Frank Van Berkum</span>, <span>Katrien Antonio</span>, <span>Michel Vellekoop</span>
+  <span>Jonas Crevecoeur</span>, <span>Katrien Antonio</span>
   </div>
   
   
@@ -598,7 +598,7 @@
     
       
     
-    July 2017
+    January 2021
   </span>
   
 
@@ -629,53 +629,6 @@
 
 
 
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://www.cambridge.org/core/journals/astin-bulletin-journal-of-the-iaa/article/bayesian-joint-model-for-population-and-portfoliospecific-mortality/46B8F06571A0087397828055636C7466" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary my-1 mr-1" href="https://www.cambridge.org/core/journals/astin-bulletin-journal-of-the-iaa/article/bayesian-joint-model-for-population-and-portfoliospecific-mortality/46B8F06571A0087397828055636C7466" target="_blank" rel="noopener">
-  Source Document
-</a>
-
-
-
-
-</div>
-
 
   
 </div>
@@ -686,7 +639,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Insurance companies and pension funds must value liabilities using mortality rates that are appropriate for their portfolio. These can only be estimated in a reliable way from a sufficiently large historical dataset for such portfolios, which is often not available. We overcome this problem by introducing a model to estimate portfolio-specific mortality simultaneously with population mortality. By using a Bayesian framework, we automatically generate the appropriate weighting for the limited statistical information in a given portfolio and the more extensive information that is available for the whole population. This allows us to separate parameter uncertainty from uncertainty due to the randomness in individual deaths for a given realization of mortality rates. When we apply our method to a dataset of assured lives in England and Wales, we find that different prior specifications for the portfolio-specific factors lead to significantly different posterior distributions for hazard rates. However, in short-term predictive distributions for future numbers of deaths, individual mortality risk turns out to be more important than parameter uncertainty in the portfolio-specific factors, both for large and for small portfolios.</p>
+    <p class="pub-abstract">Due to the presence of reporting and settlement delay, historical claim data sets in non-life insurance are typically incomplete. As a result observed claim counts and claim severities are right censored. Therefore, non-life insurance pricing is currently approached via a two-step procedure. First, insurers compute best estimates for claim frequency and severity at the level of individual policies based on the incomplete, historical claim data. Second, pricing actuaries build predictive models to estimate technical, pure premiums for new policies by treating these best estimates as actual observed outcomes, hereby neglecting the uncertainty present in them. We propose an alternative one-step approach for non-life pricing by analysing the incomplete information registered during the development of claims. The granularity of our model allows it to be applied to both pricing and reserving, hence bridging two key actuarial tasks that have traditionally been discussed in silos. We illustrate our proposed model on a reinsurance portfolio, where large uncertainties in the best estimates result from long reporting and settlement delays, low claim frequencies and extreme claim sizes.</p>
     
 
     
@@ -698,8 +651,8 @@
           <div class="col-12 col-md-9">
             
             
-            <a href="/publication/#2">
-              Journal article
+            <a href="/publication/#4">
+              Report
             </a>
             
           </div>
@@ -710,18 +663,6 @@
     <div class="d-md-none space-below"></div>
     
 
-    
-    <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <div class="row">
-          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In <em>ASTIN Bulletin: The Journal of the IAA</em></div>
-        </div>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-    <div class="d-md-none space-below"></div>
     
 
     <div class="space-below"></div>
@@ -748,7 +689,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://katrienantonio.github.io/publication/2017-bayesian-joint/&amp;text=A%20Bayesian%20joint%20model%20for%20population%20and%20portfolio-specific%20mortality" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://katrienantonio.github.io/publication/2021-reins/&amp;text=Bridging%20the%20gap%20between%20pricing%20and%20reserving%20with%20an%20occurrence%20and%20development%20model%20for%20non-life%20insurance%20claims" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -761,7 +702,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://katrienantonio.github.io/publication/2017-bayesian-joint/&amp;t=A%20Bayesian%20joint%20model%20for%20population%20and%20portfolio-specific%20mortality" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://katrienantonio.github.io/publication/2021-reins/&amp;t=Bridging%20the%20gap%20between%20pricing%20and%20reserving%20with%20an%20occurrence%20and%20development%20model%20for%20non-life%20insurance%20claims" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -774,7 +715,7 @@
       
       
       <li>
-        <a href="mailto:?subject=A%20Bayesian%20joint%20model%20for%20population%20and%20portfolio-specific%20mortality&amp;body=https://katrienantonio.github.io/publication/2017-bayesian-joint/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=Bridging%20the%20gap%20between%20pricing%20and%20reserving%20with%20an%20occurrence%20and%20development%20model%20for%20non-life%20insurance%20claims&amp;body=https://katrienantonio.github.io/publication/2021-reins/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -787,7 +728,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://katrienantonio.github.io/publication/2017-bayesian-joint/&amp;title=A%20Bayesian%20joint%20model%20for%20population%20and%20portfolio-specific%20mortality" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://katrienantonio.github.io/publication/2021-reins/&amp;title=Bridging%20the%20gap%20between%20pricing%20and%20reserving%20with%20an%20occurrence%20and%20development%20model%20for%20non-life%20insurance%20claims" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -804,17 +745,6 @@
 
 
 
-
-
-  
-    
-    
-
-
-
-
-
-  
 
 
   
