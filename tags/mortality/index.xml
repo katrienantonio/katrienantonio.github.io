@@ -5,7 +5,7 @@
     <link>https://katrienantonio.github.io/tags/mortality/</link>
       <atom:link href="https://katrienantonio.github.io/tags/mortality/index.xml" rel="self" type="application/rss+xml" />
     <description>mortality</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Tue, 11 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
       <title>mortality</title>
@@ -15,9 +15,17 @@
     <item>
       <title>Mortality modelling</title>
       <link>https://katrienantonio.github.io/project/mortality-modelling/</link>
-      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/project/mortality-modelling/</guid>
-      <description>&lt;p&gt;Here komt &amp;hellip;&lt;/p&gt;
+      <description>&lt;p&gt;Back in 2014 I served as a member of the Projection Tables Working Group of the Royal Dutch Actuarial Association. The 
+&lt;a href=&#34;https://www.ag-ai.nl/view.php?action=view&amp;amp;Pagina_Id=625&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AG 2014&lt;/a&gt; mortality projection model for the Dutch population is a stochastic mortality forecasting model of type Li-Lee. Using maximum likelihood estimation with Poisson assumption for the number of deaths, this multi-population model is calibrated on a set of European countries with similar socio-economic status. Since the publication in 2014, the Royal Dutch Actuarial Association biyearly publishes an update of the projection model, subject to methodological changes (if deemed necessary).&lt;/p&gt;
+&lt;p&gt;As principal investigator, I lead a similar project for the Institute of Actuaries in Belgium (IA|BE) with projection models published in 2015 (see 
+&lt;a href=&#34;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2576167&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IABE 2015&lt;/a&gt;) and 2020 (see 
+&lt;a href=&#34;https://katrienantonio.github.io/papers/report_iabe_2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IABE 2020&lt;/a&gt;). This IA|BE mortality projection model delivers a best estimate for future mortality at the level of the Belgian population, but can also be used as a scenario generator for future mortality. The IA|BE 2020 was presented in November 2020, including a first attempt to assess the (possible) impact of COVID-19 on the mortality forecasts, see 
+&lt;a href=&#34;https://katrienantonio.github.io/papers/report_covid_iabe_2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IABE 2020 Covid impact analysis&lt;/a&gt;. Presentation slides are available 
+&lt;a href=&#34;https://katrienantonio.github.io/slides/IABE2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and 
+&lt;a href=&#34;https://katrienantonio.github.io/slides/IABE2020Covid.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is joint work with Sander Devriendt and Jens Robben.&lt;/p&gt;
 </description>
     </item>
     
