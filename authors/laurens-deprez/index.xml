@@ -5,12 +5,20 @@
     <link>https://katrienantonio.github.io/authors/laurens-deprez/</link>
       <atom:link href="https://katrienantonio.github.io/authors/laurens-deprez/index.xml" rel="self" type="application/rss+xml" />
     <description>Laurens Deprez</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Fri, 21 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
       <title>Laurens Deprez</title>
       <link>https://katrienantonio.github.io/authors/laurens-deprez/</link>
     </image>
+    
+    <item>
+      <title>Empirical Risk Assessment of Maintenance Costs under Full-service Contracts</title>
+      <link>https://katrienantonio.github.io/publication/2021-emprisk/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-emprisk/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Pricing service maintenance contracts using predictive analytics</title>

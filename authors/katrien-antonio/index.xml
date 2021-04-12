@@ -5,7 +5,7 @@
     <link>https://katrienantonio.github.io/authors/katrien-antonio/</link>
       <atom:link href="https://katrienantonio.github.io/authors/katrien-antonio/index.xml" rel="self" type="application/rss+xml" />
     <description>Katrien Antonio</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Mon, 01 Feb 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
       <title>Katrien Antonio</title>
@@ -13,18 +13,50 @@
     </image>
     
     <item>
-      <title>When stakes are high: balancing accuracy and transparency with Model-Agnostic Interpretable Data-driven suRRogates</title>
-      <link>https://katrienantonio.github.io/publication/2020-maidrr/</link>
-      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2020-maidrr/</guid>
+      <title>Social network analytics for supervised fraud detection in insurance</title>
+      <link>https://katrienantonio.github.io/publication/2020-fraud/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2020-fraud/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Social network analytics for supervised fraud detection in insurance</title>
-      <link>https://katrienantonio.github.io/publication/2020-fraud/</link>
-      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2020-fraud/</guid>
+      <title>Bridging the gap between pricing and reserving with an occurrence and development model for non-life insurance claims</title>
+      <link>https://katrienantonio.github.io/publication/2021-reins/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-reins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Copula-based inference for bivariate survival data with left truncation and dependent censoring</title>
+      <link>https://katrienantonio.github.io/publication/2021-depcens/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-depcens/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Empirical Risk Assessment of Maintenance Costs under Full-service Contracts</title>
+      <link>https://katrienantonio.github.io/publication/2021-emprisk/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-emprisk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The skin-in-the-game bond: a novel sustainable capital instrument</title>
+      <link>https://katrienantonio.github.io/publication/2021-sitgb/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-sitgb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When stakes are high: balancing accuracy and transparency with Model-Agnostic Interpretable Data-driven suRRogates</title>
+      <link>https://katrienantonio.github.io/publication/2020-maidrr/</link>
+      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2020-maidrr/</guid>
       <description></description>
     </item>
     
@@ -151,6 +183,22 @@
     </item>
     
     <item>
+      <title>Multivariate mixtures of Erlangs for density estimation under censoring</title>
+      <link>https://katrienantonio.github.io/publication/2016-mme/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2016-mme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of multiple structural changes on mortality predictions</title>
+      <link>https://katrienantonio.github.io/publication/2016-structural-changes/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2016-structural-changes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Reserving by conditioning on markers of individual claims: a case-study using historical information</title>
       <link>https://katrienantonio.github.io/publication/2015-reserving-markers/</link>
       <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
@@ -167,14 +215,6 @@
     </item>
     
     <item>
-      <title>Multivariate mixtures of Erlangs for density estimation under censoring</title>
-      <link>https://katrienantonio.github.io/publication/2016-mme/</link>
-      <pubDate>Fri, 04 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2016-mme/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Fitting mixtures of Erlangs to censored and truncated data using the EM algorithm</title>
       <link>https://katrienantonio.github.io/publication/2015-mixtures-erlangs/</link>
       <pubDate>Mon, 20 Jul 2015 00:00:00 +0000</pubDate>
@@ -183,26 +223,18 @@
     </item>
     
     <item>
-      <title>The impact of multiple structural changes on mortality predictions</title>
-      <link>https://katrienantonio.github.io/publication/2016-structural-changes/</link>
-      <pubDate>Tue, 16 Dec 2014 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2016-structural-changes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Individual loss reserving using paid-incurred data</title>
       <link>https://katrienantonio.github.io/publication/2014-ipic/</link>
-      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/publication/2014-ipic/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Premium indexing in lifelong health insurance</title>
-      <link>https://katrienantonio.github.io/publication/2013-far-east/</link>
-      <pubDate>Fri, 27 Jun 2014 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2013-far-east/</guid>
+      <title>Micro-level stochastic loss reserving in general insurance</title>
+      <link>https://katrienantonio.github.io/publication/2014-micro/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2014-micro/</guid>
       <description></description>
     </item>
     
@@ -215,10 +247,10 @@
     </item>
     
     <item>
-      <title>Micro-level stochastic loss reserving in general insurance</title>
-      <link>https://katrienantonio.github.io/publication/2014-micro/</link>
-      <pubDate>Fri, 17 May 2013 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2014-micro/</guid>
+      <title>Premium indexing in lifelong health insurance</title>
+      <link>https://katrienantonio.github.io/publication/2013-far-east/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2013-far-east/</guid>
       <description></description>
     </item>
     
