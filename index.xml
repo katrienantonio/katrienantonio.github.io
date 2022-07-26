@@ -5,9 +5,9 @@
     <link>https://katrienantonio.github.io/</link>
       <atom:link href="https://katrienantonio.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Katrien Antonio</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>Katrien Antonio</title>
       <link>https://katrienantonio.github.io/</link>
     </image>
@@ -25,6 +25,10 @@
 &lt;a href=&#34;https://katrienantonio.github.io/papers/report_covid_iabe_2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IABE 2020 Covid impact analysis&lt;/a&gt;. Presentation slides are available 
 &lt;a href=&#34;https://katrienantonio.github.io/slides/IABE2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and 
 &lt;a href=&#34;https://katrienantonio.github.io/slides/IABE2020Covid.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our work on the impact of COVID-19 on a stochastic multi-population mortality model of type Li &amp;amp; Lee was published in 2022 in Risks. The paper is available in open access via 
+&lt;a href=&#34;https://www.mdpi.com/2227-9091/10/2/26&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A GitHub repo with the source code (in R) for our multipopulation mortality models is maintained by Jens Robben, see the 
+&lt;a href=&#34;https://github.com/RobbenJ/MultiMoMo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MultiMoMo package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This is joint work with Sander Devriendt and Jens Robben.&lt;/p&gt;
 </description>
     </item>
@@ -89,7 +93,8 @@
 &lt;/div&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    If you just want to skip to my actual slides, they are &lt;a href=&#34;../../talk/2019-jsm-talk-ds/&#34;&gt;here&lt;/a&gt;.
+    If you just want to skip to my actual slides, they are 
+&lt;a href=&#34;../../talk/2019-jsm-talk-ds/&#34;&gt;here&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -130,7 +135,7 @@
 &lt;/div&gt;
 &lt;p&gt;This slide was all I could find out about it, but it was enough to get my wheels turning right away. Having a Ph.D. in 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Developmental_psychology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;developmental psychology&lt;/a&gt;, I&amp;rsquo;d spent a lot of time studying the literature on the science of learning, and the idea of a self-assessment made me think:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/Ll9fCTNWC41rsbuqxk/giphy.gif&#34; alt=&#34;We&amp;rsquo;re onto something really good here&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/Ll9fCTNWC41rsbuqxk/giphy.gif&#34; alt=&#34;We&amp;amp;rsquo;re onto something really good here&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Why might this actually work? It reinforces some tried and true self-directed learning strategies that are actually evidence-based like:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;retrieval practice!&lt;/li&gt;
@@ -143,13 +148,17 @@
   &lt;div&gt;
     &lt;p&gt;I won&amp;rsquo;t bore with &lt;em&gt;all the edu literature&lt;/em&gt;, but if you want to know more you might enjoy reading:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&#34;&gt;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&#34;&gt;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.apa.org/science/about/psa/2016/06/learning-memory&#34;&gt;https://www.apa.org/science/about/psa/2016/06/learning-memory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.apa.org/science/about/psa/2016/06/learning-memory&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.apa.org/science/about/psa/2016/06/learning-memory&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;I had also had this little bee in my bonnet for awhile, and that was that I spent an inordinate amount of time crafting the most beautiful homework answer keys for my students&amp;hellip;that no one seemed to read. No one used my answer keys for learning. It bothered me because I knew there was value in reviewing these answer keys, but I hadn&amp;rsquo;t made them into an actual learning tool. When I saw Hal&amp;rsquo;s slide, it dawned on me: the solution to my problem was to give my answer keys away, and make them into a usable learning tool.^[I later found out that my palmerpenguins co-author Dr. Allison Horst does this too! &lt;a href=&#34;https://www.allisonhorst.com/post/share-keys/&#34;&gt;https://www.allisonhorst.com/post/share-keys/&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;I had also had this little bee in my bonnet for awhile, and that was that I spent an inordinate amount of time crafting the most beautiful homework answer keys for my students&amp;hellip;that no one seemed to read. No one used my answer keys for learning. It bothered me because I knew there was value in reviewing these answer keys, but I hadn&amp;rsquo;t made them into an actual learning tool. When I saw Hal&amp;rsquo;s slide, it dawned on me: the solution to my problem was to give my answer keys away, and make them into a usable learning tool.^[I later found out that my palmerpenguins co-author Dr. Allison Horst does this too! 
+&lt;a href=&#34;https://www.allisonhorst.com/post/share-keys/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.allisonhorst.com/post/share-keys/&lt;/a&gt;]&lt;/p&gt;
 &lt;p&gt;The truth is, providing the answer keys or feedback at the end is not actually
 helpful for learners. Students have high motivation and set aside time for what matters for their grade, not necessarily their learning. So it&amp;rsquo;s no surprise that motivation was low and time was limited for students
 to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
@@ -236,7 +245,8 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
 &lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
 &lt;/svg&gt;&lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;We advised students to color their text in R Markdown files knitted to HTML. The self-assessment portion always needed to be colored. You can find guidance on how to do that in the R Markdown cookbook: &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&#34;&gt;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We advised students to color their text in R Markdown files knitted to HTML. The self-assessment portion always needed to be colored. You can find guidance on how to do that in the R Markdown cookbook: 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&lt;/a&gt;&lt;/p&gt;
 
 
 
@@ -517,7 +527,8 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Many Hugo themes enable users to edit aesthetic elements like colors and fonts. So, depending on your Hugo theme, you may not need to know CSS. Other themes provide a way to “plug in” a custom CSS file to change those things and more (like spacing, font sizing, etc.). Guess where that is? Usually it is in your &lt;code&gt;config.toml&lt;/code&gt; file in the &lt;code&gt;[params]&lt;/code&gt; section (if no configuration directory) or the &lt;code&gt;params.toml&lt;/code&gt; file. The theme author should leave you a breadcrumb to figure out what you should name and where you should place your custom CSS file.&lt;/p&gt;
 &lt;p&gt;For example, the Hugo academic theme provides a few ways in. In the &lt;code&gt;params.toml&lt;/code&gt; file, you can use an included 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/b5963ac66c4c0400e88cd603a74d7734365f0885/exampleSite/config/_default/params.toml#L5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site color theme&lt;/a&gt; or make your own, and customize your fonts. You can also provide your own custom CSS file by including it here: &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&#34;&gt;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/b5963ac66c4c0400e88cd603a74d7734365f0885/exampleSite/config/_default/params.toml#L5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site color theme&lt;/a&gt; or make your own, and customize your fonts. You can also provide your own custom CSS file by including it here: 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If your theme doesn&amp;rsquo;t provide this level of support, then you may need to learn Hugo. Sometimes the options are tough to find, unfortunately, but many theme designers provide at least a plug-in option. Others may require you to dig into some of your theme&amp;rsquo;s partial layouts (i.e., &lt;code&gt;themes/theme_name/layouts/partials/&lt;/code&gt;) and learn to read them. Here are some examples:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -596,7 +607,8 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Important: I learned this the hard way, but you &lt;a href=&#34;https://gohugo.io/templates/introduction/#html-comments-containing-go-templates&#34;&gt;cannot&lt;/a&gt; wrap your Hugo code in HTML comments to deactivate it; all Hugo code even inside of HTML comments will still be evaluated when you build your site.
+    Important: I learned this the hard way, but you 
+&lt;a href=&#34;https://gohugo.io/templates/introduction/#html-comments-containing-go-templates&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cannot&lt;/a&gt; wrap your Hugo code in HTML comments to deactivate it; all Hugo code even inside of HTML comments will still be evaluated when you build your site.
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -645,19 +657,23 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://masalmon.eu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maëlle Salmon&amp;rsquo;s&lt;/a&gt; ROpenSci Hugo theme: &lt;a href=&#34;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&#34;&gt;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://masalmon.eu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maëlle Salmon&amp;rsquo;s&lt;/a&gt; ROpenSci Hugo theme: 
+&lt;a href=&#34;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://amber.rbind.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amber Thomas&amp;rsquo;s&lt;/a&gt; Data Science Hugo theme:
-&lt;a href=&#34;https://github.com/ProQuestionAsker/hugo-data-science&#34;&gt;https://github.com/ProQuestionAsker/hugo-data-science&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=&#34;https://github.com/ProQuestionAsker/hugo-data-science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/ProQuestionAsker/hugo-data-science&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://djnavarro.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&amp;rsquo;s&lt;/a&gt; slum Hugo theme: &lt;a href=&#34;https://github.com/djnavarro/hugo-slum&#34;&gt;https://github.com/djnavarro/hugo-slum&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://djnavarro.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&amp;rsquo;s&lt;/a&gt; slum Hugo theme: 
+&lt;a href=&#34;https://github.com/djnavarro/hugo-slum&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/djnavarro/hugo-slum&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;My own humble Hugo theme: &lt;a href=&#34;https://github.com/rstudio/hugo-graphite&#34;&gt;https://github.com/rstudio/hugo-graphite&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My own humble Hugo theme: 
+&lt;a href=&#34;https://github.com/rstudio/hugo-graphite&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/rstudio/hugo-graphite&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -688,6 +704,24 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
       <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/publication/2020-smurf/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Assessing the impact of COVID-19 on the IA|BE 2020 mortality projections - a scenario analysis</title>
+      <link>https://katrienantonio.github.io/talk/2020-iabe-covid/</link>
+      <pubDate>Mon, 23 Nov 2020 16:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-iabe-covid/</guid>
+      <description>&lt;p&gt;In this talk, I presented the strategy followed for a Covid-19 impact analysis on the IA|BE 2020, the mortality projection model developed for the Belgian population.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The IA|BE 2020 mortality projection for the Belgian population</title>
+      <link>https://katrienantonio.github.io/talk/2020-iabe/</link>
+      <pubDate>Mon, 23 Nov 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-iabe/</guid>
+      <description>&lt;p&gt;In this talk, I presented the methodology used in IA|BE 2020, the mortality projection model developed for the Belgian population.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -996,7 +1030,7 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
     
     
   &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.05%20PM.png&#34; &gt;
-  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.05%20PM_hu8ddd347995e1b8316aad5f226eef880e_1335197_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.05%20PM_hu8ddd347995e1b8316aad5f226eef880e_1335197_0x190_resize_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1005,7 +1039,7 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
     
     
   &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.51%20PM.png&#34; &gt;
-  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.51%20PM_hu8ddd347995e1b8316aad5f226eef880e_932227_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.51%20PM_hu8ddd347995e1b8316aad5f226eef880e_932227_0x190_resize_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1014,7 +1048,7 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
     
     
   &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.58%20PM.png&#34; &gt;
-  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.58%20PM_hu8ddd347995e1b8316aad5f226eef880e_2521546_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.53.58%20PM_hu8ddd347995e1b8316aad5f226eef880e_2521546_0x190_resize_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1023,7 +1057,7 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
     
     
   &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.06%20PM.png&#34; &gt;
-  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.06%20PM_hu8ddd347995e1b8316aad5f226eef880e_1994290_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.06%20PM_hu8ddd347995e1b8316aad5f226eef880e_1994290_0x190_resize_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
   &lt;/a&gt;
   
     
@@ -1032,7 +1066,7 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
     
     
   &lt;a data-fancybox=&#34;gallery-slides&#34; href=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.41%20PM.png&#34; &gt;
-  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.41%20PM_hu8ddd347995e1b8316aad5f226eef880e_365121_0x190_resize_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
+  &lt;img data-src=&#34;https://katrienantonio.github.io/post/2020-06-02-tidymodels-virtually/slides/Screen%20Shot%202020-06-01%20at%2011.54.41%20PM_hu8ddd347995e1b8316aad5f226eef880e_365121_0x190_resize_lanczos_3.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;338&#34; height=&#34;190&#34;&gt;
   &lt;/a&gt;
   
 
@@ -1309,7 +1343,7 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
 &lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;Rendering with &lt;code&gt;render()&lt;/code&gt;. I think knitting in the RStudio IDE can get you very far- this I consider an intermediate to advanced concept that is confusing if introduced too early. I&amp;rsquo;ve never heard someone say &lt;em&gt;&amp;ldquo;Well there is this simple button, but how can I do the same thing from the command line?&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Rendering with &lt;code&gt;render()&lt;/code&gt;. I think knitting in the RStudio IDE can get you very far- this I consider an intermediate to advanced concept that is confusing if introduced too early. I&amp;rsquo;ve never heard someone say &lt;em&gt;&amp;ldquo;Well there is this simple button, but how can I do the same thing from the command line?&amp;rdquo;&lt;/em&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;
@@ -1339,7 +1373,7 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/</guid>
       <description>&lt;p&gt;A few years ago, I did a talk called 
-&lt;a href=&#34;https://katrienantonio.github.io/talk/2018-ohsu-sad-plot-better/&#34;&gt;&amp;ldquo;Take a Sad Plot &amp;amp; Make it Better,&amp;quot;&lt;/a&gt; where I showed how I took a single sad plot and tried to make it better. The process of making that plot better taught me a lot about data visualization, and about the 
+&lt;a href=&#34;https://katrienantonio.github.io/talk/2018-ohsu-sad-plot-better/&#34;&gt;&amp;ldquo;Take a Sad Plot &amp;amp; Make it Better,&amp;rdquo;&lt;/a&gt; where I showed how I took a single sad plot and tried to make it better. The process of making that plot better taught me a lot about data visualization, and about the 
 &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ggplot2 package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Fast-forward to 2019 when I started learning 
 &lt;a href=&#34;https://github.com/tidymodels/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tidymodels&lt;/a&gt;, and I have accumulated some pretty sad predictive modeling scripts! And my sad plots are not so lonely anymore. Specifically, my old scripts for doing cross-validation with tidymodels are particularly sad. But, I&amp;rsquo;ve been able to make them better (one might even call them happy), primarily due to changes in the 
@@ -1415,7 +1449,8 @@ library(ranger) # for random forest
 &lt;/blockquote&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    &lt;strong&gt;Update!&lt;/strong&gt; We have bundled the Palmer Station penguins data into an R data package named palmerpenguins. Enjoy 🐧 Here is the package website: &lt;a href=&#34;https://allisonhorst.github.io/palmerpenguins/&#34;&gt;https://allisonhorst.github.io/palmerpenguins/&lt;/a&gt;
+    &lt;strong&gt;Update!&lt;/strong&gt; We have bundled the Palmer Station penguins data into an R data package named palmerpenguins. Enjoy 🐧 Here is the package website: 
+&lt;a href=&#34;https://allisonhorst.github.io/palmerpenguins/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://allisonhorst.github.io/palmerpenguins/&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;remotes&amp;quot;) # to install from github
@@ -1468,8 +1503,9 @@ glimpse(tidypenguins)
 #&amp;gt; 3 Gentoo      119
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here is a lineup:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bas.ac.uk/wp-content/uploads/2015/04/Penguin-heights.jpg&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;From: &lt;a href=&#34;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&#34;&gt;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.bas.ac.uk/wp-content/uploads/2015/04/Penguin-heights.jpg&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;p&gt;From: 
+&lt;a href=&#34;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Looks like we have data for 3 of the smaller penguin species (of those pictured here).&lt;/p&gt;
 &lt;p&gt;First, let&amp;rsquo;s build a simple linear regression model to predict body mass from flipper length.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(tidypenguins, aes(x = flipper_length_mm, y = body_mass_g)) +
@@ -1477,7 +1513,7 @@ glimpse(tidypenguins)
   geom_smooth(method = &amp;quot;lm&amp;quot;) +
   theme_penguin()
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;figs/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;figs/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;p&gt;Not bad! Looks promising. To actually fit a linear regression model, you might be used to something like this in R:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_mod &amp;lt;- lm(body_mass_g ~ flipper_length_mm, data = tidypenguins)
 summary(penguin_mod)
@@ -1649,7 +1685,7 @@ penguin_preds &amp;lt;- get_preds(model_spec = lm_spec, split = penguin_split)
   ggtitle(&amp;quot;Residuals vs Fitted&amp;quot;)
 #&amp;gt; `geom_smooth()` using formula &#39;y ~ x&#39;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;figs/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;figs/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
 # compare: get metrics
 penguin_preds %&amp;gt;% 
@@ -2178,7 +2214,7 @@ penguin_folds %&amp;gt;%
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;
-&lt;a href=&#34;https://vas3k.com/blog/machine_learning/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine Learning for Everyone.&lt;/a&gt; In simple words. With real-world examples. Yes, again.&lt;/strong&gt; In my experience, the biggest hurdle to getting started is sifting through both the hype and the math. This is a readable illustrated introduction to key concepts that will help you start building your own mental model of this space. For example, &lt;em&gt;&amp;ldquo;the only goal of machine learning is to predict results based on incoming data. That&amp;rsquo;s it.&amp;quot;&lt;/em&gt; There you go! Start here.&lt;/p&gt;
+&lt;a href=&#34;https://vas3k.com/blog/machine_learning/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Machine Learning for Everyone.&lt;/a&gt; In simple words. With real-world examples. Yes, again.&lt;/strong&gt; In my experience, the biggest hurdle to getting started is sifting through both the hype and the math. This is a readable illustrated introduction to key concepts that will help you start building your own mental model of this space. For example, &lt;em&gt;&amp;ldquo;the only goal of machine learning is to predict results based on incoming data. That&amp;rsquo;s it.&amp;rdquo;&lt;/em&gt; There you go! Start here.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://vas3k.com/blog/machine_learning/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://i.vas3k.ru/7w1.jpg&#34; width=&#34;80%&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -2225,7 +2261,7 @@ penguin_folds %&amp;gt;%
 &lt;li&gt;
 &lt;a href=&#34;https://sebastianraschka.com/blog/2018/model-evaluation-selection-part4.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Part IV: Comparing the performance of machine learning models and algorithms using statistical tests and nested cross-validation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;https://sebastianraschka.com/images/blog/2016/model-evaluation-selection-part1/iris-dist.png&#34; width=&#34;50%&#34; /&gt;&lt;/p&gt;
+ &lt;img src=&#34;https://sebastianraschka.com/images/blog/2016/model-evaluation-selection-part1/iris-dist.png&#34; width=&#34;50%&#34; /&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;At this point, if you can read through the above resources and you are no longer feeling awash in new terminology, I think your vocabulary and mental model are in pretty good shape! That means you are ready for the next step, which is to read Max Kuhn and Kjell Johnson&amp;rsquo;s new book 
@@ -2388,7 +2424,7 @@ penguin_folds %&amp;gt;%
 from https://example.org to your actual domain; 
 if you do not have a domain, set &amp;quot;baseurl&amp;quot; to &amp;quot;/&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;But be careful here- you shouldn&amp;rsquo;t leave it as &amp;ldquo;/&amp;quot;- once you do have your domain name you should update the baseurl as &amp;ldquo;/&amp;rdquo; is a not a valid URL.&lt;/p&gt;
+&lt;p&gt;But be careful here- you shouldn&amp;rsquo;t leave it as &amp;ldquo;/&amp;rdquo;- once you do have your domain name you should update the baseurl as &amp;ldquo;/&amp;rdquo; is a not a valid URL.&lt;/p&gt;
 
 
 
@@ -2429,7 +2465,7 @@ if you do not have a domain, set &amp;quot;baseurl&amp;quot; to &amp;quot;/&amp;
 &lt;a href=&#34;https://github.com/rstudio/blogdown/issues/114&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub issue #114&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;However, Hugo authors and theme developers have largely been moving towards using relative URLs instead of the baseurl to build paths. This was based on public advice voiced by the Hugo authors on the discourse forum. For example:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;The recommended way to reference resources is to use either relURL or absURL template funcs, which handles the slash issues.&amp;quot;- @
+&lt;p&gt;&amp;ldquo;The recommended way to reference resources is to use either relURL or absURL template funcs, which handles the slash issues.&amp;rdquo;- @
 &lt;a href=&#34;https://discourse.gohugo.io/t/0-19-to-0-30-2-baseurl-forward-slash-is-required/9206&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bep&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Following that advice, a more up-to-date theme would have code that looks like this buried in a layout file:&lt;/p&gt;
@@ -2715,7 +2751,7 @@ options(
 &lt;p&gt;The default here from Hugo was &lt;code&gt;/post/:year-:month-:day-:slug/:slug/&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;A small note: if you want to add relative links from a blog post to another post in your same blog. So &lt;code&gt;[this](/post/2019-02-19-hugo-archetypes/)&lt;/code&gt; becomes 
 &lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-archetypes/&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Now, add images and data files to your ❤️&#39;s content! But you may want to do one more thing&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Now, add images and data files to your ❤️&amp;rsquo;s content! But you may want to do one more thing&amp;hellip;&lt;/p&gt;
 
 
 
@@ -2748,7 +2784,9 @@ options(
 &lt;p&gt;This is my second post in this series, and it is a relatively quick one. Just do this. This one is a no-brainer.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Thanks to &lt;a href=&#34;https://twitter.com/dataandme&#34;&gt;Mara Averick&lt;/a&gt; for alerting me that with Hugo version 0.54.0 and onward, there is a trailing zero at the end of &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5639&#34;&gt;Hugo versions now&lt;/a&gt;. So for versions before 0.54.0, use the format: 0.53; for later versions use 0.54.0 (0.54 will not work).
+    Thanks to 
+&lt;a href=&#34;https://twitter.com/dataandme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mara Averick&lt;/a&gt; for alerting me that with Hugo version 0.54.0 and onward, there is a trailing zero at the end of 
+&lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5639&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo versions now&lt;/a&gt;. So for versions before 0.54.0, use the format: 0.53; for later versions use 0.54.0 (0.54 will not work).
   &lt;/div&gt;
 &lt;/div&gt;
 

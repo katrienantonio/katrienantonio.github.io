@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>netlify | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/categories/netlify/</link>
+      <atom:link href="https://katrienantonio.github.io/categories/netlify/index.xml" rel="self" type="application/rss+xml" />
+    <description>netlify</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 20 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>netlify</title>
+      <link>https://katrienantonio.github.io/categories/netlify/</link>
+    </image>
+    
+    <item>
+      <title>A Spoonful of Hugo: The netlify.toml File</title>
+      <link>https://katrienantonio.github.io/post/2019-02-19-hugo-netlify-toml/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/post/2019-02-19-hugo-netlify-toml/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Just a spoonful of Hugo helps the blog go down.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;me, only somewhat kidding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can read the previous post about my &amp;ldquo;Spoonful of Hugo&amp;rdquo; series 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-archetypes/&#34;&gt;here&lt;/a&gt;. In this series, I&amp;rsquo;m sharing small spoonfuls of Hugo that I have learned that hopefully can help you get your site &lt;em&gt;UP&lt;/em&gt; (and even better- more efficient, more streamlined, more automated).&lt;/p&gt;
+&lt;p&gt;This is my second post in this series, and it is a relatively quick one. Just do this. This one is a no-brainer.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Thanks to 
+&lt;a href=&#34;https://twitter.com/dataandme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mara Averick&lt;/a&gt; for alerting me that with Hugo version 0.54.0 and onward, there is a trailing zero at the end of 
+&lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5639&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo versions now&lt;/a&gt;. So for versions before 0.54.0, use the format: 0.53; for later versions use 0.54.0 (0.54 will not work).
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;h2 id=&#34;use-netlify-to-deploy&#34;&gt;Use Netlify to Deploy&lt;a href=&#34;#use-netlify-to-deploy&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;First, you&amp;rsquo;ll need to use Netlify! I am a very happy Netlify user and currently have approximately 33 sites deployed. To setup a new account, navigate to 
+&lt;a href=&#34;https://www.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netlify&lt;/a&gt; and click on the &lt;em&gt;Sign Up&lt;/em&gt; link.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://arm.rbind.io/slides/img/netlify-landing.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sign up with &lt;em&gt;GitHub&lt;/em&gt; to connect your GitHub and Netlify accounts (as shown below).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;netlify-sign-up.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you use a different version control service, select GitLab or BitBucket instead.&lt;/p&gt;
+&lt;p&gt;The last step is to use the Netlify UI in browser do &lt;em&gt;New Site from Git&lt;/em&gt; &amp;gt; pick your repo. You&amp;rsquo;ll be prompted to fill in these fields, they are probably already filled in correctly for you:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;netlify-deploy-settings.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The next part is the advanced build settings:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;netlify-adv-build.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See that &lt;strong&gt;pro tip&lt;/strong&gt; about the netlify.toml? Let&amp;rsquo;s do that! You can leave these fields as is.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;why-netlifytoml&#34;&gt;Why netlify.toml?&lt;a href=&#34;#why-netlifytoml&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In their 
+&lt;a href=&#34;https://www.netlify.com/docs/build-gotchas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Build Gotchas&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;If your build works locally, the next debugging step is to ensure the package versions we use to build match yours. You can find the settings for these in the 
+&lt;a href=&#34;https://www.netlify.com/docs/build-settings/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Build Settings&lt;/a&gt; doc. That’s the leading cause of build failure.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Yes that is right- package version mismatches are the leading cause of build failure with Netlify. What does this look like for blogdown users? This means that you are running a version of Hugo locally that doesn&amp;rsquo;t match the version that Netlify is using to build your site. Most of the time, you are using a more recent version of Hugo than the one Netlify uses. This means that the files your theme relies on may be using newer Hugo functions that were introduced in later Hugo versions- functions that Netlify won&amp;rsquo;t be able to find working from an older Hugo version. You&amp;rsquo;ll get &lt;em&gt;all the build errors&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;You can check your local Hugo version by running this code in your R console:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::hugo_version()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &#39;0.79.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, we want Netlify to use this same version of Hugo when it builds your site. You can do this two ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Do this in your browser (👎)&lt;/li&gt;
+&lt;li&gt;Do this in your project root directory in a netlify.toml file (👍)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+&lt;h2 id=&#34;add-the-netlifytoml-file&#34;&gt;Add the netlify.toml File&lt;a href=&#34;#add-the-netlifytoml-file&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Adding this file means that team members can see for themselves what version of Hugo you are running- if it is buried in the Netlify UI, you can&amp;rsquo;t see that information unless you sift through the public build logs (no thanks). Making the file as plain text in the root of your blogdown project directory means that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it is version controlled (yay!) and&lt;/li&gt;
+&lt;li&gt;other people who use/learn from/contribute to your blog can &lt;em&gt;actually&lt;/em&gt; reproduce your site with the same site configuration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bonus:&lt;/strong&gt; you can set the Hugo versions for branch deploys too.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is an example from my own 
+&lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/netlify.toml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;netlify.toml&lt;/a&gt; file^[the leading zero matters for Hugo versions, so 0.53 works but .53 will not. For versions &amp;gt;= 0.54.0, the trailing zero also matters, so 0.54.0 works but 0.54 will not.]:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[build] 
+  publish = &amp;quot;public&amp;quot;
+  command = &amp;quot;hugo&amp;quot;
+
+[context.production.environment]
+  HUGO_VERSION = &amp;quot;0.54.0&amp;quot; # if older, use format: 0.53 (no trailing zero)
+  HUGO_ENV = &amp;quot;production&amp;quot;
+  HUGO_ENABLEGITINFO = &amp;quot;true&amp;quot;
+  
+[context.branch-deploy.environment]
+  HUGO_VERSION = &amp;quot;0.54.0&amp;quot; # if older, use format: 0.53 (no trailing zero)
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = &amp;quot;0.54.0&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can leave off the last two chunk if you don&amp;rsquo;t want to use 
+&lt;a href=&#34;https://www.netlify.com/blog/2017/11/16/get-full-control-over-your-deployed-branches/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;branch deploys&lt;/a&gt; or 
+&lt;a href=&#34;https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;preview deploys&lt;/a&gt;, but I ❤️ these two Netlify features and encourage you to try them out. I&amp;rsquo;ve starting drafting individual blog posts and tutorials in branches, and then I can see them rendered and share them for feedback without asking collaborators to clone and build the repository locally. It is &lt;strong&gt;lovely&lt;/strong&gt;. Every branch and pull request gets a link 🎉.&lt;/p&gt;
+&lt;p&gt;So add this file to your blogdown site repo and push to GitHub.&lt;/p&gt;
+&lt;p&gt;Note that, according to the 
+&lt;a href=&#34;https://www.netlify.com/docs/netlify-toml-reference/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netlify docs&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;During a build, the following ordering determines which context covers a particular deploy: UI settings are overridden if a netlify.toml file is present in the root folder of the repo and there exists a setting for the same property/redirect/header in the toml file.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you look in your site&amp;rsquo;s Netlify deploy log, you should see entries like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;7:47:13 PM: Found netlify.toml. Overriding site configuration
+7:47:13 PM: Starting build script
+7:47:13 PM: Installing dependencies
+7:47:14 PM: Started restoring cached node version
+7:47:17 PM: Finished restoring cached node version
+7:47:18 PM: v8.15.0 is already installed.
+7:47:19 PM: Now using node v8.15.0 (npm v6.4.1)
+7:47:19 PM: Attempting ruby version 2.3.6, read from environment
+7:47:20 PM: Using ruby version 2.3.6
+7:47:20 PM: Using PHP version 5.6
+7:47:20 PM: Installing Hugo 0.54.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Success!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

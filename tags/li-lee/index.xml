@@ -5,9 +5,9 @@
     <link>https://katrienantonio.github.io/tags/li-lee/</link>
       <atom:link href="https://katrienantonio.github.io/tags/li-lee/index.xml" rel="self" type="application/rss+xml" />
     <description>Li-Lee</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>Li-Lee</title>
       <link>https://katrienantonio.github.io/tags/li-lee/</link>
     </image>
@@ -25,6 +25,10 @@
 &lt;a href=&#34;https://katrienantonio.github.io/papers/report_covid_iabe_2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IABE 2020 Covid impact analysis&lt;/a&gt;. Presentation slides are available 
 &lt;a href=&#34;https://katrienantonio.github.io/slides/IABE2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and 
 &lt;a href=&#34;https://katrienantonio.github.io/slides/IABE2020Covid.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our work on the impact of COVID-19 on a stochastic multi-population mortality model of type Li &amp;amp; Lee was published in 2022 in Risks. The paper is available in open access via 
+&lt;a href=&#34;https://www.mdpi.com/2227-9091/10/2/26&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A GitHub repo with the source code (in R) for our multipopulation mortality models is maintained by Jens Robben, see the 
+&lt;a href=&#34;https://github.com/RobbenJ/MultiMoMo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MultiMoMo package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This is joint work with Sander Devriendt and Jens Robben.&lt;/p&gt;
 </description>
     </item>

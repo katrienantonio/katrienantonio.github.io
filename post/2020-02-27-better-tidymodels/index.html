@@ -248,8 +248,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_3.png">
 
   <link rel="canonical" href="https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/">
 
@@ -322,7 +322,7 @@
     "name": "Katrien Antonio",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_2.png"
+      "url": "https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_3.png"
     }
   },
   "description": "Taking a sad script and making it better for model cross-validation."
@@ -682,7 +682,8 @@
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 517px;">
   <div style="position: relative">
     <img src="/post/2020-02-27-better-tidymodels/featured_hua3ceb266631360af179578e3785d630d_874866_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
-    <span class="article-header-caption">Image by <a href="https://unsplash.com/photos/PnAc2UaeqII">Rachel Martin</a></span>
+    <span class="article-header-caption">Image by 
+<a href="https://unsplash.com/photos/PnAc2UaeqII" target="_blank" rel="noopener">Rachel Martin</a></span>
   </div>
 </div>
 
@@ -694,7 +695,7 @@
     
     <div class="col-12 col-lg-10ish article-style">
       <p>A few years ago, I did a talk called 
-<a href="/talk/2018-ohsu-sad-plot-better/">&ldquo;Take a Sad Plot &amp; Make it Better,&quot;</a> where I showed how I took a single sad plot and tried to make it better. The process of making that plot better taught me a lot about data visualization, and about the 
+<a href="/talk/2018-ohsu-sad-plot-better/">&ldquo;Take a Sad Plot &amp; Make it Better,&rdquo;</a> where I showed how I took a single sad plot and tried to make it better. The process of making that plot better taught me a lot about data visualization, and about the 
 <a href="https://ggplot2.tidyverse.org/" target="_blank" rel="noopener">ggplot2 package</a>.</p>
 <p>Fast-forward to 2019 when I started learning 
 <a href="https://github.com/tidymodels/" target="_blank" rel="noopener">tidymodels</a>, and I have accumulated some pretty sad predictive modeling scripts! And my sad plots are not so lonely anymore. Specifically, my old scripts for doing cross-validation with tidymodels are particularly sad. But, I&rsquo;ve been able to make them better (one might even call them happy), primarily due to changes in the 
@@ -770,7 +771,8 @@ library(ranger) # for random forest
 </blockquote>
 <div class="alert alert-note">
   <div>
-    <strong>Update!</strong> We have bundled the Palmer Station penguins data into an R data package named palmerpenguins. Enjoy 🐧 Here is the package website: <a href="https://allisonhorst.github.io/palmerpenguins/">https://allisonhorst.github.io/palmerpenguins/</a>
+    <strong>Update!</strong> We have bundled the Palmer Station penguins data into an R data package named palmerpenguins. Enjoy 🐧 Here is the package website: 
+<a href="https://allisonhorst.github.io/palmerpenguins/" target="_blank" rel="noopener">https://allisonhorst.github.io/palmerpenguins/</a>
   </div>
 </div>
 <pre><code class="language-r">install.packages(&quot;remotes&quot;) # to install from github
@@ -823,8 +825,9 @@ glimpse(tidypenguins)
 #&gt; 3 Gentoo      119
 </code></pre>
 <p>Here is a lineup:</p>
-<p><img src="https://www.bas.ac.uk/wp-content/uploads/2015/04/Penguin-heights.jpg" style="display: block; margin: auto;" /></p>
-<p>From: <a href="https://www.bas.ac.uk/about/antarctica/wildlife/penguins/">https://www.bas.ac.uk/about/antarctica/wildlife/penguins/</a></p>
+<img src="https://www.bas.ac.uk/wp-content/uploads/2015/04/Penguin-heights.jpg" style="display: block; margin: auto;" />
+<p>From: 
+<a href="https://www.bas.ac.uk/about/antarctica/wildlife/penguins/" target="_blank" rel="noopener">https://www.bas.ac.uk/about/antarctica/wildlife/penguins/</a></p>
 <p>Looks like we have data for 3 of the smaller penguin species (of those pictured here).</p>
 <p>First, let&rsquo;s build a simple linear regression model to predict body mass from flipper length.</p>
 <pre><code class="language-r">ggplot(tidypenguins, aes(x = flipper_length_mm, y = body_mass_g)) +
@@ -832,7 +835,7 @@ glimpse(tidypenguins)
   geom_smooth(method = &quot;lm&quot;) +
   theme_penguin()
 </code></pre>
-<p><img src="figs/unnamed-chunk-9-1.png" width="672" /></p>
+<img src="figs/unnamed-chunk-9-1.png" width="672" />
 <p>Not bad! Looks promising. To actually fit a linear regression model, you might be used to something like this in R:</p>
 <pre><code class="language-r">penguin_mod &lt;- lm(body_mass_g ~ flipper_length_mm, data = tidypenguins)
 summary(penguin_mod)
@@ -1004,7 +1007,7 @@ penguin_preds &lt;- get_preds(model_spec = lm_spec, split = penguin_split)
   ggtitle(&quot;Residuals vs Fitted&quot;)
 #&gt; `geom_smooth()` using formula 'y ~ x'
 </code></pre>
-<p><img src="figs/unnamed-chunk-17-1.png" width="672" /></p>
+<img src="figs/unnamed-chunk-17-1.png" width="672" />
 <pre><code class="language-r">
 # compare: get metrics
 penguin_preds %&gt;% 
@@ -1780,7 +1783,7 @@ penguin_folds %&gt;%
     
     
     
-    <script src="/js/academic.min.6f7ce8be710290b8c431bbc97f405d15.js"></script>
+    <script src="/js/academic.min.1c558923276e778a7a0c05514fa3ae46.js"></script>
 
     
 
@@ -1796,7 +1799,7 @@ penguin_folds %&gt;%
   
 
   <p class="powered-by">
-    © Katrien Antonio 2021, design inspired by the work of Alison Hill &middot; 
+    © Katrien Antonio 2022, design inspired by the work of Alison Hill &middot; 
 
     Made with <a href="https://github.com/katrienantonio" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the 
     <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for

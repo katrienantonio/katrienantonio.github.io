@@ -5,9 +5,9 @@
     <link>https://katrienantonio.github.io/categories/blogdown/</link>
       <atom:link href="https://katrienantonio.github.io/categories/blogdown/index.xml" rel="self" type="application/rss+xml" />
     <description>blogdown</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>blogdown</title>
       <link>https://katrienantonio.github.io/categories/blogdown/</link>
     </image>
@@ -173,7 +173,8 @@
 &lt;/blockquote&gt;
 &lt;p&gt;Many Hugo themes enable users to edit aesthetic elements like colors and fonts. So, depending on your Hugo theme, you may not need to know CSS. Other themes provide a way to “plug in” a custom CSS file to change those things and more (like spacing, font sizing, etc.). Guess where that is? Usually it is in your &lt;code&gt;config.toml&lt;/code&gt; file in the &lt;code&gt;[params]&lt;/code&gt; section (if no configuration directory) or the &lt;code&gt;params.toml&lt;/code&gt; file. The theme author should leave you a breadcrumb to figure out what you should name and where you should place your custom CSS file.&lt;/p&gt;
 &lt;p&gt;For example, the Hugo academic theme provides a few ways in. In the &lt;code&gt;params.toml&lt;/code&gt; file, you can use an included 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/b5963ac66c4c0400e88cd603a74d7734365f0885/exampleSite/config/_default/params.toml#L5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site color theme&lt;/a&gt; or make your own, and customize your fonts. You can also provide your own custom CSS file by including it here: &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&#34;&gt;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/b5963ac66c4c0400e88cd603a74d7734365f0885/exampleSite/config/_default/params.toml#L5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site color theme&lt;/a&gt; or make your own, and customize your fonts. You can also provide your own custom CSS file by including it here: 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If your theme doesn&amp;rsquo;t provide this level of support, then you may need to learn Hugo. Sometimes the options are tough to find, unfortunately, but many theme designers provide at least a plug-in option. Others may require you to dig into some of your theme&amp;rsquo;s partial layouts (i.e., &lt;code&gt;themes/theme_name/layouts/partials/&lt;/code&gt;) and learn to read them. Here are some examples:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -252,7 +253,8 @@
 &lt;/ul&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Important: I learned this the hard way, but you &lt;a href=&#34;https://gohugo.io/templates/introduction/#html-comments-containing-go-templates&#34;&gt;cannot&lt;/a&gt; wrap your Hugo code in HTML comments to deactivate it; all Hugo code even inside of HTML comments will still be evaluated when you build your site.
+    Important: I learned this the hard way, but you 
+&lt;a href=&#34;https://gohugo.io/templates/introduction/#html-comments-containing-go-templates&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cannot&lt;/a&gt; wrap your Hugo code in HTML comments to deactivate it; all Hugo code even inside of HTML comments will still be evaluated when you build your site.
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -301,19 +303,23 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://masalmon.eu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maëlle Salmon&amp;rsquo;s&lt;/a&gt; ROpenSci Hugo theme: &lt;a href=&#34;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&#34;&gt;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://masalmon.eu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maëlle Salmon&amp;rsquo;s&lt;/a&gt; ROpenSci Hugo theme: 
+&lt;a href=&#34;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://amber.rbind.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amber Thomas&amp;rsquo;s&lt;/a&gt; Data Science Hugo theme:
-&lt;a href=&#34;https://github.com/ProQuestionAsker/hugo-data-science&#34;&gt;https://github.com/ProQuestionAsker/hugo-data-science&lt;/a&gt;&lt;/p&gt;
+
+&lt;a href=&#34;https://github.com/ProQuestionAsker/hugo-data-science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/ProQuestionAsker/hugo-data-science&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;
-&lt;a href=&#34;https://djnavarro.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&amp;rsquo;s&lt;/a&gt; slum Hugo theme: &lt;a href=&#34;https://github.com/djnavarro/hugo-slum&#34;&gt;https://github.com/djnavarro/hugo-slum&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://djnavarro.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&amp;rsquo;s&lt;/a&gt; slum Hugo theme: 
+&lt;a href=&#34;https://github.com/djnavarro/hugo-slum&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/djnavarro/hugo-slum&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;My own humble Hugo theme: &lt;a href=&#34;https://github.com/rstudio/hugo-graphite&#34;&gt;https://github.com/rstudio/hugo-graphite&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My own humble Hugo theme: 
+&lt;a href=&#34;https://github.com/rstudio/hugo-graphite&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/rstudio/hugo-graphite&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
@@ -387,7 +393,7 @@
 from https://example.org to your actual domain; 
 if you do not have a domain, set &amp;quot;baseurl&amp;quot; to &amp;quot;/&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;But be careful here- you shouldn&amp;rsquo;t leave it as &amp;ldquo;/&amp;quot;- once you do have your domain name you should update the baseurl as &amp;ldquo;/&amp;rdquo; is a not a valid URL.&lt;/p&gt;
+&lt;p&gt;But be careful here- you shouldn&amp;rsquo;t leave it as &amp;ldquo;/&amp;rdquo;- once you do have your domain name you should update the baseurl as &amp;ldquo;/&amp;rdquo; is a not a valid URL.&lt;/p&gt;
 
 
 
@@ -428,7 +434,7 @@ if you do not have a domain, set &amp;quot;baseurl&amp;quot; to &amp;quot;/&amp;
 &lt;a href=&#34;https://github.com/rstudio/blogdown/issues/114&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub issue #114&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;However, Hugo authors and theme developers have largely been moving towards using relative URLs instead of the baseurl to build paths. This was based on public advice voiced by the Hugo authors on the discourse forum. For example:&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;The recommended way to reference resources is to use either relURL or absURL template funcs, which handles the slash issues.&amp;quot;- @
+&lt;p&gt;&amp;ldquo;The recommended way to reference resources is to use either relURL or absURL template funcs, which handles the slash issues.&amp;rdquo;- @
 &lt;a href=&#34;https://discourse.gohugo.io/t/0-19-to-0-30-2-baseurl-forward-slash-is-required/9206&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bep&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Following that advice, a more up-to-date theme would have code that looks like this buried in a layout file:&lt;/p&gt;
@@ -714,7 +720,7 @@ options(
 &lt;p&gt;The default here from Hugo was &lt;code&gt;/post/:year-:month-:day-:slug/:slug/&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;A small note: if you want to add relative links from a blog post to another post in your same blog. So &lt;code&gt;[this](/post/2019-02-19-hugo-archetypes/)&lt;/code&gt; becomes 
 &lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-archetypes/&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Now, add images and data files to your ❤️&#39;s content! But you may want to do one more thing&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Now, add images and data files to your ❤️&amp;rsquo;s content! But you may want to do one more thing&amp;hellip;&lt;/p&gt;
 
 
 
@@ -747,7 +753,9 @@ options(
 &lt;p&gt;This is my second post in this series, and it is a relatively quick one. Just do this. This one is a no-brainer.&lt;/p&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Thanks to &lt;a href=&#34;https://twitter.com/dataandme&#34;&gt;Mara Averick&lt;/a&gt; for alerting me that with Hugo version 0.54.0 and onward, there is a trailing zero at the end of &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5639&#34;&gt;Hugo versions now&lt;/a&gt;. So for versions before 0.54.0, use the format: 0.53; for later versions use 0.54.0 (0.54 will not work).
+    Thanks to 
+&lt;a href=&#34;https://twitter.com/dataandme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mara Averick&lt;/a&gt; for alerting me that with Hugo version 0.54.0 and onward, there is a trailing zero at the end of 
+&lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5639&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo versions now&lt;/a&gt;. So for versions before 0.54.0, use the format: 0.53; for later versions use 0.54.0 (0.54 will not work).
   &lt;/div&gt;
 &lt;/div&gt;
 

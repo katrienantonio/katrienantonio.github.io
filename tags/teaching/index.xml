@@ -5,9 +5,9 @@
     <link>https://katrienantonio.github.io/tags/teaching/</link>
       <atom:link href="https://katrienantonio.github.io/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
     <description>teaching</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>teaching</title>
       <link>https://katrienantonio.github.io/tags/teaching/</link>
     </image>
@@ -24,7 +24,8 @@
 &lt;/div&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    If you just want to skip to my actual slides, they are &lt;a href=&#34;../../talk/2019-jsm-talk-ds/&#34;&gt;here&lt;/a&gt;.
+    If you just want to skip to my actual slides, they are 
+&lt;a href=&#34;../../talk/2019-jsm-talk-ds/&#34;&gt;here&lt;/a&gt;.
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -65,7 +66,7 @@
 &lt;/div&gt;
 &lt;p&gt;This slide was all I could find out about it, but it was enough to get my wheels turning right away. Having a Ph.D. in 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Developmental_psychology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;developmental psychology&lt;/a&gt;, I&amp;rsquo;d spent a lot of time studying the literature on the science of learning, and the idea of a self-assessment made me think:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/Ll9fCTNWC41rsbuqxk/giphy.gif&#34; alt=&#34;We&amp;rsquo;re onto something really good here&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/Ll9fCTNWC41rsbuqxk/giphy.gif&#34; alt=&#34;We&amp;amp;rsquo;re onto something really good here&#34;&gt;&lt;/p&gt;
 &lt;p&gt;Why might this actually work? It reinforces some tried and true self-directed learning strategies that are actually evidence-based like:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;retrieval practice!&lt;/li&gt;
@@ -78,13 +79,17 @@
   &lt;div&gt;
     &lt;p&gt;I won&amp;rsquo;t bore with &lt;em&gt;all the edu literature&lt;/em&gt;, but if you want to know more you might enjoy reading:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&#34;&gt;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&#34;&gt;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.apa.org/science/about/psa/2016/06/learning-memory&#34;&gt;https://www.apa.org/science/about/psa/2016/06/learning-memory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.apa.org/science/about/psa/2016/06/learning-memory&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.apa.org/science/about/psa/2016/06/learning-memory&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;I had also had this little bee in my bonnet for awhile, and that was that I spent an inordinate amount of time crafting the most beautiful homework answer keys for my students&amp;hellip;that no one seemed to read. No one used my answer keys for learning. It bothered me because I knew there was value in reviewing these answer keys, but I hadn&amp;rsquo;t made them into an actual learning tool. When I saw Hal&amp;rsquo;s slide, it dawned on me: the solution to my problem was to give my answer keys away, and make them into a usable learning tool.^[I later found out that my palmerpenguins co-author Dr. Allison Horst does this too! &lt;a href=&#34;https://www.allisonhorst.com/post/share-keys/&#34;&gt;https://www.allisonhorst.com/post/share-keys/&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;I had also had this little bee in my bonnet for awhile, and that was that I spent an inordinate amount of time crafting the most beautiful homework answer keys for my students&amp;hellip;that no one seemed to read. No one used my answer keys for learning. It bothered me because I knew there was value in reviewing these answer keys, but I hadn&amp;rsquo;t made them into an actual learning tool. When I saw Hal&amp;rsquo;s slide, it dawned on me: the solution to my problem was to give my answer keys away, and make them into a usable learning tool.^[I later found out that my palmerpenguins co-author Dr. Allison Horst does this too! 
+&lt;a href=&#34;https://www.allisonhorst.com/post/share-keys/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.allisonhorst.com/post/share-keys/&lt;/a&gt;]&lt;/p&gt;
 &lt;p&gt;The truth is, providing the answer keys or feedback at the end is not actually
 helpful for learners. Students have high motivation and set aside time for what matters for their grade, not necessarily their learning. So it&amp;rsquo;s no surprise that motivation was low and time was limited for students
 to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
@@ -171,7 +176,8 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
 &lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
 &lt;/svg&gt;&lt;/a&gt;
 &lt;/h3&gt;
-&lt;p&gt;We advised students to color their text in R Markdown files knitted to HTML. The self-assessment portion always needed to be colored. You can find guidance on how to do that in the R Markdown cookbook: &lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&#34;&gt;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We advised students to color their text in R Markdown files knitted to HTML. The self-assessment portion always needed to be colored. You can find guidance on how to do that in the R Markdown cookbook: 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&lt;/a&gt;&lt;/p&gt;
 
 
 

@@ -5,9 +5,9 @@
     <link>https://katrienantonio.github.io/categories/machine-learning/</link>
       <atom:link href="https://katrienantonio.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>machine learning</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2021, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_2.png</url>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>machine learning</title>
       <link>https://katrienantonio.github.io/categories/machine-learning/</link>
     </image>
@@ -18,7 +18,7 @@
       <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/</guid>
       <description>&lt;p&gt;A few years ago, I did a talk called 
-&lt;a href=&#34;https://katrienantonio.github.io/talk/2018-ohsu-sad-plot-better/&#34;&gt;&amp;ldquo;Take a Sad Plot &amp;amp; Make it Better,&amp;quot;&lt;/a&gt; where I showed how I took a single sad plot and tried to make it better. The process of making that plot better taught me a lot about data visualization, and about the 
+&lt;a href=&#34;https://katrienantonio.github.io/talk/2018-ohsu-sad-plot-better/&#34;&gt;&amp;ldquo;Take a Sad Plot &amp;amp; Make it Better,&amp;rdquo;&lt;/a&gt; where I showed how I took a single sad plot and tried to make it better. The process of making that plot better taught me a lot about data visualization, and about the 
 &lt;a href=&#34;https://ggplot2.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ggplot2 package&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Fast-forward to 2019 when I started learning 
 &lt;a href=&#34;https://github.com/tidymodels/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tidymodels&lt;/a&gt;, and I have accumulated some pretty sad predictive modeling scripts! And my sad plots are not so lonely anymore. Specifically, my old scripts for doing cross-validation with tidymodels are particularly sad. But, I&amp;rsquo;ve been able to make them better (one might even call them happy), primarily due to changes in the 
@@ -94,7 +94,8 @@ library(ranger) # for random forest
 &lt;/blockquote&gt;
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    &lt;strong&gt;Update!&lt;/strong&gt; We have bundled the Palmer Station penguins data into an R data package named palmerpenguins. Enjoy 🐧 Here is the package website: &lt;a href=&#34;https://allisonhorst.github.io/palmerpenguins/&#34;&gt;https://allisonhorst.github.io/palmerpenguins/&lt;/a&gt;
+    &lt;strong&gt;Update!&lt;/strong&gt; We have bundled the Palmer Station penguins data into an R data package named palmerpenguins. Enjoy 🐧 Here is the package website: 
+&lt;a href=&#34;https://allisonhorst.github.io/palmerpenguins/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://allisonhorst.github.io/palmerpenguins/&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;remotes&amp;quot;) # to install from github
@@ -147,8 +148,9 @@ glimpse(tidypenguins)
 #&amp;gt; 3 Gentoo      119
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here is a lineup:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bas.ac.uk/wp-content/uploads/2015/04/Penguin-heights.jpg&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;From: &lt;a href=&#34;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&#34;&gt;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&lt;/a&gt;&lt;/p&gt;
+&lt;img src=&#34;https://www.bas.ac.uk/wp-content/uploads/2015/04/Penguin-heights.jpg&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;p&gt;From: 
+&lt;a href=&#34;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Looks like we have data for 3 of the smaller penguin species (of those pictured here).&lt;/p&gt;
 &lt;p&gt;First, let&amp;rsquo;s build a simple linear regression model to predict body mass from flipper length.&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(tidypenguins, aes(x = flipper_length_mm, y = body_mass_g)) +
@@ -156,7 +158,7 @@ glimpse(tidypenguins)
   geom_smooth(method = &amp;quot;lm&amp;quot;) +
   theme_penguin()
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;figs/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;figs/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;p&gt;Not bad! Looks promising. To actually fit a linear regression model, you might be used to something like this in R:&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_mod &amp;lt;- lm(body_mass_g ~ flipper_length_mm, data = tidypenguins)
 summary(penguin_mod)
@@ -328,7 +330,7 @@ penguin_preds &amp;lt;- get_preds(model_spec = lm_spec, split = penguin_split)
   ggtitle(&amp;quot;Residuals vs Fitted&amp;quot;)
 #&amp;gt; `geom_smooth()` using formula &#39;y ~ x&#39;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;figs/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;img src=&#34;figs/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;
 &lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
 # compare: get metrics
 penguin_preds %&amp;gt;% 
