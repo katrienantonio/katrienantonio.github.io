@@ -27,7 +27,7 @@
   
     
   
-  <meta name="description" content="Insurance pricing with GLMs, GAMs and tree-based machine learning, the distRforest package">
+  <meta name="description" content="Insurance pricing with GLMs, GAMs and tree-based machine learning methods, construction of a GLM as a global surrogate for a more complex predictive model, the distRforest and maidrr packages">
 
   
   <link rel="alternate" hreflang="en-us" href="https://katrienantonio.github.io/project/tree-based-insurance-pricing/">
@@ -271,7 +271,7 @@
   <meta property="og:site_name" content="Katrien Antonio">
   <meta property="og:url" content="https://katrienantonio.github.io/project/tree-based-insurance-pricing/">
   <meta property="og:title" content="Machine learning for insurance pricing | Katrien Antonio">
-  <meta property="og:description" content="Insurance pricing with GLMs, GAMs and tree-based machine learning, the distRforest package"><meta property="og:image" content="https://katrienantonio.github.io/project/tree-based-insurance-pricing/featured.png">
+  <meta property="og:description" content="Insurance pricing with GLMs, GAMs and tree-based machine learning methods, construction of a GLM as a global surrogate for a more complex predictive model, the distRforest and maidrr packages"><meta property="og:image" content="https://katrienantonio.github.io/project/tree-based-insurance-pricing/featured.png">
   <meta property="twitter:image" content="https://katrienantonio.github.io/project/tree-based-insurance-pricing/featured.png"><meta property="og:locale" content="en-us">
   
     
@@ -323,7 +323,7 @@
       "url": "https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Insurance pricing with GLMs, GAMs and tree-based machine learning, the distRforest package"
+  "description": "Insurance pricing with GLMs, GAMs and tree-based machine learning methods, construction of a GLM as a global surrogate for a more complex predictive model, the distRforest and maidrr packages"
 }
 </script>
 
@@ -573,8 +573,6 @@
 
   
   
-    
-  
 
 
 <div class="article-container pt-3">
@@ -671,13 +669,26 @@
   
   
     
-    
-      
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/henckr/distRforest" target="_blank" rel="noopener">
+    <i class="fab fa-github mr-1"></i>
+    distRforest package
+  </a>
+
+  
+  
+  
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="/" >
+  
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/henckr/maidrr" target="_blank" rel="noopener">
     <i class="fab fa-github mr-1"></i>
-    materials
+    maidrr package
   </a>
 
 
@@ -687,10 +698,10 @@
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 833px;">
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 311px; max-height: 360px;">
   <div style="position: relative">
-    <img src="/project/tree-based-insurance-pricing/featured_hu6e2fd99199d62b0933de80ae7de5e983_147862_720x0_resize_lanczos_3.png" alt="" class="featured-image">
-    <span class="article-header-caption"><a href="https://github.com/henckr/distRforest" target="_blank" rel="noopener">Picture from Henckaerts, 2020</a></span>
+    <img src="/project/tree-based-insurance-pricing/featured.png" alt="" class="featured-image">
+    <span class="article-header-caption"><a href="https://github.com/henckr/distRforest" target="_blank" rel="noopener">Picture from Henckaerts et al., 2021</a></span>
   </div>
 </div>
 
@@ -699,7 +710,30 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p>Here komt &hellip;</p>
+      <p>In a series of papers we put focus on:</p>
+<ul>
+<li>smart and data driven preprocessing of <strong>continuous and spatial risk factors</strong> for use in GLMs in 
+<a href="https://www.tandfonline.com/doi/abs/10.1080/03461238.2018.1429300" target="_blank" rel="noopener">Henckaerts et al., 2018</a></li>
+<li>a <strong>comparative analysis</strong> of GLMs, GAMs, and tree-based machine learning methods (trees, RFs, GBMs) in insurance pricing with frequency and severity modelling, see 
+<a href="https://www.tandfonline.com/doi/abs/10.1080/10920277.2020.1745656?journalCode=uaaj20" target="_blank" rel="noopener">Henckaerts et al., 2021</a></li>
+<li>the smart engineering of a GLM as a <strong>global surrogate model</strong> for a machine learning method (e.g., a GBM), developed in 
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417422006042" target="_blank" rel="noopener">Henckaerts et al., 2022</a>.</li>
+</ul>
+<p>
+<a href="https://www.tandfonline.com/doi/abs/10.1080/03461238.2018.1429300" target="_blank" rel="noopener">Henckaerts et al., 2018</a> develops a fully data driven strategy to incorporate continuous risk factors and geographical information in an insurance tariff. This strategy elegantly combines GAMs, trees, clustering method and GLMs.</p>
+<p>A notebook reproducing the results of the Henckaerts et al., 2018 paper is available on 
+<a href="https://github.com/katrienantonio/PE-pricing-analytics" target="_blank" rel="noopener">GitHub</a>.</p>
+<p>
+<a href="https://www.tandfonline.com/doi/abs/10.1080/10920277.2020.1745656?journalCode=uaaj20" target="_blank" rel="noopener">Henckaerts et al., 2021</a> presents a detailed discussion of the use of tree-based machine learning methods (i.e. trees, random forests and gradient boosting machines) to model claim frequency and severity data. The goal of this paper is to investigate how tree-based pricing models perform compared to the classical actuarial approach with GLMs and GAMs. This comparison puts focus on statistical performance, interpretation and business implications.</p>
+<p>Essential coding steps to reproduce the main findings from the Henckaerts et al., 2021 paper are 
+<a href="https://github.com/katrienantonio/treeML" target="_blank" rel="noopener">here</a>. Claim severity modelling with tree-based methods is illustrated in 
+<a href="https://github.com/katrienantonio/sevtree" target="_blank" rel="noopener">this notebook</a>. The 
+<a href="https://github.com/katrienantonio/distRforest" target="_blank" rel="noopener">distRforest</a> package provides and R implementation for fitting random forests with a variety of loss functions.</p>
+<p>The 
+<a href="https://www.sciencedirect.com/science/article/abs/pii/S0957417422006042" target="_blank" rel="noopener">Henckaerts et al., 2022</a> paper proposes a procedure to develop an interpretable global surrogate for a complex system. Knowledge is extracted from a black box via partial dependence effects. These are used to perform smart feature engineering by grouping variable values. This results in a segmentation of the feature space with automatic variable selection. A transparent generalized linear model (GLM) is fit to the features in categorical format and their relevant interactions. This GLM serves as a global surrogate to the original black box and replaces it in production.</p>
+<p>Source code is available from the 
+<a href="https://github.com/henckr/maidrr" target="_blank" rel="noopener">maidrr</a> package for R.</p>
+<p>This is joint work with Roel Henckaerts, Marie-Pier Côté and Roel Verbelen.</p>
 
     </div>
 
@@ -725,6 +759,8 @@
   <a class="badge badge-light" href="/tags/rfs/">RFs</a>
   
   <a class="badge badge-light" href="/tags/gbms/">GBMs</a>
+  
+  <a class="badge badge-light" href="/tags/global-surrogate-models/">global surrogate models</a>
   
 </div>
 
