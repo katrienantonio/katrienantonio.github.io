@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>features of multiple types | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/tags/features-of-multiple-types/</link>
+      <atom:link href="https://katrienantonio.github.io/tags/features-of-multiple-types/index.xml" rel="self" type="application/rss+xml" />
+    <description>features of multiple types</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Tue, 11 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>features of multiple types</title>
+      <link>https://katrienantonio.github.io/tags/features-of-multiple-types/</link>
+    </image>
+    
+    <item>
+      <title>Sparsity with multiple types of features</title>
+      <link>https://katrienantonio.github.io/project/sparsity/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/sparsity/</guid>
+      <description>&lt;p&gt;In this project we study &lt;strong&gt;regularization&lt;/strong&gt; strategies that can handle &lt;strong&gt;different types of predictors&lt;/strong&gt; (e.g., factor, continuous, nominal, ordinal, spatial). We focus on the use of a &lt;strong&gt;Lasso penalty&lt;/strong&gt; that acts on the objective function as a &lt;strong&gt;sum of subpenalties&lt;/strong&gt;, one for each type of predictor. As such, we allow for predictor selection and level fusion within a predictor in a data-driven way, simultaneous with the parameter estimation process.&lt;/p&gt;
+&lt;p&gt;We develop a &lt;strong&gt;new estimation strategy for convex predictive models with this multi-type penalty&lt;/strong&gt;. Using the theory of proximal operators, our estimation procedure is computationally efficient, partitioning the overall optimization problem into easier to solve subproblems, specific for each predictor type and its associated penalty. Earlier research applies approximations to non-differentiable penalties to solve the optimization problem. The proposed SMuRF algorithm removes the need for approximations and achieves a higher accuracy and computational efficiency. This is demonstrated with an extensive simulation study and the analysis of a &lt;strong&gt;case-study on insurance pricing analytics&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This is joint work with Sander Devriendt, Tom Reynkens and Roel Verbelen.&lt;/p&gt;
+&lt;p&gt;R package is available on CRAN, see 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/smurf/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;smurf package&lt;/a&gt;. Source code on GitLab, see 
+&lt;a href=&#34;https://gitlab.com/TReynkens/smurf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

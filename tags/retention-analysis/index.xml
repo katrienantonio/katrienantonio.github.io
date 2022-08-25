@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>retention analysis | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/tags/retention-analysis/</link>
+      <atom:link href="https://katrienantonio.github.io/tags/retention-analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>retention analysis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 12 May 2022 09:45:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>retention analysis</title>
+      <link>https://katrienantonio.github.io/tags/retention-analysis/</link>
+    </image>
+    
+    <item>
+      <title>The added value of dynamically updating motor insurance prices with telematics collected driving behavior data</title>
+      <link>https://katrienantonio.github.io/talk/2022-eaa/</link>
+      <pubDate>Thu, 12 May 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2022-eaa/</guid>
+      <description>&lt;p&gt;In this talk, I present the Henckaerts &amp;amp; Antonio (2022, IME) paper.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

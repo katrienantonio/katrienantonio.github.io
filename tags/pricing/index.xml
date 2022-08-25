@@ -22,11 +22,11 @@
     </item>
     
     <item>
-      <title>Data Science for Non-Life Insurance</title>
-      <link>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</link>
-      <pubDate>Tue, 01 Sep 2020 09:45:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</guid>
-      <description>&lt;p&gt;Here I will describe the data science course.&lt;/p&gt;
+      <title>Boosting insights in insurance tariff plans with machine learning methods</title>
+      <link>https://katrienantonio.github.io/teaching_as_talk/2020-ergo/</link>
+      <pubDate>Thu, 03 Dec 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching_as_talk/2020-ergo/</guid>
+      <description>&lt;p&gt;In this talk, I discussed the use of tree-based machine learning methods to develop full tariff plans built from both the frequency and severity of claims.&lt;/p&gt;
 </description>
     </item>
     

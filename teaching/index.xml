@@ -1,59 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My course portfolio | Katrien Antonio</title>
+    <title>Talks &amp; workshops | Katrien Antonio</title>
     <link>https://katrienantonio.github.io/teaching/</link>
       <atom:link href="https://katrienantonio.github.io/teaching/index.xml" rel="self" type="application/rss+xml" />
-    <description>My course portfolio</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Tue, 01 Sep 2020 09:45:00 +0000</lastBuildDate>
+    <description>Talks &amp; workshops</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Fri, 01 Jul 2022 09:45:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
-      <title>My course portfolio</title>
+      <title>Talks &amp; workshops</title>
       <link>https://katrienantonio.github.io/teaching/</link>
     </image>
     
     <item>
       <title>Advanced Life Insurance Mathematics</title>
       <link>https://katrienantonio.github.io/teaching/2020-12-27-advanced-life/</link>
-      <pubDate>Tue, 01 Sep 2020 09:45:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/teaching/2020-12-27-advanced-life/</guid>
-      <description>&lt;p&gt;Here I will describe the advanced life insurance course.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Data Science for Non-Life Insurance</title>
-      <link>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</link>
-      <pubDate>Tue, 01 Sep 2020 09:45:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</guid>
-      <description>&lt;p&gt;Here I will describe the data science course.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Insurance Analytics</title>
-      <link>https://katrienantonio.github.io/teaching/2020-12-27-insurance-analytics/</link>
-      <pubDate>Tue, 01 Sep 2020 09:45:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/teaching/2020-12-27-insurance-analytics/</guid>
-      <description>&lt;p&gt;Here I will describe the insurance analytics course.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Life Insurance Mathematics</title>
-      <link>https://katrienantonio.github.io/teaching/2020-12-27-life-insurance/</link>
-      <pubDate>Tue, 01 Sep 2020 09:45:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/teaching/2020-12-27-life-insurance/</guid>
-      <description>&lt;p&gt;Here I will describe the life insurance mathematics course.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Loss Models</title>
-      <link>https://katrienantonio.github.io/teaching/2020-12-27-loss-models/</link>
-      <pubDate>Tue, 01 Sep 2020 09:45:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/teaching/2020-12-27-loss-models/</guid>
-      <description>&lt;p&gt;Here I will describe the loss models course.&lt;/p&gt;
+      <description>&lt;p&gt;The course puts focus on two main topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stochastic mortality models for population and portfolio data, with a.o. the Lee Carter, LifeMetrics models for single and multiple populations, portfolio specific mortality models&lt;/li&gt;
+&lt;li&gt;multi state models in actuarial science for life and disability insurance products, with premium calculation, policy valuation, Thiele&amp;rsquo;s differential equations, single and multiple life products.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to the official 
+&lt;a href=&#34;https://onderwijsaanbod.kuleuven.be/syllabi/e/D0N56AE.htm#activetab=doelstellingen_idp35200&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;course description&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

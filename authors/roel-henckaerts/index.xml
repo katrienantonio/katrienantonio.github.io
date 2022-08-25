@@ -5,7 +5,7 @@
     <link>https://katrienantonio.github.io/authors/roel-henckaerts/</link>
       <atom:link href="https://katrienantonio.github.io/authors/roel-henckaerts/index.xml" rel="self" type="application/rss+xml" />
     <description>Roel Henckaerts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 10 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sun, 10 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>Roel Henckaerts</title>
@@ -14,17 +14,25 @@
     
     <item>
       <title>When stakes are high: balancing accuracy and transparency with Model-Agnostic Interpretable Data-driven suRRogates</title>
-      <link>https://katrienantonio.github.io/publication/2020-maidrr/</link>
-      <pubDate>Thu, 10 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2020-maidrr/</guid>
+      <link>https://katrienantonio.github.io/publication/2022-maidrr/</link>
+      <pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-maidrr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The added value of dynamically updating motor insurance prices with telematics collected driving behavior data</title>
+      <link>https://katrienantonio.github.io/publication/2022-imetelematics/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-imetelematics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Boosting Insights in Insurance Tariff Plans with Tree-Based Machine Learning Methods</title>
-      <link>https://katrienantonio.github.io/publication/2020-boosting/</link>
-      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2020-boosting/</guid>
+      <link>https://katrienantonio.github.io/publication/2021-boosting/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-boosting/</guid>
       <description></description>
     </item>
     

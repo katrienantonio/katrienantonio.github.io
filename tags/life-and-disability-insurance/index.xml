@@ -5,7 +5,7 @@
     <link>https://katrienantonio.github.io/tags/life-and-disability-insurance/</link>
       <atom:link href="https://katrienantonio.github.io/tags/life-and-disability-insurance/index.xml" rel="self" type="application/rss+xml" />
     <description>life and disability insurance</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Tue, 01 Sep 2020 09:45:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Fri, 01 Jul 2022 09:45:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>life and disability insurance</title>
@@ -15,9 +15,15 @@
     <item>
       <title>Advanced Life Insurance Mathematics</title>
       <link>https://katrienantonio.github.io/teaching/2020-12-27-advanced-life/</link>
-      <pubDate>Tue, 01 Sep 2020 09:45:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/teaching/2020-12-27-advanced-life/</guid>
-      <description>&lt;p&gt;Here I will describe the advanced life insurance course.&lt;/p&gt;
+      <description>&lt;p&gt;The course puts focus on two main topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stochastic mortality models for population and portfolio data, with a.o. the Lee Carter, LifeMetrics models for single and multiple populations, portfolio specific mortality models&lt;/li&gt;
+&lt;li&gt;multi state models in actuarial science for life and disability insurance products, with premium calculation, policy valuation, Thiele&amp;rsquo;s differential equations, single and multiple life products.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to the official 
+&lt;a href=&#34;https://onderwijsaanbod.kuleuven.be/syllabi/e/D0N56AE.htm#activetab=doelstellingen_idp35200&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;course description&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

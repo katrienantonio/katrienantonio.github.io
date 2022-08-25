@@ -5,7 +5,7 @@
     <link>https://katrienantonio.github.io/authors/roel-verbelen/</link>
       <atom:link href="https://katrienantonio.github.io/authors/roel-verbelen/index.xml" rel="self" type="application/rss+xml" />
     <description>Roel Verbelen</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 02 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Tue, 26 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>Roel Verbelen</title>
@@ -13,18 +13,26 @@
     </image>
     
     <item>
-      <title>Sparse regression with Multi-type Regularized Feature modeling</title>
-      <link>https://katrienantonio.github.io/publication/2020-smurf/</link>
-      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2020-smurf/</guid>
+      <title>Modeling the occurrence of events subject to a reporting delay via an EM algorithm</title>
+      <link>https://katrienantonio.github.io/publication/2022-ibnr-em/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-ibnr-em/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Boosting Insights in Insurance Tariff Plans with Tree-Based Machine Learning Methods</title>
-      <link>https://katrienantonio.github.io/publication/2020-boosting/</link>
-      <pubDate>Mon, 13 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2020-boosting/</guid>
+      <link>https://katrienantonio.github.io/publication/2021-boosting/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-boosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sparse regression with Multi-type Regularized Feature modeling</title>
+      <link>https://katrienantonio.github.io/publication/2021-smurf/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-smurf/</guid>
       <description></description>
     </item>
     
@@ -33,14 +41,6 @@
       <link>https://katrienantonio.github.io/publication/2019-ejor/</link>
       <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/publication/2019-ejor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Modeling the occurrence of events subject to a reporting delay via an EM algorithm</title>
-      <link>https://katrienantonio.github.io/publication/2020-ibnr-em/</link>
-      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/publication/2020-ibnr-em/</guid>
       <description></description>
     </item>
     

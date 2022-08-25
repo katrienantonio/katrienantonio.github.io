@@ -17,7 +17,10 @@
       <link>https://katrienantonio.github.io/project/telematics/</link>
       <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/project/telematics/</guid>
-      <description>&lt;p&gt;Here komt &amp;hellip;&lt;/p&gt;
+      <description>&lt;p&gt;Our 2018 paper in JRSS C we analyze a data set from a Belgian telematics product targeting young drivers. We develop a statistical modelling approach using &lt;strong&gt;generalized additive models&lt;/strong&gt; and &lt;strong&gt;compositional predictors&lt;/strong&gt; to quantify and interpret the effect of telematics variables on the expected claim frequency.&lt;/p&gt;
+&lt;p&gt;This is joint work with Roel Verbelen and Gerda Claeskens.&lt;/p&gt;
+&lt;p&gt;In a 2022 paper in IME we extend the 2018 paper to the analysis of &lt;strong&gt;driving habits&lt;/strong&gt; and &lt;strong&gt;driving style&lt;/strong&gt; information. Driving habits are measured by the total mileage and the distance driven on different road types and during distinct time slots. Driving style is characterized by the number of harsh acceleration, braking, cornering and lateral movement events. First, we develop a &lt;strong&gt;baseline pricing model&lt;/strong&gt; for the complete portfolio with claim history and self-reported risk characteristics of approximately 400,000 policyholders each year. Next, we propose a methodology to &lt;strong&gt;update&lt;/strong&gt; the baseline price &lt;strong&gt;via the telematics information of young drivers&lt;/strong&gt;. Our approach results in a truly &lt;strong&gt;usage-based insurance (UBI) product&lt;/strong&gt;, making the premium dependent on a policyholder&amp;rsquo;s driving habits and style. We highlight the added value of telematics via improvements in risk classification and we put focus on &lt;strong&gt;managerial insights&lt;/strong&gt; by analyzing expected profits and retention rates under our new UBI pricing structure.&lt;/p&gt;
+&lt;p&gt;This is joint work with Roel Henckaerts.&lt;/p&gt;
 </description>
     </item>
     
