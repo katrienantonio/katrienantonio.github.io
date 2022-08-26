@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://katrienantonio.github.io/publication/</loc>
+    <lastmod>2022-07-27T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://katrienantonio.github.io/publication_types/4/</loc>
     <lastmod>2022-07-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -41,9 +44,6 @@
     <loc>https://katrienantonio.github.io/publication_types/</loc>
     <lastmod>2022-07-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://katrienantonio.github.io/publication/</loc>
-    <lastmod>2022-07-27T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://katrienantonio.github.io/authors/robert-boute/</loc>
     <lastmod>2022-07-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -77,7 +77,31 @@
     <loc>https://katrienantonio.github.io/teaching/2020-12-27-advanced-life/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
+    <loc>https://katrienantonio.github.io/tags/analytics/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/cash-flow-valuation/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
     <loc>https://katrienantonio.github.io/categories/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/data-science/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/frequency/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/insurance/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/teaching/2020-12-27-insurance-analytics/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/insurance-data-science/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/authors/katrien/</loc>
@@ -86,7 +110,31 @@
     <loc>https://katrienantonio.github.io/tags/life-and-disability-insurance/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
+    <loc>https://katrienantonio.github.io/tags/life-insurance-mathematics/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/teaching/2020-12-27-life-insurance/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/lifetime-data/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/teaching/2020-12-27-loss-models/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
     <loc>https://katrienantonio.github.io/tags/multi-state-models/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/pricing/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/reserving/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/risk-models/</loc>
+    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/severity/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/tags/stochastic-mortality-models/</loc>
@@ -95,10 +143,10 @@
     <loc>https://katrienantonio.github.io/tags/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
-    <loc>https://katrienantonio.github.io/teaching/</loc>
+    <loc>https://katrienantonio.github.io/categories/teaching/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
-    <loc>https://katrienantonio.github.io/categories/teaching/</loc>
+    <loc>https://katrienantonio.github.io/teaching/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/publication/2022-depcens/</loc>
@@ -207,9 +255,6 @@
     <lastmod>2021-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/tags/ibnr-and-rbns-claims/</loc>
-    <lastmod>2021-04-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/tags/insurance-data-science/</loc>
     <lastmod>2021-04-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/project/insurance-data-science-python/</loc>
@@ -336,15 +381,6 @@
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/talk/2020-ergo/</loc>
-    <lastmod>2020-12-03T09:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/teaching_as_talk/2020-ergo/</loc>
-    <lastmod>2020-12-03T09:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/tags/pricing/</loc>
-    <lastmod>2020-12-03T09:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/teaching_as_talk/</loc>
     <lastmod>2020-12-03T09:45:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/tags/tree-based/</loc>

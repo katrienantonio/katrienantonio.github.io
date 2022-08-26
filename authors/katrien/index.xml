@@ -28,6 +28,52 @@
     </item>
     
     <item>
+      <title>Data Science for Non-Life Insurance</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</guid>
+      <description>&lt;p&gt;The course puts focus on four main topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;basics of statistical and machine learning with a focus on the analysis of frequency and severity insurance data&lt;/li&gt;
+&lt;li&gt;non-life insurance pricing methods, with GLMs, regression trees, random forests, gradient boosting machines and neural nets: technicalities, interpretation tools and surrogate models, model insights and resulting pricing models&lt;/li&gt;
+&lt;li&gt;credibility theory and bonus-malus scales&lt;/li&gt;
+&lt;li&gt;non-life claims reserving.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to the official 
+&lt;a href=&#34;https://onderwijsaanbod.kuleuven.be/syllabi/e/D0N56AE.htm#activetab=doelstellingen_idp35200&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;course description&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Implementation in R and Python of pricing and reserving models will be covered.&lt;/p&gt;
+&lt;p&gt;Students will work on a group project: construction of a pricing model for a given data set.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Insurance Analytics</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-insurance-analytics/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-insurance-analytics/</guid>
+      <description>&lt;p&gt;Here I will describe the insurance analytics course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Life Insurance Mathematics</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-life-insurance/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-life-insurance/</guid>
+      <description>&lt;p&gt;Here I will describe the life insurance mathematics course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Loss Models</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-loss-models/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-loss-models/</guid>
+      <description>&lt;p&gt;Here I will describe the loss models course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The added value of dynamically updating motor insurance prices with telematics collected driving behavior data</title>
       <link>https://katrienantonio.github.io/talk/2022-eaa/</link>
       <pubDate>Thu, 12 May 2022 09:45:00 +0000</pubDate>
@@ -59,15 +105,6 @@
       <link>https://katrienantonio.github.io/talk/2020-ergo/</link>
       <pubDate>Thu, 03 Dec 2020 09:45:00 +0000</pubDate>
       <guid>https://katrienantonio.github.io/talk/2020-ergo/</guid>
-      <description>&lt;p&gt;In this talk, I discussed the use of tree-based machine learning methods to develop full tariff plans built from both the frequency and severity of claims.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Boosting insights in insurance tariff plans with machine learning methods</title>
-      <link>https://katrienantonio.github.io/teaching_as_talk/2020-ergo/</link>
-      <pubDate>Thu, 03 Dec 2020 09:45:00 +0000</pubDate>
-      <guid>https://katrienantonio.github.io/teaching_as_talk/2020-ergo/</guid>
       <description>&lt;p&gt;In this talk, I discussed the use of tree-based machine learning methods to develop full tariff plans built from both the frequency and severity of claims.&lt;/p&gt;
 </description>
     </item>
