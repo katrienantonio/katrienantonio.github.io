@@ -2,6 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://katrienantonio.github.io/authors/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/bias/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/talk/2022-ai/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/categories/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/discrimination-free/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/fairness/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/insurance-pricing/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/authors/katrien/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/machine-learning/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/tags/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/categories/talk/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
+    <loc>https://katrienantonio.github.io/talk/</loc>
+    <lastmod>2022-09-21T09:45:00+00:00</lastmod>
+  </url><url>
     <loc>https://katrienantonio.github.io/publication/</loc>
     <lastmod>2022-07-27T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,9 +48,6 @@
     <lastmod>2022-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/authors/alexandre-masquelein/</loc>
-    <lastmod>2022-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/authors/</loc>
     <lastmod>2022-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/authors/bavo-dc-campo/</loc>
@@ -33,9 +69,6 @@
     <lastmod>2022-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/authors/katrien-antonio/</loc>
-    <lastmod>2022-07-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/</loc>
     <lastmod>2022-07-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/authors/laurens-deprez/</loc>
@@ -83,9 +116,6 @@
     <loc>https://katrienantonio.github.io/tags/cash-flow-valuation/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
-    <loc>https://katrienantonio.github.io/categories/</loc>
-    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
-  </url><url>
     <loc>https://katrienantonio.github.io/tags/data-science/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
@@ -102,9 +132,6 @@
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/tags/insurance-data-science/</loc>
-    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/authors/katrien/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/tags/life-and-disability-insurance/</loc>
@@ -140,9 +167,6 @@
     <loc>https://katrienantonio.github.io/tags/stochastic-mortality-models/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
-    <loc>https://katrienantonio.github.io/tags/</loc>
-    <lastmod>2022-07-01T09:45:00+00:00</lastmod>
-  </url><url>
     <loc>https://katrienantonio.github.io/categories/teaching/</loc>
     <lastmod>2022-07-01T09:45:00+00:00</lastmod>
   </url><url>
@@ -164,19 +188,7 @@
     <loc>https://katrienantonio.github.io/publication/2022-imetelematics/</loc>
     <lastmod>2022-07-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://katrienantonio.github.io/tags/insurance-pricing/</loc>
-    <lastmod>2022-05-12T09:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/tags/machine-learning/</loc>
-    <lastmod>2022-05-12T09:45:00+00:00</lastmod>
-  </url><url>
     <loc>https://katrienantonio.github.io/tags/retention-analysis/</loc>
-    <lastmod>2022-05-12T09:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/categories/talk/</loc>
-    <lastmod>2022-05-12T09:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://katrienantonio.github.io/talk/</loc>
     <lastmod>2022-05-12T09:45:00+00:00</lastmod>
   </url><url>
     <loc>https://katrienantonio.github.io/tags/telematics/</loc>

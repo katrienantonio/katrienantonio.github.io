@@ -5,12 +5,20 @@
     <link>https://katrienantonio.github.io/tags/machine-learning/</link>
       <atom:link href="https://katrienantonio.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>machine learning</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 12 May 2022 09:45:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 21 Sep 2022 09:45:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>machine learning</title>
       <link>https://katrienantonio.github.io/tags/machine-learning/</link>
     </image>
+    
+    <item>
+      <title>Bias, fairness and discrimination-free insurance pricing</title>
+      <link>https://katrienantonio.github.io/talk/2022-ai/</link>
+      <pubDate>Wed, 21 Sep 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2022-ai/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>The added value of dynamically updating motor insurance prices with telematics collected driving behavior data</title>
