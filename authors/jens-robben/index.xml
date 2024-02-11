@@ -5,12 +5,20 @@
     <link>https://katrienantonio.github.io/authors/jens-robben/</link>
       <atom:link href="https://katrienantonio.github.io/authors/jens-robben/index.xml" rel="self" type="application/rss+xml" />
     <description>Jens Robben</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Tue, 27 Jun 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>Jens Robben</title>
       <link>https://katrienantonio.github.io/authors/jens-robben/</link>
     </image>
+    
+    <item>
+      <title>Catastrophe risk in a stochastic multi-population mortality model</title>
+      <link>https://katrienantonio.github.io/publication/2023-catastr-risk/</link>
+      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2023-catastr-risk/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A hierarchical reserving model for reported non-life insurance claims</title>

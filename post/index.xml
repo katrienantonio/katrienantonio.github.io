@@ -5,7 +5,7 @@
     <link>https://katrienantonio.github.io/post/</link>
       <atom:link href="https://katrienantonio.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2022, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
       <title>Posts</title>
@@ -1094,9 +1094,11 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;You can do something like this with &lt;a href=&#34;https://twitter.com/hashtag/rmarkdown?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rmarkdown&lt;/a&gt;. Ask students to knit to HTML, then use the bootswatch themes &lt;a href=&#34;https://t.co/J9ucdRWnIl&#34;&gt;https://t.co/J9ucdRWnIl&lt;/a&gt;&lt;br&gt;&lt;br&gt;Bonus: you get the prettiest &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; homeworks after this! 💐🖍️&lt;br&gt;---&lt;br&gt;title: &amp;quot;Habits&amp;quot; &lt;br&gt;output:   &lt;br&gt;    html_document:     &lt;br&gt;         theme: flatly&lt;br&gt;--- &lt;a href=&#34;https://t.co/wMQ3Uqhc7s&#34;&gt;https://t.co/wMQ3Uqhc7s&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/1101866080996212736?ref_src=twsrc%5Etfw&#34;&gt;March 2, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
+
 &lt;p&gt;Bonus when using a &lt;code&gt;theme&lt;/code&gt; with &lt;code&gt;html_document()&lt;/code&gt;: show off the &lt;code&gt;code_download&lt;/code&gt; output option!&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;TIL you can embed a &amp;quot;code download&amp;quot; button in an HTML &lt;a href=&#34;https://twitter.com/hashtag/rmarkdown?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rmarkdown&lt;/a&gt; doc so that users can click to download your source .Rmd from the rendered HTML version...without GitHub 🤩 &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt;&lt;br&gt;&lt;br&gt;YAML:&lt;br&gt;&lt;br&gt;---&lt;br&gt;output:&lt;br&gt;  html_document:&lt;br&gt;    code_download: true&lt;br&gt;---&lt;br&gt;&lt;br&gt;Test: &lt;a href=&#34;https://t.co/bp7w7XKF8b&#34;&gt;https://t.co/bp7w7XKF8b&lt;/a&gt; &lt;a href=&#34;https://t.co/uMQK0mvYcF&#34;&gt;pic.twitter.com/uMQK0mvYcF&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/1108925218850893832?ref_src=twsrc%5Etfw&#34;&gt;March 22, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
 
 
 
@@ -1111,6 +1113,7 @@ to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
 &lt;a href=&#34;https://gt.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gt&lt;/a&gt; table too. This is a motivational, aspirational document! I also try to use local data sets, so they can see how that actually works, as opposed to using a data package.&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Never underestimate the power of being able to make pretty &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; things. ⬆️ polish/effort ratio ➡️ happier users 🦚 &lt;a href=&#34;https://t.co/LMbFRUiuLa&#34;&gt;https://t.co/LMbFRUiuLa&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/1101978567842291712?ref_src=twsrc%5Etfw&#34;&gt;March 2, 2019&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
 
 
 
