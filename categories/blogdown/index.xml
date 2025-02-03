@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blogdown | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/categories/blogdown/</link>
+      <atom:link href="https://katrienantonio.github.io/categories/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    <description>blogdown</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sat, 12 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>blogdown</title>
+      <link>https://katrienantonio.github.io/categories/blogdown/</link>
+    </image>
+    
+    <item>
+      <title>A Spoonful of Hugo: How much Hugo do I need to know?</title>
+      <link>https://katrienantonio.github.io/post/2020-12-12-how-much-hugo/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/post/2020-12-12-how-much-hugo/</guid>
+      <description>&lt;p&gt;Greetings and happy holidays! As many folks are looking forward to down time over the holidays, my inbox naturally starts filling in with questions like &amp;ldquo;What is the difference between blogdown and X?&amp;rdquo;, &amp;ldquo;How hard is Hugo to learn?&amp;rdquo;, and &amp;ldquo;Which Hugo theme do you recommend?&amp;rdquo; These are all great questions. But the best one in my mind that one needs to ask is:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;How much Hugo do I need to know &lt;em&gt;right now&lt;/em&gt;?&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And the answer, of course, depends on where you are starting from and where you&amp;rsquo;d like to end up.&lt;/p&gt;
+&lt;p&gt;In this post, I&amp;rsquo;ll share when and why I think a typical R blogdown user needs to learn Hugo. I&amp;rsquo;ll tell you a secret: I enjoyed learning Hugo. But I learned blogdown first, and frankly was blissfully unaware of the complexity of the underlying Hugo templating language. I was a happy blogdown user for about 1.5 years before taking the plunge to actually learn Hugo. Why did I do it? I needed to build a website for the RStudio Education team, and for sustainability and maintenance, I had been burned by external themes in various ways too many times for my personal site.&lt;/p&gt;
+&lt;p&gt;We decided as a team that we didn&amp;rsquo;t want our site to depend on a third-party Hugo theme. What can go wrong with using third-party Hugo themes? For one, if you choose a not very active or well-maintained theme, then you could get stuck with a not well-maintained theme. Or worse, your theme could get orphaned, with no maintainer. But, on the flip-side, if you pick a very active and well-maintained theme, you might find yourself dealing with theme and Hugo updates more than you would like (&lt;em&gt;cough cough&lt;/em&gt; like the Wowchemy/Academic theme).&lt;/p&gt;
+&lt;p&gt;The 
+&lt;a href=&#34;https://www.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tidyverse.org&lt;/a&gt; site was built with a lot of custom HTML, CSS, and some Hugo layout files. I decided to turn that site into a real Hugo theme, and use that theme across teams. You may not have noticed any change 
+&lt;a href=&#34;https://github.com/tidyverse/tidyverse.org/pull/350&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;when we switched to the new theme&lt;/a&gt;- at least I hope you didn&amp;rsquo;t! That site and the 
+&lt;a href=&#34;https://education.rstudio.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio Education&lt;/a&gt; site both use the same Hugo theme I built.&lt;/p&gt;
+&lt;p&gt;Now that I&amp;rsquo;ve gone from casual Hugo user to theme developer, I have some advice. Generally, as a blanket rule, here is what you should and should not touch:&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;An &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/blogdown?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#blogdown&lt;/a&gt; file hierarchy cheatsheet:&lt;br&gt;&lt;br&gt;├─ archetypes &amp;lt;- edit me! &lt;br&gt;├─ config.toml &amp;lt;- edit me! &lt;br&gt;├─ content &amp;lt;- edit me! &lt;br&gt;├─ data &amp;lt;- edit me! &lt;br&gt;├─ layouts &amp;lt;- edit me! &lt;br&gt;├─ public &amp;lt;- ignore me!&lt;br&gt;├─ static &amp;lt;- use me! (png/pdf/csv/xls)&lt;br&gt;├─ themes &amp;lt;- don&amp;#39;t touch! &lt;a href=&#34;https://t.co/gvVA703Lwa&#34;&gt;pic.twitter.com/gvVA703Lwa&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/1078494406301212672?ref_src=twsrc%5Etfw&#34;&gt;December 28, 2018&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt; 
+&lt;!--![](https://media.giphy.com/media/l1J9wMccAykUCLIic/giphy.gif)--&gt;
+&lt;p&gt;But what can you do with &lt;strong&gt;blogdown&lt;/strong&gt; before learning Hugo? When and how do you know when you need to get to know Hugo better? Hopefully this post will help answer these questions.&lt;/p&gt;
+&lt;p&gt;Inspired by Jenny Bryan&amp;rsquo;s talk on 
+&lt;a href=&#34;https://resources.rstudio.com/rstudio-conf-2019/lazy-evaluation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lazy evaluation&lt;/a&gt;, I&amp;rsquo;m framing these learning decision points based on &lt;em&gt;what you want to get done&lt;/em&gt;.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;you-want-to-make-a-website-with-blogdown&#34;&gt;You want to: make a website with blogdown&lt;a href=&#34;#you-want-to-make-a-website-with-blogdown&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;You need to know this much Hugo:&lt;/strong&gt; Hugo takes a collection of files (called content) and generates a collection of static HTML files as a single, cohesive, navigable website (plopped in your &lt;code&gt;public/&lt;/code&gt; folder). How it looks depends on which Hugo theme you pick &lt;code&gt;r emo::ji(&amp;quot;paint&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You&amp;rsquo;ll need to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/themes.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;pick a Hugo theme&lt;/a&gt;, which dictates the style and layout of your content.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/rstudio-ide.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;build and serve your site locally&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;deploy your site! If you are just starting out, I recommend &lt;strong&gt;everyone&lt;/strong&gt; starts by first 
+&lt;a href=&#34;https://app.netlify.com/drop&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;dragging and dropping&lt;/a&gt; your project&amp;rsquo;s &lt;code&gt;public/&lt;/code&gt; folder into Netlify. There is your site &lt;code&gt;r emo::ji(&amp;quot;boom&amp;quot;)&lt;/code&gt;. With a link. That you can send to your best friend &lt;em&gt;right now&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/static-sites.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;realize this is a &lt;strong&gt;static&lt;/strong&gt; site&lt;/a&gt;. Read up on static sites!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But you probably want to do more&amp;hellip;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;you-want-to-customize-your-site&#34;&gt;You want to: customize your site&lt;a href=&#34;#you-want-to-customize-your-site&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;You need to know this much more Hugo:&lt;/strong&gt; Hugo themes typically use one or more metadata files (TOML or YAML) to set up global variables to use to build your site. This is usually the way to add a site url, a site name, link social accounts for personal websites, basically take any of the default content you see and customize it for you.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The main files to edit are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;configuration files&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To get familiar with &lt;code&gt;TOML&lt;/code&gt;, I recommend:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html#toml-syntax&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;a brief intro from the blogdown book&lt;/a&gt;, and&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://learnxinyminutes.com/docs/toml/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Learn TOML in Y Minutes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But, since the time we published the blogdown book, Hugo introduced configuration directories, which allowed us to no longer have one giant &lt;code&gt;config.toml&lt;/code&gt; file, and instead have multiple configuration files, like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;├── config.toml            &amp;lt;- Hugo-defined variables
+├── config
+│   ├── _default
+│   │   ├── menus.toml     &amp;lt;- menus :)
+│   │   └── params.toml    &amp;lt;- theme-specific variables
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is how you can think of these:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;config.toml&lt;/code&gt;/&lt;code&gt;config.yaml&lt;/code&gt;: your most direct communication with Hugo. These are standard Hugo-defined variables that have defaults you can override in this file. You can view all of them 
+&lt;a href=&#34;https://gohugo.io/getting-started/configuration/#all-configuration-settings&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. These are universal across themes.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;menus.toml&lt;/code&gt;: your way of editing the content in a side or upper navigation menu bar; see example 
+&lt;a href=&#34;https://gohugo.io/getting-started/configuration/#all-configuration-settings&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. These work the same way across themes (with the exception of drop-down menus, which work in some themes but not others).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;params.toml&lt;/code&gt;: your theme&amp;rsquo;s way of providing an API for Hugo. These are variables that your theme creator has made for you! This is a gift, but not the kind you can re-gift easily. This file will not work with any other theme.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If your theme uses only a single &lt;code&gt;config.toml&lt;/code&gt; file, you can infer these subsections as you scroll down:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# before the first use of [[]]
+# are all the Hugo variables
+
+# Menu Configuration- same as menus.toml
+[[menu.main]]
+
+# Theme Configuration- same as params.toml
+[params]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You still don&amp;rsquo;t need to learn Hugo&amp;hellip;yet.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;you-want-to-add-content-to-your-site&#34;&gt;You want to: add content to your site&lt;a href=&#34;#you-want-to-add-content-to-your-site&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;You need to know this much more Hugo:&lt;/strong&gt; Remember how the input to Hugo is a &amp;ldquo;collection of files&amp;rdquo;? The input is more specifically a collection of markdown files. Hugo themes use content written in markdown files (for blogdown users, R Markdown files work too) to generate your site&amp;rsquo;s content; with one very important rule — the same structure that works to organize your site content is used to organize the rendered site.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;But, what does that &lt;strong&gt;mean&lt;/strong&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/Poaj36am3ZqaA/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The main files to edit are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;files in the 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/content.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;content/&lt;/code&gt; folder&lt;/a&gt; (and see my post on 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-10-26-hugo-layouts/&#34;&gt;page bundles&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;First, the structure and the names inside your &lt;code&gt;content/&lt;/code&gt; folder is meaningful. The &lt;strong&gt;names&lt;/strong&gt; of each folder determine what Hugo layout will be applied. Why do you care? If you change the content name, things may not look good because Hugo can&amp;rsquo;t find the right layout. Think of your site like going to a party at a friend&amp;rsquo;s house- you can bring food, wine, maybe a board game- your host knows what to do with these things. But if you bring a monkey, for example, your host has no idea what to do with it!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/JPgG1GbGnGbgBitA1Q/giphy.gif&#34; alt=&#34;monkey at party&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Yuo &lt;em&gt;can&lt;/em&gt; override this by adding a &lt;code&gt;layout&lt;/code&gt; key to your file&amp;rsquo;s YAML, as described 
+&lt;a href=&#34;https://gohugo.io/content-management/front-matter/#front-matter-variables&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. The relevant bit is here:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;&lt;code&gt;layout&lt;/code&gt;: the layout Hugo should select from the lookup order when rendering the content. If a &lt;code&gt;type&lt;/code&gt; is not specified in the front matter, Hugo will look for the layout of the same name in the layout directory that corresponds with a content’s section.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The subfolders also tell you where you can find your content on your site.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.
+├── content/
+│   ├── authors/            # =&amp;gt; https://example.com/authors/
+│   ├── privacy/index.md    # =&amp;gt; https://example.com/privacy/
+│   └── home/               # =&amp;gt; https://example.com/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You should take a bit of time to get the &amp;ldquo;cook&amp;rsquo;s tour&amp;rdquo; of your site. Try looking at each file and guessing the URL you&amp;rsquo;ll use to see it in the rendered site. Do this now and it will become like second nature.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll no doubt run into one question: what is the difference between &lt;code&gt;index.md&lt;/code&gt; and &lt;code&gt;_index.md&lt;/code&gt; files? &lt;code&gt;index.md&lt;/code&gt; are simple pages; the single file goes into the site and a single file comes back out when you view the site. This is called a 
+&lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;leaf bundle&lt;/a&gt; in Hugo.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.
+├── content/
+│   ├── privacy/index.md       # =&amp;gt; a leaf bundle
+│   └── blog/                  # =&amp;gt; a branch bundle
+│       ├── _index.md          # =&amp;gt; AHA!
+│       ├── gorillas/index.md  # =&amp;gt; a leaf bundle
+│       ├── baboons/index.md   # =&amp;gt; another leaf bundle
+│       └── monkeys/index.md   # =&amp;gt; yet another leaf bundle
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;An &lt;code&gt;_index.md&lt;/code&gt; file, on the other hand, signals that this folder has a &lt;em&gt;listing page&lt;/em&gt; activated. This is called a 
+&lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;branch bundle&lt;/a&gt; in Hugo. Listing pages are a bit magical, so make sure you understand them now. Typically, if you edit the &lt;code&gt;_index.md&lt;/code&gt; file at all, you edit the YAML of this file- often the page content below the YAML isn&amp;rsquo;t revealed by the theme (this is a bit hand-wavy and I&amp;rsquo;m sorry for that).&lt;/p&gt;
+&lt;p&gt;So if you have &lt;code&gt;content/blog/gorillas/index.md&lt;/code&gt;, you get not one but two pages. Let&amp;rsquo;s pretend my baseurl is &lt;code&gt;alison.rbind.io&lt;/code&gt;. You get a &lt;strong&gt;list&lt;/strong&gt; page that will render at &lt;code&gt;alison.rbind.io/blog/&lt;/code&gt;, and indexes all the &lt;code&gt;index.md&lt;/code&gt; files inside that content folder. You also get a &lt;strong&gt;single&lt;/strong&gt; page that will render at &lt;code&gt;alison.rbind.io/blog/gorillas/&lt;/code&gt;, which shows you the full content of the &lt;code&gt;index.md&lt;/code&gt; file.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;you-want-to-customize-colors-and-fonts-on-your-site&#34;&gt;You want to: customize colors and fonts on your site&lt;a href=&#34;#you-want-to-customize-colors-and-fonts-on-your-site&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;You need to know this much more Hugo:&lt;/strong&gt; It depends on your theme :) You may need to learn CSS, and you may need to learn to &lt;em&gt;read&lt;/em&gt; Hugo now.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Many Hugo themes enable users to edit aesthetic elements like colors and fonts. So, depending on your Hugo theme, you may not need to know CSS. Other themes provide a way to “plug in” a custom CSS file to change those things and more (like spacing, font sizing, etc.). Guess where that is? Usually it is in your &lt;code&gt;config.toml&lt;/code&gt; file in the &lt;code&gt;[params]&lt;/code&gt; section (if no configuration directory) or the &lt;code&gt;params.toml&lt;/code&gt; file. The theme author should leave you a breadcrumb to figure out what you should name and where you should place your custom CSS file.&lt;/p&gt;
+&lt;p&gt;For example, the Hugo academic theme provides a few ways in. In the &lt;code&gt;params.toml&lt;/code&gt; file, you can use an included 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/b5963ac66c4c0400e88cd603a74d7734365f0885/exampleSite/config/_default/params.toml#L5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site color theme&lt;/a&gt; or make your own, and customize your fonts. You can also provide your own custom CSS file by including it here: 
+&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/gcushen/hugo-academic/blob/master/assets/scss/custom.scss&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If your theme doesn&amp;rsquo;t provide this level of support, then you may need to learn Hugo. Sometimes the options are tough to find, unfortunately, but many theme designers provide at least a plug-in option. Others may require you to dig into some of your theme&amp;rsquo;s partial layouts (i.e., &lt;code&gt;themes/theme_name/layouts/partials/&lt;/code&gt;) and learn to read them. Here are some examples:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Plug-in CSS&lt;/strong&gt;: Hugo 
+&lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/d306f0d7f67ca5880cb97530056c59216597cd51/exampleSite/config.toml#L175-L178&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tranquil Peak&lt;/a&gt; theme tells you to place the file inside your &lt;code&gt;static/&lt;/code&gt; folder then provide the path and filename in the &lt;code&gt;config.toml&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[params]
+  # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
+  # they have to be referred from static root. Example
+  # [[params.customCSS]]
+  #   href = &amp;quot;css/mystyle.css&amp;quot;         &amp;lt;- AHA!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Go Fish&lt;/strong&gt;: Hugo 
+&lt;a href=&#34;https://github.com/victoriadrake/hugo-theme-sam/blob/39ea2d5e64fd0426d275060cfa6c549df66cdece/layouts/partials/head/css.html#L14-L18&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;I Am Sam&lt;/a&gt; theme doesn&amp;rsquo;t give you this in the &lt;code&gt;config.toml&lt;/code&gt; file, but looking at one of the layout partials you can see that the theme is actually built to plug-in your custom CSS:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!-- Custom css --&amp;gt;
+{{ range .Site.Params.customCSS -}}    &amp;lt;- AHA!
+{{ $style := resources.Get . }}
+&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;{{ $style.RelPermalink }}&amp;quot; integrity=&amp;quot;{{ $style.Data.Integrity }}&amp;quot; crossorigin=&amp;quot;anonymous&amp;quot; media=&amp;quot;screen&amp;quot;&amp;gt;
+{{- end }}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h2 id=&#34;you-want-to-renovate-the-layout-of-content-on-your-site&#34;&gt;You want to: renovate the layout of content on your site&lt;a href=&#34;#you-want-to-renovate-the-layout-of-content-on-your-site&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;You need to know this much more Hugo:&lt;/strong&gt; You need to learn to use Hugo variables.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I say renovate, but these can be anywhere from small to big renovation projects. The key word here is renovate, which in Hugo world, means you want to &lt;em&gt;override&lt;/em&gt; your site&amp;rsquo;s theme. Let&amp;rsquo;s say you want different information to show up in your 
+&lt;a href=&#34;https://github.com/rbind/apreshill/commit/be80b68eec3183dea304b66eaab874d496d7d1bb&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;site&amp;rsquo;s footer&lt;/a&gt;. Or maybe you want add something new to the 
+&lt;a href=&#34;https://github.com/maelle/simplymaelle/pull/10&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;metadata&lt;/a&gt; for your blog posts.&lt;/p&gt;
+&lt;p&gt;Here is a great blog post to get you started:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://zwbetz.com/override-a-hugo-theme/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Override a Hugo theme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;tl;dr:&lt;/strong&gt; If you adapt your existing theme&amp;rsquo;s Hugo layout files, be sure to make a copy of the layout you want to edit &lt;strong&gt;first&lt;/strong&gt; and add it to your project root&amp;rsquo;s &lt;code&gt;layouts/&lt;/code&gt; folder before editing. Please do not edit any files anywhere in your &lt;code&gt;themes/&lt;/code&gt; folder.&lt;/p&gt;
+&lt;p&gt;Now, the hardest part of doing is often figuring out which layout file is the one you need to edit. Often you&amp;rsquo;ll need to do some digging to figure out which file is the one to touch.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.
+├── layouts/
+│   ├── _default/           # edit me!
+│   ├── authors/            # edit me!
+│   └── partials/           # edit me!
+├── themes/
+│   ├── theme_name/
+│   │   ├── layouts
+│   │   │   ├── _default/   # do not touch
+│   │   │   ├── authors/    # do not touch (seriously)
+│   │   │   └── partials/   # `r emo::ji(&amp;quot;fire&amp;quot;)`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You&amp;rsquo;ll also want to learn about Hugo 
+&lt;a href=&#34;https://gohugo.io/variables/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;variables&lt;/strong&gt;&lt;/a&gt;, especially:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/variables/site/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Site variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/variables/site/#the-siteparams-variable&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The &lt;code&gt;.Site.Params&lt;/code&gt; variable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/variables/page/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Page variables&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/variables/page/#the-param-method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;The &lt;code&gt;.Param&lt;/code&gt; method for page variables&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You also might need to understand Hugo 
+&lt;a href=&#34;https://gohugo.io/templates/introduction/#logic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;logic&lt;/a&gt; like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/templates/introduction/#iteration&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;iteration&lt;/a&gt; and&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/templates/introduction/#conditionals&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;conditionals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Important: I learned this the hard way, but you 
+&lt;a href=&#34;https://gohugo.io/templates/introduction/#html-comments-containing-go-templates&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cannot&lt;/a&gt; wrap your Hugo code in HTML comments to deactivate it; all Hugo code even inside of HTML comments will still be evaluated when you build your site.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;h2 id=&#34;you-want-to-create-your-own-hugo-theme&#34;&gt;You want to: create your own Hugo theme&lt;a href=&#34;#you-want-to-create-your-own-hugo-theme&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;You need to know this much more Hugo:&lt;/strong&gt; Welcome to the wizarding world of Hugo! &lt;code&gt;r emo::ji(&amp;quot;wizard&amp;quot;)&lt;/code&gt; You now need to learn to write Hugo templates.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Here are some resources for writing Hugo 
+&lt;a href=&#34;https://gohugo.io/templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;templates&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/templates/introduction/#the-dot&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Context (aka “the dot”) &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo, the scope, the context and the dot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/templates/lookup-order/#examples-layout-lookup-for-regular-pages&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Lookup order&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/templates/base/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Base templates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/templates/single-page-templates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Single page templates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://gohugo.io/templates/lists/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;List page templates&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These resources were especially helpful to me:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/templates.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown book section on templates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/custom-layouts.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown book section on customizing layouts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The 
+&lt;a href=&#34;https://gohugo.io/documentation/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo docs&lt;/a&gt; are pretty strong&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://zwbetz.com/make-a-hugo-blog-from-scratch/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Make a Hugo blog from scratch | zwbetz&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://discourse.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Community Discourse Forum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.mikedane.com/static-site-generators/hugo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;All of Mike Dane&amp;rsquo;s Hugo tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I spent a lot of time looking at other Hugo themes; here are some quality ones to learn from:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://masalmon.eu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maëlle Salmon&amp;rsquo;s&lt;/a&gt; ROpenSci Hugo theme: 
+&lt;a href=&#34;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/ropensci/roweb2/tree/master/themes/ropensci&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://amber.rbind.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Amber Thomas&amp;rsquo;s&lt;/a&gt; Data Science Hugo theme:
+
+&lt;a href=&#34;https://github.com/ProQuestionAsker/hugo-data-science&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/ProQuestionAsker/hugo-data-science&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://djnavarro.net/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Danielle Navarro&amp;rsquo;s&lt;/a&gt; slum Hugo theme: 
+&lt;a href=&#34;https://github.com/djnavarro/hugo-slum&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/djnavarro/hugo-slum&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;My own humble Hugo theme: 
+&lt;a href=&#34;https://github.com/rstudio/hugo-graphite&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://github.com/rstudio/hugo-graphite&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Again, this is all just based on my own experiences- your mileage may vary as always.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Spoonful of Hugo: Troubleshooting Your Build</title>
+      <link>https://katrienantonio.github.io/post/2019-03-04-hugo-troubleshooting/</link>
+      <pubDate>Mon, 04 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/post/2019-03-04-hugo-troubleshooting/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Just a spoonful of Hugo helps the blog go down.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;me, only somewhat kidding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this series, I&amp;rsquo;m sharing small spoonfuls of Hugo that I have learned that hopefully can help you get your site &lt;em&gt;UP&lt;/em&gt; (and even better- more efficient, more streamlined, more automated). You can read the previous posts about my &amp;ldquo;Spoonful of Hugo&amp;rdquo; series 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-archetypes/&#34;&gt;about Hugo archetypes&lt;/a&gt;, 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-netlify-toml/&#34;&gt;Hugo versions&lt;/a&gt;, and 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/&#34;&gt;Hugo page bundles&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The following are a few steps that I always start with to troubleshoot any blogdown/Hugo/Netlify problems. These steps would solve what I would anecdotally estimate as ~50% of blogdown problems that I see posted in the 
+&lt;a href=&#34;https://github.com/rstudio/blogdown/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub repository&lt;/a&gt; and on the 
+&lt;a href=&#34;https://community.rstudio.com/tags/blogdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;community site&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;1-update-hugo&#34;&gt;#1: Update Hugo&lt;a href=&#34;#1-update-hugo&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://media.giphy.com/media/syCa5ird7wp0c/giphy.gif&#34; alt=&#34;Don&#39;t be like this&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 1: Don&#39;t be like this&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If things have gone south and you are getting Hugo errors when you use the &amp;ldquo;Serve Site&amp;rdquo; Addin locally, it is possible that you need to update your version of Hugo. From R, you can check your Hugo version with blogdown:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::hugo_version()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then you can reference your 
+&lt;a href=&#34;https://themes.gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo theme&lt;/a&gt; to find the minimum version of Hugo required by your theme:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;hugo-min-version.png&#34; alt=&#34;Check your theme&#39;s minimum Hugo version&#34; width=&#34;1073&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 2: Check your theme&#39;s minimum Hugo version&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;You can go higher than the minimum version though, so it&amp;rsquo;s good practice to update your Hugo, again from within R:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown:: update_hugo()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Check your version again post-update:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::hugo_version()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &#39;0.79.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you are using Netlify to build your site using Hugo, you&amp;rsquo;ll want this version to match that- the best way to do that is with a 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-netlify-toml/&#34;&gt;netlify.toml file&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;2-change-the-baseurl&#34;&gt;#2: Change the baseurl&lt;a href=&#34;#2-change-the-baseurl&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/zG6MKhlBxIloc/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;Open up your &lt;code&gt;config.toml&lt;/code&gt; file and look for the &lt;code&gt;baseurl&lt;/code&gt; field, usually pretty close to the top. Here is mine^[Yes that&amp;rsquo;s right, I don&amp;rsquo;t have a trailing slash- read on for why I can get away with this.]:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;baseurl = &amp;quot;https://alison.rbind.io&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now if you are just starting with Hugo and don&amp;rsquo;t &lt;em&gt;actually&lt;/em&gt; have a domain name yet, try taking the advice that blogdown automatically prints out for you:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Warning: You should change the &amp;quot;baseurl&amp;quot; option in config.toml 
+from https://example.org to your actual domain; 
+if you do not have a domain, set &amp;quot;baseurl&amp;quot; to &amp;quot;/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But be careful here- you shouldn&amp;rsquo;t leave it as &amp;ldquo;/&amp;rdquo;- once you do have your domain name you should update the baseurl as &amp;ldquo;/&amp;rdquo; is a not a valid URL.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;care-to-know-more&#34;&gt;Care to know more?&lt;a href=&#34;#care-to-know-more&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Here is a quote from the person who writes the Hugo docs:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;&amp;hellip;the only purpose for the baseurl field in the config is to define the full base URL of your website for deployment purposes.&amp;rdquo; - @
+&lt;a href=&#34;https://discourse.gohugo.io/t/how-not-to-specify-url-site/5691/7&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rdwatters&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The main error that would happen without the trailing slash in the past is that you would end up with a site where the theme&amp;rsquo;s CSS would be all wrong. This was probably because the theme designer used code like this buried in a layout file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;{{ .Site.BaseURL }}css/style.css&amp;quot;/&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, if you set &lt;code&gt;baseurl = &amp;quot;http://mysite.com&amp;quot;&lt;/code&gt; but only rendered locally, things would look just peachy, because the default local server already included the trailing slash. So, the link in the html file would be^[https://discourse.gohugo.io/t/how-not-to-specify-url-site/5691/5]:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;http://localhost:1313/css/style.css&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But, at build, the link in the html file would turn into:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;http://mysite.comcss/style.css&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Which creates sites that look like this:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://user-images.githubusercontent.com/47527626/52856178-f37a3680-3123-11e9-9b26-6500efac7404.png&#34; alt=&#34;Hugo tranquil peak theme&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 3: Hugo tranquil peak theme&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/rstudio/blogdown/issues/369&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub issue #369&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://user-images.githubusercontent.com/18710907/27711864-820dc59a-5cf2-11e7-99c8-b9b7e7f46ab3.png&#34; alt=&#34;Hugo universal theme&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 4: Hugo universal theme&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/rstudio/blogdown/issues/131&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub issue #131&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cloud.githubusercontent.com/assets/4596214/26549134/7e3968fe-4445-11e7-90b1-87dd4ac2c1c0.png&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/rstudio/blogdown/issues/114&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub issue #114&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;However, Hugo authors and theme developers have largely been moving towards using relative URLs instead of the baseurl to build paths. This was based on public advice voiced by the Hugo authors on the discourse forum. For example:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The recommended way to reference resources is to use either relURL or absURL template funcs, which handles the slash issues.&amp;rdquo;- @
+&lt;a href=&#34;https://discourse.gohugo.io/t/0-19-to-0-30-2-baseurl-forward-slash-is-required/9206&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bep&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Following that advice, a more up-to-date theme would have code that looks like this buried in a layout file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;{{ &amp;quot;css/style.css&amp;quot; | relURL }}&amp;quot;/&amp;gt;  → 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Bottom line? If your theme uses &lt;code&gt;relURL&lt;/code&gt; or &lt;code&gt;absURL&lt;/code&gt; to link to site resources like CSS, JavaScript, or static images, then whether or not you include a trailing slash in your baseurl should not matter at all.&lt;/p&gt;
+&lt;p&gt;And here is some tough love about your theme: if the most recent version &lt;em&gt;does&lt;/em&gt; still require the trailing slash in the &lt;code&gt;baseurl&lt;/code&gt; to &amp;ldquo;work&amp;rdquo; out of the box, I would seriously consider switching themes. This is a pretty good &amp;ldquo;canary in the coal mine&amp;rdquo; test regarding how up-to-date the theme author is, and how well the theme you have chosen adheres to Hugo templating best practices. If you are having pain with this now, it is likely not the only thing that will be painful about working with your theme.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;3-netlify-drag-and-drop&#34;&gt;#3: Netlify drag-and-drop&lt;a href=&#34;#3-netlify-drag-and-drop&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/DfbpTbQ9TvSX6/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you can render your site locally but your published site looks different, try the drag-and-drop method:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://arm.rbind.io/slides/img/netlify-new-site.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Use the &amp;ldquo;Serve Site&amp;rdquo; Addin, then drag-and-drop the &lt;code&gt;public/&lt;/code&gt; folder straight into Netlify. What does this do? You can now see your public site&amp;hellip;that you built&amp;hellip;with your local version of Hugo. Netlify is doing none of the site building here.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;index_files/figure-html/unnamed-chunk-10-1.gif&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+&lt;p&gt;One of the first benefits of this approach is that it ensures that you are able to actually &lt;em&gt;generate&lt;/em&gt; a &lt;code&gt;public/&lt;/code&gt; folder locally! I have seen folks struggle to deploy the wrong repo. This simple step can force you to make sure to use the &amp;ldquo;Serve Site&amp;rdquo; Addin to generate the &lt;code&gt;public/&lt;/code&gt; folder, and that the repo you are trying to link to Netlify actually contains a Hugo site because you must physically move the &lt;code&gt;public/&lt;/code&gt; folder. But this method can also help you diagnose other problems too.&lt;/p&gt;
+&lt;p&gt;If your &lt;code&gt;public/&lt;/code&gt; folder &lt;strong&gt;does not render&lt;/strong&gt; on Netlify, you have work to do locally. I can&amp;rsquo;t tell you what it is as it can be a number of things, but you can be sure that your problem is not just the Netlify build- it is your local build too.&lt;/p&gt;
+&lt;p&gt;If your &lt;code&gt;public/&lt;/code&gt; folder &lt;strong&gt;does render&lt;/strong&gt; perfectly on Netlify, but you are getting a Netlify build error, then you likely have a Hugo version problem. It might be that the version you are running locally is more recent than the version run by Netlify by default to actually build your site. The good news is there is a quick fix for this! The solution is to upgrade the Hugo version Netlify is using- see my advice 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-netlify-toml/&#34;&gt;here for how to do that&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you are happy with how your site looks but you are missing content and/or seeing old deleted content, then you may need the next few strategies to troubleshoot.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;4-torch-public&#34;&gt;#4: Torch &lt;code&gt;public/&lt;/code&gt;&lt;a href=&#34;#4-torch-public&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/YA6dmVW0gfIw8/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When you are seeing very weird things locally, try deleting your local &lt;code&gt;public/&lt;/code&gt; folder. Then serve site again. Sometimes it can get &amp;ldquo;junked up&amp;rdquo;. I&amp;rsquo;ve found that sometimes deleted content can be a 
+&lt;a href=&#34;https://community.rstudio.com/t/deleted-blog-post-still-showing-up-on-blogdown-website-in-index-html/14107&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;little sticky&lt;/a&gt;. As recommended in the 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/local-preview.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown book&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;you are strongly recommended to delete the &lt;code&gt;/public/&lt;/code&gt; directory before you rebuild the site for publishing every time, because Hugo never deletes it&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Also, this has a bonus of reinforcing for you exactly what the &amp;ldquo;Serve Site&amp;rdquo; Addin &lt;em&gt;does&lt;/em&gt; - it regenerates the &lt;code&gt;public/&lt;/code&gt; folder. This is also the folder that, if you are using 
+&lt;a href=&#34;post/2019-02-19-hugo-netlify-toml/&#34;&gt;Netlify to build your site&lt;/a&gt;, is in your &lt;code&gt;.gitignore&lt;/code&gt; file because Netlify (+ Hugo) generates this file &amp;ldquo;fresh&amp;rdquo; with each push to your GitHub repository.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;index_files/figure-html/unnamed-chunk-11-1.gif&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;5-peruse-public&#34;&gt;#5: Peruse &lt;code&gt;public/&lt;/code&gt;&lt;a href=&#34;#5-peruse-public&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/NS7gPxeumewkWDOIxi/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;When you notice weird things, try actually looking inside &lt;code&gt;public/&lt;/code&gt;- don&amp;rsquo;t be afraid to spelunk around in there! If you are seeing something wrong with your site, try to figure out how blogdown/Hugo is processing and rendering your content. This folder can tell you a lot! Keep in mind that your local &lt;code&gt;public/&lt;/code&gt; folder will still contain 
+&lt;a href=&#34;#dates&#34;&gt;future/draft/expired content&lt;/a&gt; if you used the &amp;ldquo;Serve Site&amp;rdquo; Addin.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;dates&#34;&gt;#6: Back to the future&lt;a href=&#34;#dates&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://media.giphy.com/media/ek6obDm0IwjNm/giphy.gif&#34; alt=&#34;Where are my posts?&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 5: Where are my posts?&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If your site renders beautifully locally, and your drag-and-drop site from &lt;code&gt;public/&lt;/code&gt; looks the same, but you are missing key content when you actually deploy to Netlify using a Hugo build, you may have inadvertently stumbled into a Hugo date time warp. This is a fairly 
+&lt;a href=&#34;https://community.rstudio.com/t/serve-site-working-but-posts-dont-show-up-on-github-io/11254/3&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;common gotcha&lt;/a&gt;. Try using the drag-and-drop method again, this time first delete &lt;code&gt;public/&lt;/code&gt;, then instead of using the &amp;ldquo;Serve Site&amp;rdquo; Addin, run this in your console:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::build_site(local = FALSE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Plop this &lt;em&gt;new&lt;/em&gt; public folder in Netlify to see what your site will look like when it is actually published. What does this show you? Your local Hugo build (read: your &lt;code&gt;public/&lt;/code&gt; folder generated by &amp;ldquo;Serve Site&amp;rdquo;) differs &lt;em&gt;by design&lt;/em&gt; in 3 important ways from your deployed site built by Netlify/Hugo. By default, 
+&lt;a href=&#34;https://gohugo.io/getting-started/usage/#draft-future-and-expired-content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo will not publish&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Content with a future &lt;code&gt;publishDate&lt;/code&gt; value&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Content with &lt;code&gt;draft: true&lt;/code&gt; status&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Content with a past &lt;code&gt;expiryDate&lt;/code&gt; value&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can see that these are 
+&lt;a href=&#34;https://gohugo.io/getting-started/configuration/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;defaults&lt;/a&gt;. The behavior of the &amp;ldquo;Serve Site&amp;rdquo; Addin is also documented in the 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/local-preview.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown book&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;This is for you to preview draft and future posts locally.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Blogdown&amp;rsquo;s &lt;code&gt;build_site(local = FALSE)&lt;/code&gt; differs from the &amp;ldquo;Serve Site&amp;rdquo; Addin in that it &lt;em&gt;will not&lt;/em&gt; render draft, future, or expired content. So your &lt;code&gt;public/&lt;/code&gt; folder from &lt;code&gt;build_site(local = FALSE)&lt;/code&gt; shows you &lt;strong&gt;exactly&lt;/strong&gt; what Netlify &lt;strong&gt;should&lt;/strong&gt; publish. Seeing it can help you troubleshoot why some content was showing up locally but not when you publish.&lt;/p&gt;
+&lt;p&gt;The defaults are pretty sensible and nice to have, as you can still put these kinds of content under version control, and hence collaborate with other team members on the content without having the content publish (or expire) until you &lt;strong&gt;say so&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To show content that Hugo was hiding, you&amp;rsquo;ll want to edit some YAML fields in the individual offending content files. For example, in the YAML of an individual content file (like a blog post), if you want to un-draft it, add or change this key/value:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;title: &#39;A Spoonful of Hugo: Troubleshooting your Build&#39;
+author: &amp;quot;Alison Hill&amp;quot;
+date: &#39;2019-03-04&#39;
+draft: false
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Alternatively, if you want to date something in the future (like to advertise the date of an upcoming talk) but publish now, you can use the &lt;code&gt;publishDate&lt;/code&gt; field. The &lt;code&gt;publishDate&lt;/code&gt; field is a newer addition to Hugo (&amp;gt;= v0.54.0) which, if left unset, will default to the &lt;code&gt;date&lt;/code&gt; field, which means in the individual content file YAML you can do:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;title: &#39;A Spoonful of Hugo: Get excited!!&#39;
+author: &amp;quot;Alison Hill&amp;quot;
+date: &#39;2025-03-04&#39;
+publishDate: &#39;2019-03-04&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hopefully these 6 things can help you get unstuck. If not, the 
+&lt;a href=&#34;https://community.rstudio.com/tags/blogdown&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;RStudio community forums&lt;/a&gt; are a great place to ask questions!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Spoonful of Hugo: Page Bundles</title>
+      <link>https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/</link>
+      <pubDate>Thu, 21 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Just a spoonful of Hugo helps the blog go down.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;me, only somewhat kidding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In this series, I&amp;rsquo;m sharing small spoonfuls of Hugo that I have learned that hopefully can help you get your site &lt;em&gt;UP&lt;/em&gt; (and even better- more efficient, more streamlined, more automated). You can read the previous posts about my &amp;ldquo;Spoonful of Hugo&amp;rdquo; series 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-archetypes/&#34;&gt;about Hugo archetypes&lt;/a&gt; and 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-netlify-toml/&#34;&gt;Hugo versions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is my third post in this series and it is breaking news.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/dZCdA82qa8d4xVIwm3/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;hugo-page-bundles&#34;&gt;Hugo Page Bundles&lt;a href=&#34;#hugo-page-bundles&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Well, not really breaking news, but you still may not know about it! Hugo v0.32 
+&lt;a href=&#34;https://gohugo.io/news/0.32-relnotes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;introduced&lt;/a&gt; a new feature called Page Bundles, as a way to organize the content files. Blogdown users rejoice that 
+&lt;a href=&#34;https://twitter.com/dvaughan32&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Davis Vaughn&lt;/a&gt; posted an 
+&lt;a href=&#34;https://github.com/rstudio/blogdown/issues/351&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;issue&lt;/a&gt; on the rstudio/blogdown repo to enable this option, which Yihui added shortly before rstudio::conf 2019 🎉. Here is the snippet from the &lt;code&gt;NEWS.md&lt;/code&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;One benefit of using a page bundle instead of a normal page is that you can put resource files associated with the post (such as images) under the same directory of the post itself. This means you no longer have to put them under the &lt;code&gt;static/&lt;/code&gt; directory, which has been quite confusing to Hugo beginners.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;What does a blogdown/Hugo site begin to look like without page bundles? I think here is a representative example from 
+&lt;a href=&#34;https://github.com/tidyverse/tidyverse.org/tree/c0eb070017cab794029b8ed3ac518f6e1a245a2b/content/articles&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tidyverse.org&lt;/a&gt; &lt;em&gt;(sorry tidyverse team- it&amp;rsquo;s not you, it&amp;rsquo;s the old Hugo).&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;For this team, they need an image for every post, which gets out of control pretty fast. Also, some ended up in 
+&lt;a href=&#34;https://github.com/tidyverse/tidyverse.org/tree/c0eb070017cab794029b8ed3ac518f6e1a245a2b/static/images&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;static/&lt;/code&gt;&lt;/a&gt; too, organized by post (which I have done on my own blog, though not well or consistently).&lt;/p&gt;
+&lt;p&gt;What would it look like to use page bundles?&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;content/
+├── about
+│   ├── index.md
+├── posts
+│   ├── 2015-07-23-hi-world
+│   │   ├── bakers.csv
+│   │   ├── image1.jpg
+│   │   ├── image2.png
+│   │   └── index.Rmd
+│   └── 2015-07-24-bye-world
+│       └── index.Rmd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;One could call this bundled file structure &amp;ldquo;tidier&amp;rdquo; 🍱.&lt;/p&gt;
+&lt;p&gt;In the above, after serving site, &lt;code&gt;index.html&lt;/code&gt; files also get added to the bundle. In Hugo&amp;rsquo;s terms, these are 
+&lt;a href=&#34;https://gohugo.io/content-management/page-bundles/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;leaf bundles&lt;/a&gt;. The resource files allowed in a bundle include page and non-page items like images, pdf, .csv files, etc.&lt;/p&gt;
+&lt;p&gt;This is instead of:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;content/
+├── about
+│   ├── index.md
+├── posts
+│   ├── 2015-07-23-hi-world.Rmd
+│   ├── bakers.csv
+│   ├── image1.jpg
+│   ├── image2.png
+│   └── 2015-07-24-bye-world.Rmd
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When you create a new bundled post, the actual content of the post goes in the index file of a page bundle. So:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# not bundled post
+post/2015-07-23-hi-world.Rmd
+# bundled post
+post/2015-07-24-bye-world/index.Rmd
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;h2 id=&#34;bundle-me-blogdown&#34;&gt;Bundle Me, blogdown!&lt;a href=&#34;#bundle-me-blogdown&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;First, read the previous post on setting up a 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-netlify-toml/&#34;&gt;netlify.toml file&lt;/a&gt;. Since using Hugo page bundles depends on Hugo v0.32 or higher, you should go ahead and update hugo then update your netlify.toml with your updated version:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::update_hugo()
+blogdown::hugo_version()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, let&amp;rsquo;s use the 
+&lt;a href=&#34;https://usethis.r-lib.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;usethis&lt;/strong&gt; package&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;project-specific-rprofile&#34;&gt;Project-specific .Rprofile&lt;a href=&#34;#project-specific-rprofile&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;First, I&amp;rsquo;m going to demo here how to create a project-specific .Rprofile file- but know that you can do a user-level .Rprofile file too.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# install.packages(&amp;quot;usethis&amp;quot;) # uncomment this to install
+usethis::edit_r_profile(scope = &amp;quot;project&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;These helpful messages &lt;em&gt;should&lt;/em&gt; print to your console: please note the &amp;ldquo;restart&amp;rdquo; reminder&amp;hellip;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; usethis::edit_r_profile(scope = &amp;quot;project&amp;quot;)
+● Restart R for changes to take effect
+✔ Setting active project to &#39;/Users/alison/rprojs/alison.rbind.io&#39;
+● Modify &#39;.Rprofile&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now you could add this to your file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# in .Rprofile of the website project
+if (file.exists(&amp;quot;~/.Rprofile&amp;quot;)) {
+  base::sys.source(&amp;quot;~/.Rprofile&amp;quot;, envir = environment())
+}
+
+options(blogdown.new_bundle = TRUE)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The first code chunk above is from the 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/global-options.html#global-options&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;blogdown book&lt;/a&gt;, where we describe a workaround for loading both user and project .Rprofile files (since R technically only reads one startup profile file).&lt;/p&gt;
+&lt;p&gt;If you don&amp;rsquo;t want this, you could add the blogdown options to your user .Rprofile instead using:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;usethis::edit_r_profile(scope = &amp;quot;user&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Heck, while you are at it, you could set a &lt;em&gt;bunch&lt;/em&gt; of options to make your blogdown life easier:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# in .Rprofile of the website project
+if (file.exists(&amp;quot;~/.Rprofile&amp;quot;)) {
+  base::sys.source(&amp;quot;~/.Rprofile&amp;quot;, envir = environment())
+}
+
+options(
+  blogdown.author = &amp;quot;Alison Hill&amp;quot;,
+  blogdown.ext = &amp;quot;.Rmd&amp;quot;,
+  blogdown.subdir = &amp;quot;post&amp;quot;,
+  blogdown.yaml.empty = TRUE,
+  blogdown.new_bundle = TRUE,
+  blogdown.title_case = TRUE
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;For the blogdown-specific options, any of these prepopulate content in your &amp;ldquo;New Post&amp;rdquo; Addin (I told you to use this 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-archetypes/&#34;&gt;here&lt;/a&gt;). There is a handy 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/global-options.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;table&lt;/a&gt; from the blogdown book, summarized here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;blogdown.author&lt;/code&gt; = author of new posts&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;blogdown.ext&lt;/code&gt; = default extension of new posts (can also be &amp;ldquo;.md&amp;rdquo; or &amp;ldquo;.Rmarkdown&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;blogdown.subdir&lt;/code&gt; = theme-specific, you need to know your theme and content folder here&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;blogdown.yaml.empty&lt;/code&gt; = I told you to do that 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-archetypes/&#34;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;blogdown.new_bundle&lt;/code&gt; = what this whole post is about!&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;blogdown.title_case&lt;/code&gt; = &amp;ldquo;nEed More coFFee&amp;rdquo; &amp;ndash;&amp;gt; &amp;ldquo;Need More Coffee&amp;rdquo; (it tidies all your post titles to title case)&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;the-newline-thing&#34;&gt;The Newline Thing&lt;a href=&#34;#the-newline-thing&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Here is a &lt;strong&gt;massive&lt;/strong&gt; .Rprofile gotcha: this file &lt;strong&gt;must&lt;/strong&gt; end with a blank line. So make sure you add an empty line at the end of the file, then save it, and restart your R session.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;restart-r.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Want to make your general R life easier in the future? Follow Yihui&amp;rsquo;s 
+&lt;a href=&#34;https://yihui.name/en/2018/04/rprofile-trailing-newline/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;advice&lt;/a&gt; and do this in RStudio to ensure that all source files end with a newline:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://db.yihui.name/images/rstudio-newline.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;use-bundles&#34;&gt;Use Bundles&lt;a href=&#34;#use-bundles&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;After restarting R, try using the &amp;ldquo;New Post&amp;rdquo; Addin, this time &lt;em&gt;with feeling&lt;/em&gt;. There is &lt;em&gt;still&lt;/em&gt; one more gotcha though. Use the Addin to create your new bundled post. The only catch is that once you are looking at your exciting new post, you should &lt;strong&gt;delete the slug&lt;/strong&gt; in the YAML (I posted an issue about this 
+&lt;a href=&#34;https://github.com/rstudio/blogdown/issues/370&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The reason is that you want the link to your post to be:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;http://alison.rbind.io/post/2019-02-21-hugo-page-bundles/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you include the slug, the link to your post will be:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;http://alison.rbind.io/post/2019-02-21-hugo-page-bundles/hugo-page-bundles&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Another option is to update your &lt;code&gt;config.toml&lt;/code&gt; file with permalinks like 
+&lt;a href=&#34;https://bookdown.org/yihui/blogdown/configuration.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yihui suggests&lt;/a&gt; (but beware: this will change all your past links as well, requiring some 
+&lt;a href=&#34;https://yihui.name/en/2017/11/301-redirect/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netlify redirects&lt;/a&gt;):&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[permalinks]
+    post = &amp;quot;/:year/:month/:day/:slug/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The default here from Hugo was &lt;code&gt;/post/:year-:month-:day-:slug/:slug/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;A small note: if you want to add relative links from a blog post to another post in your same blog. So &lt;code&gt;[this](/post/2019-02-19-hugo-archetypes/)&lt;/code&gt; becomes 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-archetypes/&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Now, add images and data files to your ❤️&amp;rsquo;s content! But you may want to do one more thing&amp;hellip;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;update-metadata&#34;&gt;Update Metadata&lt;a href=&#34;#update-metadata&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;If you are anything like me, you may draft a blog post then come back to it later. For example, I started this post 2 days ago, but want to publish it today, 2020-12-20. The cool thing that was already built-in to blogdown is the &amp;ldquo;Update Metadata&amp;rdquo; Addin. With your blog post open (it should be called &lt;code&gt;index.Rmd&lt;/code&gt;)^[If no post is open, you will get an error: &lt;code&gt;Warning message: The current document does not seem to contain YAML metadata&lt;/code&gt;], click on Addins and select &amp;ldquo;Update Metadata&amp;rdquo;. You should see a window like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;update-metadata.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Check the box to rename the file if the date has changed. RStudio will tell you your file has been deleted- which is technically true since the folder was renamed, but don&amp;rsquo;t panic!&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;file-deleted-warning.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Click YES. The &lt;code&gt;index.Rmd&lt;/code&gt; file that is now open should have an updated date field in the YAML. In your RStudio file viewer, you may want to click on &amp;ldquo;content&amp;rdquo; at this point then navigate back to view your post- then you will then see that the folder name now has an updated date too.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Spoonful of Hugo: The netlify.toml File</title>
+      <link>https://katrienantonio.github.io/post/2019-02-19-hugo-netlify-toml/</link>
+      <pubDate>Wed, 20 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/post/2019-02-19-hugo-netlify-toml/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Just a spoonful of Hugo helps the blog go down.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;me, only somewhat kidding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can read the previous post about my &amp;ldquo;Spoonful of Hugo&amp;rdquo; series 
+&lt;a href=&#34;https://katrienantonio.github.io/post/2019-02-19-hugo-archetypes/&#34;&gt;here&lt;/a&gt;. In this series, I&amp;rsquo;m sharing small spoonfuls of Hugo that I have learned that hopefully can help you get your site &lt;em&gt;UP&lt;/em&gt; (and even better- more efficient, more streamlined, more automated).&lt;/p&gt;
+&lt;p&gt;This is my second post in this series, and it is a relatively quick one. Just do this. This one is a no-brainer.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Thanks to 
+&lt;a href=&#34;https://twitter.com/dataandme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Mara Averick&lt;/a&gt; for alerting me that with Hugo version 0.54.0 and onward, there is a trailing zero at the end of 
+&lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5639&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo versions now&lt;/a&gt;. So for versions before 0.54.0, use the format: 0.53; for later versions use 0.54.0 (0.54 will not work).
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;h2 id=&#34;use-netlify-to-deploy&#34;&gt;Use Netlify to Deploy&lt;a href=&#34;#use-netlify-to-deploy&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;First, you&amp;rsquo;ll need to use Netlify! I am a very happy Netlify user and currently have approximately 33 sites deployed. To setup a new account, navigate to 
+&lt;a href=&#34;https://www.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netlify&lt;/a&gt; and click on the &lt;em&gt;Sign Up&lt;/em&gt; link.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://arm.rbind.io/slides/img/netlify-landing.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Sign up with &lt;em&gt;GitHub&lt;/em&gt; to connect your GitHub and Netlify accounts (as shown below).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;netlify-sign-up.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you use a different version control service, select GitLab or BitBucket instead.&lt;/p&gt;
+&lt;p&gt;The last step is to use the Netlify UI in browser do &lt;em&gt;New Site from Git&lt;/em&gt; &amp;gt; pick your repo. You&amp;rsquo;ll be prompted to fill in these fields, they are probably already filled in correctly for you:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;netlify-deploy-settings.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The next part is the advanced build settings:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;netlify-adv-build.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;See that &lt;strong&gt;pro tip&lt;/strong&gt; about the netlify.toml? Let&amp;rsquo;s do that! You can leave these fields as is.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;why-netlifytoml&#34;&gt;Why netlify.toml?&lt;a href=&#34;#why-netlifytoml&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In their 
+&lt;a href=&#34;https://www.netlify.com/docs/build-gotchas/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Build Gotchas&lt;/strong&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;If your build works locally, the next debugging step is to ensure the package versions we use to build match yours. You can find the settings for these in the 
+&lt;a href=&#34;https://www.netlify.com/docs/build-settings/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Build Settings&lt;/a&gt; doc. That’s the leading cause of build failure.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Yes that is right- package version mismatches are the leading cause of build failure with Netlify. What does this look like for blogdown users? This means that you are running a version of Hugo locally that doesn&amp;rsquo;t match the version that Netlify is using to build your site. Most of the time, you are using a more recent version of Hugo than the one Netlify uses. This means that the files your theme relies on may be using newer Hugo functions that were introduced in later Hugo versions- functions that Netlify won&amp;rsquo;t be able to find working from an older Hugo version. You&amp;rsquo;ll get &lt;em&gt;all the build errors&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;You can check your local Hugo version by running this code in your R console:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;blogdown::hugo_version()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &#39;0.79.0&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, we want Netlify to use this same version of Hugo when it builds your site. You can do this two ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Do this in your browser (👎)&lt;/li&gt;
+&lt;li&gt;Do this in your project root directory in a netlify.toml file (👍)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+&lt;h2 id=&#34;add-the-netlifytoml-file&#34;&gt;Add the netlify.toml File&lt;a href=&#34;#add-the-netlifytoml-file&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Adding this file means that team members can see for themselves what version of Hugo you are running- if it is buried in the Netlify UI, you can&amp;rsquo;t see that information unless you sift through the public build logs (no thanks). Making the file as plain text in the root of your blogdown project directory means that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it is version controlled (yay!) and&lt;/li&gt;
+&lt;li&gt;other people who use/learn from/contribute to your blog can &lt;em&gt;actually&lt;/em&gt; reproduce your site with the same site configuration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bonus:&lt;/strong&gt; you can set the Hugo versions for branch deploys too.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is an example from my own 
+&lt;a href=&#34;https://github.com/rbind/apreshill/blob/master/netlify.toml&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;netlify.toml&lt;/a&gt; file^[the leading zero matters for Hugo versions, so 0.53 works but .53 will not. For versions &amp;gt;= 0.54.0, the trailing zero also matters, so 0.54.0 works but 0.54 will not.]:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[build] 
+  publish = &amp;quot;public&amp;quot;
+  command = &amp;quot;hugo&amp;quot;
+
+[context.production.environment]
+  HUGO_VERSION = &amp;quot;0.54.0&amp;quot; # if older, use format: 0.53 (no trailing zero)
+  HUGO_ENV = &amp;quot;production&amp;quot;
+  HUGO_ENABLEGITINFO = &amp;quot;true&amp;quot;
+  
+[context.branch-deploy.environment]
+  HUGO_VERSION = &amp;quot;0.54.0&amp;quot; # if older, use format: 0.53 (no trailing zero)
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = &amp;quot;0.54.0&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;You can leave off the last two chunk if you don&amp;rsquo;t want to use 
+&lt;a href=&#34;https://www.netlify.com/blog/2017/11/16/get-full-control-over-your-deployed-branches/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;branch deploys&lt;/a&gt; or 
+&lt;a href=&#34;https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;preview deploys&lt;/a&gt;, but I ❤️ these two Netlify features and encourage you to try them out. I&amp;rsquo;ve starting drafting individual blog posts and tutorials in branches, and then I can see them rendered and share them for feedback without asking collaborators to clone and build the repository locally. It is &lt;strong&gt;lovely&lt;/strong&gt;. Every branch and pull request gets a link 🎉.&lt;/p&gt;
+&lt;p&gt;So add this file to your blogdown site repo and push to GitHub.&lt;/p&gt;
+&lt;p&gt;Note that, according to the 
+&lt;a href=&#34;https://www.netlify.com/docs/netlify-toml-reference/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Netlify docs&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;During a build, the following ordering determines which context covers a particular deploy: UI settings are overridden if a netlify.toml file is present in the root folder of the repo and there exists a setting for the same property/redirect/header in the toml file.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you look in your site&amp;rsquo;s Netlify deploy log, you should see entries like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;7:47:13 PM: Found netlify.toml. Overriding site configuration
+7:47:13 PM: Starting build script
+7:47:13 PM: Installing dependencies
+7:47:14 PM: Started restoring cached node version
+7:47:17 PM: Finished restoring cached node version
+7:47:18 PM: v8.15.0 is already installed.
+7:47:19 PM: Now using node v8.15.0 (npm v6.4.1)
+7:47:19 PM: Attempting ruby version 2.3.6, read from environment
+7:47:20 PM: Using ruby version 2.3.6
+7:47:20 PM: Using PHP version 5.6
+7:47:20 PM: Installing Hugo 0.54.0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Success!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

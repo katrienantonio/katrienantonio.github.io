@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/authors/katrien-antonio/</link>
+      <atom:link href="https://katrienantonio.github.io/authors/katrien-antonio/index.xml" rel="self" type="application/rss+xml" />
+    <description>Katrien Antonio</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 19 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>Katrien Antonio</title>
+      <link>https://katrienantonio.github.io/authors/katrien-antonio/</link>
+    </image>
+    
+    <item>
+      <title>Neural networks for insurance pricing with frequency and severity data: a benchmark study from data preprocessing to technical tariff</title>
+      <link>https://katrienantonio.github.io/publication/2023-neural-nets/</link>
+      <pubDate>Thu, 19 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2023-neural-nets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An engine to simulate insurance fraud network data</title>
+      <link>https://katrienantonio.github.io/publication/2023-fraud-gen/</link>
+      <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2023-fraud-gen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Catastrophe risk in a stochastic multi-population mortality model</title>
+      <link>https://katrienantonio.github.io/publication/2023-catastr-risk/</link>
+      <pubDate>Tue, 27 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2023-catastr-risk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bridging the gap between pricing and reserving with an occurrence and development model for non-life insurance claims</title>
+      <link>https://katrienantonio.github.io/publication/2023-reins/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2023-reins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On clustering levels of a hierarchical categorical risk factor</title>
+      <link>https://katrienantonio.github.io/publication/2023-hier-clust/</link>
+      <pubDate>Tue, 18 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2023-hier-clust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data-driven preventive maintenance for a heterogeneous machine portfolio</title>
+      <link>https://katrienantonio.github.io/publication/2022-hetmachportf/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-hetmachportf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Insurance pricing with hierarchically structured data: an illustration with a workers&#39; compensation insurance portfolio</title>
+      <link>https://katrienantonio.github.io/publication/2023-workcomp/</link>
+      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2023-workcomp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The skin-in-the-game bond: a novel sustainable capital instrument</title>
+      <link>https://katrienantonio.github.io/publication/2023-sitgb/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2023-sitgb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling the occurrence of events subject to a reporting delay via an EM algorithm</title>
+      <link>https://katrienantonio.github.io/publication/2022-ibnr-em/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-ibnr-em/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When stakes are high: balancing accuracy and transparency with Model-Agnostic Interpretable Data-driven suRRogates</title>
+      <link>https://katrienantonio.github.io/publication/2022-maidrr/</link>
+      <pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-maidrr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Copula-based inference for bivariate survival data with left truncation and dependent censoring</title>
+      <link>https://katrienantonio.github.io/publication/2022-depcens/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-depcens/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Empirical risk assessment of maintenance costs under full-service contracts</title>
+      <link>https://katrienantonio.github.io/publication/2022-ejor-emp-risk/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-ejor-emp-risk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The added value of dynamically updating motor insurance prices with telematics collected driving behavior data</title>
+      <link>https://katrienantonio.github.io/publication/2022-imetelematics/</link>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-imetelematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A hierarchical reserving model for reported non-life insurance claims</title>
+      <link>https://katrienantonio.github.io/publication/2022-hirm-reserving/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-hirm-reserving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social network analytics for supervised fraud detection in insurance</title>
+      <link>https://katrienantonio.github.io/publication/2022-fraud/</link>
+      <pubDate>Tue, 01 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-fraud/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assessing the impact of the COVID-19 shock on a stochastic multi-population mortality model</title>
+      <link>https://katrienantonio.github.io/publication/2022-risks/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-risks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quantifying longevity gaps using micro‐level lifetime data</title>
+      <link>https://katrienantonio.github.io/publication/2021-jrssa-pension-fund-mortality/</link>
+      <pubDate>Wed, 03 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-jrssa-pension-fund-mortality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Boosting Insights in Insurance Tariff Plans with Tree-Based Machine Learning Methods</title>
+      <link>https://katrienantonio.github.io/publication/2021-boosting/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-boosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Editorial</title>
+      <link>https://katrienantonio.github.io/publication/2021-editorial/</link>
+      <pubDate>Thu, 01 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-editorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pricing service maintenance contracts using predictive analytics</title>
+      <link>https://katrienantonio.github.io/publication/2021-pricing-oem/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-pricing-oem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sparse regression with Multi-type Regularized Feature modeling</title>
+      <link>https://katrienantonio.github.io/publication/2021-smurf/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2021-smurf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hands-on machine learning in R</title>
+      <link>https://katrienantonio.github.io/talk/2020-hands-on-ml/</link>
+      <pubDate>Tue, 11 Feb 2020 09:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-hands-on-ml/</guid>
+      <description>&lt;p&gt;This three-day workshop introduces the essential concepts of building machine learning models with R. Throughout the workshop you will gain insights in the foundations of machine learning methods, including resampling methods, data preprocessing steps and the tuning of parameters. You will cover a variety of statistical and machine learning methods, ranging from GLMs, over tree-based machine learning methods to neural networks. You will acquire insights in the foundations of these methods, learn how to set-up the model building process, and focus on building a good understanding of the resulting model output and predictions.&lt;/p&gt;
+&lt;p&gt;Leaving this workshop, you should have a firm grasp of the working principles of a variety of machine learning methods and be able to explore their use in practical settings. Moreover, you should have acquired the fundamental insights to explore some other methods on your own.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modeling the number of hidden events subject to observation delay</title>
+      <link>https://katrienantonio.github.io/publication/2019-ejor/</link>
+      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2019-ejor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A data driven binning strategy for the construction of insurance tariff classes</title>
+      <link>https://katrienantonio.github.io/publication/2018-data-driven/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2018-data-driven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Profit maximizing logistic model for customer churn prediction using genetic algorithms</title>
+      <link>https://katrienantonio.github.io/publication/2018-proflogit/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2018-proflogit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unravelling the predictive power of telematics data in car insurance pricing</title>
+      <link>https://katrienantonio.github.io/publication/2018-telematics/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2018-telematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modelling Censored Losses Using Splicing: a Global Fit Strategy With Mixed Erlang and Extreme Value Distributions</title>
+      <link>https://katrienantonio.github.io/publication/2017-splicing-ime/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-splicing-ime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Producing the Dutch and Belgian mortality projections: a stochastic multi-population standard</title>
+      <link>https://katrienantonio.github.io/publication/2017-mortality-standard/</link>
+      <pubDate>Sat, 14 Oct 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-mortality-standard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Bayesian joint model for population and portfolio-specific mortality</title>
+      <link>https://katrienantonio.github.io/publication/2017-bayesian-joint/</link>
+      <pubDate>Tue, 18 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-bayesian-joint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lifelong health insurance covers with surrender values: updating mechanisms in the presence of medical inflation</title>
+      <link>https://katrienantonio.github.io/publication/2017-lifelong-health/</link>
+      <pubDate>Thu, 15 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-lifelong-health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multivariate mixtures of Erlangs for density estimation under censoring</title>
+      <link>https://katrienantonio.github.io/publication/2016-mme/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2016-mme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of multiple structural changes on mortality predictions</title>
+      <link>https://katrienantonio.github.io/publication/2016-structural-changes/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2016-structural-changes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reserving by conditioning on markers of individual claims: a case-study using historical information</title>
+      <link>https://katrienantonio.github.io/publication/2015-reserving-markers/</link>
+      <pubDate>Wed, 30 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2015-reserving-markers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Poisson log-bilinear models for mortality projections with multiple populations</title>
+      <link>https://katrienantonio.github.io/publication/2015-poisson-bilinear/</link>
+      <pubDate>Sat, 19 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2015-poisson-bilinear/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fitting mixtures of Erlangs to censored and truncated data using the EM algorithm</title>
+      <link>https://katrienantonio.github.io/publication/2015-mixtures-erlangs/</link>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2015-mixtures-erlangs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Individual loss reserving using paid-incurred data</title>
+      <link>https://katrienantonio.github.io/publication/2014-ipic/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2014-ipic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Micro-level stochastic loss reserving in general insurance</title>
+      <link>https://katrienantonio.github.io/publication/2014-micro/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2014-micro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Individual loss reserving with the multivariate skew normal framework</title>
+      <link>https://katrienantonio.github.io/publication/2013-astin/</link>
+      <pubDate>Tue, 06 Aug 2013 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2013-astin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Premium indexing in lifelong health insurance</title>
+      <link>https://katrienantonio.github.io/publication/2013-far-east/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2013-far-east/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A multilevel analysis of intercompany claim counts</title>
+      <link>https://katrienantonio.github.io/publication/2010-multilevel/</link>
+      <pubDate>Wed, 02 Feb 2011 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2010-multilevel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical concepts of a priori and a posteriori risk classification</title>
+      <link>https://katrienantonio.github.io/publication/2012-valdez/</link>
+      <pubDate>Wed, 02 Feb 2011 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2012-valdez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coppice management effects on experimentally established populations of three herbaceous layer woodland species</title>
+      <link>https://katrienantonio.github.io/publication/2008-coppice/</link>
+      <pubDate>Tue, 16 Sep 2008 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2008-coppice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Issues in claims reserving and credibility: a semiparametric approach with mixed models</title>
+      <link>https://katrienantonio.github.io/publication/2008-jri/</link>
+      <pubDate>Mon, 04 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2008-jri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lognormal mixed models for reported claims reserves</title>
+      <link>https://katrienantonio.github.io/publication/2006-naaj/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2006-naaj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discussion on &#39;A Bayesian generalized linear model for the Bornhuetter-Ferguson method of claims reserving&#39;</title>
+      <link>https://katrienantonio.github.io/publication/2005-naaj/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2005-naaj/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

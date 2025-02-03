@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jan Beirlant | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/authors/jan-beirlant/</link>
+      <atom:link href="https://katrienantonio.github.io/authors/jan-beirlant/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jan Beirlant</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 01 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>Jan Beirlant</title>
+      <link>https://katrienantonio.github.io/authors/jan-beirlant/</link>
+    </image>
+    
+    <item>
+      <title>Modelling Censored Losses Using Splicing: a Global Fit Strategy With Mixed Erlang and Extreme Value Distributions</title>
+      <link>https://katrienantonio.github.io/publication/2017-splicing-ime/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2017-splicing-ime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Issues in claims reserving and credibility: a semiparametric approach with mixed models</title>
+      <link>https://katrienantonio.github.io/publication/2008-jri/</link>
+      <pubDate>Mon, 04 Aug 2008 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2008-jri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lognormal mixed models for reported claims reserves</title>
+      <link>https://katrienantonio.github.io/publication/2006-naaj/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2006-naaj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discussion on &#39;A Bayesian generalized linear model for the Bornhuetter-Ferguson method of claims reserving&#39;</title>
+      <link>https://katrienantonio.github.io/publication/2005-naaj/</link>
+      <pubDate>Sat, 01 Jan 2005 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2005-naaj/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

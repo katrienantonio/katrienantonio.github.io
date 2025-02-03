@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anastasios Bardoutsos | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/authors/anastasios-bardoutsos/</link>
+      <atom:link href="https://katrienantonio.github.io/authors/anastasios-bardoutsos/index.xml" rel="self" type="application/rss+xml" />
+    <description>Anastasios Bardoutsos</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sat, 19 Sep 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>Anastasios Bardoutsos</title>
+      <link>https://katrienantonio.github.io/authors/anastasios-bardoutsos/</link>
+    </image>
+    
+    <item>
+      <title>Bayesian Poisson log-bilinear models for mortality projections with multiple populations</title>
+      <link>https://katrienantonio.github.io/publication/2015-poisson-bilinear/</link>
+      <pubDate>Sat, 19 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2015-poisson-bilinear/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks &amp; workshops | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/talk/</link>
+      <atom:link href="https://katrienantonio.github.io/talk/index.xml" rel="self" type="application/rss+xml" />
+    <description>Talks &amp; workshops</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 15 Dec 2022 09:45:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>Talks &amp; workshops</title>
+      <link>https://katrienantonio.github.io/talk/</link>
+    </image>
+    
+    <item>
+      <title>Neurale netwerken en hun inzet in het actuariaat</title>
+      <link>https://katrienantonio.github.io/talk/2022-neural/</link>
+      <pubDate>Thu, 15 Dec 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2022-neural/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bias, fairness and discrimination-free insurance pricing</title>
+      <link>https://katrienantonio.github.io/talk/2022-ai/</link>
+      <pubDate>Wed, 21 Sep 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2022-ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The added value of dynamically updating motor insurance prices with telematics collected driving behavior data</title>
+      <link>https://katrienantonio.github.io/talk/2022-eaa/</link>
+      <pubDate>Thu, 12 May 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2022-eaa/</guid>
+      <description>&lt;p&gt;In this talk, I present the Henckaerts &amp;amp; Antonio (2022, IME) paper.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Insurance pricing analytics - an academic perspective</title>
+      <link>https://katrienantonio.github.io/talk/2021-fsma/</link>
+      <pubDate>Fri, 07 May 2021 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2021-fsma/</guid>
+      <description>&lt;p&gt;In this talk, I gave a state-of-the-art of the field of insurance pricing with analytic methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boosting insights in insurance tariff plans with machine learning methods</title>
+      <link>https://katrienantonio.github.io/talk/2021-urbana/</link>
+      <pubDate>Sat, 27 Mar 2021 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2021-urbana/</guid>
+      <description>&lt;p&gt;In this talk, I presented the Henckaerts et al. (2021) paper. The central theme of the symposium was &amp;lsquo;Actuarial innovations to emerging risks&amp;rsquo;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boosting insights in insurance tariff plans with machine learning methods</title>
+      <link>https://katrienantonio.github.io/talk/2020-ergo/</link>
+      <pubDate>Thu, 03 Dec 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-ergo/</guid>
+      <description>&lt;p&gt;In this talk, I discussed the use of tree-based machine learning methods to develop full tariff plans built from both the frequency and severity of claims.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assessing the impact of COVID-19 on the IA|BE 2020 mortality projections - a scenario analysis</title>
+      <link>https://katrienantonio.github.io/talk/2020-iabe-covid/</link>
+      <pubDate>Mon, 23 Nov 2020 16:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-iabe-covid/</guid>
+      <description>&lt;p&gt;In this talk, I presented the strategy followed for a Covid-19 impact analysis on the IA|BE 2020, the mortality projection model developed for the Belgian population.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The IA|BE 2020 mortality projection for the Belgian population</title>
+      <link>https://katrienantonio.github.io/talk/2020-iabe/</link>
+      <pubDate>Mon, 23 Nov 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-iabe/</guid>
+      <description>&lt;p&gt;In this talk, I presented the methodology used in IA|BE 2020, the mortality projection model developed for the Belgian population.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hands-on machine learning in R</title>
+      <link>https://katrienantonio.github.io/talk/2020-hands-on-ml/</link>
+      <pubDate>Tue, 11 Feb 2020 09:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-hands-on-ml/</guid>
+      <description>&lt;p&gt;This three-day workshop introduces the essential concepts of building machine learning models with R. Throughout the workshop you will gain insights in the foundations of machine learning methods, including resampling methods, data preprocessing steps and the tuning of parameters. You will cover a variety of statistical and machine learning methods, ranging from GLMs, over tree-based machine learning methods to neural networks. You will acquire insights in the foundations of these methods, learn how to set-up the model building process, and focus on building a good understanding of the resulting model output and predictions.&lt;/p&gt;
+&lt;p&gt;Leaving this workshop, you should have a firm grasp of the working principles of a variety of machine learning methods and be able to explore their use in practical settings. Moreover, you should have acquired the fundamental insights to explore some other methods on your own.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

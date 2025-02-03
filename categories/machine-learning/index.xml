@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/categories/machine-learning/</link>
+      <atom:link href="https://katrienantonio.github.io/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>machine learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 27 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>machine learning</title>
+      <link>https://katrienantonio.github.io/categories/machine-learning/</link>
+    </image>
+    
+    <item>
+      <title>Take a Sad Script &amp; Make it Better: Tidymodels Edition</title>
+      <link>https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/</link>
+      <pubDate>Thu, 27 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/</guid>
+      <description>&lt;p&gt;A few years ago, I did a talk called 
+&lt;a href=&#34;https://katrienantonio.github.io/talk/2018-ohsu-sad-plot-better/&#34;&gt;&amp;ldquo;Take a Sad Plot &amp;amp; Make it Better,&amp;rdquo;&lt;/a&gt; where I showed how I took a single sad plot and tried to make it better. The process of making that plot better taught me a lot about data visualization, and about the 
+&lt;a href=&#34;https://ggplot2.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;ggplot2 package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Fast-forward to 2019 when I started learning 
+&lt;a href=&#34;https://github.com/tidymodels/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tidymodels&lt;/a&gt;, and I have accumulated some pretty sad predictive modeling scripts! And my sad plots are not so lonely anymore. Specifically, my old scripts for doing cross-validation with tidymodels are particularly sad. But, I&amp;rsquo;ve been able to make them better (one might even call them happy), primarily due to changes in the 
+&lt;a href=&#34;https://tidymodels.github.io/tune/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;tune package&lt;/a&gt; and the addition of the &lt;code&gt;fit_resamples()&lt;/code&gt; function. The process of making these scripts better taught me a lot about predictive modeling, and about the (evolving) tidymodels ecosystem. So, why write a blog post with outdated code?&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I want to remember &lt;em&gt;that&lt;/em&gt; I did this &amp;ldquo;by hand.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;I want to remember &lt;em&gt;how&lt;/em&gt; I did this &amp;ldquo;by hand.&amp;rdquo; The code still works, even if there is now a happier path to doing the same thing.&lt;/li&gt;
+&lt;li&gt;I want to share cute penguin art and gifs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let&amp;rsquo;s start with some 
+&lt;a href=&#34;http://www.greenhumour.com/2018/04/penguins-of-world.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cute penguin art&lt;/a&gt; by Rohan Chakravarty&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.greenhumour.com/2018/04/penguins-of-world.html&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;penguins-of-the-world.JPG&#34; width=&#34;270&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;My objective here is &lt;strong&gt;not&lt;/strong&gt; to provide an introduction to using tidymodels, cross-validation, or to machine learning. If that is what you came for, check out the project button at the top of this post for my workshop materials for learners, and my 
+&lt;a href=&#34;https://education.rstudio.com/blog/2020/02/conf20-intro-ml/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;associated blog post&lt;/a&gt; on the RStudio education site.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Bottom line:&lt;/strong&gt; If you are stumbling upon this blog post in the year 2020 or beyond, know that there is a better way!
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;h2 id=&#34;a-sad-script-symphony---&#34;&gt;A sad script symphony 🎻 🎷 🎹&lt;a href=&#34;#a-sad-script-symphony---&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m not the first person to write sad tidymodels scripts- there are many out in the wild. Here were the blog posts that I found most helpful when trying to solve this particular coding conundrum:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://towardsdatascience.com/modelling-with-tidymodels-and-parsnip-bae2c01c131c&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modelling with Tidymodels and Parsnip: A Tidy Approach to a Classification Problem&lt;/a&gt; by Diego Usai&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.brodrigues.co/blog/2018-11-25-tidy_cv/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A tutorial on tidy cross-validation with R&lt;/a&gt; by Bruno Rodrigues&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.benjaminsorensen.me/post/modeling-with-parsnip-and-tidymodels/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Modeling with parsnip and tidymodels&lt;/a&gt; by Benjamin Sorensen&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+&lt;h2 id=&#34;packages&#34;&gt;Packages&lt;a href=&#34;#packages&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(tidyverse)
+library(tidymodels)
+library(rpart)  # for decision tree
+library(ranger) # for random forest
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;h2 id=&#34;data&#34;&gt;Data&lt;a href=&#34;#data&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m going to use data that Allison Horst helped me source on penguins from the 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Palmer_Station&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Palmer Station&lt;/a&gt; (Antarctica) 
+&lt;a href=&#34;https://lternet.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Long Term Ecological Research Network&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;sooo now I&amp;rsquo;m just looking at penguin pictures&amp;rdquo;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://twitter.com/allison_horst?lang=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Allison Horst&lt;/a&gt; after slacking me this penguin data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;strong&gt;Update!&lt;/strong&gt; We have bundled the Palmer Station penguins data into an R data package named palmerpenguins. Enjoy 🐧 Here is the package website: 
+&lt;a href=&#34;https://allisonhorst.github.io/palmerpenguins/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://allisonhorst.github.io/palmerpenguins/&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;install.packages(&amp;quot;remotes&amp;quot;) # to install from github
+remotes::install_github(&amp;quot;allisonhorst/palmerpenguins&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://allisonhorst.github.io/palmerpenguins/reference/figures/logo.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;After you&amp;rsquo;ve installed the package, load it and read about the variables with &lt;code&gt;?penguins&lt;/code&gt;. We&amp;rsquo;ll modify this dataset lightly by:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;casting all characters as factors,&lt;/li&gt;
+&lt;li&gt;dropping any observations with missing data, and&lt;/li&gt;
+&lt;li&gt;dropping the &lt;code&gt;island&lt;/code&gt; variable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;library(palmerpenguins)
+
+tidypenguins &amp;lt;- penguins %&amp;gt;% 
+  select(-island) %&amp;gt;% 
+  drop_na()
+
+glimpse(tidypenguins)
+#&amp;gt; Rows: 333
+#&amp;gt; Columns: 7
+#&amp;gt; $ species           &amp;lt;fct&amp;gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Ade…
+#&amp;gt; $ bill_length_mm    &amp;lt;dbl&amp;gt; 39.1, 39.5, 40.3, 36.7, 39.3, 38.9, 39.2, 41.1, 38.…
+#&amp;gt; $ bill_depth_mm     &amp;lt;dbl&amp;gt; 18.7, 17.4, 18.0, 19.3, 20.6, 17.8, 19.6, 17.6, 21.…
+#&amp;gt; $ flipper_length_mm &amp;lt;int&amp;gt; 181, 186, 195, 193, 190, 181, 195, 182, 191, 198, 1…
+#&amp;gt; $ body_mass_g       &amp;lt;int&amp;gt; 3750, 3800, 3250, 3450, 3650, 3625, 4675, 3200, 380…
+#&amp;gt; $ sex               &amp;lt;fct&amp;gt; male, female, female, female, male, female, male, f…
+#&amp;gt; $ year              &amp;lt;int&amp;gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 200…
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;h2 id=&#34;penguins&#34;&gt;Penguins&lt;a href=&#34;#penguins&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://allisonhorst.github.io/palmerpenguins/man/figures/lter_penguins.png&#34; alt=&#34;Artwork by @allisonhorst&#34; width=&#34;50%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 1: Artwork by @allisonhorst&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This data included structural size measurements of penguins like their bill length, flipper length, and body mass. It also included each penguin&amp;rsquo;s species and sex. I&amp;rsquo;m going to use this data to try to predict penguin body mass. Sadly, we only have data for three distinct penguin species:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;tidypenguins %&amp;gt;% 
+  count(species)
+#&amp;gt; # A tibble: 3 x 2
+#&amp;gt;   species       n
+#&amp;gt;   &amp;lt;fct&amp;gt;     &amp;lt;int&amp;gt;
+#&amp;gt; 1 Adelie      146
+#&amp;gt; 2 Chinstrap    68
+#&amp;gt; 3 Gentoo      119
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is a lineup:&lt;/p&gt;
+&lt;img src=&#34;https://www.bas.ac.uk/wp-content/uploads/2015/04/Penguin-heights.jpg&#34; style=&#34;display: block; margin: auto;&#34; /&gt;
+&lt;p&gt;From: 
+&lt;a href=&#34;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.bas.ac.uk/about/antarctica/wildlife/penguins/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Looks like we have data for 3 of the smaller penguin species (of those pictured here).&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s build a simple linear regression model to predict body mass from flipper length.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(tidypenguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(color = &amp;quot;salmon&amp;quot;, size = 3, alpha = .9) +
+  geom_smooth(method = &amp;quot;lm&amp;quot;) +
+  theme_penguin()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;figs/unnamed-chunk-9-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;p&gt;Not bad! Looks promising. To actually fit a linear regression model, you might be used to something like this in R:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_mod &amp;lt;- lm(body_mass_g ~ flipper_length_mm, data = tidypenguins)
+summary(penguin_mod)
+#&amp;gt; 
+#&amp;gt; Call:
+#&amp;gt; lm(formula = body_mass_g ~ flipper_length_mm, data = tidypenguins)
+#&amp;gt; 
+#&amp;gt; Residuals:
+#&amp;gt;      Min       1Q   Median       3Q      Max 
+#&amp;gt; -1057.33  -259.79   -12.24   242.97  1293.89 
+#&amp;gt; 
+#&amp;gt; Coefficients:
+#&amp;gt;                   Estimate Std. Error t value Pr(&amp;gt;|t|)    
+#&amp;gt; (Intercept)       -5872.09     310.29  -18.93   &amp;lt;2e-16 ***
+#&amp;gt; flipper_length_mm    50.15       1.54   32.56   &amp;lt;2e-16 ***
+#&amp;gt; ---
+#&amp;gt; Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+#&amp;gt; 
+#&amp;gt; Residual standard error: 393.3 on 331 degrees of freedom
+#&amp;gt; Multiple R-squared:  0.7621,	Adjusted R-squared:  0.7614 
+#&amp;gt; F-statistic:  1060 on 1 and 331 DF,  p-value: &amp;lt; 2.2e-16
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But we aren&amp;rsquo;t going to stick with this. We are going to use tidymodels, with the goal of generating accurate predictions for future, yet-to-be-seen penguins.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/C0EYVrLCgnYdy/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;tidymodels-101&#34;&gt;tidymodels 101&lt;a href=&#34;#tidymodels-101&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The code provided in the section below is &lt;em&gt;not&lt;/em&gt; particularly sad 🐧. If you are embarking on learning tidymodels, you&amp;rsquo;ll need to use this same kind of code as the building blocks for any predictive modeling pipeline.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;parsnip-build-the-model&#34;&gt;Parsnip: build the model&lt;a href=&#34;#parsnip-build-the-model&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;This step is really three, using only the 
+&lt;a href=&#34;https://tidymodels.github.io/parsnip/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;parsnip package&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;lm_spec &amp;lt;- 
+  linear_reg() %&amp;gt;%       # pick model
+  set_engine(&amp;quot;lm&amp;quot;) %&amp;gt;%   # set engine
+  set_mode(&amp;quot;regression&amp;quot;) # set mode
+
+lm_spec
+#&amp;gt; Linear Regression Model Specification (regression)
+#&amp;gt; 
+#&amp;gt; Computational engine: lm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Things that are missing: data (we haven&amp;rsquo;t touched it yet) and a formula (no data, no variables, no twiddle &lt;code&gt;~&lt;/code&gt;). This is an &lt;em&gt;abstract&lt;/em&gt; model specification. See other possible parsnip models 
+&lt;a href=&#34;https://tidymodels.github.io/parsnip/articles/articles/Models.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;recipe-not-happening-here-folks&#34;&gt;Recipe: not happening here, folks&lt;a href=&#34;#recipe-not-happening-here-folks&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;This is where you would normally insert some code for feature engineering using the 
+&lt;a href=&#34;https://tidymodels.github.io/recipes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;recipes package&lt;/a&gt;. But previously this required functions named &lt;code&gt;prep()&lt;/code&gt;, &lt;code&gt;bake()&lt;/code&gt;, &lt;code&gt;juice()&lt;/code&gt;- so I&amp;rsquo;m willfully ignoring that for now. There will be no recipes involving penguins.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/H4uE6w9G1uK4M/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;rsample-initial-split&#34;&gt;Rsample: initial split&lt;a href=&#34;#rsample-initial-split&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;We&amp;rsquo;ll use the 
+&lt;a href=&#34;https://tidymodels.github.io/rsample/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;rsample package&lt;/a&gt; to split (&lt;em&gt;ayee! I promise no penguins were hurt in the writing of this blog post&lt;/em&gt;) the penguins up into two datasets: training and testing. If you are unfamiliar with this practice, read up on 
+&lt;a href=&#34;https://sebastianraschka.com/blog/2016/model-evaluation-selection-part1.html#resubstitution-validation-and-the-holdout-method&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the holdout method&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_split &amp;lt;- initial_split(tidypenguins, strata = species)
+penguin_train &amp;lt;- training(penguin_split)
+penguin_test  &amp;lt;- testing(penguin_split)
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;fitting-the-model-once&#34;&gt;Fitting the model once&lt;a href=&#34;#fitting-the-model-once&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Fitting a single model once is&amp;hellip;not &lt;em&gt;exactly&lt;/em&gt; the hardest part.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/4KALRmOb8uwbC/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;This is essentially the workflow from this 
+&lt;a href=&#34;https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;early blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(0)
+
+lm_spec %&amp;gt;% 
+  
+  # train: get fitted model
+  fit(body_mass_g ~ ., data = penguin_train) %&amp;gt;% 
+  
+  # test: get predictions
+  predict(new_data = penguin_test) %&amp;gt;% 
+  
+  # compare: get metrics
+  bind_cols(penguin_test) %&amp;gt;% 
+  rmse(truth = body_mass_g, estimate = .pred)
+#&amp;gt; # A tibble: 1 x 3
+#&amp;gt;   .metric .estimator .estimate
+#&amp;gt;   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
+#&amp;gt; 1 rmse    standard        278.
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;fitting-the-model-with-a-function&#34;&gt;Fitting the model with a function&lt;a href=&#34;#fitting-the-model-with-a-function&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;If you squint, you might see that I could make this into a function like below:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;get_rmse &amp;lt;- function(model_spec, split) {
+  
+  model_spec %&amp;gt;% 
+    
+    # train: get fitted model
+    fit(body_mass_g ~ ., data = training(split)) %&amp;gt;% 
+    
+    # test: get predictions
+    predict(new_data = testing(split)) %&amp;gt;% 
+    
+    # compare: get metrics
+    bind_cols(testing(split)) %&amp;gt;% 
+    rmse(truth = body_mass_g, estimate = .pred)
+  
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;And I could use it to fit a linear regression model:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(0)
+get_rmse(model_spec = lm_spec, split = penguin_split)
+#&amp;gt; # A tibble: 1 x 3
+#&amp;gt;   .metric .estimator .estimate
+#&amp;gt;   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
+#&amp;gt; 1 rmse    standard        278.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I could also build up a tibble that includes the results, if I wanted to save the predicted values, for example:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;get_preds &amp;lt;- function(model_spec, split){
+  
+  # train: get fitted model
+  fit_model &amp;lt;- model_spec %&amp;gt;% 
+    fit(body_mass_g ~ ., data = training(split))
+  
+  # test: get predictions
+  preds &amp;lt;- fit_model %&amp;gt;% 
+    predict(new_data = testing(split)) %&amp;gt;% 
+    bind_cols(testing(split) %&amp;gt;% select(body_mass_g, species))
+
+  preds
+}
+
+set.seed(0)
+penguin_preds &amp;lt;- get_preds(model_spec = lm_spec, split = penguin_split)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then I can work with the predicted values, like plotting the fitted body mass estimates against the residuals.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;ggplot(penguin_preds, aes(x = .pred, y = (.pred - body_mass_g))) +
+  geom_point(aes(colour = species), size = 3, alpha = .8) +
+  geom_smooth(method = &amp;quot;lm&amp;quot;) +
+  theme_penguin() +
+  scico::scale_colour_scico_d(end = .8) +
+  ggtitle(&amp;quot;Residuals vs Fitted&amp;quot;)
+#&amp;gt; `geom_smooth()` using formula &#39;y ~ x&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;img src=&#34;figs/unnamed-chunk-17-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;
+# compare: get metrics
+penguin_preds %&amp;gt;% 
+  rmse(truth = body_mass_g, estimate = .pred)
+#&amp;gt; # A tibble: 1 x 3
+#&amp;gt;   .metric .estimator .estimate
+#&amp;gt;   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
+#&amp;gt; 1 rmse    standard        278.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or I could fit a regression tree model with a new model spec:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# regression tree model spec
+rt_spec &amp;lt;-
+  decision_tree() %&amp;gt;% 
+  set_engine(&amp;quot;rpart&amp;quot;) %&amp;gt;% 
+  set_mode(&amp;quot;regression&amp;quot;)
+
+# get rmse
+set.seed(0)
+get_preds(model_spec = rt_spec, 
+          split = penguin_split) %&amp;gt;% 
+  rmse(truth = body_mass_g, estimate = .pred)
+#&amp;gt; # A tibble: 1 x 3
+#&amp;gt;   .metric .estimator .estimate
+#&amp;gt;   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
+#&amp;gt; 1 rmse    standard        312.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Or a random forest:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# random forest model spec
+rf_spec &amp;lt;-
+  rand_forest() %&amp;gt;% 
+  set_engine(&amp;quot;ranger&amp;quot;) %&amp;gt;% 
+  set_mode(&amp;quot;regression&amp;quot;)
+
+# get rmse
+set.seed(0)
+get_preds(model_spec = rf_spec, 
+          split = penguin_split) %&amp;gt;% 
+  rmse(truth = body_mass_g, estimate = .pred)
+#&amp;gt; # A tibble: 1 x 3
+#&amp;gt;   .metric .estimator .estimate
+#&amp;gt;   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
+#&amp;gt; 1 rmse    standard        300.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;But, unfortunately, I shouldn&amp;rsquo;t be predicting with the test set over and over again like this. It isn&amp;rsquo;t good practice to predict with the test set &amp;gt; 1 time. What is a good predictive modeler to do? I should be saving (holding out) the test set and use it to generate predictions exactly once, at the very end — after I&amp;rsquo;ve compared different models, selected my features, and tuned my hyperparameters. How do you do this? You do 
+&lt;a href=&#34;https://sebastianraschka.com/blog/2016/model-evaluation-selection-part3.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;cross-validation&lt;/a&gt; with the training set, and you leave the testing set for 
+&lt;a href=&#34;https://tidymodels.github.io/tune/reference/last_fit.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;the very last fit you do&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/uwlDAujt3w9mU/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;hey-jude-dont-make-it-sad-&#34;&gt;Hey Jude, don&amp;rsquo;t make it sad 🎶&lt;a href=&#34;#hey-jude-dont-make-it-sad-&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Now, for the 😭 part- let&amp;rsquo;s add cross-validation! To do this, we&amp;rsquo;ll use a function called 
+&lt;a href=&#34;https://tidymodels.github.io/rsample/reference/vfold_cv.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;rsample::vfold_cv()&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# add the cv step here
+set.seed(0)
+penguin_folds &amp;lt;- vfold_cv(data = penguin_train, strata = &amp;quot;species&amp;quot;)
+
+penguin_folds
+#&amp;gt; #  10-fold cross-validation using stratification 
+#&amp;gt; # A tibble: 10 x 2
+#&amp;gt;    splits           id    
+#&amp;gt;    &amp;lt;list&amp;gt;           &amp;lt;chr&amp;gt; 
+#&amp;gt;  1 &amp;lt;split [225/26]&amp;gt; Fold01
+#&amp;gt;  2 &amp;lt;split [226/25]&amp;gt; Fold02
+#&amp;gt;  3 &amp;lt;split [226/25]&amp;gt; Fold03
+#&amp;gt;  4 &amp;lt;split [226/25]&amp;gt; Fold04
+#&amp;gt;  5 &amp;lt;split [226/25]&amp;gt; Fold05
+#&amp;gt;  6 &amp;lt;split [226/25]&amp;gt; Fold06
+#&amp;gt;  7 &amp;lt;split [226/25]&amp;gt; Fold07
+#&amp;gt;  8 &amp;lt;split [226/25]&amp;gt; Fold08
+#&amp;gt;  9 &amp;lt;split [226/25]&amp;gt; Fold09
+#&amp;gt; 10 &amp;lt;split [226/25]&amp;gt; Fold10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The process of training, testing, and computing metrics gets a lot harder when you need to do this across 10 folds, each with a different data split. I eventually worked out three approaches, which I show below. All require some level of comfort with iteration using the 
+&lt;a href=&#34;https://purrr.tidyverse.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;purrr package&lt;/a&gt;.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;function-with-minimal-purrr-ing&#34;&gt;Function with minimal purrr-ing&lt;a href=&#34;#function-with-minimal-purrr-ing&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;This approach is essentially a mega-function, that we then use purrr to map across each fold.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m going to change a few things from my previous &lt;code&gt;get_preds()&lt;/code&gt; function:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;training(split)&lt;/code&gt; -&amp;gt; &lt;code&gt;analysis(split)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;testing(split)&lt;/code&gt; -&amp;gt; &lt;code&gt;assessment(split)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;I also added the &lt;code&gt;rsample::add_resample_id()&lt;/code&gt; function to keep track of the fold number.&lt;/li&gt;
+&lt;li&gt;I saved the predictions now as a list column.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;To build up this function, my strategy was to figure out how to work with one fold, then I knew I&amp;rsquo;d be able to use &lt;code&gt;purrr::map_df()&lt;/code&gt; to apply it across multiple folds.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Figure it out for one fold
+get_fold_results &amp;lt;- function(model_spec, split){
+  
+  # train: get fitted model for each fold
+  fits &amp;lt;- model_spec %&amp;gt;% 
+    fit(body_mass_g ~ ., data = analysis(split))
+  
+  # test: get predictions on for each fold
+  preds &amp;lt;- fits %&amp;gt;% 
+    predict(new_data = assessment(split)) %&amp;gt;% 
+    bind_cols(assessment(split)) 
+  
+  # compare: compute metric for each fold
+  rmse &amp;lt;- assessment(split)  %&amp;gt;% 
+    summarize(rmse = rmse_vec(truth = body_mass_g, 
+                              estimate = preds$.pred))
+  
+  rmse %&amp;gt;% 
+    # add fold identifier column
+    rsample::add_resample_id(split = split) %&amp;gt;% 
+    as_tibble() %&amp;gt;% 
+    # add predictions
+    mutate(preds = list(preds))
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I tried this function with a single fold first:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(0)
+get_fold_results(
+    split      = penguin_folds$splits[[1]], 
+    model_spec = rt_spec
+  )
+#&amp;gt; # A tibble: 1 x 3
+#&amp;gt;    rmse id     preds            
+#&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;  &amp;lt;list&amp;gt;           
+#&amp;gt; 1  419. Fold01 &amp;lt;tibble [26 × 8]&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Next, I used purrr- but just once. The function &lt;code&gt;get_fold_results&lt;/code&gt; is doing &lt;strong&gt;most&lt;/strong&gt; of the work for us, but I needed purrr to map it across each fold.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(0)
+kfold_results &amp;lt;- 
+  map_df(
+    penguin_folds$splits, 
+    ~get_fold_results(.x, model = rt_spec))
+kfold_results
+#&amp;gt; # A tibble: 10 x 3
+#&amp;gt;     rmse id     preds            
+#&amp;gt;    &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;  &amp;lt;list&amp;gt;           
+#&amp;gt;  1  419. Fold01 &amp;lt;tibble [26 × 8]&amp;gt;
+#&amp;gt;  2  326. Fold02 &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  3  414. Fold03 &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  4  327. Fold04 &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  5  336. Fold05 &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  6  406. Fold06 &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  7  305. Fold07 &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  8  301. Fold08 &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  9  315. Fold09 &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt; 10  319. Fold10 &amp;lt;tibble [25 × 8]&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here we are still left with 10 RMSE values- one for each of the 10 folds. We don&amp;rsquo;t care too much about by fold- the power is in the aggregate. Specifically, we mainly care about the central tendency and spread of these RMSE values. Let&amp;rsquo;s finish by combining (or aggregating) these metrics.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;kfold_results %&amp;gt;% 
+  summarize(mean_rmse = mean(rmse), sd_rmse = sd(rmse))
+#&amp;gt; # A tibble: 1 x 2
+#&amp;gt;   mean_rmse sd_rmse
+#&amp;gt;       &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;
+#&amp;gt; 1      347.    46.8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So, this works. But, can you imagine doing it again? Without errors? Can you imagine teaching it?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/bmGmHZ5khMjN6/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;purrr-to-the-max&#34;&gt;Purrr-to-the-max&lt;a href=&#34;#purrr-to-the-max&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;This approach is &lt;code&gt;purrr::map()&lt;/code&gt; (and friends) on steriods. We use vanilla &lt;code&gt;map()&lt;/code&gt;, &lt;code&gt;map2()&lt;/code&gt;, &lt;em&gt;and&lt;/em&gt; &lt;code&gt;map2_dbl()&lt;/code&gt; here. We also use 
+&lt;a href=&#34;https://jennybc.github.io/purrr-tutorial/ls03_map-function-syntax.html#anonymous_function,_formula&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;anonymous functions as a formula&lt;/a&gt;, &lt;em&gt;and&lt;/em&gt; the pipe operator within those anonymous functions.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(0)
+penguin_res &amp;lt;- penguin_folds %&amp;gt;% 
+  mutate(
+    
+    # train: get fitted model for each fold
+    train_set  = map(splits, analysis),
+    fit_models = map(train_set, ~rt_spec %&amp;gt;% 
+                                    fit(body_mass_g ~ ., 
+                                        data = .x)),
+    
+    # test: get predictions for each fold
+    test_set   = map(splits, assessment),
+    estimates  = map2(fit_models, 
+                      test_set, 
+                      ~.x %&amp;gt;% 
+                        predict(.y)),
+    
+    # compare: compute metric for each fold
+    rmse       = map2_dbl(test_set, 
+                          estimates, 
+                          ~rmse_vec(truth = .x$body_mass_g, 
+                                    estimate = .y$.pred))
+  )
+
+penguin_res
+#&amp;gt; #  10-fold cross-validation using stratification 
+#&amp;gt; # A tibble: 10 x 7
+#&amp;gt;    splits       id     train_set     fit_models test_set     estimates      rmse
+#&amp;gt;    &amp;lt;list&amp;gt;       &amp;lt;chr&amp;gt;  &amp;lt;list&amp;gt;        &amp;lt;list&amp;gt;     &amp;lt;list&amp;gt;       &amp;lt;list&amp;gt;        &amp;lt;dbl&amp;gt;
+#&amp;gt;  1 &amp;lt;split [225… Fold01 &amp;lt;tibble [225… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [26… &amp;lt;tibble [26 …  419.
+#&amp;gt;  2 &amp;lt;split [226… Fold02 &amp;lt;tibble [226… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [25… &amp;lt;tibble [25 …  326.
+#&amp;gt;  3 &amp;lt;split [226… Fold03 &amp;lt;tibble [226… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [25… &amp;lt;tibble [25 …  414.
+#&amp;gt;  4 &amp;lt;split [226… Fold04 &amp;lt;tibble [226… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [25… &amp;lt;tibble [25 …  327.
+#&amp;gt;  5 &amp;lt;split [226… Fold05 &amp;lt;tibble [226… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [25… &amp;lt;tibble [25 …  336.
+#&amp;gt;  6 &amp;lt;split [226… Fold06 &amp;lt;tibble [226… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [25… &amp;lt;tibble [25 …  406.
+#&amp;gt;  7 &amp;lt;split [226… Fold07 &amp;lt;tibble [226… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [25… &amp;lt;tibble [25 …  305.
+#&amp;gt;  8 &amp;lt;split [226… Fold08 &amp;lt;tibble [226… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [25… &amp;lt;tibble [25 …  301.
+#&amp;gt;  9 &amp;lt;split [226… Fold09 &amp;lt;tibble [226… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [25… &amp;lt;tibble [25 …  315.
+#&amp;gt; 10 &amp;lt;split [226… Fold10 &amp;lt;tibble [226… &amp;lt;fit[+]&amp;gt;   &amp;lt;tibble [25… &amp;lt;tibble [25 …  319.
+
+penguin_res %&amp;gt;% 
+  summarise(mean_rmse = mean(rmse), sd_rmse = sd(rmse))
+#&amp;gt; # A tibble: 1 x 2
+#&amp;gt;   mean_rmse sd_rmse
+#&amp;gt;       &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;
+#&amp;gt; 1      347.    46.8
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;h3 id=&#34;the-purrr-mash-up&#34;&gt;The purrr mash-up&lt;a href=&#34;#the-purrr-mash-up&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Another way I worked out was largely after reviewing Max&amp;rsquo;s slides from previous workshops. This is basically a mash-up of my previous two approaches, where we write laser-focused functions that each do one thing, then use purrr to apply those functions across the folds. This way is nice(r) for showing in slides as you can incrementally build up the results table. Let&amp;rsquo;s see this sad script in action&amp;hellip;&lt;/p&gt;
+
+
+
+&lt;h4 id=&#34;round-1&#34;&gt;Round 1&lt;a href=&#34;#round-1&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(0) # for reproducibility
+
+# train: get fitted model for a split
+get_fits &amp;lt;- function(split, model_spec){
+  model_spec %&amp;gt;% 
+    fit(body_mass_g ~ ., 
+        data = analysis(split))
+}
+
+# train: get fitted models across folds
+penguin_purrr &amp;lt;- penguin_folds %&amp;gt;% 
+  mutate(rt_fits = map(splits, get_fits, rt_spec))
+
+penguin_purrr
+#&amp;gt; #  10-fold cross-validation using stratification 
+#&amp;gt; # A tibble: 10 x 3
+#&amp;gt;    splits           id     rt_fits 
+#&amp;gt;    &amp;lt;list&amp;gt;           &amp;lt;chr&amp;gt;  &amp;lt;list&amp;gt;  
+#&amp;gt;  1 &amp;lt;split [225/26]&amp;gt; Fold01 &amp;lt;fit[+]&amp;gt;
+#&amp;gt;  2 &amp;lt;split [226/25]&amp;gt; Fold02 &amp;lt;fit[+]&amp;gt;
+#&amp;gt;  3 &amp;lt;split [226/25]&amp;gt; Fold03 &amp;lt;fit[+]&amp;gt;
+#&amp;gt;  4 &amp;lt;split [226/25]&amp;gt; Fold04 &amp;lt;fit[+]&amp;gt;
+#&amp;gt;  5 &amp;lt;split [226/25]&amp;gt; Fold05 &amp;lt;fit[+]&amp;gt;
+#&amp;gt;  6 &amp;lt;split [226/25]&amp;gt; Fold06 &amp;lt;fit[+]&amp;gt;
+#&amp;gt;  7 &amp;lt;split [226/25]&amp;gt; Fold07 &amp;lt;fit[+]&amp;gt;
+#&amp;gt;  8 &amp;lt;split [226/25]&amp;gt; Fold08 &amp;lt;fit[+]&amp;gt;
+#&amp;gt;  9 &amp;lt;split [226/25]&amp;gt; Fold09 &amp;lt;fit[+]&amp;gt;
+#&amp;gt; 10 &amp;lt;split [226/25]&amp;gt; Fold10 &amp;lt;fit[+]&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;round-2&#34;&gt;Round 2&lt;a href=&#34;#round-2&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# test: get predictions for a split
+get_preds &amp;lt;- function(split, fit_df) {
+  
+  fit_df %&amp;gt;% 
+    predict(new_data = assessment(split)) %&amp;gt;% 
+    bind_cols(assessment(split))
+  
+}
+
+# test: get predictions across folds
+penguin_purrr &amp;lt;- penguin_purrr %&amp;gt;% 
+  mutate(rt_preds = map2(splits, rt_fits, get_preds))
+
+penguin_purrr
+#&amp;gt; #  10-fold cross-validation using stratification 
+#&amp;gt; # A tibble: 10 x 4
+#&amp;gt;    splits           id     rt_fits  rt_preds         
+#&amp;gt;    &amp;lt;list&amp;gt;           &amp;lt;chr&amp;gt;  &amp;lt;list&amp;gt;   &amp;lt;list&amp;gt;           
+#&amp;gt;  1 &amp;lt;split [225/26]&amp;gt; Fold01 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [26 × 8]&amp;gt;
+#&amp;gt;  2 &amp;lt;split [226/25]&amp;gt; Fold02 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  3 &amp;lt;split [226/25]&amp;gt; Fold03 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  4 &amp;lt;split [226/25]&amp;gt; Fold04 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  5 &amp;lt;split [226/25]&amp;gt; Fold05 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  6 &amp;lt;split [226/25]&amp;gt; Fold06 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  7 &amp;lt;split [226/25]&amp;gt; Fold07 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  8 &amp;lt;split [226/25]&amp;gt; Fold08 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt;  9 &amp;lt;split [226/25]&amp;gt; Fold09 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;
+#&amp;gt; 10 &amp;lt;split [226/25]&amp;gt; Fold10 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+
+
+&lt;h4 id=&#34;aaaand-round-3&#34;&gt;aaaand Round 3&lt;a href=&#34;#aaaand-round-3&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h4&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# compare: compute metric for a split
+get_rmse &amp;lt;- function(pred_df) {
+  
+  pred_df %&amp;gt;% 
+    rmse(truth    = body_mass_g, 
+         estimate = .pred) %&amp;gt;% 
+    pluck(&amp;quot;.estimate&amp;quot;)
+  
+}
+
+# compare: compute metric across folds
+penguin_purrr &amp;lt;- penguin_purrr %&amp;gt;% 
+  mutate(rt_rmse = map_dbl(rt_preds, get_rmse))
+
+penguin_purrr
+#&amp;gt; #  10-fold cross-validation using stratification 
+#&amp;gt; # A tibble: 10 x 5
+#&amp;gt;    splits           id     rt_fits  rt_preds          rt_rmse
+#&amp;gt;    &amp;lt;list&amp;gt;           &amp;lt;chr&amp;gt;  &amp;lt;list&amp;gt;   &amp;lt;list&amp;gt;              &amp;lt;dbl&amp;gt;
+#&amp;gt;  1 &amp;lt;split [225/26]&amp;gt; Fold01 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [26 × 8]&amp;gt;    419.
+#&amp;gt;  2 &amp;lt;split [226/25]&amp;gt; Fold02 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    326.
+#&amp;gt;  3 &amp;lt;split [226/25]&amp;gt; Fold03 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    414.
+#&amp;gt;  4 &amp;lt;split [226/25]&amp;gt; Fold04 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    327.
+#&amp;gt;  5 &amp;lt;split [226/25]&amp;gt; Fold05 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    336.
+#&amp;gt;  6 &amp;lt;split [226/25]&amp;gt; Fold06 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    406.
+#&amp;gt;  7 &amp;lt;split [226/25]&amp;gt; Fold07 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    305.
+#&amp;gt;  8 &amp;lt;split [226/25]&amp;gt; Fold08 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    301.
+#&amp;gt;  9 &amp;lt;split [226/25]&amp;gt; Fold09 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    315.
+#&amp;gt; 10 &amp;lt;split [226/25]&amp;gt; Fold10 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    319.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finally, summarizing as I did before:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_purrr %&amp;gt;% 
+  summarize(mean_rmse = mean(rt_rmse), sd_rmse = sd(rt_rmse))
+#&amp;gt; # A tibble: 1 x 2
+#&amp;gt;   mean_rmse sd_rmse
+#&amp;gt;       &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt;
+#&amp;gt; 1      347.    46.8
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In practice, if you did all these at once instead of incrementally, it would look like:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;set.seed(0)
+penguin_folds %&amp;gt;% 
+  
+  # train: get fitted model for a split
+  mutate(rt_fits = map(splits, get_fits, rt_spec)) %&amp;gt;% 
+  
+  # test: get predictions on for each fold
+  mutate(rt_preds = map2(splits, rt_fits, get_preds)) %&amp;gt;% 
+  
+  # compare: compute metric for each fold
+  mutate(rt_rmse = map_dbl(rt_preds, get_rmse))
+#&amp;gt; #  10-fold cross-validation using stratification 
+#&amp;gt; # A tibble: 10 x 5
+#&amp;gt;    splits           id     rt_fits  rt_preds          rt_rmse
+#&amp;gt;    &amp;lt;list&amp;gt;           &amp;lt;chr&amp;gt;  &amp;lt;list&amp;gt;   &amp;lt;list&amp;gt;              &amp;lt;dbl&amp;gt;
+#&amp;gt;  1 &amp;lt;split [225/26]&amp;gt; Fold01 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [26 × 8]&amp;gt;    419.
+#&amp;gt;  2 &amp;lt;split [226/25]&amp;gt; Fold02 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    326.
+#&amp;gt;  3 &amp;lt;split [226/25]&amp;gt; Fold03 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    414.
+#&amp;gt;  4 &amp;lt;split [226/25]&amp;gt; Fold04 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    327.
+#&amp;gt;  5 &amp;lt;split [226/25]&amp;gt; Fold05 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    336.
+#&amp;gt;  6 &amp;lt;split [226/25]&amp;gt; Fold06 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    406.
+#&amp;gt;  7 &amp;lt;split [226/25]&amp;gt; Fold07 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    305.
+#&amp;gt;  8 &amp;lt;split [226/25]&amp;gt; Fold08 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    301.
+#&amp;gt;  9 &amp;lt;split [226/25]&amp;gt; Fold09 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    315.
+#&amp;gt; 10 &amp;lt;split [226/25]&amp;gt; Fold10 &amp;lt;fit[+]&amp;gt; &amp;lt;tibble [25 × 8]&amp;gt;    319.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When you put it like &lt;em&gt;that&lt;/em&gt;, it doesn&amp;rsquo;t look like so much work! But, this way hides how much work it takes to write those 3 custom functions: &lt;code&gt;get_fits()&lt;/code&gt;, &lt;code&gt;get_preds()&lt;/code&gt;, and &lt;code&gt;get_rmse()&lt;/code&gt;. And we still had to use vanilla &lt;code&gt;map()&lt;/code&gt;, &lt;code&gt;map2()&lt;/code&gt;, &lt;em&gt;and&lt;/em&gt; &lt;code&gt;map2_dbl()&lt;/code&gt;.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;make-it-better&#34;&gt;Make it better&lt;a href=&#34;#make-it-better&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;I kept a learning log while working through the all the above code, and I wrote down these notes to myself:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;It is very easy to do the wrong thing; it is very hard to do the right thing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I lost sight many times of what the code I was writing was doing, because I was using up so much cognitive energy on getting the code to just work.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;I thought I knew how to use purrr&amp;hellip;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you have made it this far, I&amp;rsquo;m pretty sure I don&amp;rsquo;t need to convince you that a better way to do cross-validation using tidymodels would be more pleasant to do more than once. It would also be less prone to error due to me copying-and-pasting repeatedly, and making stupid mistakes that would be difficult to spot with so much cluttered code. Luckily, 
+&lt;a href=&#34;https://tidymodels.github.io/tune/reference/fit_resamples.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;tune::fit_resamples()&lt;/code&gt;&lt;/a&gt; came along to take a sad script and make it better:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_party &amp;lt;-
+  tune::fit_resamples(
+    rt_spec,
+    body_mass_g ~ .,
+    resamples = penguin_folds
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Here is the beautiful output from that function:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_party
+#&amp;gt; # Resampling results
+#&amp;gt; # 10-fold cross-validation using stratification 
+#&amp;gt; # A tibble: 10 x 4
+#&amp;gt;    splits           id     .metrics         .notes          
+#&amp;gt;    &amp;lt;list&amp;gt;           &amp;lt;chr&amp;gt;  &amp;lt;list&amp;gt;           &amp;lt;list&amp;gt;          
+#&amp;gt;  1 &amp;lt;split [225/26]&amp;gt; Fold01 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+#&amp;gt;  2 &amp;lt;split [226/25]&amp;gt; Fold02 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+#&amp;gt;  3 &amp;lt;split [226/25]&amp;gt; Fold03 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+#&amp;gt;  4 &amp;lt;split [226/25]&amp;gt; Fold04 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+#&amp;gt;  5 &amp;lt;split [226/25]&amp;gt; Fold05 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+#&amp;gt;  6 &amp;lt;split [226/25]&amp;gt; Fold06 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+#&amp;gt;  7 &amp;lt;split [226/25]&amp;gt; Fold07 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+#&amp;gt;  8 &amp;lt;split [226/25]&amp;gt; Fold08 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+#&amp;gt;  9 &amp;lt;split [226/25]&amp;gt; Fold09 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+#&amp;gt; 10 &amp;lt;split [226/25]&amp;gt; Fold10 &amp;lt;tibble [2 × 3]&amp;gt; &amp;lt;tibble [0 × 1]&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, to see all the stuff inside this &lt;code&gt;penguin_party&lt;/code&gt;, we can use tune&amp;rsquo;s &lt;code&gt;collect_*&lt;/code&gt; functions.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_party %&amp;gt;% 
+  collect_metrics()
+#&amp;gt; # A tibble: 2 x 5
+#&amp;gt;   .metric .estimator    mean     n std_err
+#&amp;gt;   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;        &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;   &amp;lt;dbl&amp;gt;
+#&amp;gt; 1 rmse    standard   347.       10 14.8   
+#&amp;gt; 2 rsq     standard     0.839    10  0.0141
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To see the predictions, we need to add use 
+&lt;a href=&#34;https://tidymodels.github.io/tune/reference/control_grid.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;code&gt;control_resamples()&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_party &amp;lt;-
+  tune::fit_resamples(
+    rt_spec,
+    body_mass_g ~ .,
+    resamples = penguin_folds,
+    control = control_resamples(save_pred = TRUE) # add this line
+)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then we collect the predictions.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;penguin_party %&amp;gt;% 
+  collect_predictions()
+#&amp;gt; # A tibble: 251 x 4
+#&amp;gt;    id     .pred  .row body_mass_g
+#&amp;gt;    &amp;lt;chr&amp;gt;  &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;       &amp;lt;int&amp;gt;
+#&amp;gt;  1 Fold01 3402.     4        3625
+#&amp;gt;  2 Fold01 3402.    11        3325
+#&amp;gt;  3 Fold01 3988.    14        3950
+#&amp;gt;  4 Fold01 3988.    41        3700
+#&amp;gt;  5 Fold01 3402.    54        3700
+#&amp;gt;  6 Fold01 3988.    65        3950
+#&amp;gt;  7 Fold01 3988.    70        4450
+#&amp;gt;  8 Fold01 3402.    71        3300
+#&amp;gt;  9 Fold01 3402.    76        3075
+#&amp;gt; 10 Fold01 3402.    85        2900
+#&amp;gt; # … with 241 more rows
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now, isn&amp;rsquo;t that better?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/daeKl3P4SissU/giphy.gif&#34; alt=&#34;&#34;&gt;&lt;!-- --&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

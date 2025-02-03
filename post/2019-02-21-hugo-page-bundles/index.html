@@ -1,0 +1,1120 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Katrien Antonio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Why (and how) you should use Hugo&#39;s new page bundles feature">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#1D8DB0">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/tomorrow.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/tomorrow.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i%7CKarla:400,400i,700,700i%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99209585-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-99209585-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Katrien Antonio">
+  <meta property="og:url" content="https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/">
+  <meta property="og:title" content="A Spoonful of Hugo: Page Bundles | Katrien Antonio">
+  <meta property="og:description" content="Why (and how) you should use Hugo&#39;s new page bundles feature"><meta property="og:image" content="https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/featured.jpg">
+  <meta property="twitter:image" content="https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2019-02-21T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2019-02-21T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/"
+  },
+  "headline": "A Spoonful of Hugo: Page Bundles",
+  
+  "image": [
+    "https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/featured.jpg"
+  ],
+  
+  "datePublished": "2019-02-21T00:00:00Z",
+  "dateModified": "2019-02-21T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "alison"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Katrien Antonio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Why (and how) you should use Hugo's new page bundles feature"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>A Spoonful of Hugo: Page Bundles | Katrien Antonio</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Katrien Antonio</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/lab"><span>Lab</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/teachings"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/pdf/CV%20Katrien%20Antonio.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article">
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>A Spoonful of Hugo: Page Bundles</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span><a href="/authors/alison/">alison</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Feb 21, 2019
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    6 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/hugo/">hugo</a>, <a href="/categories/blogdown/">blogdown</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 481px;">
+  <div style="position: relative">
+    <img src="/post/2019-02-21-hugo-page-bundles/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_1199790_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    <span class="article-header-caption"><a href="https://unsplash.com/photos/Prfs32wh-o4" target="_blank" rel="noopener">Photo by Joanna Kosinska on Unsplash</a></span>
+  </div>
+</div>
+
+
+  
+  <div class="article-container">
+    
+    <div class="row">
+    
+    <div class="col-12 col-lg-10ish article-style">
+      <blockquote>
+<p>&ldquo;Just a spoonful of Hugo helps the blog go down.&rdquo;</p>
+</blockquote>
+<ul>
+<li>me, only somewhat kidding</li>
+</ul>
+<p>In this series, I&rsquo;m sharing small spoonfuls of Hugo that I have learned that hopefully can help you get your site <em>UP</em> (and even better- more efficient, more streamlined, more automated). You can read the previous posts about my &ldquo;Spoonful of Hugo&rdquo; series 
+<a href="/post/2019-02-19-hugo-archetypes/">about Hugo archetypes</a> and 
+<a href="/post/2019-02-19-hugo-netlify-toml/">Hugo versions</a>.</p>
+<p>This is my third post in this series and it is breaking news.</p>
+<p><img src="https://media.giphy.com/media/dZCdA82qa8d4xVIwm3/giphy.gif" alt=""></p>
+
+
+
+<h2 id="hugo-page-bundles">Hugo Page Bundles<a href="#hugo-page-bundles"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>Well, not really breaking news, but you still may not know about it! Hugo v0.32 
+<a href="https://gohugo.io/news/0.32-relnotes/" target="_blank" rel="noopener">introduced</a> a new feature called Page Bundles, as a way to organize the content files. Blogdown users rejoice that 
+<a href="https://twitter.com/dvaughan32" target="_blank" rel="noopener">Davis Vaughn</a> posted an 
+<a href="https://github.com/rstudio/blogdown/issues/351" target="_blank" rel="noopener">issue</a> on the rstudio/blogdown repo to enable this option, which Yihui added shortly before rstudio::conf 2019 🎉. Here is the snippet from the <code>NEWS.md</code>:</p>
+<blockquote>
+<p>&ldquo;One benefit of using a page bundle instead of a normal page is that you can put resource files associated with the post (such as images) under the same directory of the post itself. This means you no longer have to put them under the <code>static/</code> directory, which has been quite confusing to Hugo beginners.&rdquo;</p>
+</blockquote>
+<p>What does a blogdown/Hugo site begin to look like without page bundles? I think here is a representative example from 
+<a href="https://github.com/tidyverse/tidyverse.org/tree/c0eb070017cab794029b8ed3ac518f6e1a245a2b/content/articles" target="_blank" rel="noopener">tidyverse.org</a> <em>(sorry tidyverse team- it&rsquo;s not you, it&rsquo;s the old Hugo).</em></p>
+<p>For this team, they need an image for every post, which gets out of control pretty fast. Also, some ended up in 
+<a href="https://github.com/tidyverse/tidyverse.org/tree/c0eb070017cab794029b8ed3ac518f6e1a245a2b/static/images" target="_blank" rel="noopener"><code>static/</code></a> too, organized by post (which I have done on my own blog, though not well or consistently).</p>
+<p>What would it look like to use page bundles?</p>
+<pre><code class="language-r">content/
+├── about
+│   ├── index.md
+├── posts
+│   ├── 2015-07-23-hi-world
+│   │   ├── bakers.csv
+│   │   ├── image1.jpg
+│   │   ├── image2.png
+│   │   └── index.Rmd
+│   └── 2015-07-24-bye-world
+│       └── index.Rmd
+</code></pre>
+<p>One could call this bundled file structure &ldquo;tidier&rdquo; 🍱.</p>
+<p>In the above, after serving site, <code>index.html</code> files also get added to the bundle. In Hugo&rsquo;s terms, these are 
+<a href="https://gohugo.io/content-management/page-bundles/" target="_blank" rel="noopener">leaf bundles</a>. The resource files allowed in a bundle include page and non-page items like images, pdf, .csv files, etc.</p>
+<p>This is instead of:</p>
+<pre><code class="language-r">content/
+├── about
+│   ├── index.md
+├── posts
+│   ├── 2015-07-23-hi-world.Rmd
+│   ├── bakers.csv
+│   ├── image1.jpg
+│   ├── image2.png
+│   └── 2015-07-24-bye-world.Rmd
+</code></pre>
+<p>When you create a new bundled post, the actual content of the post goes in the index file of a page bundle. So:</p>
+<pre><code># not bundled post
+post/2015-07-23-hi-world.Rmd
+# bundled post
+post/2015-07-24-bye-world/index.Rmd
+</code></pre>
+
+
+
+<h2 id="bundle-me-blogdown">Bundle Me, blogdown!<a href="#bundle-me-blogdown"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>First, read the previous post on setting up a 
+<a href="/post/2019-02-19-hugo-netlify-toml/">netlify.toml file</a>. Since using Hugo page bundles depends on Hugo v0.32 or higher, you should go ahead and update hugo then update your netlify.toml with your updated version:</p>
+<pre><code class="language-r">blogdown::update_hugo()
+blogdown::hugo_version()
+</code></pre>
+<p>Now, let&rsquo;s use the 
+<a href="https://usethis.r-lib.org/" target="_blank" rel="noopener"><strong>usethis</strong> package</a>.</p>
+
+
+
+<h3 id="project-specific-rprofile">Project-specific .Rprofile<a href="#project-specific-rprofile"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>First, I&rsquo;m going to demo here how to create a project-specific .Rprofile file- but know that you can do a user-level .Rprofile file too.</p>
+<pre><code class="language-r"># install.packages(&quot;usethis&quot;) # uncomment this to install
+usethis::edit_r_profile(scope = &quot;project&quot;)
+</code></pre>
+<p>These helpful messages <em>should</em> print to your console: please note the &ldquo;restart&rdquo; reminder&hellip;</p>
+<pre><code>&gt; usethis::edit_r_profile(scope = &quot;project&quot;)
+● Restart R for changes to take effect
+✔ Setting active project to '/Users/alison/rprojs/alison.rbind.io'
+● Modify '.Rprofile'
+</code></pre>
+<p>Now you could add this to your file:</p>
+<pre><code># in .Rprofile of the website project
+if (file.exists(&quot;~/.Rprofile&quot;)) {
+  base::sys.source(&quot;~/.Rprofile&quot;, envir = environment())
+}
+
+options(blogdown.new_bundle = TRUE)
+</code></pre>
+<p>The first code chunk above is from the 
+<a href="https://bookdown.org/yihui/blogdown/global-options.html#global-options" target="_blank" rel="noopener">blogdown book</a>, where we describe a workaround for loading both user and project .Rprofile files (since R technically only reads one startup profile file).</p>
+<p>If you don&rsquo;t want this, you could add the blogdown options to your user .Rprofile instead using:</p>
+<pre><code>usethis::edit_r_profile(scope = &quot;user&quot;)
+</code></pre>
+<p>Heck, while you are at it, you could set a <em>bunch</em> of options to make your blogdown life easier:</p>
+<pre><code># in .Rprofile of the website project
+if (file.exists(&quot;~/.Rprofile&quot;)) {
+  base::sys.source(&quot;~/.Rprofile&quot;, envir = environment())
+}
+
+options(
+  blogdown.author = &quot;Alison Hill&quot;,
+  blogdown.ext = &quot;.Rmd&quot;,
+  blogdown.subdir = &quot;post&quot;,
+  blogdown.yaml.empty = TRUE,
+  blogdown.new_bundle = TRUE,
+  blogdown.title_case = TRUE
+)
+</code></pre>
+<p>For the blogdown-specific options, any of these prepopulate content in your &ldquo;New Post&rdquo; Addin (I told you to use this 
+<a href="/post/2019-02-19-hugo-archetypes/">here</a>). There is a handy 
+<a href="https://bookdown.org/yihui/blogdown/global-options.html" target="_blank" rel="noopener">table</a> from the blogdown book, summarized here:</p>
+<ul>
+<li><code>blogdown.author</code> = author of new posts</li>
+<li><code>blogdown.ext</code> = default extension of new posts (can also be &ldquo;.md&rdquo; or &ldquo;.Rmarkdown&rdquo;)</li>
+<li><code>blogdown.subdir</code> = theme-specific, you need to know your theme and content folder here</li>
+<li><code>blogdown.yaml.empty</code> = I told you to do that 
+<a href="/post/2019-02-19-hugo-archetypes/">here</a></li>
+<li><code>blogdown.new_bundle</code> = what this whole post is about!</li>
+<li><code>blogdown.title_case</code> = &ldquo;nEed More coFFee&rdquo; &ndash;&gt; &ldquo;Need More Coffee&rdquo; (it tidies all your post titles to title case)</li>
+</ul>
+
+
+
+<h3 id="the-newline-thing">The Newline Thing<a href="#the-newline-thing"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>Here is a <strong>massive</strong> .Rprofile gotcha: this file <strong>must</strong> end with a blank line. So make sure you add an empty line at the end of the file, then save it, and restart your R session.</p>
+<p><img src="restart-r.png" alt=""></p>
+<p>Want to make your general R life easier in the future? Follow Yihui&rsquo;s 
+<a href="https://yihui.name/en/2018/04/rprofile-trailing-newline/" target="_blank" rel="noopener">advice</a> and do this in RStudio to ensure that all source files end with a newline:</p>
+<p><img src="https://db.yihui.name/images/rstudio-newline.png" alt=""></p>
+
+
+
+<h2 id="use-bundles">Use Bundles<a href="#use-bundles"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>After restarting R, try using the &ldquo;New Post&rdquo; Addin, this time <em>with feeling</em>. There is <em>still</em> one more gotcha though. Use the Addin to create your new bundled post. The only catch is that once you are looking at your exciting new post, you should <strong>delete the slug</strong> in the YAML (I posted an issue about this 
+<a href="https://github.com/rstudio/blogdown/issues/370" target="_blank" rel="noopener">here</a>).</p>
+<p>The reason is that you want the link to your post to be:</p>
+<p><code>http://alison.rbind.io/post/2019-02-21-hugo-page-bundles/</code></p>
+<p>If you include the slug, the link to your post will be:</p>
+<p><code>http://alison.rbind.io/post/2019-02-21-hugo-page-bundles/hugo-page-bundles</code></p>
+<p>Another option is to update your <code>config.toml</code> file with permalinks like 
+<a href="https://bookdown.org/yihui/blogdown/configuration.html" target="_blank" rel="noopener">Yihui suggests</a> (but beware: this will change all your past links as well, requiring some 
+<a href="https://yihui.name/en/2017/11/301-redirect/" target="_blank" rel="noopener">Netlify redirects</a>):</p>
+<pre><code>[permalinks]
+    post = &quot;/:year/:month/:day/:slug/&quot;
+</code></pre>
+<p>The default here from Hugo was <code>/post/:year-:month-:day-:slug/:slug/</code>.</p>
+<p>A small note: if you want to add relative links from a blog post to another post in your same blog. So <code>[this](/post/2019-02-19-hugo-archetypes/)</code> becomes 
+<a href="/post/2019-02-19-hugo-archetypes/">this</a>.</p>
+<p>Now, add images and data files to your ❤️&rsquo;s content! But you may want to do one more thing&hellip;</p>
+
+
+
+<h2 id="update-metadata">Update Metadata<a href="#update-metadata"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>If you are anything like me, you may draft a blog post then come back to it later. For example, I started this post 2 days ago, but want to publish it today, 2020-12-20. The cool thing that was already built-in to blogdown is the &ldquo;Update Metadata&rdquo; Addin. With your blog post open (it should be called <code>index.Rmd</code>)^[If no post is open, you will get an error: <code>Warning message: The current document does not seem to contain YAML metadata</code>], click on Addins and select &ldquo;Update Metadata&rdquo;. You should see a window like this:</p>
+<p><img src="update-metadata.png" alt=""></p>
+<p>Check the box to rename the file if the date has changed. RStudio will tell you your file has been deleted- which is technically true since the folder was renamed, but don&rsquo;t panic!</p>
+<p><img src="file-deleted-warning.png" alt=""></p>
+<p>Click YES. The <code>index.Rmd</code> file that is now open should have an updated date field in the YAML. In your RStudio file viewer, you may want to click on &ldquo;content&rdquo; at this point then navigate back to view your post- then you will then see that the folder name now has an updated date too.</p>
+
+    </div>
+    
+    <div class="col-12 col-lg-2ish article-style">
+    </div>
+  </div>
+    <div class="col-12 col-lg-10ish article-style">
+    </div>
+  
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/blogdown/">blogdown</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/&amp;text=A%20Spoonful%20of%20Hugo:%20Page%20Bundles" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/&amp;t=A%20Spoonful%20of%20Hugo:%20Page%20Bundles" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=A%20Spoonful%20of%20Hugo:%20Page%20Bundles&amp;body=https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://katrienantonio.github.io/post/2019-02-21-hugo-page-bundles/&amp;title=A%20Spoonful%20of%20Hugo:%20Page%20Bundles" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.1c558923276e778a7a0c05514fa3ae46.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Katrien Antonio 2024, design inspired by the work of Alison Hill &middot; 
+
+    Made with <a href="https://github.com/katrienantonio" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the 
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>teaching | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/tags/teaching/</link>
+      <atom:link href="https://katrienantonio.github.io/tags/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <description>teaching</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>teaching</title>
+      <link>https://katrienantonio.github.io/tags/teaching/</link>
+    </image>
+    
+    <item>
+      <title>Teaching students to talk about data science</title>
+      <link>https://katrienantonio.github.io/post/2020-12-13-self-assessments/</link>
+      <pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/post/2020-12-13-self-assessments/</guid>
+      <description>&lt;p&gt;Last summer (😬), I was invited to give a talk at the Joint Statistical Meetings on data science education. The session I was invited to join included Shannon Ellis, Stephanie Hicks, and Michael Love as the other speakers, and I immediately knew what I wanted to talk about!&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;jsm2019.jpg&#34; alt=&#34;L to R: Shannon Ellis, Stephanie Hicks, Michael Love, me&#34; width=&#34;75%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 1: L to R: Shannon Ellis, Stephanie Hicks, Michael Love, me&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    If you just want to skip to my actual slides, they are 
+&lt;a href=&#34;../../talk/2019-jsm-talk-ds/&#34;&gt;here&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+&lt;h2 id=&#34;teaching-students-to-talk-about-data-science&#34;&gt;Teaching students to talk about data science&lt;a href=&#34;#teaching-students-to-talk-about-data-science&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;One of the things I spent a lot of time thinking about in my 12 years as a professor was how to teach students how to &lt;em&gt;communicate about data science with other human beings&lt;/em&gt;. It is sometimes all too easy to focus on &amp;ldquo;just&amp;rdquo; the practical skills like being able to wrangle, explore, analyze, and visualize data (preferably using code). But, teaching students to be able to describe, document, plan, collaborate, question, and communicate effectively about data science? That is &lt;em&gt;way harder&lt;/em&gt; than it sounds.&lt;/p&gt;
+&lt;p&gt;For example, you may know learners like this:&lt;/p&gt;
+&lt;p&gt;You can ask them focused questions on an assignment, and they do fine. Maybe even great.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;write.png&#34; alt=&#34;A+ writing&#34; width=&#34;100%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 2: A+ writing&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Then you may ask them to present their work. Also fine. Maybe even great.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;present.png&#34; alt=&#34;A+ presenting&#34; width=&#34;100%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 3: A+ presenting&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Then comes the Q&amp;amp;A, and maybe a colleague you invited or another student asks a &lt;em&gt;good&lt;/em&gt; question&amp;hellip;and your star student freezes. Or maybe they tell you about a job interview they had, and they fumbled it.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;talk.png&#34; alt=&#34;Oh no&#34; width=&#34;100%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 4: Oh no&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As a former language researcher, I like to compare this to learning the semantics versus pragmatics of language. So semantics is concerned with getting vocabulary and meaning correct. But pragmatics is all about language use in real life. And to get a job, to engage with and contribute to the data science community, learners need pragmatics.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;pragmatics.png&#34; alt=&#34;The semantics &amp;amp; pragmatics of data science communication&#34; width=&#34;100%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 5: The semantics &amp; pragmatics of data science communication&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;So how did I start getting them there? Sort of by accident! One day, I happened to stumble upon a syllabus by 
+&lt;a href=&#34;https://docs.google.com/presentation/d/1AL4WIGN6ti3uuIE-XgMQqQpLXijlVIeskI_D5ZxN80Q/edit#slide=id.g10749fb5e7_0_60&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hal Daumé&lt;/a&gt; from his machine learning class. I noticed something intriguing in there called &amp;ldquo;self-assessments.&amp;rdquo;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;daume.png&#34; alt=&#34;From Hal Daumé&#39;s syllabus&#34; width=&#34;75%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 6: From Hal Daumé&#39;s syllabus&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;This slide was all I could find out about it, but it was enough to get my wheels turning right away. Having a Ph.D. in 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Developmental_psychology&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;developmental psychology&lt;/a&gt;, I&amp;rsquo;d spent a lot of time studying the literature on the science of learning, and the idea of a self-assessment made me think:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://media.giphy.com/media/Ll9fCTNWC41rsbuqxk/giphy.gif&#34; alt=&#34;We&amp;amp;rsquo;re onto something really good here&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Why might this actually work? It reinforces some tried and true self-directed learning strategies that are actually evidence-based like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;retrieval practice!&lt;/li&gt;
+&lt;li&gt;distributed practice!&lt;/li&gt;
+&lt;li&gt;elaborative interrogation!&lt;/li&gt;
+&lt;li&gt;self-explanation!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;All that to say, self-assessment would help students talk to themselves and to me about data science- in a way that I hadn&amp;rsquo;t enabled before.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;I won&amp;rsquo;t bore with &lt;em&gt;all the edu literature&lt;/em&gt;, but if you want to know more you might enjoy reading:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.indiana.edu/~pcl/rgoldsto/courses/dunloskyimprovinglearning.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://tguilfoyle.cmswiki.wikispaces.net/file/view/What_works,_What_doesn%27t.pdf&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;a href=&#34;https://www.apa.org/science/about/psa/2016/06/learning-memory&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.apa.org/science/about/psa/2016/06/learning-memory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;I had also had this little bee in my bonnet for awhile, and that was that I spent an inordinate amount of time crafting the most beautiful homework answer keys for my students&amp;hellip;that no one seemed to read. No one used my answer keys for learning. It bothered me because I knew there was value in reviewing these answer keys, but I hadn&amp;rsquo;t made them into an actual learning tool. When I saw Hal&amp;rsquo;s slide, it dawned on me: the solution to my problem was to give my answer keys away, and make them into a usable learning tool.^[I later found out that my palmerpenguins co-author Dr. Allison Horst does this too! 
+&lt;a href=&#34;https://www.allisonhorst.com/post/share-keys/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.allisonhorst.com/post/share-keys/&lt;/a&gt;]&lt;/p&gt;
+&lt;p&gt;The truth is, providing the answer keys or feedback at the end is not actually
+helpful for learners. Students have high motivation and set aside time for what matters for their grade, not necessarily their learning. So it&amp;rsquo;s no surprise that motivation was low and time was limited for students
+to devote to &amp;ldquo;extracurricular&amp;rdquo; learning.&lt;/p&gt;
+&lt;p&gt;What if the homework was less about how well students could do with little support, and more about how much they could learn with all my support?&lt;/p&gt;
+&lt;p&gt;I decided to find out. The next time I taught my statistics course, I began requiring students to turn in self-assessments. Here is my version of Hal&amp;rsquo;s slide with my rough plan:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;key.png&#34; alt=&#34;Self-assessment plan&#34; width=&#34;1365&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 7: Self-assessment plan&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;If you look carefully there, you&amp;rsquo;ll see that there are in fact two ways to succeed while really trying in my class, and I was &lt;em&gt;very&lt;/em&gt; proud of this. At the beginning of class, I would tell students that some over-achievers might find this annoying at first, but that for me, my ultimate goal was &lt;em&gt;that every single person learned&lt;/em&gt;. I didn&amp;rsquo;t care whether you got it right off the bat, or whether you needed more time and resources to get it right. Either way, my grades mapped onto actual learning.&lt;/p&gt;
+&lt;p&gt;Also note that the 0/1/2 points for the initial submission had nothing to do with accuracy of their initial solutions. And the accuracy for the self-assessment had only to do with the accuracy of their self-assessment! So really, we washed away the grading effect of getting it right in 1 week alone or in 2 weeks with the key. The students who got it right on the initial submission bought themselves every other week free and clear from assignments, though.&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;how-to-succeed-while-really-trying&#34;&gt;How to succeed while really trying&lt;a href=&#34;#how-to-succeed-while-really-trying&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+
+
+
+&lt;h3 id=&#34;submit-a-perfectly-accurate-initial-solution&#34;&gt;Submit a perfectly accurate initial solution.&lt;a href=&#34;#submit-a-perfectly-accurate-initial-solution&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;If your initial submission was a good faith effort (&lt;em&gt;2 points&lt;/em&gt;) and happened to be perfectly accurate when you reviewed the answer key (&lt;em&gt;3 points&lt;/em&gt;), you got a 5/5 for that question.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I found the same results as the answer key. Bada bing, bada boom.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+&lt;h3 id=&#34;submit-a-perfectly-accurate-self-assessment&#34;&gt;Submit a perfectly accurate self-assessment.&lt;a href=&#34;#submit-a-perfectly-accurate-self-assessment&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;If your initial submission was a good faith effort (&lt;em&gt;2 points&lt;/em&gt;) but you did a bang-up job analyzing all of your mistakes and misunderstandings after thoroughly reviewing the key (&lt;em&gt;3 points&lt;/em&gt;), you got a 5/5 for that question.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Well, well, well. I was really confused about interaction effects.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Gah! I didn&amp;rsquo;t actually understand the null hypothesis here.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I forgot to set a seed for my permutation test, so now I see why my results kept changing!&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+&lt;h2 id=&#34;sample-self-assessments&#34;&gt;Sample self-assessments&lt;a href=&#34;#sample-self-assessments&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;Most of my code matches the answer key - there were only one or two sections where I didn’t make the correct plot or write the correct code for the desired output, but I think a good portion of my narrative was accurate, which is encouraging.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;After doing this self-assessment, I’m realizing that I had a better grasp on this analysis than I had previously thought. I made a couple small errors, but after seeing the answer key, I think I understood why I made them and how to avoid those errors in the future. &amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I liked that the self-assessment allowed me to see where I was close and what parts I was really far off.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I found that, while generating this model was straightforward, interpretation of the results was more difficult than I expected.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+&lt;h2 id=&#34;logistics&#34;&gt;Logistics&lt;a href=&#34;#logistics&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;OK, at this point, you may also be credibly curious. But you are probably wondering, how on earth did this actually work?&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;turning-it-in&#34;&gt;Turning it in&lt;a href=&#34;#turning-it-in&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;We advised students to color their text in R Markdown files knitted to HTML. The self-assessment portion always needed to be colored. You can find guidance on how to do that in the R Markdown cookbook: 
+&lt;a href=&#34;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://bookdown.org/yihui/rmarkdown-cookbook/font-color.html&lt;/a&gt;&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;trade-offs&#34;&gt;Trade-offs&lt;a href=&#34;#trade-offs&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Yes, I did have to cut back significantly on my homeworks. Whereas I would have anywhere from 6-8 homeworks before, I went down to four per quarter (plus a final project). This was because I typically allowed 1 week for the initial submission and another for the self-assessment, with no overlap. So each homework took 2 weeks. I trimmed homework length down, and I cut out anything that wasn&amp;rsquo;t essential.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;time-spent-by-tas&#34;&gt;Time spent by TAs&lt;a href=&#34;#time-spent-by-tas&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Honestly, I would have loved for self-assessments to have saved myself and my TAs time. I cannot say this was my experience. It was about the same amount of time overall.&lt;/p&gt;
+&lt;p&gt;But, what our teaching team did notice was that we felt better with our own grade assignments, and we enjoyed the grading process more. Rather than feeling like you were searching for mistakes to remove points, you were searching for true insights gained to add points. Small code errors or typos were usually caught by the students themselves, so TAs felt less personally responsible for making sure students were made aware of everything they did wrong. Also, student self-assessments were funny, charming, and allowed us to get to know them better. We also were better able to identify students who could use 1-on-1 help&amp;hellip;because they would tell us that.&lt;/p&gt;
+&lt;p&gt;And that brings me to the most common question I get: how did I assign grades? Truth be told, grading was my absolute least favorite part of teaching in academia. But self-assessments actually helped me get to a place where I felt like my grades mapped onto my goals. Here is an excerpt from my syllabus that describes my system:&lt;/p&gt;
+
+
+
+&lt;h2 id=&#34;homework&#34;&gt;Homework&lt;a href=&#34;#homework&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;A total of 4 homeworks will be assigned; your lowest score will be dropped at the end of the quarter. Some homeworks will require you to use R to analyze data. Although no prior R experience is required for this course, be prepared to do &lt;em&gt;a lot&lt;/em&gt; of self-guided learning. Students are expected to run R on their own computer or a computer they have plenty of access to and control over. Please attempt to do all homeworks on your own, but you may work with other students. However, you may not submit homework assignments as a group. You should submit your own original work.&lt;/p&gt;
+&lt;p&gt;You will have 1 week to complete each homework assignment, and your initial solutions must be submitted to Sakai by 2pm on the due date (at the start of class on Thursdays). Late homeworks will not be accepted.&lt;/p&gt;
+
+
+
+&lt;h3 id=&#34;homework-self-assessment&#34;&gt;Homework self-assessment&lt;a href=&#34;#homework-self-assessment&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;After the initial solutions are due, you will be provided a solution key. Using that key, you will be asked to assess your own initial solutions for accuracy and thoroughness; where you made mistakes, you must discuss and analyze where you went wrong, and correct them without copying/pasting directly from the key (this typically means that you need to include more narrative than we provide in the key). A good self-assessment will include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Assessment of the accuracy and completeness of your &amp;ldquo;initial solutions&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Correct worked solutions with some discussion and analysis of why your initial solution was incorrect, and reflection on the source of your confusion (if you got an answer correct, this is not necessary)&lt;/li&gt;
+&lt;li&gt;Attributions as appropriate to other students who helped you, or other sources such as lecture notes, readings, online resources, etc. that helped you&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;homework-grades&#34;&gt;Homework grades&lt;a href=&#34;#homework-grades&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Homework grades will be based on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Was your initial solution a good faith effort?&lt;/li&gt;
+&lt;li&gt;Did you catch all of your own errors in your self-assessment?&lt;/li&gt;
+&lt;li&gt;Is your updated solution correct?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each homework includes 3 questions, worth 5 points per question, scored as follows:&lt;/p&gt;
+&lt;p&gt;2 points for each initial solution being “in-good-faith”.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;2 (Strong attempt): answer reflects strong independent problem solving, with clearly thought out attempts to approach the problem and a diligent and honest effort to find the solution&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1 (Weak attempt): answer reflects some attempt to approach the problem, but approach appears to be superficial and lacks depth of analysis&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;0 (No attempt)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3 points for the quality of the final answer / discussion.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;3 (Exceptional): answer is thorough, concise, and clearly demonstrates ability to analyze and interpret statistics as well as theoretical understanding of statistical concepts&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;2 (Adequate): answer addresses the question with moderate inaccuracies in analysis and/or interpretation, or offers a correct but incomplete answer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1 (Inadequate): answer attempts to address question with substantial inaccuracies in analysis and/or interpretation&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;0 (Insufficient): answer does not attempt to address question or answer is insufficient to grade&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This means that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can get 100% of the points if you either:
+&lt;ul&gt;
+&lt;li&gt;Submit perfectly accurate initial solutions, or&lt;/li&gt;
+&lt;li&gt;Submit a perfectly accurate self-assessment,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;If you simply cannot submit any homework solutions on time, after the homework due date, you will receive the solutions key and can submit a self-assessment for a max score of 60% (3 out of 5 points per problem). We feel this is fair given that:
+&lt;ul&gt;
+&lt;li&gt;You did not attempt a good faith effort, and&lt;/li&gt;
+&lt;li&gt;We will drop your lowest homework grade.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;h3 id=&#34;what-is-a-good-faith-effort&#34;&gt;What is a &amp;ldquo;good faith effort&amp;rdquo;?&lt;a href=&#34;#what-is-a-good-faith-effort&#34;&gt;&lt;svg class=&#34;anchor-symbol&#34; height=&#34;26&#34; width=&#34;26&#34; viewBox=&#34;0 0 22 22&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;
+&lt;path d=&#34;M0 0h24v24H0z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;
+&lt;path d=&#34;M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z&#34;&gt;&lt;/path&gt;
+&lt;/svg&gt;&lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Simply submitting nonsense or saying “I can’t do this” for each problem will not meet our criteria for a good faith effort, because there is no attempt on your part to show us why you are struggling, what you tried but didn’t work, what specific part of the problem you got stuck on, which other examples in the text/lecture you tried to work through to get a grasp on the problem, etc. ^[This is especially true if you don’t attend any office hours, post on Sakai, or otherwise seek out help &lt;em&gt;before&lt;/em&gt; the due date.] The good faith effort is just that- we are interested in seeing evidence of a diligent and honest effort on your part, made with deliberate intention, to understand the problem and attempt an answer.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;In the talk I gave at JSM, I talked about self-assessments as just one out of three strategies I used to get students talking about data science. My students often had a final project and/or presentation at the end of a course, which I also think helps them to think out loud and on their feet. I sincerely hope other educators try these kinds of methods out! I can honestly say I wouldn&amp;rsquo;t teach a university-level course any other way.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;allthree.png&#34; alt=&#34;All three strategies&#34; width=&#34;1365&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figure 8: All three strategies&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

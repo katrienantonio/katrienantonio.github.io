@@ -1,0 +1,1825 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Katrien Antonio">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Taking a sad script and making it better for model cross-validation.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#1D8DB0">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/tomorrow.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/tomorrow.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i%7CKarla:400,400i,700,700i%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-99209585-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-99209585-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_32x32_fill_lanczos_center_3.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_3.png">
+
+  <link rel="canonical" href="https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Katrien Antonio">
+  <meta property="og:url" content="https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/">
+  <meta property="og:title" content="Take a Sad Script &amp; Make it Better: Tidymodels Edition | Katrien Antonio">
+  <meta property="og:description" content="Taking a sad script and making it better for model cross-validation."><meta property="og:image" content="https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/featured.jpg">
+  <meta property="twitter:image" content="https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/featured.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-02-27T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-02-27T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/"
+  },
+  "headline": "Take a Sad Script \u0026 Make it Better: Tidymodels Edition",
+  
+  "image": [
+    "https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/featured.jpg"
+  ],
+  
+  "datePublished": "2020-02-27T00:00:00Z",
+  "dateModified": "2020-02-27T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Katrien Antonio"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Katrien Antonio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Taking a sad script and making it better for model cross-validation."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Take a Sad Script &amp; Make it Better: Tidymodels Edition | Katrien Antonio</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Katrien Antonio</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/publication"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/talks"><span>Talks</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/lab"><span>Lab</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/teachings"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/pdf/CV%20Katrien%20Antonio.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article">
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>Take a Sad Script &amp; Make it Better: Tidymodels Edition</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Feb 27, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    19 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/machine-learning/">machine learning</a>, <a href="/categories/tidymodels/">tidymodels</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 517px;">
+  <div style="position: relative">
+    <img src="/post/2020-02-27-better-tidymodels/featured_hua3ceb266631360af179578e3785d630d_874866_720x0_resize_q90_lanczos.jpg" alt="" class="featured-image">
+    <span class="article-header-caption">Image by 
+<a href="https://unsplash.com/photos/PnAc2UaeqII" target="_blank" rel="noopener">Rachel Martin</a></span>
+  </div>
+</div>
+
+
+  
+  <div class="article-container">
+    
+    <div class="row">
+    
+    <div class="col-12 col-lg-10ish article-style">
+      <p>A few years ago, I did a talk called 
+<a href="/talk/2018-ohsu-sad-plot-better/">&ldquo;Take a Sad Plot &amp; Make it Better,&rdquo;</a> where I showed how I took a single sad plot and tried to make it better. The process of making that plot better taught me a lot about data visualization, and about the 
+<a href="https://ggplot2.tidyverse.org/" target="_blank" rel="noopener">ggplot2 package</a>.</p>
+<p>Fast-forward to 2019 when I started learning 
+<a href="https://github.com/tidymodels/" target="_blank" rel="noopener">tidymodels</a>, and I have accumulated some pretty sad predictive modeling scripts! And my sad plots are not so lonely anymore. Specifically, my old scripts for doing cross-validation with tidymodels are particularly sad. But, I&rsquo;ve been able to make them better (one might even call them happy), primarily due to changes in the 
+<a href="https://tidymodels.github.io/tune/" target="_blank" rel="noopener">tune package</a> and the addition of the <code>fit_resamples()</code> function. The process of making these scripts better taught me a lot about predictive modeling, and about the (evolving) tidymodels ecosystem. So, why write a blog post with outdated code?</p>
+<ol>
+<li>I want to remember <em>that</em> I did this &ldquo;by hand.&rdquo;</li>
+<li>I want to remember <em>how</em> I did this &ldquo;by hand.&rdquo; The code still works, even if there is now a happier path to doing the same thing.</li>
+<li>I want to share cute penguin art and gifs.</li>
+</ol>
+<p>Let&rsquo;s start with some 
+<a href="http://www.greenhumour.com/2018/04/penguins-of-world.html" target="_blank" rel="noopener">cute penguin art</a> by Rohan Chakravarty&hellip;</p>
+<p><a href="http://www.greenhumour.com/2018/04/penguins-of-world.html" target="_blank"><img src="penguins-of-the-world.JPG" width="270" style="display: block; margin: auto;" /></a></p>
+<p>My objective here is <strong>not</strong> to provide an introduction to using tidymodels, cross-validation, or to machine learning. If that is what you came for, check out the project button at the top of this post for my workshop materials for learners, and my 
+<a href="https://education.rstudio.com/blog/2020/02/conf20-intro-ml/" target="_blank" rel="noopener">associated blog post</a> on the RStudio education site.</p>
+<div class="alert alert-note">
+  <div>
+    <strong>Bottom line:</strong> If you are stumbling upon this blog post in the year 2020 or beyond, know that there is a better way!
+  </div>
+</div>
+
+
+
+<h2 id="a-sad-script-symphony---">A sad script symphony 🎻 🎷 🎹<a href="#a-sad-script-symphony---"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>I&rsquo;m not the first person to write sad tidymodels scripts- there are many out in the wild. Here were the blog posts that I found most helpful when trying to solve this particular coding conundrum:</p>
+<ol>
+<li>
+<p>
+<a href="https://towardsdatascience.com/modelling-with-tidymodels-and-parsnip-bae2c01c131c" target="_blank" rel="noopener">Modelling with Tidymodels and Parsnip: A Tidy Approach to a Classification Problem</a> by Diego Usai</p>
+</li>
+<li>
+<p>
+<a href="https://www.brodrigues.co/blog/2018-11-25-tidy_cv/" target="_blank" rel="noopener">A tutorial on tidy cross-validation with R</a> by Bruno Rodrigues</p>
+</li>
+<li>
+<p>
+<a href="https://www.benjaminsorensen.me/post/modeling-with-parsnip-and-tidymodels/" target="_blank" rel="noopener">Modeling with parsnip and tidymodels</a> by Benjamin Sorensen</p>
+</li>
+</ol>
+
+
+
+<h2 id="packages">Packages<a href="#packages"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<pre><code class="language-r">library(tidyverse)
+library(tidymodels)
+library(rpart)  # for decision tree
+library(ranger) # for random forest
+</code></pre>
+
+
+
+<h2 id="data">Data<a href="#data"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>I&rsquo;m going to use data that Allison Horst helped me source on penguins from the 
+<a href="https://en.wikipedia.org/wiki/Palmer_Station" target="_blank" rel="noopener">Palmer Station</a> (Antarctica) 
+<a href="https://lternet.edu/" target="_blank" rel="noopener">Long Term Ecological Research Network</a>.</p>
+<blockquote>
+<p>&ldquo;sooo now I&rsquo;m just looking at penguin pictures&rdquo;</p>
+<ul>
+<li>
+<a href="https://twitter.com/allison_horst?lang=en" target="_blank" rel="noopener">Allison Horst</a> after slacking me this penguin data</li>
+</ul>
+</blockquote>
+<div class="alert alert-note">
+  <div>
+    <strong>Update!</strong> We have bundled the Palmer Station penguins data into an R data package named palmerpenguins. Enjoy 🐧 Here is the package website: 
+<a href="https://allisonhorst.github.io/palmerpenguins/" target="_blank" rel="noopener">https://allisonhorst.github.io/palmerpenguins/</a>
+  </div>
+</div>
+<pre><code class="language-r">install.packages(&quot;remotes&quot;) # to install from github
+remotes::install_github(&quot;allisonhorst/palmerpenguins&quot;)
+</code></pre>
+<p><img src="https://allisonhorst.github.io/palmerpenguins/reference/figures/logo.png" alt=""></p>
+<p>After you&rsquo;ve installed the package, load it and read about the variables with <code>?penguins</code>. We&rsquo;ll modify this dataset lightly by:</p>
+<ul>
+<li>casting all characters as factors,</li>
+<li>dropping any observations with missing data, and</li>
+<li>dropping the <code>island</code> variable.</li>
+</ul>
+<pre><code class="language-r">library(palmerpenguins)
+
+tidypenguins &lt;- penguins %&gt;% 
+  select(-island) %&gt;% 
+  drop_na()
+
+glimpse(tidypenguins)
+#&gt; Rows: 333
+#&gt; Columns: 7
+#&gt; $ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Ade…
+#&gt; $ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, 36.7, 39.3, 38.9, 39.2, 41.1, 38.…
+#&gt; $ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, 19.3, 20.6, 17.8, 19.6, 17.6, 21.…
+#&gt; $ flipper_length_mm &lt;int&gt; 181, 186, 195, 193, 190, 181, 195, 182, 191, 198, 1…
+#&gt; $ body_mass_g       &lt;int&gt; 3750, 3800, 3250, 3450, 3650, 3625, 4675, 3200, 380…
+#&gt; $ sex               &lt;fct&gt; male, female, female, female, male, female, male, f…
+#&gt; $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 200…
+</code></pre>
+
+
+
+<h2 id="penguins">Penguins<a href="#penguins"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<div class="figure">
+<img src="https://allisonhorst.github.io/palmerpenguins/man/figures/lter_penguins.png" alt="Artwork by @allisonhorst" width="50%" />
+<p class="caption">Figure 1: Artwork by @allisonhorst</p>
+</div>
+<p>This data included structural size measurements of penguins like their bill length, flipper length, and body mass. It also included each penguin&rsquo;s species and sex. I&rsquo;m going to use this data to try to predict penguin body mass. Sadly, we only have data for three distinct penguin species:</p>
+<pre><code class="language-r">tidypenguins %&gt;% 
+  count(species)
+#&gt; # A tibble: 3 x 2
+#&gt;   species       n
+#&gt;   &lt;fct&gt;     &lt;int&gt;
+#&gt; 1 Adelie      146
+#&gt; 2 Chinstrap    68
+#&gt; 3 Gentoo      119
+</code></pre>
+<p>Here is a lineup:</p>
+<img src="https://www.bas.ac.uk/wp-content/uploads/2015/04/Penguin-heights.jpg" style="display: block; margin: auto;" />
+<p>From: 
+<a href="https://www.bas.ac.uk/about/antarctica/wildlife/penguins/" target="_blank" rel="noopener">https://www.bas.ac.uk/about/antarctica/wildlife/penguins/</a></p>
+<p>Looks like we have data for 3 of the smaller penguin species (of those pictured here).</p>
+<p>First, let&rsquo;s build a simple linear regression model to predict body mass from flipper length.</p>
+<pre><code class="language-r">ggplot(tidypenguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point(color = &quot;salmon&quot;, size = 3, alpha = .9) +
+  geom_smooth(method = &quot;lm&quot;) +
+  theme_penguin()
+</code></pre>
+<img src="figs/unnamed-chunk-9-1.png" width="672" />
+<p>Not bad! Looks promising. To actually fit a linear regression model, you might be used to something like this in R:</p>
+<pre><code class="language-r">penguin_mod &lt;- lm(body_mass_g ~ flipper_length_mm, data = tidypenguins)
+summary(penguin_mod)
+#&gt; 
+#&gt; Call:
+#&gt; lm(formula = body_mass_g ~ flipper_length_mm, data = tidypenguins)
+#&gt; 
+#&gt; Residuals:
+#&gt;      Min       1Q   Median       3Q      Max 
+#&gt; -1057.33  -259.79   -12.24   242.97  1293.89 
+#&gt; 
+#&gt; Coefficients:
+#&gt;                   Estimate Std. Error t value Pr(&gt;|t|)    
+#&gt; (Intercept)       -5872.09     310.29  -18.93   &lt;2e-16 ***
+#&gt; flipper_length_mm    50.15       1.54   32.56   &lt;2e-16 ***
+#&gt; ---
+#&gt; Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+#&gt; 
+#&gt; Residual standard error: 393.3 on 331 degrees of freedom
+#&gt; Multiple R-squared:  0.7621,	Adjusted R-squared:  0.7614 
+#&gt; F-statistic:  1060 on 1 and 331 DF,  p-value: &lt; 2.2e-16
+</code></pre>
+<p>But we aren&rsquo;t going to stick with this. We are going to use tidymodels, with the goal of generating accurate predictions for future, yet-to-be-seen penguins.</p>
+<p><img src="https://media.giphy.com/media/C0EYVrLCgnYdy/giphy.gif" alt=""></p>
+
+
+
+<h2 id="tidymodels-101">tidymodels 101<a href="#tidymodels-101"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>The code provided in the section below is <em>not</em> particularly sad 🐧. If you are embarking on learning tidymodels, you&rsquo;ll need to use this same kind of code as the building blocks for any predictive modeling pipeline.</p>
+
+
+
+<h3 id="parsnip-build-the-model">Parsnip: build the model<a href="#parsnip-build-the-model"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>This step is really three, using only the 
+<a href="https://tidymodels.github.io/parsnip/" target="_blank" rel="noopener">parsnip package</a>:</p>
+<pre><code class="language-r">lm_spec &lt;- 
+  linear_reg() %&gt;%       # pick model
+  set_engine(&quot;lm&quot;) %&gt;%   # set engine
+  set_mode(&quot;regression&quot;) # set mode
+
+lm_spec
+#&gt; Linear Regression Model Specification (regression)
+#&gt; 
+#&gt; Computational engine: lm
+</code></pre>
+<p>Things that are missing: data (we haven&rsquo;t touched it yet) and a formula (no data, no variables, no twiddle <code>~</code>). This is an <em>abstract</em> model specification. See other possible parsnip models 
+<a href="https://tidymodels.github.io/parsnip/articles/articles/Models.html" target="_blank" rel="noopener">here</a>.</p>
+
+
+
+<h3 id="recipe-not-happening-here-folks">Recipe: not happening here, folks<a href="#recipe-not-happening-here-folks"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>This is where you would normally insert some code for feature engineering using the 
+<a href="https://tidymodels.github.io/recipes/" target="_blank" rel="noopener">recipes package</a>. But previously this required functions named <code>prep()</code>, <code>bake()</code>, <code>juice()</code>- so I&rsquo;m willfully ignoring that for now. There will be no recipes involving penguins.</p>
+<p><img src="https://media.giphy.com/media/H4uE6w9G1uK4M/giphy.gif" alt=""></p>
+
+
+
+<h3 id="rsample-initial-split">Rsample: initial split<a href="#rsample-initial-split"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>We&rsquo;ll use the 
+<a href="https://tidymodels.github.io/rsample/" target="_blank" rel="noopener">rsample package</a> to split (<em>ayee! I promise no penguins were hurt in the writing of this blog post</em>) the penguins up into two datasets: training and testing. If you are unfamiliar with this practice, read up on 
+<a href="https://sebastianraschka.com/blog/2016/model-evaluation-selection-part1.html#resubstitution-validation-and-the-holdout-method" target="_blank" rel="noopener">the holdout method</a>.</p>
+<pre><code class="language-r">penguin_split &lt;- initial_split(tidypenguins, strata = species)
+penguin_train &lt;- training(penguin_split)
+penguin_test  &lt;- testing(penguin_split)
+</code></pre>
+
+
+
+<h3 id="fitting-the-model-once">Fitting the model once<a href="#fitting-the-model-once"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>Fitting a single model once is&hellip;not <em>exactly</em> the hardest part.</p>
+<p><img src="https://media.giphy.com/media/4KALRmOb8uwbC/giphy.gif" alt=""></p>
+<p>This is essentially the workflow from this 
+<a href="https://rviews.rstudio.com/2019/06/19/a-gentle-intro-to-tidymodels/" target="_blank" rel="noopener">early blog post</a>.</p>
+<pre><code class="language-r">set.seed(0)
+
+lm_spec %&gt;% 
+  
+  # train: get fitted model
+  fit(body_mass_g ~ ., data = penguin_train) %&gt;% 
+  
+  # test: get predictions
+  predict(new_data = penguin_test) %&gt;% 
+  
+  # compare: get metrics
+  bind_cols(penguin_test) %&gt;% 
+  rmse(truth = body_mass_g, estimate = .pred)
+#&gt; # A tibble: 1 x 3
+#&gt;   .metric .estimator .estimate
+#&gt;   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+#&gt; 1 rmse    standard        278.
+</code></pre>
+
+
+
+<h3 id="fitting-the-model-with-a-function">Fitting the model with a function<a href="#fitting-the-model-with-a-function"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>If you squint, you might see that I could make this into a function like below:</p>
+<pre><code class="language-r">get_rmse &lt;- function(model_spec, split) {
+  
+  model_spec %&gt;% 
+    
+    # train: get fitted model
+    fit(body_mass_g ~ ., data = training(split)) %&gt;% 
+    
+    # test: get predictions
+    predict(new_data = testing(split)) %&gt;% 
+    
+    # compare: get metrics
+    bind_cols(testing(split)) %&gt;% 
+    rmse(truth = body_mass_g, estimate = .pred)
+  
+}
+</code></pre>
+<p>And I could use it to fit a linear regression model:</p>
+<pre><code class="language-r">set.seed(0)
+get_rmse(model_spec = lm_spec, split = penguin_split)
+#&gt; # A tibble: 1 x 3
+#&gt;   .metric .estimator .estimate
+#&gt;   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+#&gt; 1 rmse    standard        278.
+</code></pre>
+<p>I could also build up a tibble that includes the results, if I wanted to save the predicted values, for example:</p>
+<pre><code class="language-r">get_preds &lt;- function(model_spec, split){
+  
+  # train: get fitted model
+  fit_model &lt;- model_spec %&gt;% 
+    fit(body_mass_g ~ ., data = training(split))
+  
+  # test: get predictions
+  preds &lt;- fit_model %&gt;% 
+    predict(new_data = testing(split)) %&gt;% 
+    bind_cols(testing(split) %&gt;% select(body_mass_g, species))
+
+  preds
+}
+
+set.seed(0)
+penguin_preds &lt;- get_preds(model_spec = lm_spec, split = penguin_split)
+</code></pre>
+<p>Then I can work with the predicted values, like plotting the fitted body mass estimates against the residuals.</p>
+<pre><code class="language-r">ggplot(penguin_preds, aes(x = .pred, y = (.pred - body_mass_g))) +
+  geom_point(aes(colour = species), size = 3, alpha = .8) +
+  geom_smooth(method = &quot;lm&quot;) +
+  theme_penguin() +
+  scico::scale_colour_scico_d(end = .8) +
+  ggtitle(&quot;Residuals vs Fitted&quot;)
+#&gt; `geom_smooth()` using formula 'y ~ x'
+</code></pre>
+<img src="figs/unnamed-chunk-17-1.png" width="672" />
+<pre><code class="language-r">
+# compare: get metrics
+penguin_preds %&gt;% 
+  rmse(truth = body_mass_g, estimate = .pred)
+#&gt; # A tibble: 1 x 3
+#&gt;   .metric .estimator .estimate
+#&gt;   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+#&gt; 1 rmse    standard        278.
+</code></pre>
+<p>Or I could fit a regression tree model with a new model spec:</p>
+<pre><code class="language-r"># regression tree model spec
+rt_spec &lt;-
+  decision_tree() %&gt;% 
+  set_engine(&quot;rpart&quot;) %&gt;% 
+  set_mode(&quot;regression&quot;)
+
+# get rmse
+set.seed(0)
+get_preds(model_spec = rt_spec, 
+          split = penguin_split) %&gt;% 
+  rmse(truth = body_mass_g, estimate = .pred)
+#&gt; # A tibble: 1 x 3
+#&gt;   .metric .estimator .estimate
+#&gt;   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+#&gt; 1 rmse    standard        312.
+</code></pre>
+<p>Or a random forest:</p>
+<pre><code class="language-r"># random forest model spec
+rf_spec &lt;-
+  rand_forest() %&gt;% 
+  set_engine(&quot;ranger&quot;) %&gt;% 
+  set_mode(&quot;regression&quot;)
+
+# get rmse
+set.seed(0)
+get_preds(model_spec = rf_spec, 
+          split = penguin_split) %&gt;% 
+  rmse(truth = body_mass_g, estimate = .pred)
+#&gt; # A tibble: 1 x 3
+#&gt;   .metric .estimator .estimate
+#&gt;   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+#&gt; 1 rmse    standard        300.
+</code></pre>
+<p>But, unfortunately, I shouldn&rsquo;t be predicting with the test set over and over again like this. It isn&rsquo;t good practice to predict with the test set &gt; 1 time. What is a good predictive modeler to do? I should be saving (holding out) the test set and use it to generate predictions exactly once, at the very end — after I&rsquo;ve compared different models, selected my features, and tuned my hyperparameters. How do you do this? You do 
+<a href="https://sebastianraschka.com/blog/2016/model-evaluation-selection-part3.html" target="_blank" rel="noopener">cross-validation</a> with the training set, and you leave the testing set for 
+<a href="https://tidymodels.github.io/tune/reference/last_fit.html" target="_blank" rel="noopener"><em>the very last fit you do</em></a>.</p>
+<p><img src="https://media.giphy.com/media/uwlDAujt3w9mU/giphy.gif" alt=""></p>
+
+
+
+<h2 id="hey-jude-dont-make-it-sad-">Hey Jude, don&rsquo;t make it sad 🎶<a href="#hey-jude-dont-make-it-sad-"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>Now, for the 😭 part- let&rsquo;s add cross-validation! To do this, we&rsquo;ll use a function called 
+<a href="https://tidymodels.github.io/rsample/reference/vfold_cv.html" target="_blank" rel="noopener"><code>rsample::vfold_cv()</code></a>.</p>
+<pre><code class="language-r"># add the cv step here
+set.seed(0)
+penguin_folds &lt;- vfold_cv(data = penguin_train, strata = &quot;species&quot;)
+
+penguin_folds
+#&gt; #  10-fold cross-validation using stratification 
+#&gt; # A tibble: 10 x 2
+#&gt;    splits           id    
+#&gt;    &lt;list&gt;           &lt;chr&gt; 
+#&gt;  1 &lt;split [225/26]&gt; Fold01
+#&gt;  2 &lt;split [226/25]&gt; Fold02
+#&gt;  3 &lt;split [226/25]&gt; Fold03
+#&gt;  4 &lt;split [226/25]&gt; Fold04
+#&gt;  5 &lt;split [226/25]&gt; Fold05
+#&gt;  6 &lt;split [226/25]&gt; Fold06
+#&gt;  7 &lt;split [226/25]&gt; Fold07
+#&gt;  8 &lt;split [226/25]&gt; Fold08
+#&gt;  9 &lt;split [226/25]&gt; Fold09
+#&gt; 10 &lt;split [226/25]&gt; Fold10
+</code></pre>
+<p>The process of training, testing, and computing metrics gets a lot harder when you need to do this across 10 folds, each with a different data split. I eventually worked out three approaches, which I show below. All require some level of comfort with iteration using the 
+<a href="https://purrr.tidyverse.org/" target="_blank" rel="noopener">purrr package</a>.</p>
+
+
+
+<h3 id="function-with-minimal-purrr-ing">Function with minimal purrr-ing<a href="#function-with-minimal-purrr-ing"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>This approach is essentially a mega-function, that we then use purrr to map across each fold.</p>
+<p>I&rsquo;m going to change a few things from my previous <code>get_preds()</code> function:</p>
+<ol>
+<li><code>training(split)</code> -&gt; <code>analysis(split)</code></li>
+<li><code>testing(split)</code> -&gt; <code>assessment(split)</code></li>
+<li>I also added the <code>rsample::add_resample_id()</code> function to keep track of the fold number.</li>
+<li>I saved the predictions now as a list column.</li>
+</ol>
+<p>To build up this function, my strategy was to figure out how to work with one fold, then I knew I&rsquo;d be able to use <code>purrr::map_df()</code> to apply it across multiple folds.</p>
+<pre><code class="language-r"># Figure it out for one fold
+get_fold_results &lt;- function(model_spec, split){
+  
+  # train: get fitted model for each fold
+  fits &lt;- model_spec %&gt;% 
+    fit(body_mass_g ~ ., data = analysis(split))
+  
+  # test: get predictions on for each fold
+  preds &lt;- fits %&gt;% 
+    predict(new_data = assessment(split)) %&gt;% 
+    bind_cols(assessment(split)) 
+  
+  # compare: compute metric for each fold
+  rmse &lt;- assessment(split)  %&gt;% 
+    summarize(rmse = rmse_vec(truth = body_mass_g, 
+                              estimate = preds$.pred))
+  
+  rmse %&gt;% 
+    # add fold identifier column
+    rsample::add_resample_id(split = split) %&gt;% 
+    as_tibble() %&gt;% 
+    # add predictions
+    mutate(preds = list(preds))
+}
+</code></pre>
+<p>I tried this function with a single fold first:</p>
+<pre><code class="language-r">set.seed(0)
+get_fold_results(
+    split      = penguin_folds$splits[[1]], 
+    model_spec = rt_spec
+  )
+#&gt; # A tibble: 1 x 3
+#&gt;    rmse id     preds            
+#&gt;   &lt;dbl&gt; &lt;chr&gt;  &lt;list&gt;           
+#&gt; 1  419. Fold01 &lt;tibble [26 × 8]&gt;
+</code></pre>
+<p>Next, I used purrr- but just once. The function <code>get_fold_results</code> is doing <strong>most</strong> of the work for us, but I needed purrr to map it across each fold.</p>
+<pre><code class="language-r">set.seed(0)
+kfold_results &lt;- 
+  map_df(
+    penguin_folds$splits, 
+    ~get_fold_results(.x, model = rt_spec))
+kfold_results
+#&gt; # A tibble: 10 x 3
+#&gt;     rmse id     preds            
+#&gt;    &lt;dbl&gt; &lt;chr&gt;  &lt;list&gt;           
+#&gt;  1  419. Fold01 &lt;tibble [26 × 8]&gt;
+#&gt;  2  326. Fold02 &lt;tibble [25 × 8]&gt;
+#&gt;  3  414. Fold03 &lt;tibble [25 × 8]&gt;
+#&gt;  4  327. Fold04 &lt;tibble [25 × 8]&gt;
+#&gt;  5  336. Fold05 &lt;tibble [25 × 8]&gt;
+#&gt;  6  406. Fold06 &lt;tibble [25 × 8]&gt;
+#&gt;  7  305. Fold07 &lt;tibble [25 × 8]&gt;
+#&gt;  8  301. Fold08 &lt;tibble [25 × 8]&gt;
+#&gt;  9  315. Fold09 &lt;tibble [25 × 8]&gt;
+#&gt; 10  319. Fold10 &lt;tibble [25 × 8]&gt;
+</code></pre>
+<p>Here we are still left with 10 RMSE values- one for each of the 10 folds. We don&rsquo;t care too much about by fold- the power is in the aggregate. Specifically, we mainly care about the central tendency and spread of these RMSE values. Let&rsquo;s finish by combining (or aggregating) these metrics.</p>
+<pre><code class="language-r">kfold_results %&gt;% 
+  summarize(mean_rmse = mean(rmse), sd_rmse = sd(rmse))
+#&gt; # A tibble: 1 x 2
+#&gt;   mean_rmse sd_rmse
+#&gt;       &lt;dbl&gt;   &lt;dbl&gt;
+#&gt; 1      347.    46.8
+</code></pre>
+<p>So, this works. But, can you imagine doing it again? Without errors? Can you imagine teaching it?</p>
+<p><img src="https://media.giphy.com/media/bmGmHZ5khMjN6/giphy.gif" alt=""></p>
+
+
+
+<h3 id="purrr-to-the-max">Purrr-to-the-max<a href="#purrr-to-the-max"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>This approach is <code>purrr::map()</code> (and friends) on steriods. We use vanilla <code>map()</code>, <code>map2()</code>, <em>and</em> <code>map2_dbl()</code> here. We also use 
+<a href="https://jennybc.github.io/purrr-tutorial/ls03_map-function-syntax.html#anonymous_function,_formula" target="_blank" rel="noopener">anonymous functions as a formula</a>, <em>and</em> the pipe operator within those anonymous functions.</p>
+<pre><code class="language-r">set.seed(0)
+penguin_res &lt;- penguin_folds %&gt;% 
+  mutate(
+    
+    # train: get fitted model for each fold
+    train_set  = map(splits, analysis),
+    fit_models = map(train_set, ~rt_spec %&gt;% 
+                                    fit(body_mass_g ~ ., 
+                                        data = .x)),
+    
+    # test: get predictions for each fold
+    test_set   = map(splits, assessment),
+    estimates  = map2(fit_models, 
+                      test_set, 
+                      ~.x %&gt;% 
+                        predict(.y)),
+    
+    # compare: compute metric for each fold
+    rmse       = map2_dbl(test_set, 
+                          estimates, 
+                          ~rmse_vec(truth = .x$body_mass_g, 
+                                    estimate = .y$.pred))
+  )
+
+penguin_res
+#&gt; #  10-fold cross-validation using stratification 
+#&gt; # A tibble: 10 x 7
+#&gt;    splits       id     train_set     fit_models test_set     estimates      rmse
+#&gt;    &lt;list&gt;       &lt;chr&gt;  &lt;list&gt;        &lt;list&gt;     &lt;list&gt;       &lt;list&gt;        &lt;dbl&gt;
+#&gt;  1 &lt;split [225… Fold01 &lt;tibble [225… &lt;fit[+]&gt;   &lt;tibble [26… &lt;tibble [26 …  419.
+#&gt;  2 &lt;split [226… Fold02 &lt;tibble [226… &lt;fit[+]&gt;   &lt;tibble [25… &lt;tibble [25 …  326.
+#&gt;  3 &lt;split [226… Fold03 &lt;tibble [226… &lt;fit[+]&gt;   &lt;tibble [25… &lt;tibble [25 …  414.
+#&gt;  4 &lt;split [226… Fold04 &lt;tibble [226… &lt;fit[+]&gt;   &lt;tibble [25… &lt;tibble [25 …  327.
+#&gt;  5 &lt;split [226… Fold05 &lt;tibble [226… &lt;fit[+]&gt;   &lt;tibble [25… &lt;tibble [25 …  336.
+#&gt;  6 &lt;split [226… Fold06 &lt;tibble [226… &lt;fit[+]&gt;   &lt;tibble [25… &lt;tibble [25 …  406.
+#&gt;  7 &lt;split [226… Fold07 &lt;tibble [226… &lt;fit[+]&gt;   &lt;tibble [25… &lt;tibble [25 …  305.
+#&gt;  8 &lt;split [226… Fold08 &lt;tibble [226… &lt;fit[+]&gt;   &lt;tibble [25… &lt;tibble [25 …  301.
+#&gt;  9 &lt;split [226… Fold09 &lt;tibble [226… &lt;fit[+]&gt;   &lt;tibble [25… &lt;tibble [25 …  315.
+#&gt; 10 &lt;split [226… Fold10 &lt;tibble [226… &lt;fit[+]&gt;   &lt;tibble [25… &lt;tibble [25 …  319.
+
+penguin_res %&gt;% 
+  summarise(mean_rmse = mean(rmse), sd_rmse = sd(rmse))
+#&gt; # A tibble: 1 x 2
+#&gt;   mean_rmse sd_rmse
+#&gt;       &lt;dbl&gt;   &lt;dbl&gt;
+#&gt; 1      347.    46.8
+</code></pre>
+
+
+
+<h3 id="the-purrr-mash-up">The purrr mash-up<a href="#the-purrr-mash-up"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h3>
+<p>Another way I worked out was largely after reviewing Max&rsquo;s slides from previous workshops. This is basically a mash-up of my previous two approaches, where we write laser-focused functions that each do one thing, then use purrr to apply those functions across the folds. This way is nice(r) for showing in slides as you can incrementally build up the results table. Let&rsquo;s see this sad script in action&hellip;</p>
+
+
+
+<h4 id="round-1">Round 1<a href="#round-1"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h4>
+<pre><code class="language-r">set.seed(0) # for reproducibility
+
+# train: get fitted model for a split
+get_fits &lt;- function(split, model_spec){
+  model_spec %&gt;% 
+    fit(body_mass_g ~ ., 
+        data = analysis(split))
+}
+
+# train: get fitted models across folds
+penguin_purrr &lt;- penguin_folds %&gt;% 
+  mutate(rt_fits = map(splits, get_fits, rt_spec))
+
+penguin_purrr
+#&gt; #  10-fold cross-validation using stratification 
+#&gt; # A tibble: 10 x 3
+#&gt;    splits           id     rt_fits 
+#&gt;    &lt;list&gt;           &lt;chr&gt;  &lt;list&gt;  
+#&gt;  1 &lt;split [225/26]&gt; Fold01 &lt;fit[+]&gt;
+#&gt;  2 &lt;split [226/25]&gt; Fold02 &lt;fit[+]&gt;
+#&gt;  3 &lt;split [226/25]&gt; Fold03 &lt;fit[+]&gt;
+#&gt;  4 &lt;split [226/25]&gt; Fold04 &lt;fit[+]&gt;
+#&gt;  5 &lt;split [226/25]&gt; Fold05 &lt;fit[+]&gt;
+#&gt;  6 &lt;split [226/25]&gt; Fold06 &lt;fit[+]&gt;
+#&gt;  7 &lt;split [226/25]&gt; Fold07 &lt;fit[+]&gt;
+#&gt;  8 &lt;split [226/25]&gt; Fold08 &lt;fit[+]&gt;
+#&gt;  9 &lt;split [226/25]&gt; Fold09 &lt;fit[+]&gt;
+#&gt; 10 &lt;split [226/25]&gt; Fold10 &lt;fit[+]&gt;
+</code></pre>
+
+
+
+<h4 id="round-2">Round 2<a href="#round-2"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h4>
+<pre><code class="language-r"># test: get predictions for a split
+get_preds &lt;- function(split, fit_df) {
+  
+  fit_df %&gt;% 
+    predict(new_data = assessment(split)) %&gt;% 
+    bind_cols(assessment(split))
+  
+}
+
+# test: get predictions across folds
+penguin_purrr &lt;- penguin_purrr %&gt;% 
+  mutate(rt_preds = map2(splits, rt_fits, get_preds))
+
+penguin_purrr
+#&gt; #  10-fold cross-validation using stratification 
+#&gt; # A tibble: 10 x 4
+#&gt;    splits           id     rt_fits  rt_preds         
+#&gt;    &lt;list&gt;           &lt;chr&gt;  &lt;list&gt;   &lt;list&gt;           
+#&gt;  1 &lt;split [225/26]&gt; Fold01 &lt;fit[+]&gt; &lt;tibble [26 × 8]&gt;
+#&gt;  2 &lt;split [226/25]&gt; Fold02 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;
+#&gt;  3 &lt;split [226/25]&gt; Fold03 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;
+#&gt;  4 &lt;split [226/25]&gt; Fold04 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;
+#&gt;  5 &lt;split [226/25]&gt; Fold05 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;
+#&gt;  6 &lt;split [226/25]&gt; Fold06 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;
+#&gt;  7 &lt;split [226/25]&gt; Fold07 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;
+#&gt;  8 &lt;split [226/25]&gt; Fold08 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;
+#&gt;  9 &lt;split [226/25]&gt; Fold09 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;
+#&gt; 10 &lt;split [226/25]&gt; Fold10 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;
+</code></pre>
+
+
+
+<h4 id="aaaand-round-3">aaaand Round 3<a href="#aaaand-round-3"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h4>
+<pre><code class="language-r"># compare: compute metric for a split
+get_rmse &lt;- function(pred_df) {
+  
+  pred_df %&gt;% 
+    rmse(truth    = body_mass_g, 
+         estimate = .pred) %&gt;% 
+    pluck(&quot;.estimate&quot;)
+  
+}
+
+# compare: compute metric across folds
+penguin_purrr &lt;- penguin_purrr %&gt;% 
+  mutate(rt_rmse = map_dbl(rt_preds, get_rmse))
+
+penguin_purrr
+#&gt; #  10-fold cross-validation using stratification 
+#&gt; # A tibble: 10 x 5
+#&gt;    splits           id     rt_fits  rt_preds          rt_rmse
+#&gt;    &lt;list&gt;           &lt;chr&gt;  &lt;list&gt;   &lt;list&gt;              &lt;dbl&gt;
+#&gt;  1 &lt;split [225/26]&gt; Fold01 &lt;fit[+]&gt; &lt;tibble [26 × 8]&gt;    419.
+#&gt;  2 &lt;split [226/25]&gt; Fold02 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    326.
+#&gt;  3 &lt;split [226/25]&gt; Fold03 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    414.
+#&gt;  4 &lt;split [226/25]&gt; Fold04 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    327.
+#&gt;  5 &lt;split [226/25]&gt; Fold05 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    336.
+#&gt;  6 &lt;split [226/25]&gt; Fold06 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    406.
+#&gt;  7 &lt;split [226/25]&gt; Fold07 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    305.
+#&gt;  8 &lt;split [226/25]&gt; Fold08 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    301.
+#&gt;  9 &lt;split [226/25]&gt; Fold09 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    315.
+#&gt; 10 &lt;split [226/25]&gt; Fold10 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    319.
+</code></pre>
+<p>Finally, summarizing as I did before:</p>
+<pre><code class="language-r">penguin_purrr %&gt;% 
+  summarize(mean_rmse = mean(rt_rmse), sd_rmse = sd(rt_rmse))
+#&gt; # A tibble: 1 x 2
+#&gt;   mean_rmse sd_rmse
+#&gt;       &lt;dbl&gt;   &lt;dbl&gt;
+#&gt; 1      347.    46.8
+</code></pre>
+<p>In practice, if you did all these at once instead of incrementally, it would look like:</p>
+<pre><code class="language-r">set.seed(0)
+penguin_folds %&gt;% 
+  
+  # train: get fitted model for a split
+  mutate(rt_fits = map(splits, get_fits, rt_spec)) %&gt;% 
+  
+  # test: get predictions on for each fold
+  mutate(rt_preds = map2(splits, rt_fits, get_preds)) %&gt;% 
+  
+  # compare: compute metric for each fold
+  mutate(rt_rmse = map_dbl(rt_preds, get_rmse))
+#&gt; #  10-fold cross-validation using stratification 
+#&gt; # A tibble: 10 x 5
+#&gt;    splits           id     rt_fits  rt_preds          rt_rmse
+#&gt;    &lt;list&gt;           &lt;chr&gt;  &lt;list&gt;   &lt;list&gt;              &lt;dbl&gt;
+#&gt;  1 &lt;split [225/26]&gt; Fold01 &lt;fit[+]&gt; &lt;tibble [26 × 8]&gt;    419.
+#&gt;  2 &lt;split [226/25]&gt; Fold02 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    326.
+#&gt;  3 &lt;split [226/25]&gt; Fold03 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    414.
+#&gt;  4 &lt;split [226/25]&gt; Fold04 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    327.
+#&gt;  5 &lt;split [226/25]&gt; Fold05 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    336.
+#&gt;  6 &lt;split [226/25]&gt; Fold06 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    406.
+#&gt;  7 &lt;split [226/25]&gt; Fold07 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    305.
+#&gt;  8 &lt;split [226/25]&gt; Fold08 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    301.
+#&gt;  9 &lt;split [226/25]&gt; Fold09 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    315.
+#&gt; 10 &lt;split [226/25]&gt; Fold10 &lt;fit[+]&gt; &lt;tibble [25 × 8]&gt;    319.
+</code></pre>
+<p>When you put it like <em>that</em>, it doesn&rsquo;t look like so much work! But, this way hides how much work it takes to write those 3 custom functions: <code>get_fits()</code>, <code>get_preds()</code>, and <code>get_rmse()</code>. And we still had to use vanilla <code>map()</code>, <code>map2()</code>, <em>and</em> <code>map2_dbl()</code>.</p>
+
+
+
+<h2 id="make-it-better">Make it better<a href="#make-it-better"><svg class="anchor-symbol" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0h24v24H0z" fill="currentColor"></path>
+<path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+</svg></a>
+</h2>
+<p>I kept a learning log while working through the all the above code, and I wrote down these notes to myself:</p>
+<ol>
+<li>
+<p>It is very easy to do the wrong thing; it is very hard to do the right thing.</p>
+</li>
+<li>
+<p>I lost sight many times of what the code I was writing was doing, because I was using up so much cognitive energy on getting the code to just work.</p>
+</li>
+<li>
+<p>I thought I knew how to use purrr&hellip;</p>
+</li>
+</ol>
+<p>If you have made it this far, I&rsquo;m pretty sure I don&rsquo;t need to convince you that a better way to do cross-validation using tidymodels would be more pleasant to do more than once. It would also be less prone to error due to me copying-and-pasting repeatedly, and making stupid mistakes that would be difficult to spot with so much cluttered code. Luckily, 
+<a href="https://tidymodels.github.io/tune/reference/fit_resamples.html" target="_blank" rel="noopener"><code>tune::fit_resamples()</code></a> came along to take a sad script and make it better:</p>
+<pre><code class="language-r">penguin_party &lt;-
+  tune::fit_resamples(
+    rt_spec,
+    body_mass_g ~ .,
+    resamples = penguin_folds
+)
+</code></pre>
+<p>Here is the beautiful output from that function:</p>
+<pre><code class="language-r">penguin_party
+#&gt; # Resampling results
+#&gt; # 10-fold cross-validation using stratification 
+#&gt; # A tibble: 10 x 4
+#&gt;    splits           id     .metrics         .notes          
+#&gt;    &lt;list&gt;           &lt;chr&gt;  &lt;list&gt;           &lt;list&gt;          
+#&gt;  1 &lt;split [225/26]&gt; Fold01 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+#&gt;  2 &lt;split [226/25]&gt; Fold02 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+#&gt;  3 &lt;split [226/25]&gt; Fold03 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+#&gt;  4 &lt;split [226/25]&gt; Fold04 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+#&gt;  5 &lt;split [226/25]&gt; Fold05 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+#&gt;  6 &lt;split [226/25]&gt; Fold06 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+#&gt;  7 &lt;split [226/25]&gt; Fold07 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+#&gt;  8 &lt;split [226/25]&gt; Fold08 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+#&gt;  9 &lt;split [226/25]&gt; Fold09 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+#&gt; 10 &lt;split [226/25]&gt; Fold10 &lt;tibble [2 × 3]&gt; &lt;tibble [0 × 1]&gt;
+</code></pre>
+<p>Now, to see all the stuff inside this <code>penguin_party</code>, we can use tune&rsquo;s <code>collect_*</code> functions.</p>
+<pre><code class="language-r">penguin_party %&gt;% 
+  collect_metrics()
+#&gt; # A tibble: 2 x 5
+#&gt;   .metric .estimator    mean     n std_err
+#&gt;   &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt; &lt;int&gt;   &lt;dbl&gt;
+#&gt; 1 rmse    standard   347.       10 14.8   
+#&gt; 2 rsq     standard     0.839    10  0.0141
+</code></pre>
+<p>To see the predictions, we need to add use 
+<a href="https://tidymodels.github.io/tune/reference/control_grid.html" target="_blank" rel="noopener"><code>control_resamples()</code></a>:</p>
+<pre><code class="language-r">penguin_party &lt;-
+  tune::fit_resamples(
+    rt_spec,
+    body_mass_g ~ .,
+    resamples = penguin_folds,
+    control = control_resamples(save_pred = TRUE) # add this line
+)
+</code></pre>
+<p>Then we collect the predictions.</p>
+<pre><code class="language-r">penguin_party %&gt;% 
+  collect_predictions()
+#&gt; # A tibble: 251 x 4
+#&gt;    id     .pred  .row body_mass_g
+#&gt;    &lt;chr&gt;  &lt;dbl&gt; &lt;int&gt;       &lt;int&gt;
+#&gt;  1 Fold01 3402.     4        3625
+#&gt;  2 Fold01 3402.    11        3325
+#&gt;  3 Fold01 3988.    14        3950
+#&gt;  4 Fold01 3988.    41        3700
+#&gt;  5 Fold01 3402.    54        3700
+#&gt;  6 Fold01 3988.    65        3950
+#&gt;  7 Fold01 3988.    70        4450
+#&gt;  8 Fold01 3402.    71        3300
+#&gt;  9 Fold01 3402.    76        3075
+#&gt; 10 Fold01 3402.    85        2900
+#&gt; # … with 241 more rows
+</code></pre>
+<p>Now, isn&rsquo;t that better?</p>
+<p><img src="https://media.giphy.com/media/daeKl3P4SissU/giphy.gif" alt=""><!-- --></p>
+
+    </div>
+    
+    <div class="col-12 col-lg-2ish article-style">
+    </div>
+  </div>
+    <div class="col-12 col-lg-10ish article-style">
+    </div>
+  
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/tidymodels/">tidymodels</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/&amp;text=Take%20a%20Sad%20Script%20&amp;amp;%20Make%20it%20Better:%20Tidymodels%20Edition" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/&amp;t=Take%20a%20Sad%20Script%20&amp;amp;%20Make%20it%20Better:%20Tidymodels%20Edition" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Take%20a%20Sad%20Script%20&amp;amp;%20Make%20it%20Better:%20Tidymodels%20Edition&amp;body=https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://katrienantonio.github.io/post/2020-02-27-better-tidymodels/&amp;title=Take%20a%20Sad%20Script%20&amp;amp;%20Make%20it%20Better:%20Tidymodels%20Edition" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/authors/katrien/avatar_hu22fe4e42f0e61cbf31d78663753cfc2d_920246_270x270_fill_q90_lanczos_center.jpg" alt="Katrien Antonio">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="/authors/katrien/">Katrien Antonio</a></h5>
+        <h6 class="card-subtitle">professor in actuarial science and insurance analytics</h6>
+        <p class="card-text">I&rsquo;m a professor in actuarial science who loves data science, programming and teaching.</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/katrienantonio" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/katrien-antonio-a419636/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.be/citations?user=8nEiR3MAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.youtube.com/channel/UCsYG87LOgAqLfqI_sG-jXPA" target="_blank" rel="noopener">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/r.min.js"></script>
+        
+      
+
+      
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.1c558923276e778a7a0c05514fa3ae46.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © Katrien Antonio 2024, design inspired by the work of Alison Hill &middot; 
+
+    Made with <a href="https://github.com/katrienantonio" target="_blank" rel="noopener"><i class="fas fa-code-branch"></i></a>, the <a href="https://cran.r-project.org/" target="_blank" rel="noopener"><i class="fab fa-r-project"></i> </a><a href="https://github.com/rstudio/blogdown" target="_blank" rel="noopener">blogdown</a> package, and the 
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

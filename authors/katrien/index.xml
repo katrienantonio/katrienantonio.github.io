@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/authors/katrien/</link>
+      <atom:link href="https://katrienantonio.github.io/authors/katrien/index.xml" rel="self" type="application/rss+xml" />
+    <description>Katrien Antonio</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Thu, 15 Dec 2022 09:45:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>Katrien Antonio</title>
+      <link>https://katrienantonio.github.io/authors/katrien/</link>
+    </image>
+    
+    <item>
+      <title>Neurale netwerken en hun inzet in het actuariaat</title>
+      <link>https://katrienantonio.github.io/talk/2022-neural/</link>
+      <pubDate>Thu, 15 Dec 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2022-neural/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bias, fairness and discrimination-free insurance pricing</title>
+      <link>https://katrienantonio.github.io/talk/2022-ai/</link>
+      <pubDate>Wed, 21 Sep 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2022-ai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Advanced Life Insurance Mathematics</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-advanced-life/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-advanced-life/</guid>
+      <description>&lt;p&gt;The course puts focus on two main topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;stochastic mortality models for population and portfolio data, with a.o. the Lee Carter, LifeMetrics models for single and multiple populations, portfolio specific mortality models&lt;/li&gt;
+&lt;li&gt;multi state models in actuarial science for life and disability insurance products, with premium calculation, policy valuation, Thiele&amp;rsquo;s differential equations, single and multiple life products.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to the official 
+&lt;a href=&#34;https://onderwijsaanbod.kuleuven.be/syllabi/e/D0N56AE.htm#activetab=doelstellingen_idp35200&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;course description&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Science for Non-Life Insurance</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</guid>
+      <description>&lt;p&gt;The course puts focus on four main topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;basics of statistical and machine learning with a focus on the analysis of frequency and severity insurance data&lt;/li&gt;
+&lt;li&gt;non-life insurance pricing methods, with GLMs, regression trees, random forests, gradient boosting machines and neural nets: technicalities, interpretation tools and surrogate models, model insights and resulting pricing models&lt;/li&gt;
+&lt;li&gt;credibility theory and bonus-malus scales&lt;/li&gt;
+&lt;li&gt;non-life claims reserving.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to the official 
+&lt;a href=&#34;https://onderwijsaanbod.kuleuven.be/syllabi/e/D0N56AE.htm#activetab=doelstellingen_idp35200&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;course description&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Implementation in R and Python of pricing and reserving models will be covered.&lt;/p&gt;
+&lt;p&gt;Students will work on a group project: construction of a pricing model for a given data set.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Insurance Analytics</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-insurance-analytics/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-insurance-analytics/</guid>
+      <description>&lt;p&gt;Here I will describe the insurance analytics course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Life Insurance Mathematics</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-life-insurance/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-life-insurance/</guid>
+      <description>&lt;p&gt;Here I will describe the life insurance mathematics course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Loss Models</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-loss-models/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-loss-models/</guid>
+      <description>&lt;p&gt;Here I will describe the loss models course.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The added value of dynamically updating motor insurance prices with telematics collected driving behavior data</title>
+      <link>https://katrienantonio.github.io/talk/2022-eaa/</link>
+      <pubDate>Thu, 12 May 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2022-eaa/</guid>
+      <description>&lt;p&gt;In this talk, I present the Henckaerts &amp;amp; Antonio (2022, IME) paper.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Insurance pricing analytics - an academic perspective</title>
+      <link>https://katrienantonio.github.io/talk/2021-fsma/</link>
+      <pubDate>Fri, 07 May 2021 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2021-fsma/</guid>
+      <description>&lt;p&gt;In this talk, I gave a state-of-the-art of the field of insurance pricing with analytic methods.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boosting insights in insurance tariff plans with machine learning methods</title>
+      <link>https://katrienantonio.github.io/talk/2021-urbana/</link>
+      <pubDate>Sat, 27 Mar 2021 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2021-urbana/</guid>
+      <description>&lt;p&gt;In this talk, I presented the Henckaerts et al. (2021) paper. The central theme of the symposium was &amp;lsquo;Actuarial innovations to emerging risks&amp;rsquo;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boosting insights in insurance tariff plans with machine learning methods</title>
+      <link>https://katrienantonio.github.io/talk/2020-ergo/</link>
+      <pubDate>Thu, 03 Dec 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-ergo/</guid>
+      <description>&lt;p&gt;In this talk, I discussed the use of tree-based machine learning methods to develop full tariff plans built from both the frequency and severity of claims.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Assessing the impact of COVID-19 on the IA|BE 2020 mortality projections - a scenario analysis</title>
+      <link>https://katrienantonio.github.io/talk/2020-iabe-covid/</link>
+      <pubDate>Mon, 23 Nov 2020 16:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-iabe-covid/</guid>
+      <description>&lt;p&gt;In this talk, I presented the strategy followed for a Covid-19 impact analysis on the IA|BE 2020, the mortality projection model developed for the Belgian population.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The IA|BE 2020 mortality projection for the Belgian population</title>
+      <link>https://katrienantonio.github.io/talk/2020-iabe/</link>
+      <pubDate>Mon, 23 Nov 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-iabe/</guid>
+      <description>&lt;p&gt;In this talk, I presented the methodology used in IA|BE 2020, the mortality projection model developed for the Belgian population.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

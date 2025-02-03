@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>insurance data science | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/tags/insurance-data-science/</link>
+      <atom:link href="https://katrienantonio.github.io/tags/insurance-data-science/index.xml" rel="self" type="application/rss+xml" />
+    <description>insurance data science</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Fri, 01 Jul 2022 09:45:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>insurance data science</title>
+      <link>https://katrienantonio.github.io/tags/insurance-data-science/</link>
+    </image>
+    
+    <item>
+      <title>Data Science for Non-Life Insurance</title>
+      <link>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</link>
+      <pubDate>Fri, 01 Jul 2022 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/teaching/2020-12-27-data-science/</guid>
+      <description>&lt;p&gt;The course puts focus on four main topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;basics of statistical and machine learning with a focus on the analysis of frequency and severity insurance data&lt;/li&gt;
+&lt;li&gt;non-life insurance pricing methods, with GLMs, regression trees, random forests, gradient boosting machines and neural nets: technicalities, interpretation tools and surrogate models, model insights and resulting pricing models&lt;/li&gt;
+&lt;li&gt;credibility theory and bonus-malus scales&lt;/li&gt;
+&lt;li&gt;non-life claims reserving.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Link to the official 
+&lt;a href=&#34;https://onderwijsaanbod.kuleuven.be/syllabi/e/D0N56AE.htm#activetab=doelstellingen_idp35200&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;course description&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Implementation in R and Python of pricing and reserving models will be covered.&lt;/p&gt;
+&lt;p&gt;Students will work on a group project: construction of a pricing model for a given data set.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Insurance data science with Python</title>
+      <link>https://katrienantonio.github.io/project/insurance-data-science-python/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/insurance-data-science-python/</guid>
+      <description>&lt;p&gt;Will follow&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Boosting insights in insurance tariff plans with machine learning methods</title>
+      <link>https://katrienantonio.github.io/talk/2020-ergo/</link>
+      <pubDate>Thu, 03 Dec 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-ergo/</guid>
+      <description>&lt;p&gt;In this talk, I discussed the use of tree-based machine learning methods to develop full tariff plans built from both the frequency and severity of claims.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hands-on machine learning in R</title>
+      <link>https://katrienantonio.github.io/talk/2020-hands-on-ml/</link>
+      <pubDate>Tue, 11 Feb 2020 09:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-hands-on-ml/</guid>
+      <description>&lt;p&gt;This three-day workshop introduces the essential concepts of building machine learning models with R. Throughout the workshop you will gain insights in the foundations of machine learning methods, including resampling methods, data preprocessing steps and the tuning of parameters. You will cover a variety of statistical and machine learning methods, ranging from GLMs, over tree-based machine learning methods to neural networks. You will acquire insights in the foundations of these methods, learn how to set-up the model building process, and focus on building a good understanding of the resulting model output and predictions.&lt;/p&gt;
+&lt;p&gt;Leaving this workshop, you should have a firm grasp of the working principles of a variety of machine learning methods and be able to explore their use in practical settings. Moreover, you should have acquired the fundamental insights to explore some other methods on your own.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

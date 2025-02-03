@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IA|BE 2020 | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/tags/iabe-2020/</link>
+      <atom:link href="https://katrienantonio.github.io/tags/iabe-2020/index.xml" rel="self" type="application/rss+xml" />
+    <description>IA|BE 2020</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Mon, 23 Nov 2020 16:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>IA|BE 2020</title>
+      <link>https://katrienantonio.github.io/tags/iabe-2020/</link>
+    </image>
+    
+    <item>
+      <title>Assessing the impact of COVID-19 on the IA|BE 2020 mortality projections - a scenario analysis</title>
+      <link>https://katrienantonio.github.io/talk/2020-iabe-covid/</link>
+      <pubDate>Mon, 23 Nov 2020 16:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-iabe-covid/</guid>
+      <description>&lt;p&gt;In this talk, I presented the strategy followed for a Covid-19 impact analysis on the IA|BE 2020, the mortality projection model developed for the Belgian population.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The IA|BE 2020 mortality projection for the Belgian population</title>
+      <link>https://katrienantonio.github.io/talk/2020-iabe/</link>
+      <pubDate>Mon, 23 Nov 2020 09:45:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/talk/2020-iabe/</guid>
+      <description>&lt;p&gt;In this talk, I presented the methodology used in IA|BE 2020, the mortality projection model developed for the Belgian population.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

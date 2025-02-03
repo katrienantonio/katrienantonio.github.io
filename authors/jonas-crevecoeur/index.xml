@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jonas Crevecoeur | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/authors/jonas-crevecoeur/</link>
+      <atom:link href="https://katrienantonio.github.io/authors/jonas-crevecoeur/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jonas Crevecoeur</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Mon, 24 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>Jonas Crevecoeur</title>
+      <link>https://katrienantonio.github.io/authors/jonas-crevecoeur/</link>
+    </image>
+    
+    <item>
+      <title>Bridging the gap between pricing and reserving with an occurrence and development model for non-life insurance claims</title>
+      <link>https://katrienantonio.github.io/publication/2023-reins/</link>
+      <pubDate>Mon, 24 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2023-reins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling the occurrence of events subject to a reporting delay via an EM algorithm</title>
+      <link>https://katrienantonio.github.io/publication/2022-ibnr-em/</link>
+      <pubDate>Tue, 26 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-ibnr-em/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A hierarchical reserving model for reported non-life insurance claims</title>
+      <link>https://katrienantonio.github.io/publication/2022-hirm-reserving/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2022-hirm-reserving/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Modeling the number of hidden events subject to observation delay</title>
+      <link>https://katrienantonio.github.io/publication/2019-ejor/</link>
+      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/publication/2019-ejor/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

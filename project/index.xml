@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Katrien Antonio</title>
+    <link>https://katrienantonio.github.io/project/</link>
+      <atom:link href="https://katrienantonio.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Katrien Antonio 2024, design inspired by the work of Alison Hill</copyright><lastBuildDate>Wed, 07 Apr 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://katrienantonio.github.io/images/icon_hue00fb631d8486eb2cd20ec1420b5517a_27920_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://katrienantonio.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>Insurance data science with Python</title>
+      <link>https://katrienantonio.github.io/project/insurance-data-science-python/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/insurance-data-science-python/</guid>
+      <description>&lt;p&gt;Will follow&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Junior college financieel en actuarieel waarderen</title>
+      <link>https://katrienantonio.github.io/project/junior-college/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/junior-college/</guid>
+      <description>&lt;p&gt;In February 2022 I recorded a lecture targeting high school (college) students interested in pursuing a degree in finance or actuarial science.&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/l34aGKMqWP4&#34; title=&#34;YouTube video player&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;(in Dutch) Wat doet aan actuaris binnen een bank of verzekeraar, met een takenpakket op het snijvlak van wiskunde en economie? Dit college reikt je inzichten aan in de wiskunde achter persoonlijke financiële planning en enkele courante financiële producten. Je verkent enerzijds de basisprincipes van het waarderen van toekomstige kasstromen (‘cash flows’) en anderzijds de kansrekening die relevant is bij pensioen- of levensverzekeringsproducten. Je start met het berekenen van de aflossingstabel bij een lening; nuttig als je later de aankoop van een eigen woning wilt financieren via een lening bij een bank. Daarna zoom je in op de evolutie van overlevingskansen en de levensverwachting voor Belgische mannen en vrouwen. Tot slot, combineer je financiële en demografische inzichten en krijg je inzicht in de prijs van financiële en verzekeringsproducten waarvan de uitbetaling afhankelijk is van de levensloop van de begunstigde, bijv. een pensioen of schuldsaldoverzekering.&lt;/p&gt;
+&lt;p&gt;Download the lecture slides 
+&lt;a href=&#34;http://katrienantonio.github.io/slides/JuniorCollege.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Joint work with Kristien Smedts.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mortality modelling</title>
+      <link>https://katrienantonio.github.io/project/mortality-modelling/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/mortality-modelling/</guid>
+      <description>&lt;p&gt;Back in 2014 I served as a member of the Projection Tables Working Group of the Royal Dutch Actuarial Association. The 
+&lt;a href=&#34;https://www.ag-ai.nl/view.php?action=view&amp;amp;Pagina_Id=625&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;AG 2014&lt;/a&gt; mortality projection model for the Dutch population is a stochastic mortality forecasting model of type Li-Lee. Using maximum likelihood estimation with Poisson assumption for the number of deaths, this multi-population model is calibrated on a set of European countries with similar socio-economic status. Since the publication in 2014, the Royal Dutch Actuarial Association biyearly publishes an update of the projection model, subject to methodological changes (if deemed necessary).&lt;/p&gt;
+&lt;p&gt;As principal investigator, I lead a similar project for the Institute of Actuaries in Belgium (IA|BE) with projection models published in 2015 (see 
+&lt;a href=&#34;https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2576167&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IABE 2015&lt;/a&gt;) and 2020 (see 
+&lt;a href=&#34;https://katrienantonio.github.io/papers/report_iabe_2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IABE 2020&lt;/a&gt;). This IA|BE mortality projection model delivers a best estimate for future mortality at the level of the Belgian population, but can also be used as a scenario generator for future mortality. The IA|BE 2020 was presented in November 2020, including a first attempt to assess the (possible) impact of COVID-19 on the mortality forecasts, see 
+&lt;a href=&#34;https://katrienantonio.github.io/papers/report_covid_iabe_2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IABE 2020 Covid impact analysis&lt;/a&gt;. Presentation slides are available 
+&lt;a href=&#34;https://katrienantonio.github.io/slides/IABE2020.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and 
+&lt;a href=&#34;https://katrienantonio.github.io/slides/IABE2020Covid.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Our work on the impact of COVID-19 on a stochastic multi-population mortality model of type Li &amp;amp; Lee was published in 2022 in Risks. The paper is available in open access via 
+&lt;a href=&#34;https://www.mdpi.com/2227-9091/10/2/26&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this link&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;A GitHub repo with the source code (in R) for our multipopulation mortality models is maintained by Jens Robben, see the 
+&lt;a href=&#34;https://github.com/RobbenJ/MultiMoMo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MultiMoMo package&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is joint work with Sander Devriendt and Jens Robben.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reserving in non-life insurance</title>
+      <link>https://katrienantonio.github.io/project/reserving-in-non-life-insurance/</link>
+      <pubDate>Wed, 07 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/reserving-in-non-life-insurance/</guid>
+      <description>&lt;p&gt;Will follow&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interviews, op-eds, speech</title>
+      <link>https://katrienantonio.github.io/project/op-eds/</link>
+      <pubDate>Sun, 07 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/op-eds/</guid>
+      <description>&lt;p&gt;Will follow&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hands-on machine learning in R</title>
+      <link>https://katrienantonio.github.io/project/hands-on-ml/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/hands-on-ml/</guid>
+      <description>&lt;p&gt;This three-day workshop introduces the essential concepts of building machine learning models with R. Throughout the workshop you will gain insights in the foundations of machine learning methods, including resampling methods, data preprocessing steps and the tuning of parameters. You will cover a variety of statistical and machine learning methods, ranging from GLMs, over tree-based machine learning methods to neural networks. You will acquire insights in the foundations of these methods, learn how to set-up the model building process, and focus on building a good understanding of the resulting model output and predictions.&lt;/p&gt;
+&lt;p&gt;Leaving this workshop, you should have a firm grasp of the working principles of a variety of machine learning methods and be able to explore their use in practical settings. Moreover, you should have acquired the fundamental insights to explore some other methods on your own.&lt;/p&gt;
+&lt;p&gt;Previous editions of the workshop were taught for Nationale Nederlanden (in company, February 2020) and the Actuarieel Instituut (online, December 2020 - January 2021).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Machine learning for insurance pricing</title>
+      <link>https://katrienantonio.github.io/project/tree-based-insurance-pricing/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/tree-based-insurance-pricing/</guid>
+      <description>&lt;p&gt;In a series of papers we put focus on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;smart and data driven preprocessing of &lt;strong&gt;continuous and spatial risk factors&lt;/strong&gt; for use in GLMs in 
+&lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.1080/03461238.2018.1429300&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henckaerts et al., 2018&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;a &lt;strong&gt;comparative analysis&lt;/strong&gt; of GLMs, GAMs, and tree-based machine learning methods (trees, RFs, GBMs) in insurance pricing with frequency and severity modelling, see 
+&lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.1080/10920277.2020.1745656?journalCode=uaaj20&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henckaerts et al., 2021&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;the smart engineering of a GLM as a &lt;strong&gt;global surrogate model&lt;/strong&gt; for a machine learning method (e.g., a GBM), developed in 
+&lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S0957417422006042&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henckaerts et al., 2022&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.1080/03461238.2018.1429300&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henckaerts et al., 2018&lt;/a&gt; develops a fully data driven strategy to incorporate continuous risk factors and geographical information in an insurance tariff. This strategy elegantly combines GAMs, trees, clustering method and GLMs.&lt;/p&gt;
+&lt;p&gt;A notebook reproducing the results of the Henckaerts et al., 2018 paper is available on 
+&lt;a href=&#34;https://github.com/katrienantonio/PE-pricing-analytics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://www.tandfonline.com/doi/abs/10.1080/10920277.2020.1745656?journalCode=uaaj20&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henckaerts et al., 2021&lt;/a&gt; presents a detailed discussion of the use of tree-based machine learning methods (i.e. trees, random forests and gradient boosting machines) to model claim frequency and severity data. The goal of this paper is to investigate how tree-based pricing models perform compared to the classical actuarial approach with GLMs and GAMs. This comparison puts focus on statistical performance, interpretation and business implications.&lt;/p&gt;
+&lt;p&gt;Essential coding steps to reproduce the main findings from the Henckaerts et al., 2021 paper are 
+&lt;a href=&#34;https://github.com/katrienantonio/treeML&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. Claim severity modelling with tree-based methods is illustrated in 
+&lt;a href=&#34;https://github.com/katrienantonio/sevtree&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this notebook&lt;/a&gt;. The 
+&lt;a href=&#34;https://github.com/katrienantonio/distRforest&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;distRforest&lt;/a&gt; package provides and R implementation for fitting random forests with a variety of loss functions.&lt;/p&gt;
+&lt;p&gt;The 
+&lt;a href=&#34;https://www.sciencedirect.com/science/article/abs/pii/S0957417422006042&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Henckaerts et al., 2022&lt;/a&gt; paper proposes a procedure to develop an interpretable global surrogate for a complex system. Knowledge is extracted from a black box via partial dependence effects. These are used to perform smart feature engineering by grouping variable values. This results in a segmentation of the feature space with automatic variable selection. A transparent generalized linear model (GLM) is fit to the features in categorical format and their relevant interactions. This GLM serves as a global surrogate to the original black box and replaces it in production.&lt;/p&gt;
+&lt;p&gt;Source code is available from the 
+&lt;a href=&#34;https://github.com/henckr/maidrr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;maidrr&lt;/a&gt; package for R.&lt;/p&gt;
+&lt;p&gt;This is joint work with Roel Henckaerts, Marie-Pier Côté and Roel Verbelen.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sparsity with multiple types of features</title>
+      <link>https://katrienantonio.github.io/project/sparsity/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/sparsity/</guid>
+      <description>&lt;p&gt;In this project we study &lt;strong&gt;regularization&lt;/strong&gt; strategies that can handle &lt;strong&gt;different types of predictors&lt;/strong&gt; (e.g., factor, continuous, nominal, ordinal, spatial). We focus on the use of a &lt;strong&gt;Lasso penalty&lt;/strong&gt; that acts on the objective function as a &lt;strong&gt;sum of subpenalties&lt;/strong&gt;, one for each type of predictor. As such, we allow for predictor selection and level fusion within a predictor in a data-driven way, simultaneous with the parameter estimation process.&lt;/p&gt;
+&lt;p&gt;We develop a &lt;strong&gt;new estimation strategy for convex predictive models with this multi-type penalty&lt;/strong&gt;. Using the theory of proximal operators, our estimation procedure is computationally efficient, partitioning the overall optimization problem into easier to solve subproblems, specific for each predictor type and its associated penalty. Earlier research applies approximations to non-differentiable penalties to solve the optimization problem. The proposed SMuRF algorithm removes the need for approximations and achieves a higher accuracy and computational efficiency. This is demonstrated with an extensive simulation study and the analysis of a &lt;strong&gt;case-study on insurance pricing analytics&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;This is joint work with Sander Devriendt, Tom Reynkens and Roel Verbelen.&lt;/p&gt;
+&lt;p&gt;R package is available on CRAN, see 
+&lt;a href=&#34;https://cran.r-project.org/web/packages/smurf/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;smurf package&lt;/a&gt;. Source code on GitLab, see 
+&lt;a href=&#34;https://gitlab.com/TReynkens/smurf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Telematics insurance</title>
+      <link>https://katrienantonio.github.io/project/telematics/</link>
+      <pubDate>Tue, 11 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://katrienantonio.github.io/project/telematics/</guid>
+      <description>&lt;p&gt;Our 2018 paper in JRSS C we analyze a data set from a Belgian telematics product targeting young drivers. We develop a statistical modelling approach using &lt;strong&gt;generalized additive models&lt;/strong&gt; and &lt;strong&gt;compositional predictors&lt;/strong&gt; to quantify and interpret the effect of telematics variables on the expected claim frequency.&lt;/p&gt;
+&lt;p&gt;This is joint work with Roel Verbelen and Gerda Claeskens.&lt;/p&gt;
+&lt;p&gt;In a 2022 paper in IME we extend the 2018 paper to the analysis of &lt;strong&gt;driving habits&lt;/strong&gt; and &lt;strong&gt;driving style&lt;/strong&gt; information. Driving habits are measured by the total mileage and the distance driven on different road types and during distinct time slots. Driving style is characterized by the number of harsh acceleration, braking, cornering and lateral movement events. First, we develop a &lt;strong&gt;baseline pricing model&lt;/strong&gt; for the complete portfolio with claim history and self-reported risk characteristics of approximately 400,000 policyholders each year. Next, we propose a methodology to &lt;strong&gt;update&lt;/strong&gt; the baseline price &lt;strong&gt;via the telematics information of young drivers&lt;/strong&gt;. Our approach results in a truly &lt;strong&gt;usage-based insurance (UBI) product&lt;/strong&gt;, making the premium dependent on a policyholder&amp;rsquo;s driving habits and style. We highlight the added value of telematics via improvements in risk classification and we put focus on &lt;strong&gt;managerial insights&lt;/strong&gt; by analyzing expected profits and retention rates under our new UBI pricing structure.&lt;/p&gt;
+&lt;p&gt;This is joint work with Roel Henckaerts.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
