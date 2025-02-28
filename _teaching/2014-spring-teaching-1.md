@@ -1,20 +1,19 @@
 ---
-title: "Teaching experience 1"
+title: "Advanced Life Insurance Mathematics"
 collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
+type: "Course in the MSc in Actuarial and Financial Engineering"
+permalink: /teaching/ALIM
+venue: "KU Leuven"
 date: 2014-01-01
-location: "City, Country"
+end_date: 2025-01-01
+location: 
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+![Image of KU Leuven Universiteitsbibliotheek](../images/KUL.png)
 
-Heading 1
-======
+The course puts focus on two main topics:
 
-Heading 2
-======
+* stochastic mortality models for population and portfolio data, with a.o. the Lee Carter, LifeMetrics models for single and multiple populations, portfolio specific mortality models  
+* multi state models in actuarial science for life and disability insurance products, with premium calculation, policy valuation, Thiele’s differential equations, single and multiple life products.  
 
-Heading 3
-======
+Link to the official [course description](https://onderwijsaanbod.kuleuven.be/syllabi/e/D0N56AE.htm#activetab=doelstellingen_idp35200).
