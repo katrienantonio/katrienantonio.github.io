@@ -18,7 +18,7 @@ main:
     url: /projects/
 
   - title: "CV"
-    url: /files/CVKatrienAntonio.pdf
+    url: /cv/
 
   - title: "Lab"
     url: /lab/
