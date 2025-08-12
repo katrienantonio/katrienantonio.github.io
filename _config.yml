@@ -26,8 +26,8 @@ author:
   name             : "Katrien Antonio"
   pronouns         : # example: "she/her"  
   bio              : "Professor"
-  location         : "Earth"
-  employer         : "XYZ University"
+  location         : "Leuven & Amsterdam"
+  employer         : "KU Leuven & UvA"
   uri              : # URL
   email            :  
 
@@ -35,7 +35,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=8nEiR3MAAAAJ"
   impactstory      : # URL
-  orcid            : 
+  orcid            : "https://orcid.org/0000-0002-1850-9425"
   semantic         : # URL
   pubmed           : 
   researchgate     : # URL
