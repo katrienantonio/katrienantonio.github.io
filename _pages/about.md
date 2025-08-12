@@ -10,7 +10,13 @@ redirect_from:
 
 I am a professor in actuarial science and insurance analytics at KU Leuven. I am also a (part-time) professor in actuarial data science with the University of Amsterdam in the Netherlands. 
 
+[KU Leuven profile](https://www.kuleuven.be/wieiswie/nl/person/00043788) and 
+[UvA profile](https://www.uva.nl/profiel/a/n/k.antonio/k.antonio.html)
+
 ## News
+
+<i class="fa fa-info-circle" aria-hidden="true"></i> August 1, 2025: new academic website - under construction!
+
 
 <i class="fa fa-info-circle" aria-hidden="true"></i> August 1, 2025: I started as vice-dean for education and students at [FEB](http://feb.kuleuven.be), KU Leuven.
 
