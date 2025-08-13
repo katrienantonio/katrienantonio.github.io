@@ -9,6 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-
-- [Short CV](../files/CVKatrienAntonio.pdf)  
-- [Long CV](../files/CVKatrienAntonio.pdf)
+Here you can download a [short CV](../files/CVKatrienAntonio.pdf) or [long CV](../files/CVKatrienAntonio.pdf).
