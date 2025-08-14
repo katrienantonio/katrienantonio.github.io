@@ -9,19 +9,16 @@ main:
     url: /research/
 
   - title: "Talks"
-    url: /talks/    
+    url: /talkmap/    
 
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Projects"
+  - title: "Projects & Media"
     url: /projects/
-
-  - title: "CV"
-    url: /cv/
 
   - title: "Lab"
     url: /lab/
 
-  - title: "Media"
-    url: /media/
+  - title: "CV"
+    url: /cv/
