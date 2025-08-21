@@ -21,6 +21,7 @@ Contributions are labelled below according to research topics and acronyms.
 | Workers' compensation insurance | WorkComp|
 | Motor insurance | Motor |
 | Life insurance | Life |
+| Telematics insurance | Tele |
 
 
 ## <span>Working papers</span>
