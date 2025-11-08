@@ -1,5 +1,5 @@
 ---
-title: "The Use of IoT Sensor Data to Dynamically Assess Maintenance Risk in Service Contracts."
+title: "The use of IoT sensor data to dynamically assess maintenance risk in service contracts."
 collection: publications
 permalink: /publication/2025-IoT-sensor
 date: 2025-04-17
