@@ -32,7 +32,7 @@ author_profile: true
 - Dr. Anastasios Bardoutsos, <em>first placement:</em> University of Groningen, now at Nationale Nederlanden
 - Dr. Bavo DC Campo, <em>first placement:</em> Ageas
 - Dr. Jonas Crevecoeur, <em>first placement:</em> University of Hasselt, now at Dataminded
-- Dr. Laurens Deprez, co-supervision, supervised by prof. Robert Boute, <em>first placement:</em> Belfius bank 
+- Dr. Laurens Deprez, co-supervision, supervised by prof. Robert Boute, <em>first placement:</em> University of Luxemburg, now at Belfius bank 
 - Dr. Sander Devriendt, <em>first placement:</em> National Bank of Belgium
 - Dr. Els Godecharle, <em>first placement:</em> KPMG, Melbourne
 - Dr. Roel Henckaerts, <em>first placement:</em> self-employed

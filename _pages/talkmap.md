@@ -9,7 +9,7 @@ Few selected talks are listed below.
 
 ## Upcoming talks
 
-I will present at: University of Barcelona (March 2026), Warsaw School of Economics (in September 2025).
+I will present at: Verbond Van Verzekeraars (October 2026), University of Luxembourg and Institute of Actuaries in Luxembourg (October 2026), assembly of the German actuarial association in Mannheim (November 2026).
 
 ## Examples of past talks, keynotes, seminars
 
