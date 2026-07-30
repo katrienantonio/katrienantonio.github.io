@@ -7,72 +7,51 @@ title: " "
 
 ## Featured lab publications
 
-<table style="border:none; margin:auto; border-collapse:collapse;">
-<tr>
+<div class="paper-grid">
 
-<td align="center" style="border:none; padding:5px;">
-<img src="/images/papers/IME.png"
-     style="height:240px; width:auto; border:1px solid #d9d9d9;">
-<br>
-<a href="https://doi.org/10.1016/j.insmatheco.2017.08.005">
-<em>In IME (2017)</em> →
-</a>
-</td>
+  <a href="https://doi.org/10.1016/j.insmatheco.2017.08.005">
+    <img src="/images/papers/IME-1.png" alt="IME paper">
+    <div class="paper-caption">
+ IME (2017)&nbsp; →
+</div>
+  </a>
 
-<td align="center" style="border:none; padding:5px;">
-<img src="/images/papers/telematics.png"
-     style="height:240px; width:auto; border:1px solid #d9d9d9;">
-<br>
-<a href="https://doi.org/10.1111/rssc.12283">
-<em>In JRSS C (2019)</em> →
-</a>
-</td>
+  <a href="https://doi.org/10.1111/rssc.12283">
+    <img src="/images/papers/JRSSC-1.png" alt="JRSS C paper">
+    <div class="paper-caption">
+ JRSS C (2019)&nbsp; →
+</div>
+  </a>
 
+  <a href="https://projecteuclid.org/journals/statistical-science/volume-37/issue-3/Modeling-the-Occurrence-of-Events-Subject-to-a-Reporting-Delay/10.1214/21-STS831.pdf">
+    <img src="/images/papers/StatScience-1.png" alt="Stat Science paper">
+    <div class="paper-caption">
+ Stat Science (2021)&nbsp; →
+</div>
+  </a>
 
-<td align="center" style="border:none; padding:5px;">
-<img src="/images/papers/StatScience.png"
-     style="height:240px; width:auto; border:1px solid #d9d9d9;">
-<br>
-<a href="https://projecteuclid.org/journals/statistical-science/volume-37/issue-3/Modeling-the-Occurrence-of-Events-Subject-to-a-Reporting-Delay/10.1214/21-STS831.pdf">
-<em>In Statistical Science (2022)</em> →
-</a>
-</td>
+  <a href="https://doi.org/10.1017/asb.2023.14">
+    <img src="/images/papers/ASTIN.png" alt="ASTIN paper">
+        <div class="paper-caption">
+ ASTIN (2023)&nbsp; →
+</div>
+  </a>
 
+  <a href="https://www.tandfonline.com/doi/full/10.1080/10920277.2025.2451860">
+    <img src="/images/papers/NAAJ.png" alt="NAAJ paper">
+    <div class="paper-caption">
+ NAAJ (2025)&nbsp; →
+</div>
+  </a>
 
-</tr>
+  <a href="https://doi.org/10.1093/jrsssa/qnaf052">
+    <img src="/images/papers/JRSSA.png" alt="JRSS A paper">
+    <div class="paper-caption">
+ JRSS A (2026)&nbsp; →
+</div>
+  </a>
 
-<tr>
-
-<td align="center" style="border:none; padding:5px;">
-<img src="/images/papers/ASTIN.png"
-     style="height:240px; width:auto; border:1px solid #d9d9d9;">
-<br>
-<a href="https://doi.org/10.1017/asb.2023.14">
-<em>In ASTIN Bulletin (2023)</em> →
-</a>
-</td>
-
-<td align="center" style="border:none; padding:5px;">
-<img src="/images/papers/NAAJ.png"
-     style="height:240px; width:auto; border:1px solid #d9d9d9;">
-<br>
-<a href="https://www.tandfonline.com/doi/full/10.1080/10920277.2025.2451860">
-<em>In NAAJ (2025)</em> →
-</a>
-</td>
-
-<td align="center" style="border:none; padding:5px;">
-<img src="/images/papers/jrssa.png"
-     style="height:240px; width:auto; border:1px solid #d9d9d9;">
-<br>
-<a href="https://doi.org/10.1093/jrsssa/qnaf052">
-<em>In JRSS A (2026)</em> →
-</a>
-<br>
-</td>
-
-</tr>
-</table>
+</div>
 
 ---
 

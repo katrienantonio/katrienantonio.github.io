@@ -40,3 +40,60 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+/* Paper thumbnails */
+
+.paper-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.paper-grid a {
+  display: block;
+}
+
+.paper-grid img {
+  width: 120px;
+  height: 150px;
+  object-fit: contain;
+  border: 1px solid #d9d9d9;
+  padding: 5px;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.paper-grid img:hover {
+  border-color: #999999;
+}
+
+.paper-caption {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.55rem;
+  line-height: 1.1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.paper-caption:hover {
+  text-decoration: underline;
+}
+
+/* Tablet: 3 per rij */
+@media screen and (max-width: 900px) {
+  .paper-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* Smartphone: 2 per rij */
+@media screen and (max-width: 500px) {
+  .paper-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
