@@ -8,7 +8,26 @@ This page highlights selected activities beyond my academic publications, includ
 
 ---
 
+## Speeches, op-ed, ...
+
+**Closing words**, FEB graduation ceremony on campus Leuven (2026)
+
+[On Graceland and other creative collabs →](../files/speech/2026-09-11 FEB graduation ceremony_Graceland_collab.pdf)
+
+---
+
 ## Media, interviews & outreach
+
+---
+
+**Het Belang Van Limburg (2026)**
+
+Interview in *Het Belang Van Limburg* (August 29, 2026) on insurance, actuarial sciences and climate. 
+
+[Read the interview →](https://www.hbvl.be/regio/limburg/nu-het-klimaat-steeds-extremer-wordt-hoe-gaan-onze-verzekeringen-er-in-de-toekomst-uitzien/160267764.html)
+
+<br clear="left">
+---
 
 <img src="/images/portfolio/tea39.png" width="130" align="left" style="margin: 0 25px 10px 0;">
 
@@ -77,11 +96,11 @@ Get in touch if interested in organizing a similar event.
 
 Our paper *"Bridging the gap between pricing and reserving with an occurrence and development model for non-life insurance claims"* received the 2024 Hachemeister prize, awarded by the Casualty Actuarial Society.
 
-[More information →](https://actuaries.org/sections/astin/astin-prizes/)
+[More information →](https://www.casact.org/about/awards-prizes-scholarships/charles-hachemeister-prize)
 
 <br clear="left">
 
 
 ## Collaborations & industry projects
 
-
+Will follow soon.
