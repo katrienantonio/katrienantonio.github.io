@@ -10,15 +10,27 @@ This page highlights selected activities beyond my academic publications, includ
 
 ## Speeches, op-ed, ...
 
+**Dimensions of Caroline Van Schoubroeck**, emeritus celebration of prof. Caroline Van Schoubroeck (October 16, 2026)
+
+(available on request, pictures [here](https://www.law.kuleuven.be/pictures/emeritaatsviering-prof-dr-caroline-van-schoubroeck))
+
 **Closing words**, FEB graduation ceremony on campus Leuven (2026)
 
-[On Graceland and other creative collabs →](../files/speech/2026-09-11 FEB graduation ceremony_Graceland_collab.pdf)
+[About Graceland and other creative collabs →](../files/speech/2026-09-11 FEB graduation ceremony_Graceland_collab.pdf)
 
 ---
 
 ## Media, interviews & outreach
 
 ---
+
+**Verbond van Verzekeraars (2026)**
+
+Interview related to my keynote during the Datamiddag organized by het Verbond (in Dutch)
+
+[Read the interview →](https://www.verzekeraars.nl/publicaties/longreads/professor-katrien-antonio-fijnmazige-data-dwingen-verzekeraars-tot-keuzes)
+
+<br clear="left">
 
 **Het Belang Van Limburg (2026)**
 

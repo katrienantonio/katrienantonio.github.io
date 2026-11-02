@@ -11,14 +11,12 @@ author_profile: true
 
 **Postdocs**
 
+- Dr. Freek Holvoet
 
 **PhD students**
 
 - Dries Van Ceulebroeck
-- Freek Holvoet  
 - Paul Wilsens, co-supervised by prof. Gerda Claeskens  
-- Rune Buckinx, co-supervised by prof. Gerda Claeskens  
-- Stijn Loeys, co-supervision, supervised by prof. Robert Boute 
 - Ho Ming Lee, Melbourne & KU Leuven, co-supervision with prof. Benjamin Avanzi and prof. Rui Zhou 
 
 **Former postdocs**
@@ -30,12 +28,15 @@ author_profile: true
 **Former PhD students**
 
 - Dr. Anastasios Bardoutsos, <em>first placement:</em> University of Groningen, now at Nationale Nederlanden
+- Rune Buckinx, MSc, co-supervised by prof. Gerda Claeskens  
 - Dr. Bavo DC Campo, <em>first placement:</em> Ageas
+- Dr. Atibhav Chaudry, co-supervision with prof. Avanzi (Melbourne), prof. Zhou (Melbourne) and prof. Dhaene (KU Leuven)
 - Dr. Jonas Crevecoeur, <em>first placement:</em> University of Hasselt, now at Dataminded
 - Dr. Laurens Deprez, co-supervision, supervised by prof. Robert Boute, <em>first placement:</em> University of Luxemburg, now at Belfius bank 
 - Dr. Sander Devriendt, <em>first placement:</em> National Bank of Belgium
 - Dr. Els Godecharle, <em>first placement:</em> KPMG, Melbourne
 - Dr. Roel Henckaerts, <em>first placement:</em> self-employed
+- Dr. Stijn Loeys, co-supervision, supervised by prof. Robert Boute, <em>first placement:</em> Triple A consultancy
 - Dr. Frank van Berkum, co-supervision, supervised by prof. Michel Vellekoop, now at PwC and University of Amsterdam
 - Dr. Roel Verbelen, co-supervised with prof. Gerda Claeskens, <em>first placement:</em> Finity, Sydney
 - Dr. Eva Verschueren, co-supervised with prof. Wim Schoutens, <em>first placement:</em> quant at Standard Chartered in Warsaw 
